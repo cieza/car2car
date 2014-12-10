@@ -42,187 +42,192 @@
 NS_LOG_COMPONENT_DEFINE ("ndn.fw.V2v");
 
 namespace ns3 {
-namespace ndn {
-namespace fw {
-
-NS_OBJECT_ENSURE_REGISTERED (V2v);
-
-TypeId
-V2v::GetTypeId (void)
-{
-  static TypeId tid = TypeId ("ns3::ndn::fw::V2v")
-    .SetParent<ForwardingStrategy> ()
-    .SetGroupName ("Ndn")
-    .AddConstructor<V2v> ()
-
-  ;
-  return tid;
-}
-
-V2v::V2v()
-{
-}
-
-V2v::~V2v ()
-{
-}
-
-void
-V2v::OnInterest (Ptr<Face> face,
-                 Ptr<const InterestHeader> header,
-                 Ptr<const Packet> origPacket)
-{
-  if (DynamicCast<AppFace> (face))
-    {
-      Ptr<MobilityModel> model = GetObject<MobilityModel> ();
-      Vector position;
-      if (model)
-        {
-          position = model->GetPosition ();
-          GeoSrcTag tag;
-          tag.SetPosition (position);
-          origPacket->AddPacketTag (tag);
-        }
-    }
-
-  ForwardingStrategy::OnInterest (face, header, origPacket);
-
-//std::cout << "Node: " << this->GetObject<Node>()->GetId() << " Receive Interest: " << header->GetName() << "\n";
-
-}
-
-void
-V2v::OnData (Ptr<Face> face,
-             Ptr<const ContentObjectHeader> header,
-             Ptr<Packet> payload,
-             Ptr<const Packet> origPacket)
-{
-std::cout<<"Node: "<<GetObject<Node> ()->GetId()<<"    Face: "<<face->GetId()<<"   Header: "<<header->GetName()<<"\n";
-  if (DynamicCast<AppFace> (face))
-    {
-      Ptr<MobilityModel> model = GetObject<MobilityModel> ();
-      Vector position;
-      if (model)
-        {
-          position = model->GetPosition ();
-          GeoSrcTag tag;
-          tag.SetPosition (position);
-          origPacket->AddPacketTag (tag);
-          // payload->AddPacketTag (tag);
-        }
-    }
-
-  ForwardingStrategy::OnData (face, header, payload, origPacket);
-}
-
-
-bool
-V2v::DoPropagateInterest (Ptr<Face> inFace,
-                          Ptr<const InterestHeader> header,
-                          Ptr<const Packet> origPacket,
-                          Ptr<pit::Entry> pitEntry)
-{
-  NS_LOG_FUNCTION (this);
-
-  int propagatedCount = 0;
-
-  BOOST_FOREACH (const fib::FaceMetric &metricFace, pitEntry->GetFibEntry ()->m_faces.get<fib::i_metric> ())
-    {
-      NS_LOG_DEBUG ("Trying " << boost::cref(metricFace));
-      //if (metricFace.m_status == fib::FaceMetric::NDN_FIB_RED) // all non-read faces are in the front of the list
-      if (metricFace.GetStatus () == fib::FaceMetric::NDN_FIB_RED) // all non-read faces are in the front of the list
-        break;
-
-      //if (!TrySendOutInterest (inFace, metricFace.m_face, header, origPacket, pitEntry))
-      if (!TrySendOutInterest (inFace, metricFace.GetFace (), header, origPacket, pitEntry))
-        {
-          continue;
-        }
-
-      propagatedCount++;
-    }
-
-  NS_LOG_INFO ("Propagated to " << propagatedCount << " faces");
-  return propagatedCount > 0;
-}
-
-void
-V2v::DidReceiveSolicitedData (Ptr<Face> inFace,
-                              Ptr<const ContentObjectHeader> header,
-                              Ptr<const Packet> payload,
-                              Ptr<const Packet> origPacket,
-                              bool didCreateCacheEntry)
-{
-  ForwardingStrategy::DidReceiveSolicitedData (inFace, header, payload, origPacket, didCreateCacheEntry);
-
-  if (didCreateCacheEntry)
-    {
-      // initiate low priority "pushing" only for "new data packets"
-
-      Ptr<L3Protocol> l3 = this->GetObject<L3Protocol> ();
-      NS_ASSERT (l3 != 0);
-
-      // Push interest using low-priority send method
-      for (uint32_t faceId = 0; faceId < l3->GetNFaces (); faceId++)
-        {
-          TrySendLowPriority (l3->GetFace (faceId), origPacket);
-        }
-    }
-}
-
-void
-V2v::DidReceiveUnsolicitedData (Ptr<Face> inFace,
-                                Ptr<const ContentObjectHeader> header,
-                                Ptr<const Packet> payload,
-                                Ptr<const Packet> origPacket,
-                                bool didCreateCacheEntry)
-{
-  ForwardingStrategy::DidReceiveUnsolicitedData (inFace, header, payload, origPacket, didCreateCacheEntry);
-
-  if (didCreateCacheEntry)
-    {
-      // initiate low priority "pushing" only for "new data packets"
-
-      Ptr<L3Protocol> l3 = this->GetObject<L3Protocol> ();
-      NS_ASSERT (l3 != 0);
-
-      // Push interest using low-priority send method
-      for (uint32_t faceId = 0; faceId < l3->GetNFaces (); faceId++)
-        {
-          TrySendLowPriority (l3->GetFace (faceId), origPacket);
-        }
-    }
-}
-
-void
-V2v::DidExhaustForwardingOptions (Ptr<Face> inFace,
-                                  Ptr<const InterestHeader> header,
-                                  Ptr<const Packet> origPacket,
-                                  Ptr<pit::Entry> pitEntry)
-{
-  ForwardingStrategy::DidExhaustForwardingOptions (inFace, header, origPacket, pitEntry);
-
-  // Try to push new packet further with lowest priority possible on all L3 faces
-  BOOST_FOREACH (const fib::FaceMetric &face, pitEntry->GetFibEntry ()->m_faces)
-    {
-      //TrySendLowPriority (face.m_face, origPacket);
-      TrySendLowPriority (face.GetFace (), origPacket);
-    }
-}
-
-void
-V2v::TrySendLowPriority (Ptr<Face> face, Ptr<const Packet> packet)
-{
-  NS_LOG_FUNCTION (boost::cref (*face));
-
-  Ptr<V2vNetDeviceFace> v2vFace = DynamicCast<V2vNetDeviceFace> (face);
-  if (v2vFace)
-    {
-      v2vFace->SendLowPriority (packet->Copy ());
-    }
-}
-
-
-} // namespace fw
-} // namespace ndn
+    namespace ndn {
+        namespace fw {
+            
+            NS_OBJECT_ENSURE_REGISTERED (V2v);
+            
+            TypeId
+            V2v::GetTypeId (void)
+            {
+                static TypeId tid = TypeId ("ns3::ndn::fw::V2v")
+                .SetParent<ForwardingStrategy> ()
+                .SetGroupName ("Ndn")
+                .AddConstructor<V2v> ()
+                
+                ;
+                return tid;
+            }
+            
+            V2v::V2v()
+            {
+            }
+            
+            V2v::~V2v ()
+            {
+            }
+            
+            void
+            V2v::OnInterest (Ptr<Face> face,
+                             Ptr<const InterestHeader> header,
+                             Ptr<const Packet> origPacket)
+            {
+                if (DynamicCast<AppFace> (face))
+                {
+                    Ptr<MobilityModel> model = GetObject<MobilityModel> ();
+                    Vector position;
+                    if (model)
+                    {
+                        position = model->GetPosition ();
+                        GeoSrcTag tag;
+                        tag.SetPosition (position);
+                        origPacket->AddPacketTag (tag);
+                    }
+                }
+                
+                ForwardingStrategy::OnInterest (face, header, origPacket);
+                
+                //std::cout << "Node: " << this->GetObject<Node>()->GetId() << " Receive Interest: " << header->GetName() << "\n";
+                
+            }
+            
+            void
+            V2v::OnData (Ptr<Face> face,
+                         Ptr<const ContentObjectHeader> header,
+                         Ptr<Packet> payload,
+                         Ptr<const Packet> origPacket)
+            {
+                std::cout<<"Node: "<<GetObject<Node> ()->GetId()<<"    Face: "<<face->GetId()<<"   Header: "<<header->GetName()<<"\n";
+                if (DynamicCast<AppFace> (face))
+                {
+                    Ptr<MobilityModel> model = GetObject<MobilityModel> ();
+                    Vector position;
+                    if (model)
+                    {
+                        position = model->GetPosition ();
+                        GeoSrcTag tag;
+                        tag.SetPosition (position);
+                        origPacket->AddPacketTag (tag);
+                        // payload->AddPacketTag (tag);
+                    }
+                }
+                
+                ForwardingStrategy::OnData (face, header, payload, origPacket);
+            }
+            
+            
+            bool
+            V2v::DoPropagateInterest (Ptr<Face> inFace,
+                                      Ptr<const InterestHeader> header,
+                                      Ptr<const Packet> origPacket,
+                                      Ptr<pit::Entry> pitEntry)
+            {
+                NS_LOG_FUNCTION (this);
+                
+                int propagatedCount = 0;
+                
+                BOOST_FOREACH (const fib::FaceMetric &metricFace, pitEntry->GetFibEntry ()->m_faces.get<fib::i_metric> ())
+                {
+                    NS_LOG_DEBUG ("Trying " << boost::cref(metricFace));
+                    //if (metricFace.m_status == fib::FaceMetric::NDN_FIB_RED) // all non-read faces are in the front of the list
+                    if (metricFace.GetStatus () == fib::FaceMetric::NDN_FIB_RED) // all non-read faces are in the front of the list
+                        break;
+                    
+                    //if (!TrySendOutInterest (inFace, metricFace.m_face, header, origPacket, pitEntry))
+                    if (!TrySendOutInterest (inFace, metricFace.GetFace (), header, origPacket, pitEntry))
+                    {
+                        continue;
+                    }
+                    
+                    propagatedCount++;
+                }
+                
+                NS_LOG_INFO ("Propagated to " << propagatedCount << " faces");
+                return propagatedCount > 0;
+            }
+            
+            void
+            V2v::DidReceiveSolicitedData (Ptr<Face> inFace,
+                                          Ptr<const ContentObjectHeader> header,
+                                          Ptr<const Packet> payload,
+                                          Ptr<const Packet> origPacket,
+                                          bool didCreateCacheEntry)
+            {
+                ForwardingStrategy::DidReceiveSolicitedData (inFace, header, payload, origPacket, didCreateCacheEntry);
+                
+                if (didCreateCacheEntry)
+                {
+                    // initiate low priority "pushing" only for "new data packets"
+                    
+                    Ptr<L3Protocol> l3 = this->GetObject<L3Protocol> ();
+                    NS_ASSERT (l3 != 0);
+                    
+                    // Push interest using low-priority send method
+                    for (uint32_t faceId = 0; faceId < l3->GetNFaces (); faceId++)
+                    {
+                        TrySendLowPriority (l3->GetFace (faceId), origPacket);
+                    }
+                }
+            }
+            
+            void
+            V2v::DidReceiveUnsolicitedData (Ptr<Face> inFace,
+                                            Ptr<const ContentObjectHeader> header,
+                                            Ptr<const Packet> payload,
+                                            Ptr<const Packet> origPacket,
+                                            bool didCreateCacheEntry)
+            {
+                ForwardingStrategy::DidReceiveUnsolicitedData (inFace, header, payload, origPacket, didCreateCacheEntry);
+                
+                
+                /* ESSE TRECHO ABAIXO DEVE SER COMENTADO PARA DESABILITAR O COMPORTAMENTO PROATIVO
+                 if (didCreateCacheEntry)
+                 {
+                 // initiate low priority "pushing" only for "new data packets"
+                 
+                 Ptr<L3Protocol> l3 = this->GetObject<L3Protocol> ();
+                 NS_ASSERT (l3 != 0);
+                 
+                 // Push interest using low-priority send method
+                 for (uint32_t faceId = 0; faceId < l3->GetNFaces (); faceId++)
+                 {
+                 NS_LOG_INFO("Tentando Enviar Conteudo (Nao Solicitado) " << header->GetName().GetComponents());
+                 TrySendLowPriority (l3->GetFace (faceId), origPacket);
+                 }
+                 }
+                 */
+                
+            }
+            
+            void
+            V2v::DidExhaustForwardingOptions (Ptr<Face> inFace,
+                                              Ptr<const InterestHeader> header,
+                                              Ptr<const Packet> origPacket,
+                                              Ptr<pit::Entry> pitEntry)
+            {
+                ForwardingStrategy::DidExhaustForwardingOptions (inFace, header, origPacket, pitEntry);
+                
+                // Try to push new packet further with lowest priority possible on all L3 faces
+                BOOST_FOREACH (const fib::FaceMetric &face, pitEntry->GetFibEntry ()->m_faces)
+                {
+                    //TrySendLowPriority (face.m_face, origPacket);
+                    TrySendLowPriority (face.GetFace (), origPacket);
+                }
+            }
+            
+            void
+            V2v::TrySendLowPriority (Ptr<Face> face, Ptr<const Packet> packet)
+            {
+                NS_LOG_FUNCTION (boost::cref (*face));
+                
+                Ptr<V2vNetDeviceFace> v2vFace = DynamicCast<V2vNetDeviceFace> (face);
+                if (v2vFace)
+                {
+                    v2vFace->SendLowPriority (packet->Copy ());
+                }
+            }
+            
+            
+        } // namespace fw
+    } // namespace ndn
 } // namespace ns3
