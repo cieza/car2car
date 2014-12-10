@@ -1,0 +1,276 @@
+# project ddos-eval (0.1) configured on Tue Nov 25 01:01:31 2014 by
+# waf 1.7.9 (abi 98, python 20703f0 on linux2)
+# using ./waf configure
+#
+----------------------------------------
+Setting top to
+/home/elise/ndnSIM-nom-rapid-car2car
+----------------------------------------
+Setting out to
+/home/elise/ndnSIM-nom-rapid-car2car/build
+----------------------------------------
+Checking for 'g++' (c++ compiler)
+find program=['g++', 'c++'] paths=['/usr/lib/lightdm/lightdm', '/usr/local/sbin', '/usr/local/bin', '/usr/sbin', '/usr/bin', '/sbin', '/bin', '/usr/games', '/home/elise/bake'] var='CXX' -> '/usr/bin/g++'
+find program=['ar'] paths=['/usr/lib/lightdm/lightdm', '/usr/local/sbin', '/usr/local/bin', '/usr/sbin', '/usr/bin', '/sbin', '/bin', '/usr/games', '/home/elise/bake'] var='AR' -> '/usr/bin/ar'
+/usr/bin/g++
+----------------------------------------
+Checking boost includes
+1_48
+----------------------------------------
+Checking boost libs
+Found the boost path in /usr/lib with the libraries:
+    /usr/lib/libboost_chrono-mt.a
+    /usr/lib/libboost_chrono-mt.so
+    /usr/lib/libboost_chrono.a
+    /usr/lib/libboost_chrono.so
+    /usr/lib/libboost_chrono.so.1.48.0
+    /usr/lib/libboost_date_time-mt.a
+    /usr/lib/libboost_date_time-mt.so
+    /usr/lib/libboost_date_time.a
+    /usr/lib/libboost_date_time.so
+    /usr/lib/libboost_date_time.so.1.48.0
+    /usr/lib/libboost_filesystem-mt.a
+    /usr/lib/libboost_filesystem-mt.so
+    /usr/lib/libboost_filesystem.a
+    /usr/lib/libboost_filesystem.so
+    /usr/lib/libboost_filesystem.so.1.46.1
+    /usr/lib/libboost_filesystem.so.1.48.0
+    /usr/lib/libboost_graph-mt.a
+    /usr/lib/libboost_graph-mt.so
+    /usr/lib/libboost_graph.a
+    /usr/lib/libboost_graph.so
+    /usr/lib/libboost_graph.so.1.48.0
+    /usr/lib/libboost_graph_parallel-mt.a
+    /usr/lib/libboost_graph_parallel-mt.so
+    /usr/lib/libboost_graph_parallel.a
+    /usr/lib/libboost_graph_parallel.so
+    /usr/lib/libboost_graph_parallel.so.1.48.0
+    /usr/lib/libboost_iostreams-mt.a
+    /usr/lib/libboost_iostreams-mt.so
+    /usr/lib/libboost_iostreams.a
+    /usr/lib/libboost_iostreams.so
+    /usr/lib/libboost_iostreams.so.1.48.0
+    /usr/lib/libboost_locale-mt.a
+    /usr/lib/libboost_locale-mt.so
+    /usr/lib/libboost_locale.a
+    /usr/lib/libboost_locale.so
+    /usr/lib/libboost_locale.so.1.48.0
+    /usr/lib/libboost_math_c99-mt.a
+    /usr/lib/libboost_math_c99-mt.so
+    /usr/lib/libboost_math_c99.a
+    /usr/lib/libboost_math_c99.so
+    /usr/lib/libboost_math_c99.so.1.48.0
+    /usr/lib/libboost_math_c99f-mt.a
+    /usr/lib/libboost_math_c99f-mt.so
+    /usr/lib/libboost_math_c99f.a
+    /usr/lib/libboost_math_c99f.so
+    /usr/lib/libboost_math_c99f.so.1.48.0
+    /usr/lib/libboost_math_c99l-mt.a
+    /usr/lib/libboost_math_c99l-mt.so
+    /usr/lib/libboost_math_c99l.a
+    /usr/lib/libboost_math_c99l.so
+    /usr/lib/libboost_math_c99l.so.1.48.0
+    /usr/lib/libboost_math_tr1-mt.a
+    /usr/lib/libboost_math_tr1-mt.so
+    /usr/lib/libboost_math_tr1.a
+    /usr/lib/libboost_math_tr1.so
+    /usr/lib/libboost_math_tr1.so.1.48.0
+    /usr/lib/libboost_math_tr1f-mt.a
+    /usr/lib/libboost_math_tr1f-mt.so
+    /usr/lib/libboost_math_tr1f.a
+    /usr/lib/libboost_math_tr1f.so
+    /usr/lib/libboost_math_tr1f.so.1.48.0
+    /usr/lib/libboost_math_tr1l-mt.a
+    /usr/lib/libboost_math_tr1l-mt.so
+    /usr/lib/libboost_math_tr1l.a
+    /usr/lib/libboost_math_tr1l.so
+    /usr/lib/libboost_math_tr1l.so.1.48.0
+    /usr/lib/libboost_mpi-mt.a
+    /usr/lib/libboost_mpi-mt.so
+    /usr/lib/libboost_mpi.a
+    /usr/lib/libboost_mpi.so
+    /usr/lib/libboost_mpi.so.1.48.0
+    /usr/lib/libboost_mpi_python-mt-py27.a
+    /usr/lib/libboost_mpi_python-mt-py27.so
+    /usr/lib/libboost_mpi_python-mt-py32.a
+    /usr/lib/libboost_mpi_python-mt-py32.so
+    /usr/lib/libboost_mpi_python-py27.a
+    /usr/lib/libboost_mpi_python-py27.so
+    /usr/lib/libboost_mpi_python-py27.so.1.48.0
+    /usr/lib/libboost_mpi_python-py32.a
+    /usr/lib/libboost_mpi_python-py32.so
+    /usr/lib/libboost_mpi_python-py32.so.1.48.0
+    /usr/lib/libboost_mpi_python.a
+    /usr/lib/libboost_mpi_python.so
+    /usr/lib/libboost_prg_exec_monitor-mt.a
+    /usr/lib/libboost_prg_exec_monitor-mt.so
+    /usr/lib/libboost_prg_exec_monitor.a
+    /usr/lib/libboost_prg_exec_monitor.so
+    /usr/lib/libboost_prg_exec_monitor.so.1.48.0
+    /usr/lib/libboost_program_options-mt.a
+    /usr/lib/libboost_program_options-mt.so
+    /usr/lib/libboost_program_options.a
+    /usr/lib/libboost_program_options.so
+    /usr/lib/libboost_program_options.so.1.48.0
+    /usr/lib/libboost_python-mt-py27.a
+    /usr/lib/libboost_python-mt-py27.so
+    /usr/lib/libboost_python-mt-py32.a
+    /usr/lib/libboost_python-mt-py32.so
+    /usr/lib/libboost_python-py27.a
+    /usr/lib/libboost_python-py27.so
+    /usr/lib/libboost_python-py27.so.1.48.0
+    /usr/lib/libboost_python-py32.a
+    /usr/lib/libboost_python-py32.so
+    /usr/lib/libboost_python-py32.so.1.48.0
+    /usr/lib/libboost_python.a
+    /usr/lib/libboost_python.so
+    /usr/lib/libboost_random-mt.a
+    /usr/lib/libboost_random-mt.so
+    /usr/lib/libboost_random.a
+    /usr/lib/libboost_random.so
+    /usr/lib/libboost_random.so.1.48.0
+    /usr/lib/libboost_regex-mt.a
+    /usr/lib/libboost_regex-mt.so
+    /usr/lib/libboost_regex.a
+    /usr/lib/libboost_regex.so
+    /usr/lib/libboost_regex.so.1.48.0
+    /usr/lib/libboost_serialization-mt.a
+    /usr/lib/libboost_serialization-mt.so
+    /usr/lib/libboost_serialization.a
+    /usr/lib/libboost_serialization.so
+    /usr/lib/libboost_serialization.so.1.46.1
+    /usr/lib/libboost_serialization.so.1.48.0
+    /usr/lib/libboost_signals-mt.a
+    /usr/lib/libboost_signals-mt.so
+    /usr/lib/libboost_signals.a
+    /usr/lib/libboost_signals.so
+    /usr/lib/libboost_signals.so.1.46.1
+    /usr/lib/libboost_signals.so.1.48.0
+    /usr/lib/libboost_system-mt.a
+    /usr/lib/libboost_system-mt.so
+    /usr/lib/libboost_system.a
+    /usr/lib/libboost_system.so
+    /usr/lib/libboost_system.so.1.46.1
+    /usr/lib/libboost_system.so.1.48.0
+    /usr/lib/libboost_test_exec_monitor-mt.a
+    /usr/lib/libboost_test_exec_monitor.a
+    /usr/lib/libboost_thread-mt.a
+    /usr/lib/libboost_thread-mt.so
+    /usr/lib/libboost_thread.a
+    /usr/lib/libboost_thread.so
+    /usr/lib/libboost_thread.so.1.48.0
+    /usr/lib/libboost_timer-mt.a
+    /usr/lib/libboost_timer-mt.so
+    /usr/lib/libboost_timer.a
+    /usr/lib/libboost_timer.so
+    /usr/lib/libboost_timer.so.1.48.0
+    /usr/lib/libboost_unit_test_framework-mt.a
+    /usr/lib/libboost_unit_test_framework-mt.so
+    /usr/lib/libboost_unit_test_framework.a
+    /usr/lib/libboost_unit_test_framework.so
+    /usr/lib/libboost_unit_test_framework.so.1.48.0
+    /usr/lib/libboost_wave-mt.a
+    /usr/lib/libboost_wave-mt.so
+    /usr/lib/libboost_wave.a
+    /usr/lib/libboost_wave.so
+    /usr/lib/libboost_wave.so.1.48.0
+    /usr/lib/libboost_wserialization-mt.a
+    /usr/lib/libboost_wserialization-mt.so
+    /usr/lib/libboost_wserialization.a
+    /usr/lib/libboost_wserialization.so
+    /usr/lib/libboost_wserialization.so.1.46.1
+    /usr/lib/libboost_wserialization.so.1.48.0
+Trying pattern boost_system(-gcc[0-9]{0,3})+(-1_48)+
+Trying pattern boost_system(-1_48)+
+Trying pattern boost_system(-1_48)+
+Trying pattern boost_system(-gcc[0-9]{0,3})+
+Trying pattern boost_system
+Found boost lib libboost_system-mt.a
+Trying pattern boost_iostreams(-gcc[0-9]{0,3})+(-1_48)+
+Trying pattern boost_iostreams(-1_48)+
+Trying pattern boost_iostreams(-1_48)+
+Trying pattern boost_iostreams(-gcc[0-9]{0,3})+
+Trying pattern boost_iostreams
+Found boost lib libboost_iostreams-mt.a
+ok
+----------------------------------------
+Checking for boost linkage
+==>
+#include <boost/system/error_code.hpp>
+int main() { boost::system::error_code c; }
+<==
+[1/2] [32mcxx: build/.conf_check_968fbcee789046a8c143bb4a6e302895/test.cpp -> build/.conf_check_968fbcee789046a8c143bb4a6e302895/testbuild/test.cpp.1.o
+[0m
+['/usr/bin/g++', '-I/usr/include', '../test.cpp', '-c', '-o', 'test.cpp.1.o']
+[2/2] [33mcxxprogram: build/.conf_check_968fbcee789046a8c143bb4a6e302895/testbuild/test.cpp.1.o -> build/.conf_check_968fbcee789046a8c143bb4a6e302895/testbuild/testprog
+[0m
+['/usr/bin/g++', 'test.cpp.1.o', '-o', '/home/elise/ndnSIM-nom-rapid-car2car/build/.conf_check_968fbcee789046a8c143bb4a6e302895/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic', '-L/usr/lib', '-lboost_system-mt', '-lboost_iostreams-mt']
+ok
+----------------------------------------
+Checking for program pkg-config
+/usr/bin/pkg-config
+find program=['pkg-config'] paths=['/usr/lib/lightdm/lightdm', '/usr/local/sbin', '/usr/local/bin', '/usr/sbin', '/usr/bin', '/sbin', '/bin', '/usr/games', '/home/elise/bake'] var='PKGCONFIG' -> '/usr/bin/pkg-config'
+------------------------------------------
+Checking for pkg-config version >= '0.0.0'
+['/usr/bin/pkg-config', '--atleast-pkgconfig-version=0.0.0']
+yes
+------------------------------------------
+Checking for ns3-ndnSIM
+['/usr/bin/pkg-config', '--cflags', '--libs', 'libns3-dev-ndnSIM-optimized']
+out: -pthread -I/usr/local/include/ns3-dev  -Wl,-Bdynamic -L/usr/local/lib -lns3-dev-ndnSIM-optimized -lns3-dev-point-to-point-optimized -lns3-dev-internet-optimized -lns3-dev-topology-read-optimized -lns3-dev-mobility-optimized -lns3-dev-bridge-optimized -lns3-dev-mpi-optimized -lns3-dev-network-optimized -lns3-dev-core-optimized -lrt -lgsl -lgslcblas -lm  
+
+yes
+------------------------------------------
+Checking for ns3-core
+['/usr/bin/pkg-config', '--cflags', '--libs', 'libns3-dev-core-optimized']
+out: -pthread -I/usr/local/include/ns3-dev  -Wl,-Bdynamic -L/usr/local/lib -lns3-dev-core-optimized -lrt -lgsl -lgslcblas -lm  
+
+yes
+------------------------------------------
+Checking for ns3-network
+['/usr/bin/pkg-config', '--cflags', '--libs', 'libns3-dev-network-optimized']
+out: -pthread -I/usr/local/include/ns3-dev  -Wl,-Bdynamic -L/usr/local/lib -lns3-dev-network-optimized -lns3-dev-core-optimized -lrt -lgsl -lgslcblas -lm  
+
+yes
+------------------------------------------
+Checking for ns3-internet
+['/usr/bin/pkg-config', '--cflags', '--libs', 'libns3-dev-internet-optimized']
+out: -pthread -I/usr/local/include/ns3-dev  -Wl,-Bdynamic -L/usr/local/lib -lns3-dev-internet-optimized -lns3-dev-bridge-optimized -lns3-dev-mpi-optimized -lns3-dev-network-optimized -lns3-dev-core-optimized -lrt -lgsl -lgslcblas -lm  
+
+yes
+------------------------------------------
+Checking for ns3-point-to-point
+['/usr/bin/pkg-config', '--cflags', '--libs', 'libns3-dev-point-to-point-optimized']
+out: -pthread -I/usr/local/include/ns3-dev  -Wl,-Bdynamic -L/usr/local/lib -lns3-dev-point-to-point-optimized -lns3-dev-mpi-optimized -lns3-dev-network-optimized -lns3-dev-core-optimized -lrt -lgsl -lgslcblas -lm  
+
+yes
+------------------------------------------
+Checking for ns3-topology-read
+['/usr/bin/pkg-config', '--cflags', '--libs', 'libns3-dev-topology-read-optimized']
+out: -pthread -I/usr/local/include/ns3-dev  -Wl,-Bdynamic -L/usr/local/lib -lns3-dev-topology-read-optimized -lns3-dev-network-optimized -lns3-dev-core-optimized -lrt -lgsl -lgslcblas -lm  
+
+yes
+------------------------------------------
+Checking for ns3-applications
+['/usr/bin/pkg-config', '--cflags', '--libs', 'libns3-dev-applications-optimized']
+out: -pthread -I/usr/local/include/ns3-dev -I/usr/include/gtk-2.0 -I/usr/lib/i386-linux-gnu/gtk-2.0/include -I/usr/include/atk-1.0 -I/usr/include/cairo -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/pango-1.0 -I/usr/include/gio-unix-2.0/ -I/usr/include/glib-2.0 -I/usr/lib/i386-linux-gnu/glib-2.0/include -I/usr/include/pixman-1 -I/usr/include/freetype2 -I/usr/include/libpng12 -I/usr/include/libxml2  -Wl,-Bdynamic -L/usr/local/lib -lns3-dev-applications-optimized -lns3-dev-internet-optimized -lns3-dev-config-store-optimized -lgtk-x11-2.0 -lgdk-x11-2.0 -latk-1.0 -lgio-2.0 -lpangoft2-1.0 -lpangocairo-1.0 -lgdk_pixbuf-2.0 -lcairo -lpango-1.0 -lfreetype -lfontconfig -lgobject-2.0 -lglib-2.0 -lxml2 -lns3-dev-tools-optimized -lns3-dev-bridge-optimized -lns3-dev-mpi-optimized -lns3-dev-stats-optimized -lsqlite3 -lns3-dev-network-optimized -lns3-dev-core-optimized -lrt -lgsl -lgslcblas -lm  
+
+yes
+------------------------------------------
+Checking for ns3-mobility
+['/usr/bin/pkg-config', '--cflags', '--libs', 'libns3-dev-mobility-optimized']
+out: -pthread -I/usr/local/include/ns3-dev  -Wl,-Bdynamic -L/usr/local/lib -lns3-dev-mobility-optimized -lns3-dev-network-optimized -lns3-dev-core-optimized -lrt -lgsl -lgslcblas -lm  
+
+yes
+------------------------------------------
+Checking for ns3-wifi
+['/usr/bin/pkg-config', '--cflags', '--libs', 'libns3-dev-wifi-optimized']
+out: -pthread -I/usr/local/include/ns3-dev  -Wl,-Bdynamic -L/usr/local/lib -lns3-dev-wifi-optimized -lns3-dev-propagation-optimized -lns3-dev-mobility-optimized -lns3-dev-network-optimized -lns3-dev-core-optimized -lrt -lgsl -lgslcblas -lm  
+
+yes
+------------------------------------------
+Checking for ns3-visualizer
+['/usr/bin/pkg-config', '--cflags', '--libs', 'libns3-dev-visualizer-optimized']
+out: -pthread -I/usr/local/include/ns3-dev  -Wl,-Bdynamic -L/usr/local/lib -lns3-dev-visualizer-optimized -lns3-dev-internet-optimized -lns3-dev-wifi-optimized -lns3-dev-point-to-point-optimized -lns3-dev-bridge-optimized -lns3-dev-propagation-optimized -lns3-dev-mobility-optimized -lns3-dev-mpi-optimized -lns3-dev-network-optimized -lns3-dev-core-optimized -lrt -lgsl -lgslcblas -lm  
+
+yes

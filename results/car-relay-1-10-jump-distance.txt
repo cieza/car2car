@@ -1,0 +1,3 @@
+Time	NodeId	JumpDistance
+0.0027441	1	120
+0.0614651	2	230
