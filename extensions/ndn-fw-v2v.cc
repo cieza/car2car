@@ -180,7 +180,7 @@ namespace ns3 {
                 ForwardingStrategy::DidReceiveUnsolicitedData (inFace, header, payload, origPacket, didCreateCacheEntry);
                 
                 
-                /* ESSE TRECHO ABAIXO DEVE SER COMENTADO PARA DESABILITAR O COMPORTAMENTO PROATIVO
+                /* ESSE TRECHO ABAIXO DEVE SER COMENTADO PARA DESABILITAR O COMPORTAMENTO PROATIVO*/
                  if (didCreateCacheEntry)
                  {
                  // initiate low priority "pushing" only for "new data packets"
@@ -195,7 +195,7 @@ namespace ns3 {
                  TrySendLowPriority (l3->GetFace (faceId), origPacket);
                  }
                  }
-                 */
+                 
                 
             }
             
