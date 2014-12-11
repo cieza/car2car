@@ -251,7 +251,7 @@ main (int argc, char *argv[])
   // Consumer will request /polluted/0, /polluted/1, ...
 
   ndn::AppHelper consumerHelperAttack ("ns3::ndn::ConsumerCbr");
-  consumerHelperAttack.SetPrefix (producerHelperAttack);
+  consumerHelperAttack.SetPrefix (prefixAttack);
   consumerHelperAttack.SetAttribute ("Frequency", DoubleValue (20.0));
   consumerHelperAttack.Install (nodes.Get (5));
   consumerHelperAttack.Install (nodes.Get (10));
