@@ -159,9 +159,9 @@ main (int argc, char *argv[])
 
   //area baseada no shopping mall at millenia de 103.866 metros quadrados, estacionamento (320X360)
   //sem mobilidade - RANDOM BOX
-  Ptr<UniformRandomVariable> randomizer = CreateObject<UniformRandomVariable> ();
-  randomizer->SetAttribute ("Min", DoubleValue (320));
-  randomizer->SetAttribute ("Max", DoubleValue (360));
+  /*Ptr<UniformRandomVariable> randomizer = CreateObject<UniformRandomVariable> ();
+  randomizer->SetAttribute ("Min", DoubleValue (20));
+  randomizer->SetAttribute ("Max", DoubleValue (60));
 
   MobilityHelper mobility;
   mobility.SetPositionAllocator ("ns3::RandomBoxPositionAllocator",
@@ -169,7 +169,7 @@ main (int argc, char *argv[])
                                  "Y", PointerValue (randomizer),
                                  "Z", PointerValue (NULL));
   
-  mobility.SetMobilityModel ("ns3::ConstantPositionMobilityModel");
+  mobility.SetMobilityModel ("ns3::ConstantPositionMobilityModel");*/
 
   //com mobilidade - NAO VEICULAR
   /*mobility.SetMobilityModel ("ns3::RandomWalk2dMobilityModel",
@@ -179,7 +179,7 @@ main (int argc, char *argv[])
   */
 
   ////com mobilidade - VEICULAR
-  /*MobilityHelper mobility;
+  MobilityHelper mobility;
   mobility.SetPositionAllocator ("ns3::HighwayPositionAllocator",
                                  "Start", VectorValue(Vector(0.0, 0.0, 0.0)),
                                  "Direction", DoubleValue(0.0),
@@ -188,7 +188,7 @@ main (int argc, char *argv[])
                                  "MaxGap", DoubleValue(distance));
 
   mobility.SetMobilityModel("ns3::CustomConstantVelocityMobilityModel",
-                            "ConstantVelocity", VectorValue(Vector(26.8224, 0, 0)));*/
+                            "ConstantVelocity", VectorValue(Vector(26.8224, 0, 0)));
 
 
 //--------------------------------------------------------------------------
@@ -213,7 +213,7 @@ main (int argc, char *argv[])
   ndnHelper.AddNetDeviceFaceCreateCallback (WifiNetDevice::GetTypeId (), MakeCallback (V2vNetDeviceFaceCallback));
   ndnHelper.SetForwardingStrategy ("ns3::ndn::fw::V2v");
   ndnHelper.SetContentStore ("ns3::ndn::cs::Lru", "MaxSize", "50");
-  ndnHelper.SetContentStore ("ns3::ndn::cs::Nocache");
+  //ndnHelper.SetContentStore ("ns3::ndn::cs::Nocache");
   //ndnHelper.SetContentStore ("ns3::ndn::cs::Lru",
   //                           "MaxSize", "10000");
   ndnHelper.SetDefaultRoutes(true);
@@ -244,16 +244,16 @@ main (int argc, char *argv[])
   producerHelper.Install (nodes.Get (0));
 
   // 5. Set up applications << nos atacantes
-  NS_LOG_INFO ("Installing Applications - Malicious Nodes");
+  /*NS_LOG_INFO ("Installing Applications - Malicious Nodes");
 
   std::string prefixAttack = "/polluted";
 
   // Consumer will request /polluted/0, /polluted/1, ...
 
   ndn::AppHelper consumerHelperAttack ("ns3::ndn::ConsumerCbr");
-  consumerHelperAttack.SetPrefix (prefixAttack);
+  consumerHelperAttack.SetPrefix (producerHelperAttack);
   consumerHelperAttack.SetAttribute ("Frequency", DoubleValue (20.0));
-  consumerHelperAttack.Install (nodes.Get (3));//voltar para 5
+  consumerHelperAttack.Install (nodes.Get (5));
   consumerHelperAttack.Install (nodes.Get (10));
   consumerHelperAttack.Install (nodes.Get (15));
 
@@ -262,7 +262,7 @@ main (int argc, char *argv[])
   ndn::AppHelper producerHelperAttack ("ns3::ndn::Producer");
   producerHelperAttack.SetPrefix (prefixAttack);
   producerHelperAttack.SetAttribute ("PayloadSize", StringValue("1024"));
-  producerHelperAttack.Install (nodes.Get (1));
+  producerHelperAttack.Install (nodes.Get (1));*/
 
 //--------------------------------------------------------------------------
 //
@@ -271,19 +271,19 @@ main (int argc, char *argv[])
 //--------------------------------------------------------------------------
 
 
-  boost::tuple< boost::shared_ptr<std::ostream>, std::list<boost::shared_ptr<ndn::V2vTracer> > >
-    tracing = ndn::V2vTracer::InstallAll ("results/car-pusher2.txt");
+  //boost::tuple< boost::shared_ptr<std::ostream>, std::list<boost::shared_ptr<ndn::V2vTracer> > >
+    //tracing = ndn::V2vTracer::InstallAll ("results/car-pusher2.txt");
 
-  /*std::string tracer("results/ndn-no-cache-no-mob/experimento_");
+  std::string tracer("resultados/ndn-with-cache-with-mob-v2v/experimento_");
   tracer = tracer.append(argv[2]);
   tracer = tracer.append("/rodada_");
   tracer = tracer.append(argv[3]);
   tracer = tracer.append("/trace.txt");
 
   boost::tuple< boost::shared_ptr<std::ostream>, std::list<boost::shared_ptr<ndn::V2vTracer> > >
-    tracing = ndn::V2vTracer::InstallAll (tracer);*/
+    tracing = ndn::V2vTracer::InstallAll (tracer);
 
-  cout << "Linha 175" << "\n";
+  //cout << "Linha 175" << "\n";
 
   Simulator::Stop (Seconds (10.0));
 

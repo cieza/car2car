@@ -254,7 +254,7 @@ V2vTracer::InInterest (Ptr<const Interest> header, Ptr<const Face> face)
 
       double taxa_absoluta = satisfied_data_map.size();
       taxa_absoluta = taxa_absoluta/interest_map.size();
-      //cout << "Node: " << m_node << " Taxa de entrega Absoluta: " << taxa_absoluta << "\n";
+      cout << "Node: " << m_node << " Taxa de entrega Absoluta: " << taxa_absoluta << "\n";
   }
   
 }

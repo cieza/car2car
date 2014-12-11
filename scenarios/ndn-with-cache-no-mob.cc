@@ -160,8 +160,8 @@ main (int argc, char *argv[])
   //area baseada no shopping mall at millenia de 103.866 metros quadrados, estacionamento (320X360)
   //sem mobilidade - RANDOM BOX
   Ptr<UniformRandomVariable> randomizer = CreateObject<UniformRandomVariable> ();
-  randomizer->SetAttribute ("Min", DoubleValue (20));
-  randomizer->SetAttribute ("Max", DoubleValue (60));
+  randomizer->SetAttribute ("Min", DoubleValue (320));
+  randomizer->SetAttribute ("Max", DoubleValue (360));
 
   MobilityHelper mobility;
   mobility.SetPositionAllocator ("ns3::RandomBoxPositionAllocator",
@@ -212,7 +212,7 @@ main (int argc, char *argv[])
   ndn::StackHelper ndnHelper;
   ndnHelper.AddNetDeviceFaceCreateCallback (WifiNetDevice::GetTypeId (), MakeCallback (V2vNetDeviceFaceCallback));
   ndnHelper.SetForwardingStrategy ("ns3::ndn::fw::V2v");
-  ndnHelper.SetContentStore ("ns3::ndn::cs::Lru", "MaxSize", "5");// size=#seqnumbers
+  ndnHelper.SetContentStore ("ns3::ndn::cs::Lru", "MaxSize", "50");// size=#seqnumbers
   //ndnHelper.SetContentStore ("ns3::ndn::cs::Nocache");
   ndnHelper.SetDefaultRoutes(true);
   ndnHelper.Install(nodes);
@@ -227,12 +227,12 @@ main (int argc, char *argv[])
   ndn::AppHelper consumerHelper ("ns3::ndn::ConsumerCbr");
   consumerHelper.SetPrefix (prefix);
   consumerHelper.SetAttribute ("Frequency", DoubleValue (10.0));
-  consumerHelper.SetAttribute ("MaxSeq", IntegerValue (5));
+  consumerHelper.SetAttribute ("MaxSeq", IntegerValue (50));
   consumerHelper.Install (nodes.Get (2));
-  /*consumerHelper.Install (nodes.Get (3));
+  consumerHelper.Install (nodes.Get (3));
   consumerHelper.Install (nodes.Get (6));
   consumerHelper.Install (nodes.Get (9));
-  consumerHelper.Install (nodes.Get (12));*/
+  consumerHelper.Install (nodes.Get (12));
 
   // Producer will reply to all requests starting with /prefix
 
@@ -283,7 +283,7 @@ main (int argc, char *argv[])
   boost::tuple< boost::shared_ptr<std::ostream>, std::list<boost::shared_ptr<ndn::V2vTracer> > >
     tracing = ndn::V2vTracer::InstallAll (tracer);
 
-  cout << "Linha 175" << "\n";
+  //cout << "Linha 175" << "\n";
 
   Simulator::Stop (Seconds (10.0));
 
@@ -295,7 +295,7 @@ main (int argc, char *argv[])
 
   Simulator::Destroy ();
 
-  cout << "terminou" << "\n";
+  //cout << "terminou" << "\n";
 
   return 0;
 }
