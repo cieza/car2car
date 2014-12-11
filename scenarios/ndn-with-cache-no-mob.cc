@@ -278,7 +278,7 @@ main (int argc, char *argv[])
   tracer = tracer.append(argv[3]);
   tracer = tracer.append("/trace.txt");
 
-  cout << tracer << "\n";
+  //cout << tracer << "\n";
 
   boost::tuple< boost::shared_ptr<std::ostream>, std::list<boost::shared_ptr<ndn::V2vTracer> > >
     tracing = ndn::V2vTracer::InstallAll (tracer);
@@ -295,7 +295,7 @@ main (int argc, char *argv[])
 
   Simulator::Destroy ();
 
-  //cout << "terminou" << "\n";
+  cout << "terminou" << "\n";
 
   return 0;
 }
