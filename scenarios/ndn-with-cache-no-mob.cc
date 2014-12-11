@@ -295,7 +295,7 @@ main (int argc, char *argv[])
 
   Simulator::Destroy ();
 
-  cout << "terminou" << "\n";
+  //cout << "terminou" << "\n";
 
   return 0;
 }
