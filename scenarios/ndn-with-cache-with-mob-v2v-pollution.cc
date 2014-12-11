@@ -213,9 +213,7 @@ main (int argc, char *argv[])
   ndnHelper.AddNetDeviceFaceCreateCallback (WifiNetDevice::GetTypeId (), MakeCallback (V2vNetDeviceFaceCallback));
   ndnHelper.SetForwardingStrategy ("ns3::ndn::fw::V2v");
   ndnHelper.SetContentStore ("ns3::ndn::cs::Lru", "MaxSize", "50");
-  n//dnHelper.SetContentStore ("ns3::ndn::cs::Nocache");
-  //ndnHelper.SetContentStore ("ns3::ndn::cs::Lru",
-  //                           "MaxSize", "10000");
+  //ndnHelper.SetContentStore ("ns3::ndn::cs::Nocache");
   ndnHelper.SetDefaultRoutes(true);
   ndnHelper.Install(nodes);
 
