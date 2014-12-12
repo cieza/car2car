@@ -123,7 +123,7 @@ foreach $dir_scenario(@lista)
 }
 
 
-$diretorio = "/home/elise/car2car/resultados";
+$file_name = "/home/elise/car2car/resultados";
 open ARK, ">".$file_name;
 select ARK;
 $i = 0;
