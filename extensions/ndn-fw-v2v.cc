@@ -97,7 +97,7 @@ namespace ns3 {
                          Ptr<Packet> payload,
                          Ptr<const Packet> origPacket)
             {
-                std::cout<<"Node: "<<GetObject<Node> ()->GetId()<<"    Face: "<<face->GetId()<<"   Header: "<<header->GetName()<<"\n";
+                //std::cout<<"Node: "<<GetObject<Node> ()->GetId()<<"    Face: "<<face->GetId()<<"   Header: "<<header->GetName()<<"\n";
                 if (DynamicCast<AppFace> (face))
                 {
                     Ptr<MobilityModel> model = GetObject<MobilityModel> ();
