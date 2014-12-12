@@ -1,1114 +1,1114 @@
-Taxa_Entrega_Absoluta   Node : 2 Satisfeitos: 0 Interesses: 1
-Taxa_Entrega_Absoluta   Node : 3 Satisfeitos: 0 Interesses: 1
-Taxa_Entrega_Absoluta   Node : 6 Satisfeitos: 0 Interesses: 1
-Taxa_Entrega_Absoluta   Node : 9 Satisfeitos: 0 Interesses: 1
-Taxa_Entrega_Absoluta   Node : 12 Satisfeitos: 0 Interesses: 1
-Taxa_Entrega_Absoluta   Node : 3 Satisfeitos: 0 Interesses: 1
-Taxa_Entrega_Absoluta   Node : 12 Satisfeitos: 0 Interesses: 1
-Taxa_Entrega_Absoluta   Node : 9 Satisfeitos: 0 Interesses: 1
-Taxa_Entrega_Absoluta   Node : 6 Satisfeitos: 0 Interesses: 1
-Taxa_Entrega_Absoluta   Node : 3 Satisfeitos: 0 Interesses: 1
-Taxa_Entrega_Absoluta   Node : 2 Satisfeitos: 0 Interesses: 1
-Taxa_Entrega_Absoluta   Node : 3 Satisfeitos: 0 Interesses: 1
-Taxa_Entrega_Absoluta   Node : 9 Satisfeitos: 0 Interesses: 1
-Taxa_Entrega_Absoluta   Node : 2 Satisfeitos: 0 Interesses: 1
-Taxa_Entrega_Absoluta   Node : 12 Satisfeitos: 0 Interesses: 1
-Taxa_Entrega_Absoluta   Node : 2 Satisfeitos: 0 Interesses: 1
-Taxa_Entrega_Absoluta   Node : 6 Satisfeitos: 0 Interesses: 1
-Taxa_Entrega_Absoluta   Node : 9 Satisfeitos: 0 Interesses: 1
-Taxa_Entrega_Absoluta   Node : 12 Satisfeitos: 0 Interesses: 1
-Taxa_Entrega_Absoluta   Node : 12 Satisfeitos: 0 Interesses: 1
-Taxa_Entrega_Absoluta   Node : 9 Satisfeitos: 0 Interesses: 1
-Taxa_Entrega_Absoluta   Node : 6 Satisfeitos: 0 Interesses: 1
-Taxa_Entrega_Absoluta   Node : 3 Satisfeitos: 0 Interesses: 1
-Taxa_Entrega_Absoluta   Node : 2 Satisfeitos: 0 Interesses: 1
-Taxa_Entrega_Absoluta   Node : 12 Satisfeitos: 0 Interesses: 1
-Taxa_Entrega_Absoluta   Node : 9 Satisfeitos: 0 Interesses: 1
-Taxa_Entrega_Absoluta   Node : 12 Satisfeitos: 0 Interesses: 1
-Taxa_Entrega_Absoluta   Node : 12 Satisfeitos: 0 Interesses: 1
-Taxa_Entrega_Absoluta   Node : 6 Satisfeitos: 0 Interesses: 1
-Taxa_Entrega_Absoluta   Node : 6 Satisfeitos: 0 Interesses: 1
-Taxa_Entrega_Absoluta   Node : 3 Satisfeitos: 0 Interesses: 1
-Taxa_Entrega_Absoluta   Node : 2 Satisfeitos: 0 Interesses: 1
-Taxa_Entrega_Absoluta   Node : 9 Satisfeitos: 0 Interesses: 1
-Taxa_Entrega_Absoluta   Node : 12 Satisfeitos: 0 Interesses: 1
-Taxa_Entrega_Absoluta   Node : 2 Satisfeitos: 1 Interesses: 1
-Taxa_Entrega_Absoluta   Node : 3 Satisfeitos: 1 Interesses: 1
-Taxa_Entrega_Absoluta   Node : 9 Satisfeitos: 1 Interesses: 1
-Taxa_Entrega_Absoluta   Node : 12 Satisfeitos: 1 Interesses: 1
-Taxa_Entrega_Absoluta   Node : 6 Satisfeitos: 1 Interesses: 1
-Taxa_Entrega_Absoluta   Node : 12 Satisfeitos: 1 Interesses: 1
-Taxa_Entrega_Absoluta   Node : 9 Satisfeitos: 1 Interesses: 1
-Taxa_Entrega_Absoluta   Node : 6 Satisfeitos: 1 Interesses: 1
-Taxa_Entrega_Absoluta   Node : 2 Satisfeitos: 1 Interesses: 1
-Taxa_Entrega_Absoluta   Node : 6 Satisfeitos: 1 Interesses: 1
-Taxa_Entrega_Absoluta   Node : 12 Satisfeitos: 1 Interesses: 1
-Taxa_Entrega_Absoluta   Node : 6 Satisfeitos: 1 Interesses: 1
-Taxa_Entrega_Absoluta   Node : 12 Satisfeitos: 1 Interesses: 1
-Taxa_Entrega_Absoluta   Node : 2 Satisfeitos: 1 Interesses: 2
-Taxa_Entrega_Absoluta   Node : 3 Satisfeitos: 1 Interesses: 2
-Taxa_Entrega_Absoluta   Node : 6 Satisfeitos: 1 Interesses: 2
-Taxa_Entrega_Absoluta   Node : 9 Satisfeitos: 1 Interesses: 2
-Taxa_Entrega_Absoluta   Node : 12 Satisfeitos: 1 Interesses: 2
-Taxa_Entrega_Absoluta   Node : 2 Satisfeitos: 1 Interesses: 3
-Taxa_Entrega_Absoluta   Node : 3 Satisfeitos: 1 Interesses: 3
-Taxa_Entrega_Absoluta   Node : 6 Satisfeitos: 1 Interesses: 3
-Taxa_Entrega_Absoluta   Node : 9 Satisfeitos: 1 Interesses: 3
-Taxa_Entrega_Absoluta   Node : 12 Satisfeitos: 1 Interesses: 3
-Taxa_Entrega_Absoluta   Node : 2 Satisfeitos: 1 Interesses: 4
-Taxa_Entrega_Absoluta   Node : 3 Satisfeitos: 1 Interesses: 4
-Taxa_Entrega_Absoluta   Node : 6 Satisfeitos: 1 Interesses: 4
-Taxa_Entrega_Absoluta   Node : 9 Satisfeitos: 1 Interesses: 4
-Taxa_Entrega_Absoluta   Node : 12 Satisfeitos: 1 Interesses: 4
-Taxa_Entrega_Absoluta   Node : 12 Satisfeitos: 1 Interesses: 4
-Taxa_Entrega_Absoluta   Node : 6 Satisfeitos: 1 Interesses: 4
-Taxa_Entrega_Absoluta   Node : 3 Satisfeitos: 1 Interesses: 4
-Taxa_Entrega_Absoluta   Node : 12 Satisfeitos: 1 Interesses: 4
-Taxa_Entrega_Absoluta   Node : 6 Satisfeitos: 1 Interesses: 4
-Taxa_Entrega_Absoluta   Node : 9 Satisfeitos: 1 Interesses: 4
-Taxa_Entrega_Absoluta   Node : 2 Satisfeitos: 1 Interesses: 4
-Taxa_Entrega_Absoluta   Node : 3 Satisfeitos: 1 Interesses: 4
-Taxa_Entrega_Absoluta   Node : 6 Satisfeitos: 1 Interesses: 4
-Taxa_Entrega_Absoluta   Node : 9 Satisfeitos: 1 Interesses: 4
-Taxa_Entrega_Absoluta   Node : 2 Satisfeitos: 2 Interesses: 4
-Taxa_Entrega_Absoluta   Node : 3 Satisfeitos: 2 Interesses: 4
-Taxa_Entrega_Absoluta   Node : 6 Satisfeitos: 2 Interesses: 4
-Taxa_Entrega_Absoluta   Node : 9 Satisfeitos: 2 Interesses: 4
-Taxa_Entrega_Absoluta   Node : 12 Satisfeitos: 1 Interesses: 4
-Taxa_Entrega_Absoluta   Node : 9 Satisfeitos: 2 Interesses: 4
-Taxa_Entrega_Absoluta   Node : 2 Satisfeitos: 2 Interesses: 4
-Taxa_Entrega_Absoluta   Node : 12 Satisfeitos: 2 Interesses: 4
-Taxa_Entrega_Absoluta   Node : 12 Satisfeitos: 2 Interesses: 4
-Taxa_Entrega_Absoluta   Node : 2 Satisfeitos: 2 Interesses: 4
-Taxa_Entrega_Absoluta   Node : 9 Satisfeitos: 2 Interesses: 4
-Taxa_Entrega_Absoluta   Node : 2 Satisfeitos: 2 Interesses: 4
-Taxa_Entrega_Absoluta   Node : 3 Satisfeitos: 2 Interesses: 4
-Taxa_Entrega_Absoluta   Node : 6 Satisfeitos: 2 Interesses: 4
-Taxa_Entrega_Absoluta   Node : 9 Satisfeitos: 2 Interesses: 4
-Taxa_Entrega_Absoluta   Node : 12 Satisfeitos: 2 Interesses: 4
-Taxa_Entrega_Absoluta   Node : 2 Satisfeitos: 2 Interesses: 4
-Taxa_Entrega_Absoluta   Node : 3 Satisfeitos: 2 Interesses: 4
-Taxa_Entrega_Absoluta   Node : 6 Satisfeitos: 2 Interesses: 4
-Taxa_Entrega_Absoluta   Node : 9 Satisfeitos: 2 Interesses: 4
-Taxa_Entrega_Absoluta   Node : 12 Satisfeitos: 2 Interesses: 4
-Taxa_Entrega_Absoluta   Node : 12 Satisfeitos: 2 Interesses: 4
-Taxa_Entrega_Absoluta   Node : 9 Satisfeitos: 2 Interesses: 4
-Taxa_Entrega_Absoluta   Node : 6 Satisfeitos: 2 Interesses: 4
-Taxa_Entrega_Absoluta   Node : 3 Satisfeitos: 2 Interesses: 4
-Taxa_Entrega_Absoluta   Node : 12 Satisfeitos: 2 Interesses: 4
-Taxa_Entrega_Absoluta   Node : 6 Satisfeitos: 2 Interesses: 4
-Taxa_Entrega_Absoluta   Node : 3 Satisfeitos: 2 Interesses: 4
-Taxa_Entrega_Absoluta   Node : 2 Satisfeitos: 2 Interesses: 4
-Taxa_Entrega_Absoluta   Node : 6 Satisfeitos: 2 Interesses: 4
-Taxa_Entrega_Absoluta   Node : 9 Satisfeitos: 2 Interesses: 4
-Taxa_Entrega_Absoluta   Node : 12 Satisfeitos: 2 Interesses: 4
-Taxa_Entrega_Absoluta   Node : 2 Satisfeitos: 3 Interesses: 4
-Taxa_Entrega_Absoluta   Node : 3 Satisfeitos: 3 Interesses: 4
-Taxa_Entrega_Absoluta   Node : 6 Satisfeitos: 3 Interesses: 4
-Taxa_Entrega_Absoluta   Node : 12 Satisfeitos: 3 Interesses: 4
-Taxa_Entrega_Absoluta   Node : 12 Satisfeitos: 3 Interesses: 4
-Taxa_Entrega_Absoluta   Node : 9 Satisfeitos: 3 Interesses: 4
-Taxa_Entrega_Absoluta   Node : 12 Satisfeitos: 3 Interesses: 4
-Taxa_Entrega_Absoluta   Node : 2 Satisfeitos: 3 Interesses: 5
-Taxa_Entrega_Absoluta   Node : 3 Satisfeitos: 3 Interesses: 5
-Taxa_Entrega_Absoluta   Node : 6 Satisfeitos: 3 Interesses: 5
-Taxa_Entrega_Absoluta   Node : 9 Satisfeitos: 3 Interesses: 5
-Taxa_Entrega_Absoluta   Node : 12 Satisfeitos: 3 Interesses: 5
-Taxa_Entrega_Absoluta   Node : 12 Satisfeitos: 3 Interesses: 5
-Taxa_Entrega_Absoluta   Node : 9 Satisfeitos: 3 Interesses: 5
-Taxa_Entrega_Absoluta   Node : 2 Satisfeitos: 3 Interesses: 5
-Taxa_Entrega_Absoluta   Node : 3 Satisfeitos: 3 Interesses: 5
-Taxa_Entrega_Absoluta   Node : 6 Satisfeitos: 3 Interesses: 5
-Taxa_Entrega_Absoluta   Node : 9 Satisfeitos: 3 Interesses: 5
-Taxa_Entrega_Absoluta   Node : 12 Satisfeitos: 3 Interesses: 5
-Taxa_Entrega_Absoluta   Node : 6 Satisfeitos: 3 Interesses: 5
-Taxa_Entrega_Absoluta   Node : 2 Satisfeitos: 4 Interesses: 5
-Taxa_Entrega_Absoluta   Node : 3 Satisfeitos: 4 Interesses: 5
-Taxa_Entrega_Absoluta   Node : 6 Satisfeitos: 4 Interesses: 5
-Taxa_Entrega_Absoluta   Node : 12 Satisfeitos: 4 Interesses: 5
-Taxa_Entrega_Absoluta   Node : 9 Satisfeitos: 4 Interesses: 5
-Taxa_Entrega_Absoluta   Node : 2 Satisfeitos: 4 Interesses: 5
-Taxa_Entrega_Absoluta   Node : 3 Satisfeitos: 4 Interesses: 5
-Taxa_Entrega_Absoluta   Node : 6 Satisfeitos: 4 Interesses: 5
-Taxa_Entrega_Absoluta   Node : 9 Satisfeitos: 4 Interesses: 5
-Taxa_Entrega_Absoluta   Node : 12 Satisfeitos: 4 Interesses: 5
-Taxa_Entrega_Absoluta   Node : 2 Satisfeitos: 4 Interesses: 6
-Taxa_Entrega_Absoluta   Node : 3 Satisfeitos: 4 Interesses: 6
-Taxa_Entrega_Absoluta   Node : 6 Satisfeitos: 4 Interesses: 6
-Taxa_Entrega_Absoluta   Node : 9 Satisfeitos: 4 Interesses: 6
-Taxa_Entrega_Absoluta   Node : 12 Satisfeitos: 4 Interesses: 6
-Taxa_Entrega_Absoluta   Node : 2 Satisfeitos: 4 Interesses: 7
-Taxa_Entrega_Absoluta   Node : 3 Satisfeitos: 4 Interesses: 7
-Taxa_Entrega_Absoluta   Node : 6 Satisfeitos: 4 Interesses: 7
-Taxa_Entrega_Absoluta   Node : 9 Satisfeitos: 4 Interesses: 7
-Taxa_Entrega_Absoluta   Node : 12 Satisfeitos: 4 Interesses: 7
-Taxa_Entrega_Absoluta   Node : 2 Satisfeitos: 4 Interesses: 8
-Taxa_Entrega_Absoluta   Node : 3 Satisfeitos: 4 Interesses: 8
-Taxa_Entrega_Absoluta   Node : 6 Satisfeitos: 4 Interesses: 8
-Taxa_Entrega_Absoluta   Node : 9 Satisfeitos: 4 Interesses: 8
-Taxa_Entrega_Absoluta   Node : 12 Satisfeitos: 4 Interesses: 8
-Taxa_Entrega_Absoluta   Node : 12 Satisfeitos: 4 Interesses: 8
-Taxa_Entrega_Absoluta   Node : 9 Satisfeitos: 4 Interesses: 8
-Taxa_Entrega_Absoluta   Node : 6 Satisfeitos: 4 Interesses: 8
-Taxa_Entrega_Absoluta   Node : 3 Satisfeitos: 4 Interesses: 8
-Taxa_Entrega_Absoluta   Node : 2 Satisfeitos: 4 Interesses: 8
-Taxa_Entrega_Absoluta   Node : 9 Satisfeitos: 4 Interesses: 8
-Taxa_Entrega_Absoluta   Node : 12 Satisfeitos: 4 Interesses: 8
-Taxa_Entrega_Absoluta   Node : 9 Satisfeitos: 4 Interesses: 8
-Taxa_Entrega_Absoluta   Node : 2 Satisfeitos: 5 Interesses: 8
-Taxa_Entrega_Absoluta   Node : 3 Satisfeitos: 5 Interesses: 8
-Taxa_Entrega_Absoluta   Node : 6 Satisfeitos: 5 Interesses: 8
-Taxa_Entrega_Absoluta   Node : 9 Satisfeitos: 5 Interesses: 8
-Taxa_Entrega_Absoluta   Node : 12 Satisfeitos: 5 Interesses: 8
-Taxa_Entrega_Absoluta   Node : 12 Satisfeitos: 5 Interesses: 8
-Taxa_Entrega_Absoluta   Node : 9 Satisfeitos: 5 Interesses: 8
-Taxa_Entrega_Absoluta   Node : 6 Satisfeitos: 5 Interesses: 8
-Taxa_Entrega_Absoluta   Node : 2 Satisfeitos: 5 Interesses: 8
-Taxa_Entrega_Absoluta   Node : 2 Satisfeitos: 5 Interesses: 8
-Taxa_Entrega_Absoluta   Node : 3 Satisfeitos: 5 Interesses: 8
-Taxa_Entrega_Absoluta   Node : 6 Satisfeitos: 5 Interesses: 8
-Taxa_Entrega_Absoluta   Node : 9 Satisfeitos: 5 Interesses: 8
-Taxa_Entrega_Absoluta   Node : 12 Satisfeitos: 5 Interesses: 8
-Taxa_Entrega_Absoluta   Node : 2 Satisfeitos: 5 Interesses: 8
-Taxa_Entrega_Absoluta   Node : 3 Satisfeitos: 5 Interesses: 8
-Taxa_Entrega_Absoluta   Node : 6 Satisfeitos: 5 Interesses: 8
-Taxa_Entrega_Absoluta   Node : 9 Satisfeitos: 5 Interesses: 8
-Taxa_Entrega_Absoluta   Node : 12 Satisfeitos: 5 Interesses: 8
-Taxa_Entrega_Absoluta   Node : 12 Satisfeitos: 5 Interesses: 8
-Taxa_Entrega_Absoluta   Node : 9 Satisfeitos: 5 Interesses: 8
-Taxa_Entrega_Absoluta   Node : 6 Satisfeitos: 5 Interesses: 8
-Taxa_Entrega_Absoluta   Node : 3 Satisfeitos: 5 Interesses: 8
-Taxa_Entrega_Absoluta   Node : 2 Satisfeitos: 5 Interesses: 8
-Taxa_Entrega_Absoluta   Node : 12 Satisfeitos: 5 Interesses: 8
-Taxa_Entrega_Absoluta   Node : 6 Satisfeitos: 5 Interesses: 8
-Taxa_Entrega_Absoluta   Node : 2 Satisfeitos: 6 Interesses: 8
-Taxa_Entrega_Absoluta   Node : 3 Satisfeitos: 6 Interesses: 8
-Taxa_Entrega_Absoluta   Node : 6 Satisfeitos: 6 Interesses: 8
-Taxa_Entrega_Absoluta   Node : 9 Satisfeitos: 6 Interesses: 8
-Taxa_Entrega_Absoluta   Node : 12 Satisfeitos: 6 Interesses: 8
-Taxa_Entrega_Absoluta   Node : 6 Satisfeitos: 6 Interesses: 8
-Taxa_Entrega_Absoluta   Node : 3 Satisfeitos: 6 Interesses: 8
-Taxa_Entrega_Absoluta   Node : 2 Satisfeitos: 6 Interesses: 8
-Taxa_Entrega_Absoluta   Node : 9 Satisfeitos: 6 Interesses: 8
-Taxa_Entrega_Absoluta   Node : 12 Satisfeitos: 6 Interesses: 8
-Taxa_Entrega_Absoluta   Node : 2 Satisfeitos: 6 Interesses: 9
-Taxa_Entrega_Absoluta   Node : 3 Satisfeitos: 6 Interesses: 9
-Taxa_Entrega_Absoluta   Node : 6 Satisfeitos: 6 Interesses: 9
-Taxa_Entrega_Absoluta   Node : 9 Satisfeitos: 6 Interesses: 9
-Taxa_Entrega_Absoluta   Node : 12 Satisfeitos: 6 Interesses: 9
-Taxa_Entrega_Absoluta   Node : 2 Satisfeitos: 6 Interesses: 10
-Taxa_Entrega_Absoluta   Node : 3 Satisfeitos: 6 Interesses: 10
-Taxa_Entrega_Absoluta   Node : 6 Satisfeitos: 6 Interesses: 10
-Taxa_Entrega_Absoluta   Node : 9 Satisfeitos: 6 Interesses: 10
-Taxa_Entrega_Absoluta   Node : 12 Satisfeitos: 6 Interesses: 10
-Taxa_Entrega_Absoluta   Node : 2 Satisfeitos: 6 Interesses: 11
-Taxa_Entrega_Absoluta   Node : 3 Satisfeitos: 6 Interesses: 11
-Taxa_Entrega_Absoluta   Node : 6 Satisfeitos: 6 Interesses: 11
-Taxa_Entrega_Absoluta   Node : 9 Satisfeitos: 6 Interesses: 11
-Taxa_Entrega_Absoluta   Node : 12 Satisfeitos: 6 Interesses: 11
-Taxa_Entrega_Absoluta   Node : 2 Satisfeitos: 6 Interesses: 12
-Taxa_Entrega_Absoluta   Node : 3 Satisfeitos: 6 Interesses: 12
-Taxa_Entrega_Absoluta   Node : 6 Satisfeitos: 6 Interesses: 12
-Taxa_Entrega_Absoluta   Node : 9 Satisfeitos: 6 Interesses: 12
-Taxa_Entrega_Absoluta   Node : 12 Satisfeitos: 6 Interesses: 12
-Taxa_Entrega_Absoluta   Node : 12 Satisfeitos: 6 Interesses: 12
-Taxa_Entrega_Absoluta   Node : 9 Satisfeitos: 6 Interesses: 12
-Taxa_Entrega_Absoluta   Node : 6 Satisfeitos: 6 Interesses: 12
-Taxa_Entrega_Absoluta   Node : 3 Satisfeitos: 6 Interesses: 12
-Taxa_Entrega_Absoluta   Node : 2 Satisfeitos: 6 Interesses: 12
-Taxa_Entrega_Absoluta   Node : 2 Satisfeitos: 7 Interesses: 12
-Taxa_Entrega_Absoluta   Node : 3 Satisfeitos: 7 Interesses: 12
-Taxa_Entrega_Absoluta   Node : 6 Satisfeitos: 7 Interesses: 12
-Taxa_Entrega_Absoluta   Node : 12 Satisfeitos: 7 Interesses: 12
-Taxa_Entrega_Absoluta   Node : 2 Satisfeitos: 7 Interesses: 12
-Taxa_Entrega_Absoluta   Node : 3 Satisfeitos: 7 Interesses: 12
-Taxa_Entrega_Absoluta   Node : 6 Satisfeitos: 7 Interesses: 12
-Taxa_Entrega_Absoluta   Node : 12 Satisfeitos: 7 Interesses: 12
-Taxa_Entrega_Absoluta   Node : 9 Satisfeitos: 6 Interesses: 12
-Taxa_Entrega_Absoluta   Node : 3 Satisfeitos: 7 Interesses: 12
-Taxa_Entrega_Absoluta   Node : 9 Satisfeitos: 7 Interesses: 12
-Taxa_Entrega_Absoluta   Node : 9 Satisfeitos: 7 Interesses: 12
-Taxa_Entrega_Absoluta   Node : 2 Satisfeitos: 7 Interesses: 12
-Taxa_Entrega_Absoluta   Node : 2 Satisfeitos: 7 Interesses: 12
-Taxa_Entrega_Absoluta   Node : 3 Satisfeitos: 7 Interesses: 12
-Taxa_Entrega_Absoluta   Node : 6 Satisfeitos: 7 Interesses: 12
-Taxa_Entrega_Absoluta   Node : 9 Satisfeitos: 7 Interesses: 12
-Taxa_Entrega_Absoluta   Node : 12 Satisfeitos: 7 Interesses: 12
-Taxa_Entrega_Absoluta   Node : 2 Satisfeitos: 7 Interesses: 12
-Taxa_Entrega_Absoluta   Node : 3 Satisfeitos: 7 Interesses: 12
-Taxa_Entrega_Absoluta   Node : 6 Satisfeitos: 7 Interesses: 12
-Taxa_Entrega_Absoluta   Node : 9 Satisfeitos: 7 Interesses: 12
-Taxa_Entrega_Absoluta   Node : 12 Satisfeitos: 7 Interesses: 12
-Taxa_Entrega_Absoluta   Node : 2 Satisfeitos: 7 Interesses: 12
-Taxa_Entrega_Absoluta   Node : 3 Satisfeitos: 7 Interesses: 12
-Taxa_Entrega_Absoluta   Node : 6 Satisfeitos: 7 Interesses: 12
-Taxa_Entrega_Absoluta   Node : 9 Satisfeitos: 7 Interesses: 12
-Taxa_Entrega_Absoluta   Node : 12 Satisfeitos: 7 Interesses: 12
-Taxa_Entrega_Absoluta   Node : 2 Satisfeitos: 7 Interesses: 12
-Taxa_Entrega_Absoluta   Node : 3 Satisfeitos: 7 Interesses: 12
-Taxa_Entrega_Absoluta   Node : 6 Satisfeitos: 7 Interesses: 12
-Taxa_Entrega_Absoluta   Node : 9 Satisfeitos: 7 Interesses: 12
-Taxa_Entrega_Absoluta   Node : 12 Satisfeitos: 7 Interesses: 12
-Taxa_Entrega_Absoluta   Node : 2 Satisfeitos: 7 Interesses: 13
-Taxa_Entrega_Absoluta   Node : 3 Satisfeitos: 7 Interesses: 13
-Taxa_Entrega_Absoluta   Node : 6 Satisfeitos: 7 Interesses: 13
-Taxa_Entrega_Absoluta   Node : 9 Satisfeitos: 7 Interesses: 13
-Taxa_Entrega_Absoluta   Node : 12 Satisfeitos: 7 Interesses: 13
-Taxa_Entrega_Absoluta   Node : 2 Satisfeitos: 7 Interesses: 14
-Taxa_Entrega_Absoluta   Node : 3 Satisfeitos: 7 Interesses: 14
-Taxa_Entrega_Absoluta   Node : 6 Satisfeitos: 7 Interesses: 14
-Taxa_Entrega_Absoluta   Node : 9 Satisfeitos: 7 Interesses: 14
-Taxa_Entrega_Absoluta   Node : 12 Satisfeitos: 7 Interesses: 14
-Taxa_Entrega_Absoluta   Node : 12 Satisfeitos: 7 Interesses: 14
-Taxa_Entrega_Absoluta   Node : 9 Satisfeitos: 7 Interesses: 14
-Taxa_Entrega_Absoluta   Node : 2 Satisfeitos: 7 Interesses: 14
-Taxa_Entrega_Absoluta   Node : 12 Satisfeitos: 7 Interesses: 14
-Taxa_Entrega_Absoluta   Node : 9 Satisfeitos: 7 Interesses: 14
-Taxa_Entrega_Absoluta   Node : 2 Satisfeitos: 8 Interesses: 14
-Taxa_Entrega_Absoluta   Node : 3 Satisfeitos: 8 Interesses: 14
-Taxa_Entrega_Absoluta   Node : 6 Satisfeitos: 8 Interesses: 14
-Taxa_Entrega_Absoluta   Node : 9 Satisfeitos: 8 Interesses: 14
-Taxa_Entrega_Absoluta   Node : 12 Satisfeitos: 8 Interesses: 14
-Taxa_Entrega_Absoluta   Node : 2 Satisfeitos: 8 Interesses: 14
-Taxa_Entrega_Absoluta   Node : 12 Satisfeitos: 8 Interesses: 14
-Taxa_Entrega_Absoluta   Node : 6 Satisfeitos: 8 Interesses: 14
-Taxa_Entrega_Absoluta   Node : 9 Satisfeitos: 8 Interesses: 14
-Taxa_Entrega_Absoluta   Node : 3 Satisfeitos: 8 Interesses: 14
-Taxa_Entrega_Absoluta   Node : 2 Satisfeitos: 8 Interesses: 14
-Taxa_Entrega_Absoluta   Node : 12 Satisfeitos: 8 Interesses: 14
-Taxa_Entrega_Absoluta   Node : 6 Satisfeitos: 8 Interesses: 14
-Taxa_Entrega_Absoluta   Node : 2 Satisfeitos: 8 Interesses: 14
-Taxa_Entrega_Absoluta   Node : 3 Satisfeitos: 8 Interesses: 14
-Taxa_Entrega_Absoluta   Node : 6 Satisfeitos: 8 Interesses: 14
-Taxa_Entrega_Absoluta   Node : 9 Satisfeitos: 8 Interesses: 14
-Taxa_Entrega_Absoluta   Node : 12 Satisfeitos: 8 Interesses: 14
-Taxa_Entrega_Absoluta   Node : 12 Satisfeitos: 8 Interesses: 14
-Taxa_Entrega_Absoluta   Node : 2 Satisfeitos: 8 Interesses: 14
-Taxa_Entrega_Absoluta   Node : 3 Satisfeitos: 8 Interesses: 14
-Taxa_Entrega_Absoluta   Node : 6 Satisfeitos: 8 Interesses: 14
-Taxa_Entrega_Absoluta   Node : 9 Satisfeitos: 8 Interesses: 14
-Taxa_Entrega_Absoluta   Node : 12 Satisfeitos: 8 Interesses: 14
-Taxa_Entrega_Absoluta   Node : 12 Satisfeitos: 8 Interesses: 14
-Taxa_Entrega_Absoluta   Node : 9 Satisfeitos: 8 Interesses: 14
-Taxa_Entrega_Absoluta   Node : 6 Satisfeitos: 8 Interesses: 14
-Taxa_Entrega_Absoluta   Node : 3 Satisfeitos: 8 Interesses: 14
-Taxa_Entrega_Absoluta   Node : 2 Satisfeitos: 8 Interesses: 14
-Taxa_Entrega_Absoluta   Node : 3 Satisfeitos: 8 Interesses: 14
-Taxa_Entrega_Absoluta   Node : 2 Satisfeitos: 8 Interesses: 14
-Taxa_Entrega_Absoluta   Node : 6 Satisfeitos: 8 Interesses: 14
-Taxa_Entrega_Absoluta   Node : 9 Satisfeitos: 8 Interesses: 14
-Taxa_Entrega_Absoluta   Node : 12 Satisfeitos: 8 Interesses: 14
-Taxa_Entrega_Absoluta   Node : 2 Satisfeitos: 8 Interesses: 14
-Taxa_Entrega_Absoluta   Node : 3 Satisfeitos: 8 Interesses: 14
-Taxa_Entrega_Absoluta   Node : 6 Satisfeitos: 8 Interesses: 14
-Taxa_Entrega_Absoluta   Node : 9 Satisfeitos: 8 Interesses: 14
-Taxa_Entrega_Absoluta   Node : 12 Satisfeitos: 8 Interesses: 14
-Taxa_Entrega_Absoluta   Node : 9 Satisfeitos: 8 Interesses: 14
-Taxa_Entrega_Absoluta   Node : 3 Satisfeitos: 8 Interesses: 14
-Taxa_Entrega_Absoluta   Node : 2 Satisfeitos: 8 Interesses: 14
-Taxa_Entrega_Absoluta   Node : 2 Satisfeitos: 9 Interesses: 14
-Taxa_Entrega_Absoluta   Node : 3 Satisfeitos: 9 Interesses: 14
-Taxa_Entrega_Absoluta   Node : 6 Satisfeitos: 9 Interesses: 14
-Taxa_Entrega_Absoluta   Node : 9 Satisfeitos: 9 Interesses: 14
-Taxa_Entrega_Absoluta   Node : 12 Satisfeitos: 9 Interesses: 14
-Taxa_Entrega_Absoluta   Node : 12 Satisfeitos: 9 Interesses: 14
-Taxa_Entrega_Absoluta   Node : 2 Satisfeitos: 9 Interesses: 14
-Taxa_Entrega_Absoluta   Node : 3 Satisfeitos: 9 Interesses: 14
-Taxa_Entrega_Absoluta   Node : 6 Satisfeitos: 9 Interesses: 14
-Taxa_Entrega_Absoluta   Node : 9 Satisfeitos: 9 Interesses: 14
-Taxa_Entrega_Absoluta   Node : 12 Satisfeitos: 9 Interesses: 14
-Taxa_Entrega_Absoluta   Node : 2 Satisfeitos: 9 Interesses: 14
-Taxa_Entrega_Absoluta   Node : 3 Satisfeitos: 9 Interesses: 14
-Taxa_Entrega_Absoluta   Node : 6 Satisfeitos: 9 Interesses: 14
-Taxa_Entrega_Absoluta   Node : 9 Satisfeitos: 9 Interesses: 14
-Taxa_Entrega_Absoluta   Node : 12 Satisfeitos: 9 Interesses: 14
-Taxa_Entrega_Absoluta   Node : 2 Satisfeitos: 9 Interesses: 14
-Taxa_Entrega_Absoluta   Node : 3 Satisfeitos: 9 Interesses: 14
-Taxa_Entrega_Absoluta   Node : 6 Satisfeitos: 9 Interesses: 14
-Taxa_Entrega_Absoluta   Node : 9 Satisfeitos: 9 Interesses: 14
-Taxa_Entrega_Absoluta   Node : 12 Satisfeitos: 9 Interesses: 14
-Taxa_Entrega_Absoluta   Node : 2 Satisfeitos: 9 Interesses: 15
-Taxa_Entrega_Absoluta   Node : 3 Satisfeitos: 9 Interesses: 15
-Taxa_Entrega_Absoluta   Node : 6 Satisfeitos: 9 Interesses: 15
-Taxa_Entrega_Absoluta   Node : 9 Satisfeitos: 9 Interesses: 15
-Taxa_Entrega_Absoluta   Node : 12 Satisfeitos: 9 Interesses: 15
-Taxa_Entrega_Absoluta   Node : 2 Satisfeitos: 9 Interesses: 15
-Taxa_Entrega_Absoluta   Node : 3 Satisfeitos: 9 Interesses: 15
-Taxa_Entrega_Absoluta   Node : 6 Satisfeitos: 9 Interesses: 15
-Taxa_Entrega_Absoluta   Node : 9 Satisfeitos: 9 Interesses: 15
-Taxa_Entrega_Absoluta   Node : 12 Satisfeitos: 9 Interesses: 15
-Taxa_Entrega_Absoluta   Node : 2 Satisfeitos: 10 Interesses: 15
-Taxa_Entrega_Absoluta   Node : 3 Satisfeitos: 10 Interesses: 15
-Taxa_Entrega_Absoluta   Node : 6 Satisfeitos: 10 Interesses: 15
-Taxa_Entrega_Absoluta   Node : 9 Satisfeitos: 10 Interesses: 15
-Taxa_Entrega_Absoluta   Node : 12 Satisfeitos: 10 Interesses: 15
-Taxa_Entrega_Absoluta   Node : 9 Satisfeitos: 10 Interesses: 15
-Taxa_Entrega_Absoluta   Node : 12 Satisfeitos: 10 Interesses: 15
-Taxa_Entrega_Absoluta   Node : 6 Satisfeitos: 10 Interesses: 15
-Taxa_Entrega_Absoluta   Node : 3 Satisfeitos: 10 Interesses: 15
-Taxa_Entrega_Absoluta   Node : 12 Satisfeitos: 10 Interesses: 15
-Taxa_Entrega_Absoluta   Node : 9 Satisfeitos: 10 Interesses: 15
-Taxa_Entrega_Absoluta   Node : 12 Satisfeitos: 10 Interesses: 15
-Taxa_Entrega_Absoluta   Node : 9 Satisfeitos: 10 Interesses: 15
-Taxa_Entrega_Absoluta   Node : 6 Satisfeitos: 10 Interesses: 15
-Taxa_Entrega_Absoluta   Node : 2 Satisfeitos: 10 Interesses: 15
-Taxa_Entrega_Absoluta   Node : 3 Satisfeitos: 10 Interesses: 15
-Taxa_Entrega_Absoluta   Node : 6 Satisfeitos: 10 Interesses: 15
-Taxa_Entrega_Absoluta   Node : 9 Satisfeitos: 10 Interesses: 15
-Taxa_Entrega_Absoluta   Node : 12 Satisfeitos: 10 Interesses: 15
-Taxa_Entrega_Absoluta   Node : 12 Satisfeitos: 10 Interesses: 15
-Taxa_Entrega_Absoluta   Node : 9 Satisfeitos: 10 Interesses: 15
-Taxa_Entrega_Absoluta   Node : 6 Satisfeitos: 10 Interesses: 15
-Taxa_Entrega_Absoluta   Node : 3 Satisfeitos: 10 Interesses: 15
-Taxa_Entrega_Absoluta   Node : 2 Satisfeitos: 10 Interesses: 15
-Taxa_Entrega_Absoluta   Node : 2 Satisfeitos: 10 Interesses: 15
-Taxa_Entrega_Absoluta   Node : 3 Satisfeitos: 10 Interesses: 15
-Taxa_Entrega_Absoluta   Node : 6 Satisfeitos: 10 Interesses: 15
-Taxa_Entrega_Absoluta   Node : 9 Satisfeitos: 10 Interesses: 15
-Taxa_Entrega_Absoluta   Node : 12 Satisfeitos: 10 Interesses: 15
-Taxa_Entrega_Absoluta   Node : 12 Satisfeitos: 10 Interesses: 15
-Taxa_Entrega_Absoluta   Node : 2 Satisfeitos: 10 Interesses: 15
-Taxa_Entrega_Absoluta   Node : 2 Satisfeitos: 11 Interesses: 15
-Taxa_Entrega_Absoluta   Node : 3 Satisfeitos: 11 Interesses: 15
-Taxa_Entrega_Absoluta   Node : 6 Satisfeitos: 11 Interesses: 15
-Taxa_Entrega_Absoluta   Node : 9 Satisfeitos: 11 Interesses: 15
-Taxa_Entrega_Absoluta   Node : 12 Satisfeitos: 11 Interesses: 15
-Taxa_Entrega_Absoluta   Node : 12 Satisfeitos: 11 Interesses: 15
-Taxa_Entrega_Absoluta   Node : 6 Satisfeitos: 11 Interesses: 15
-Taxa_Entrega_Absoluta   Node : 2 Satisfeitos: 11 Interesses: 15
-Taxa_Entrega_Absoluta   Node : 3 Satisfeitos: 11 Interesses: 15
-Taxa_Entrega_Absoluta   Node : 6 Satisfeitos: 11 Interesses: 15
-Taxa_Entrega_Absoluta   Node : 9 Satisfeitos: 11 Interesses: 15
-Taxa_Entrega_Absoluta   Node : 12 Satisfeitos: 11 Interesses: 15
-Taxa_Entrega_Absoluta   Node : 2 Satisfeitos: 11 Interesses: 15
-Taxa_Entrega_Absoluta   Node : 3 Satisfeitos: 11 Interesses: 15
-Taxa_Entrega_Absoluta   Node : 6 Satisfeitos: 11 Interesses: 15
-Taxa_Entrega_Absoluta   Node : 9 Satisfeitos: 11 Interesses: 15
-Taxa_Entrega_Absoluta   Node : 12 Satisfeitos: 11 Interesses: 15
-Taxa_Entrega_Absoluta   Node : 2 Satisfeitos: 11 Interesses: 15
-Taxa_Entrega_Absoluta   Node : 3 Satisfeitos: 11 Interesses: 15
-Taxa_Entrega_Absoluta   Node : 6 Satisfeitos: 11 Interesses: 15
-Taxa_Entrega_Absoluta   Node : 9 Satisfeitos: 11 Interesses: 15
-Taxa_Entrega_Absoluta   Node : 12 Satisfeitos: 11 Interesses: 15
-Taxa_Entrega_Absoluta   Node : 2 Satisfeitos: 11 Interesses: 16
-Taxa_Entrega_Absoluta   Node : 3 Satisfeitos: 11 Interesses: 16
-Taxa_Entrega_Absoluta   Node : 6 Satisfeitos: 11 Interesses: 16
-Taxa_Entrega_Absoluta   Node : 9 Satisfeitos: 11 Interesses: 16
-Taxa_Entrega_Absoluta   Node : 12 Satisfeitos: 11 Interesses: 16
-Taxa_Entrega_Absoluta   Node : 12 Satisfeitos: 11 Interesses: 16
-Taxa_Entrega_Absoluta   Node : 9 Satisfeitos: 11 Interesses: 16
-Taxa_Entrega_Absoluta   Node : 6 Satisfeitos: 11 Interesses: 16
-Taxa_Entrega_Absoluta   Node : 3 Satisfeitos: 11 Interesses: 16
-Taxa_Entrega_Absoluta   Node : 2 Satisfeitos: 11 Interesses: 16
-Taxa_Entrega_Absoluta   Node : 2 Satisfeitos: 12 Interesses: 16
-Taxa_Entrega_Absoluta   Node : 3 Satisfeitos: 12 Interesses: 16
-Taxa_Entrega_Absoluta   Node : 9 Satisfeitos: 12 Interesses: 16
-Taxa_Entrega_Absoluta   Node : 6 Satisfeitos: 12 Interesses: 16
-Taxa_Entrega_Absoluta   Node : 12 Satisfeitos: 12 Interesses: 16
-Taxa_Entrega_Absoluta   Node : 2 Satisfeitos: 12 Interesses: 16
-Taxa_Entrega_Absoluta   Node : 3 Satisfeitos: 12 Interesses: 16
-Taxa_Entrega_Absoluta   Node : 6 Satisfeitos: 12 Interesses: 16
-Taxa_Entrega_Absoluta   Node : 9 Satisfeitos: 12 Interesses: 16
-Taxa_Entrega_Absoluta   Node : 12 Satisfeitos: 12 Interesses: 16
-Taxa_Entrega_Absoluta   Node : 12 Satisfeitos: 12 Interesses: 16
-Taxa_Entrega_Absoluta   Node : 12 Satisfeitos: 12 Interesses: 16
-Taxa_Entrega_Absoluta   Node : 6 Satisfeitos: 12 Interesses: 16
-Taxa_Entrega_Absoluta   Node : 2 Satisfeitos: 12 Interesses: 16
-Taxa_Entrega_Absoluta   Node : 3 Satisfeitos: 12 Interesses: 16
-Taxa_Entrega_Absoluta   Node : 6 Satisfeitos: 12 Interesses: 16
-Taxa_Entrega_Absoluta   Node : 9 Satisfeitos: 12 Interesses: 16
-Taxa_Entrega_Absoluta   Node : 12 Satisfeitos: 12 Interesses: 16
-Taxa_Entrega_Absoluta   Node : 2 Satisfeitos: 12 Interesses: 16
-Taxa_Entrega_Absoluta   Node : 3 Satisfeitos: 12 Interesses: 16
-Taxa_Entrega_Absoluta   Node : 6 Satisfeitos: 12 Interesses: 16
-Taxa_Entrega_Absoluta   Node : 9 Satisfeitos: 12 Interesses: 16
-Taxa_Entrega_Absoluta   Node : 12 Satisfeitos: 12 Interesses: 16
-Taxa_Entrega_Absoluta   Node : 2 Satisfeitos: 12 Interesses: 16
-Taxa_Entrega_Absoluta   Node : 3 Satisfeitos: 12 Interesses: 16
-Taxa_Entrega_Absoluta   Node : 6 Satisfeitos: 12 Interesses: 16
-Taxa_Entrega_Absoluta   Node : 9 Satisfeitos: 12 Interesses: 16
-Taxa_Entrega_Absoluta   Node : 12 Satisfeitos: 12 Interesses: 16
-Taxa_Entrega_Absoluta   Node : 2 Satisfeitos: 12 Interesses: 17
-Taxa_Entrega_Absoluta   Node : 3 Satisfeitos: 12 Interesses: 17
-Taxa_Entrega_Absoluta   Node : 6 Satisfeitos: 12 Interesses: 17
-Taxa_Entrega_Absoluta   Node : 9 Satisfeitos: 12 Interesses: 17
-Taxa_Entrega_Absoluta   Node : 12 Satisfeitos: 12 Interesses: 17
-Taxa_Entrega_Absoluta   Node : 2 Satisfeitos: 12 Interesses: 18
-Taxa_Entrega_Absoluta   Node : 3 Satisfeitos: 12 Interesses: 18
-Taxa_Entrega_Absoluta   Node : 6 Satisfeitos: 12 Interesses: 18
-Taxa_Entrega_Absoluta   Node : 9 Satisfeitos: 12 Interesses: 18
-Taxa_Entrega_Absoluta   Node : 12 Satisfeitos: 12 Interesses: 18
-Taxa_Entrega_Absoluta   Node : 12 Satisfeitos: 12 Interesses: 18
-Taxa_Entrega_Absoluta   Node : 9 Satisfeitos: 12 Interesses: 18
-Taxa_Entrega_Absoluta   Node : 6 Satisfeitos: 12 Interesses: 18
-Taxa_Entrega_Absoluta   Node : 3 Satisfeitos: 12 Interesses: 18
-Taxa_Entrega_Absoluta   Node : 2 Satisfeitos: 12 Interesses: 18
-Taxa_Entrega_Absoluta   Node : 2 Satisfeitos: 13 Interesses: 18
-Taxa_Entrega_Absoluta   Node : 3 Satisfeitos: 13 Interesses: 18
-Taxa_Entrega_Absoluta   Node : 6 Satisfeitos: 13 Interesses: 18
-Taxa_Entrega_Absoluta   Node : 9 Satisfeitos: 13 Interesses: 18
-Taxa_Entrega_Absoluta   Node : 9 Satisfeitos: 13 Interesses: 18
-Taxa_Entrega_Absoluta   Node : 6 Satisfeitos: 13 Interesses: 18
-Taxa_Entrega_Absoluta   Node : 6 Satisfeitos: 13 Interesses: 18
-Taxa_Entrega_Absoluta   Node : 3 Satisfeitos: 13 Interesses: 18
-Taxa_Entrega_Absoluta   Node : 2 Satisfeitos: 13 Interesses: 18
-Taxa_Entrega_Absoluta   Node : 9 Satisfeitos: 13 Interesses: 18
-Taxa_Entrega_Absoluta   Node : 12 Satisfeitos: 12 Interesses: 18
-Taxa_Entrega_Absoluta   Node : 12 Satisfeitos: 13 Interesses: 18
-Taxa_Entrega_Absoluta   Node : 3 Satisfeitos: 13 Interesses: 18
-Taxa_Entrega_Absoluta   Node : 2 Satisfeitos: 13 Interesses: 18
-Taxa_Entrega_Absoluta   Node : 6 Satisfeitos: 13 Interesses: 18
-Taxa_Entrega_Absoluta   Node : 9 Satisfeitos: 13 Interesses: 18
-Taxa_Entrega_Absoluta   Node : 12 Satisfeitos: 13 Interesses: 18
-Taxa_Entrega_Absoluta   Node : 12 Satisfeitos: 13 Interesses: 18
-Taxa_Entrega_Absoluta   Node : 9 Satisfeitos: 13 Interesses: 18
-Taxa_Entrega_Absoluta   Node : 6 Satisfeitos: 13 Interesses: 18
-Taxa_Entrega_Absoluta   Node : 2 Satisfeitos: 13 Interesses: 18
-Taxa_Entrega_Absoluta   Node : 3 Satisfeitos: 13 Interesses: 18
-Taxa_Entrega_Absoluta   Node : 6 Satisfeitos: 13 Interesses: 18
-Taxa_Entrega_Absoluta   Node : 9 Satisfeitos: 13 Interesses: 18
-Taxa_Entrega_Absoluta   Node : 12 Satisfeitos: 13 Interesses: 18
-Taxa_Entrega_Absoluta   Node : 2 Satisfeitos: 13 Interesses: 18
-Taxa_Entrega_Absoluta   Node : 3 Satisfeitos: 13 Interesses: 18
-Taxa_Entrega_Absoluta   Node : 6 Satisfeitos: 13 Interesses: 18
-Taxa_Entrega_Absoluta   Node : 9 Satisfeitos: 13 Interesses: 18
-Taxa_Entrega_Absoluta   Node : 12 Satisfeitos: 13 Interesses: 18
-Taxa_Entrega_Absoluta   Node : 12 Satisfeitos: 13 Interesses: 18
-Taxa_Entrega_Absoluta   Node : 9 Satisfeitos: 13 Interesses: 18
-Taxa_Entrega_Absoluta   Node : 6 Satisfeitos: 13 Interesses: 18
-Taxa_Entrega_Absoluta   Node : 2 Satisfeitos: 13 Interesses: 18
-Taxa_Entrega_Absoluta   Node : 2 Satisfeitos: 14 Interesses: 18
-Taxa_Entrega_Absoluta   Node : 3 Satisfeitos: 14 Interesses: 18
-Taxa_Entrega_Absoluta   Node : 6 Satisfeitos: 14 Interesses: 18
-Taxa_Entrega_Absoluta   Node : 12 Satisfeitos: 14 Interesses: 18
-Taxa_Entrega_Absoluta   Node : 6 Satisfeitos: 14 Interesses: 18
-Taxa_Entrega_Absoluta   Node : 3 Satisfeitos: 14 Interesses: 18
-Taxa_Entrega_Absoluta   Node : 2 Satisfeitos: 14 Interesses: 18
-Taxa_Entrega_Absoluta   Node : 9 Satisfeitos: 13 Interesses: 18
-Taxa_Entrega_Absoluta   Node : 3 Satisfeitos: 14 Interesses: 18
-Taxa_Entrega_Absoluta   Node : 2 Satisfeitos: 14 Interesses: 18
-Taxa_Entrega_Absoluta   Node : 6 Satisfeitos: 14 Interesses: 18
-Taxa_Entrega_Absoluta   Node : 9 Satisfeitos: 13 Interesses: 18
-Taxa_Entrega_Absoluta   Node : 12 Satisfeitos: 14 Interesses: 18
-Taxa_Entrega_Absoluta   Node : 2 Satisfeitos: 14 Interesses: 18
-Taxa_Entrega_Absoluta   Node : 3 Satisfeitos: 14 Interesses: 18
-Taxa_Entrega_Absoluta   Node : 6 Satisfeitos: 14 Interesses: 18
-Taxa_Entrega_Absoluta   Node : 12 Satisfeitos: 14 Interesses: 18
-Taxa_Entrega_Absoluta   Node : 9 Satisfeitos: 14 Interesses: 18
-Taxa_Entrega_Absoluta   Node : 12 Satisfeitos: 14 Interesses: 18
-Taxa_Entrega_Absoluta   Node : 9 Satisfeitos: 14 Interesses: 18
-Taxa_Entrega_Absoluta   Node : 3 Satisfeitos: 14 Interesses: 18
-Taxa_Entrega_Absoluta   Node : 2 Satisfeitos: 14 Interesses: 18
-Taxa_Entrega_Absoluta   Node : 3 Satisfeitos: 14 Interesses: 18
-Taxa_Entrega_Absoluta   Node : 6 Satisfeitos: 14 Interesses: 18
-Taxa_Entrega_Absoluta   Node : 9 Satisfeitos: 14 Interesses: 18
-Taxa_Entrega_Absoluta   Node : 12 Satisfeitos: 14 Interesses: 18
-Taxa_Entrega_Absoluta   Node : 2 Satisfeitos: 14 Interesses: 18
-Taxa_Entrega_Absoluta   Node : 3 Satisfeitos: 14 Interesses: 18
-Taxa_Entrega_Absoluta   Node : 6 Satisfeitos: 14 Interesses: 18
-Taxa_Entrega_Absoluta   Node : 9 Satisfeitos: 14 Interesses: 18
-Taxa_Entrega_Absoluta   Node : 12 Satisfeitos: 14 Interesses: 18
-Taxa_Entrega_Absoluta   Node : 12 Satisfeitos: 14 Interesses: 18
-Taxa_Entrega_Absoluta   Node : 9 Satisfeitos: 14 Interesses: 18
-Taxa_Entrega_Absoluta   Node : 6 Satisfeitos: 14 Interesses: 18
-Taxa_Entrega_Absoluta   Node : 3 Satisfeitos: 14 Interesses: 18
-Taxa_Entrega_Absoluta   Node : 2 Satisfeitos: 14 Interesses: 18
-Taxa_Entrega_Absoluta   Node : 12 Satisfeitos: 14 Interesses: 18
-Taxa_Entrega_Absoluta   Node : 9 Satisfeitos: 14 Interesses: 18
-Taxa_Entrega_Absoluta   Node : 6 Satisfeitos: 14 Interesses: 18
-Taxa_Entrega_Absoluta   Node : 3 Satisfeitos: 14 Interesses: 18
-Taxa_Entrega_Absoluta   Node : 2 Satisfeitos: 14 Interesses: 18
-Taxa_Entrega_Absoluta   Node : 9 Satisfeitos: 14 Interesses: 18
-Taxa_Entrega_Absoluta   Node : 12 Satisfeitos: 14 Interesses: 18
-Taxa_Entrega_Absoluta   Node : 9 Satisfeitos: 14 Interesses: 18
-Taxa_Entrega_Absoluta   Node : 6 Satisfeitos: 14 Interesses: 18
-Taxa_Entrega_Absoluta   Node : 12 Satisfeitos: 14 Interesses: 18
-Taxa_Entrega_Absoluta   Node : 9 Satisfeitos: 14 Interesses: 18
-Taxa_Entrega_Absoluta   Node : 6 Satisfeitos: 14 Interesses: 18
-Taxa_Entrega_Absoluta   Node : 2 Satisfeitos: 15 Interesses: 18
-Taxa_Entrega_Absoluta   Node : 3 Satisfeitos: 15 Interesses: 18
-Taxa_Entrega_Absoluta   Node : 6 Satisfeitos: 15 Interesses: 18
-Taxa_Entrega_Absoluta   Node : 9 Satisfeitos: 15 Interesses: 18
-Taxa_Entrega_Absoluta   Node : 12 Satisfeitos: 15 Interesses: 18
-Taxa_Entrega_Absoluta   Node : 2 Satisfeitos: 15 Interesses: 18
-Taxa_Entrega_Absoluta   Node : 3 Satisfeitos: 15 Interesses: 18
-Taxa_Entrega_Absoluta   Node : 6 Satisfeitos: 15 Interesses: 18
-Taxa_Entrega_Absoluta   Node : 9 Satisfeitos: 15 Interesses: 18
-Taxa_Entrega_Absoluta   Node : 12 Satisfeitos: 15 Interesses: 18
-Taxa_Entrega_Absoluta   Node : 2 Satisfeitos: 15 Interesses: 18
-Taxa_Entrega_Absoluta   Node : 3 Satisfeitos: 15 Interesses: 18
-Taxa_Entrega_Absoluta   Node : 6 Satisfeitos: 15 Interesses: 18
-Taxa_Entrega_Absoluta   Node : 9 Satisfeitos: 15 Interesses: 18
-Taxa_Entrega_Absoluta   Node : 2 Satisfeitos: 15 Interesses: 19
-Taxa_Entrega_Absoluta   Node : 3 Satisfeitos: 15 Interesses: 19
-Taxa_Entrega_Absoluta   Node : 6 Satisfeitos: 15 Interesses: 19
-Taxa_Entrega_Absoluta   Node : 9 Satisfeitos: 15 Interesses: 19
-Taxa_Entrega_Absoluta   Node : 12 Satisfeitos: 15 Interesses: 19
-Taxa_Entrega_Absoluta   Node : 2 Satisfeitos: 15 Interesses: 19
-Taxa_Entrega_Absoluta   Node : 3 Satisfeitos: 15 Interesses: 19
-Taxa_Entrega_Absoluta   Node : 6 Satisfeitos: 15 Interesses: 19
-Taxa_Entrega_Absoluta   Node : 9 Satisfeitos: 15 Interesses: 19
-Taxa_Entrega_Absoluta   Node : 2 Satisfeitos: 15 Interesses: 19
-Taxa_Entrega_Absoluta   Node : 3 Satisfeitos: 15 Interesses: 19
-Taxa_Entrega_Absoluta   Node : 6 Satisfeitos: 15 Interesses: 19
-Taxa_Entrega_Absoluta   Node : 9 Satisfeitos: 15 Interesses: 19
-Taxa_Entrega_Absoluta   Node : 2 Satisfeitos: 15 Interesses: 20
-Taxa_Entrega_Absoluta   Node : 3 Satisfeitos: 15 Interesses: 20
-Taxa_Entrega_Absoluta   Node : 6 Satisfeitos: 15 Interesses: 20
-Taxa_Entrega_Absoluta   Node : 9 Satisfeitos: 15 Interesses: 20
-Taxa_Entrega_Absoluta   Node : 12 Satisfeitos: 15 Interesses: 20
-Taxa_Entrega_Absoluta   Node : 9 Satisfeitos: 15 Interesses: 20
-Taxa_Entrega_Absoluta   Node : 12 Satisfeitos: 15 Interesses: 20
-Taxa_Entrega_Absoluta   Node : 2 Satisfeitos: 15 Interesses: 20
-Taxa_Entrega_Absoluta   Node : 3 Satisfeitos: 15 Interesses: 20
-Taxa_Entrega_Absoluta   Node : 6 Satisfeitos: 15 Interesses: 20
-Taxa_Entrega_Absoluta   Node : 2 Satisfeitos: 15 Interesses: 21
-Taxa_Entrega_Absoluta   Node : 3 Satisfeitos: 15 Interesses: 21
-Taxa_Entrega_Absoluta   Node : 6 Satisfeitos: 15 Interesses: 21
-Taxa_Entrega_Absoluta   Node : 9 Satisfeitos: 15 Interesses: 21
-Taxa_Entrega_Absoluta   Node : 12 Satisfeitos: 15 Interesses: 21
-Taxa_Entrega_Absoluta   Node : 2 Satisfeitos: 15 Interesses: 21
-Taxa_Entrega_Absoluta   Node : 3 Satisfeitos: 15 Interesses: 21
-Taxa_Entrega_Absoluta   Node : 6 Satisfeitos: 15 Interesses: 21
-Taxa_Entrega_Absoluta   Node : 9 Satisfeitos: 15 Interesses: 21
-Taxa_Entrega_Absoluta   Node : 12 Satisfeitos: 15 Interesses: 21
-Taxa_Entrega_Absoluta   Node : 2 Satisfeitos: 15 Interesses: 21
-Taxa_Entrega_Absoluta   Node : 3 Satisfeitos: 15 Interesses: 21
-Taxa_Entrega_Absoluta   Node : 6 Satisfeitos: 15 Interesses: 21
-Taxa_Entrega_Absoluta   Node : 2 Satisfeitos: 15 Interesses: 22
-Taxa_Entrega_Absoluta   Node : 3 Satisfeitos: 15 Interesses: 22
-Taxa_Entrega_Absoluta   Node : 6 Satisfeitos: 15 Interesses: 22
-Taxa_Entrega_Absoluta   Node : 9 Satisfeitos: 15 Interesses: 22
-Taxa_Entrega_Absoluta   Node : 12 Satisfeitos: 15 Interesses: 22
-Taxa_Entrega_Absoluta   Node : 2 Satisfeitos: 15 Interesses: 23
-Taxa_Entrega_Absoluta   Node : 3 Satisfeitos: 15 Interesses: 23
-Taxa_Entrega_Absoluta   Node : 6 Satisfeitos: 15 Interesses: 23
-Taxa_Entrega_Absoluta   Node : 9 Satisfeitos: 15 Interesses: 23
-Taxa_Entrega_Absoluta   Node : 12 Satisfeitos: 15 Interesses: 23
-Taxa_Entrega_Absoluta   Node : 9 Satisfeitos: 15 Interesses: 23
-Taxa_Entrega_Absoluta   Node : 12 Satisfeitos: 15 Interesses: 23
-Taxa_Entrega_Absoluta   Node : 6 Satisfeitos: 15 Interesses: 23
-Taxa_Entrega_Absoluta   Node : 3 Satisfeitos: 15 Interesses: 23
-Taxa_Entrega_Absoluta   Node : 2 Satisfeitos: 15 Interesses: 23
-Taxa_Entrega_Absoluta   Node : 12 Satisfeitos: 15 Interesses: 23
-Taxa_Entrega_Absoluta   Node : 2 Satisfeitos: 16 Interesses: 23
-Taxa_Entrega_Absoluta   Node : 3 Satisfeitos: 16 Interesses: 23
-Taxa_Entrega_Absoluta   Node : 12 Satisfeitos: 15 Interesses: 23
-Taxa_Entrega_Absoluta   Node : 9 Satisfeitos: 15 Interesses: 23
-Taxa_Entrega_Absoluta   Node : 6 Satisfeitos: 15 Interesses: 23
-Taxa_Entrega_Absoluta   Node : 3 Satisfeitos: 16 Interesses: 23
-Taxa_Entrega_Absoluta   Node : 2 Satisfeitos: 16 Interesses: 23
-Taxa_Entrega_Absoluta   Node : 12 Satisfeitos: 15 Interesses: 23
-Taxa_Entrega_Absoluta   Node : 3 Satisfeitos: 16 Interesses: 23
-Taxa_Entrega_Absoluta   Node : 6 Satisfeitos: 16 Interesses: 23
-Taxa_Entrega_Absoluta   Node : 9 Satisfeitos: 16 Interesses: 23
-Taxa_Entrega_Absoluta   Node : 12 Satisfeitos: 16 Interesses: 23
-Taxa_Entrega_Absoluta   Node : 12 Satisfeitos: 16 Interesses: 23
-Taxa_Entrega_Absoluta   Node : 12 Satisfeitos: 16 Interesses: 23
-Taxa_Entrega_Absoluta   Node : 9 Satisfeitos: 16 Interesses: 23
-Taxa_Entrega_Absoluta   Node : 3 Satisfeitos: 16 Interesses: 23
-Taxa_Entrega_Absoluta   Node : 12 Satisfeitos: 16 Interesses: 23
-Taxa_Entrega_Absoluta   Node : 2 Satisfeitos: 16 Interesses: 23
-Taxa_Entrega_Absoluta   Node : 3 Satisfeitos: 16 Interesses: 23
-Taxa_Entrega_Absoluta   Node : 6 Satisfeitos: 16 Interesses: 23
-Taxa_Entrega_Absoluta   Node : 9 Satisfeitos: 16 Interesses: 23
-Taxa_Entrega_Absoluta   Node : 12 Satisfeitos: 16 Interesses: 23
-Taxa_Entrega_Absoluta   Node : 2 Satisfeitos: 16 Interesses: 23
-Taxa_Entrega_Absoluta   Node : 3 Satisfeitos: 16 Interesses: 23
-Taxa_Entrega_Absoluta   Node : 6 Satisfeitos: 16 Interesses: 23
-Taxa_Entrega_Absoluta   Node : 9 Satisfeitos: 16 Interesses: 23
-Taxa_Entrega_Absoluta   Node : 12 Satisfeitos: 16 Interesses: 23
-Taxa_Entrega_Absoluta   Node : 12 Satisfeitos: 16 Interesses: 23
-Taxa_Entrega_Absoluta   Node : 9 Satisfeitos: 16 Interesses: 23
-Taxa_Entrega_Absoluta   Node : 6 Satisfeitos: 16 Interesses: 23
-Taxa_Entrega_Absoluta   Node : 3 Satisfeitos: 16 Interesses: 23
-Taxa_Entrega_Absoluta   Node : 2 Satisfeitos: 17 Interesses: 23
-Taxa_Entrega_Absoluta   Node : 3 Satisfeitos: 17 Interesses: 23
-Taxa_Entrega_Absoluta   Node : 6 Satisfeitos: 17 Interesses: 23
-Taxa_Entrega_Absoluta   Node : 9 Satisfeitos: 17 Interesses: 23
-Taxa_Entrega_Absoluta   Node : 12 Satisfeitos: 16 Interesses: 23
-Taxa_Entrega_Absoluta   Node : 2 Satisfeitos: 17 Interesses: 23
-Taxa_Entrega_Absoluta   Node : 3 Satisfeitos: 17 Interesses: 23
-Taxa_Entrega_Absoluta   Node : 6 Satisfeitos: 17 Interesses: 23
-Taxa_Entrega_Absoluta   Node : 12 Satisfeitos: 16 Interesses: 23
-Taxa_Entrega_Absoluta   Node : 9 Satisfeitos: 17 Interesses: 23
-Taxa_Entrega_Absoluta   Node : 12 Satisfeitos: 17 Interesses: 23
-Taxa_Entrega_Absoluta   Node : 12 Satisfeitos: 17 Interesses: 23
-Taxa_Entrega_Absoluta   Node : 2 Satisfeitos: 17 Interesses: 23
-Taxa_Entrega_Absoluta   Node : 3 Satisfeitos: 17 Interesses: 23
-Taxa_Entrega_Absoluta   Node : 6 Satisfeitos: 17 Interesses: 23
-Taxa_Entrega_Absoluta   Node : 9 Satisfeitos: 17 Interesses: 23
-Taxa_Entrega_Absoluta   Node : 12 Satisfeitos: 17 Interesses: 23
-Taxa_Entrega_Absoluta   Node : 2 Satisfeitos: 17 Interesses: 23
-Taxa_Entrega_Absoluta   Node : 3 Satisfeitos: 17 Interesses: 23
-Taxa_Entrega_Absoluta   Node : 6 Satisfeitos: 17 Interesses: 23
-Taxa_Entrega_Absoluta   Node : 9 Satisfeitos: 17 Interesses: 23
-Taxa_Entrega_Absoluta   Node : 12 Satisfeitos: 17 Interesses: 23
-Taxa_Entrega_Absoluta   Node : 2 Satisfeitos: 17 Interesses: 23
-Taxa_Entrega_Absoluta   Node : 3 Satisfeitos: 17 Interesses: 23
-Taxa_Entrega_Absoluta   Node : 6 Satisfeitos: 17 Interesses: 23
-Taxa_Entrega_Absoluta   Node : 9 Satisfeitos: 17 Interesses: 23
-Taxa_Entrega_Absoluta   Node : 12 Satisfeitos: 17 Interesses: 23
-Taxa_Entrega_Absoluta   Node : 2 Satisfeitos: 17 Interesses: 23
-Taxa_Entrega_Absoluta   Node : 3 Satisfeitos: 17 Interesses: 23
-Taxa_Entrega_Absoluta   Node : 6 Satisfeitos: 17 Interesses: 23
-Taxa_Entrega_Absoluta   Node : 9 Satisfeitos: 17 Interesses: 23
-Taxa_Entrega_Absoluta   Node : 12 Satisfeitos: 17 Interesses: 23
-Taxa_Entrega_Absoluta   Node : 12 Satisfeitos: 17 Interesses: 23
-Taxa_Entrega_Absoluta   Node : 9 Satisfeitos: 17 Interesses: 23
-Taxa_Entrega_Absoluta   Node : 6 Satisfeitos: 17 Interesses: 23
-Taxa_Entrega_Absoluta   Node : 3 Satisfeitos: 17 Interesses: 23
-Taxa_Entrega_Absoluta   Node : 2 Satisfeitos: 17 Interesses: 23
-Taxa_Entrega_Absoluta   Node : 12 Satisfeitos: 17 Interesses: 23
-Taxa_Entrega_Absoluta   Node : 9 Satisfeitos: 17 Interesses: 23
-Taxa_Entrega_Absoluta   Node : 2 Satisfeitos: 17 Interesses: 23
-Taxa_Entrega_Absoluta   Node : 6 Satisfeitos: 17 Interesses: 23
-Taxa_Entrega_Absoluta   Node : 3 Satisfeitos: 17 Interesses: 23
-Taxa_Entrega_Absoluta   Node : 2 Satisfeitos: 17 Interesses: 23
-Taxa_Entrega_Absoluta   Node : 2 Satisfeitos: 17 Interesses: 23
-Taxa_Entrega_Absoluta   Node : 3 Satisfeitos: 17 Interesses: 23
-Taxa_Entrega_Absoluta   Node : 6 Satisfeitos: 17 Interesses: 23
-Taxa_Entrega_Absoluta   Node : 9 Satisfeitos: 17 Interesses: 23
-Taxa_Entrega_Absoluta   Node : 12 Satisfeitos: 17 Interesses: 23
-Taxa_Entrega_Absoluta   Node : 2 Satisfeitos: 18 Interesses: 23
-Taxa_Entrega_Absoluta   Node : 3 Satisfeitos: 18 Interesses: 23
-Taxa_Entrega_Absoluta   Node : 6 Satisfeitos: 18 Interesses: 23
-Taxa_Entrega_Absoluta   Node : 12 Satisfeitos: 18 Interesses: 23
-Taxa_Entrega_Absoluta   Node : 9 Satisfeitos: 18 Interesses: 23
-Taxa_Entrega_Absoluta   Node : 12 Satisfeitos: 18 Interesses: 23
-Taxa_Entrega_Absoluta   Node : 2 Satisfeitos: 18 Interesses: 24
-Taxa_Entrega_Absoluta   Node : 3 Satisfeitos: 18 Interesses: 24
-Taxa_Entrega_Absoluta   Node : 6 Satisfeitos: 18 Interesses: 24
-Taxa_Entrega_Absoluta   Node : 9 Satisfeitos: 18 Interesses: 24
-Taxa_Entrega_Absoluta   Node : 12 Satisfeitos: 18 Interesses: 24
-Taxa_Entrega_Absoluta   Node : 2 Satisfeitos: 18 Interesses: 25
-Taxa_Entrega_Absoluta   Node : 3 Satisfeitos: 18 Interesses: 25
-Taxa_Entrega_Absoluta   Node : 6 Satisfeitos: 18 Interesses: 25
-Taxa_Entrega_Absoluta   Node : 9 Satisfeitos: 18 Interesses: 25
-Taxa_Entrega_Absoluta   Node : 12 Satisfeitos: 18 Interesses: 25
-Taxa_Entrega_Absoluta   Node : 9 Satisfeitos: 18 Interesses: 25
-Taxa_Entrega_Absoluta   Node : 12 Satisfeitos: 18 Interesses: 25
-Taxa_Entrega_Absoluta   Node : 6 Satisfeitos: 18 Interesses: 25
-Taxa_Entrega_Absoluta   Node : 3 Satisfeitos: 18 Interesses: 25
-Taxa_Entrega_Absoluta   Node : 2 Satisfeitos: 18 Interesses: 25
-Taxa_Entrega_Absoluta   Node : 12 Satisfeitos: 18 Interesses: 25
-Taxa_Entrega_Absoluta   Node : 9 Satisfeitos: 18 Interesses: 25
-Taxa_Entrega_Absoluta   Node : 2 Satisfeitos: 19 Interesses: 25
-Taxa_Entrega_Absoluta   Node : 3 Satisfeitos: 19 Interesses: 25
-Taxa_Entrega_Absoluta   Node : 9 Satisfeitos: 19 Interesses: 25
-Taxa_Entrega_Absoluta   Node : 12 Satisfeitos: 19 Interesses: 25
-Taxa_Entrega_Absoluta   Node : 6 Satisfeitos: 19 Interesses: 25
-Taxa_Entrega_Absoluta   Node : 3 Satisfeitos: 19 Interesses: 25
-Taxa_Entrega_Absoluta   Node : 2 Satisfeitos: 19 Interesses: 25
-Taxa_Entrega_Absoluta   Node : 6 Satisfeitos: 19 Interesses: 25
-Taxa_Entrega_Absoluta   Node : 9 Satisfeitos: 19 Interesses: 25
-Taxa_Entrega_Absoluta   Node : 12 Satisfeitos: 19 Interesses: 25
-Taxa_Entrega_Absoluta   Node : 2 Satisfeitos: 19 Interesses: 25
-Taxa_Entrega_Absoluta   Node : 3 Satisfeitos: 19 Interesses: 25
-Taxa_Entrega_Absoluta   Node : 6 Satisfeitos: 19 Interesses: 25
-Taxa_Entrega_Absoluta   Node : 9 Satisfeitos: 19 Interesses: 25
-Taxa_Entrega_Absoluta   Node : 12 Satisfeitos: 19 Interesses: 25
-Taxa_Entrega_Absoluta   Node : 2 Satisfeitos: 19 Interesses: 25
-Taxa_Entrega_Absoluta   Node : 3 Satisfeitos: 19 Interesses: 25
-Taxa_Entrega_Absoluta   Node : 6 Satisfeitos: 19 Interesses: 25
-Taxa_Entrega_Absoluta   Node : 9 Satisfeitos: 19 Interesses: 25
-Taxa_Entrega_Absoluta   Node : 12 Satisfeitos: 19 Interesses: 25
-Taxa_Entrega_Absoluta   Node : 12 Satisfeitos: 19 Interesses: 25
-Taxa_Entrega_Absoluta   Node : 9 Satisfeitos: 19 Interesses: 25
-Taxa_Entrega_Absoluta   Node : 6 Satisfeitos: 19 Interesses: 25
-Taxa_Entrega_Absoluta   Node : 2 Satisfeitos: 19 Interesses: 25
-Taxa_Entrega_Absoluta   Node : 2 Satisfeitos: 20 Interesses: 25
-Taxa_Entrega_Absoluta   Node : 3 Satisfeitos: 20 Interesses: 25
-Taxa_Entrega_Absoluta   Node : 6 Satisfeitos: 20 Interesses: 25
-Taxa_Entrega_Absoluta   Node : 9 Satisfeitos: 20 Interesses: 25
-Taxa_Entrega_Absoluta   Node : 2 Satisfeitos: 20 Interesses: 25
-Taxa_Entrega_Absoluta   Node : 3 Satisfeitos: 20 Interesses: 25
-Taxa_Entrega_Absoluta   Node : 6 Satisfeitos: 20 Interesses: 25
-Taxa_Entrega_Absoluta   Node : 12 Satisfeitos: 19 Interesses: 25
-Taxa_Entrega_Absoluta   Node : 9 Satisfeitos: 20 Interesses: 25
-Taxa_Entrega_Absoluta   Node : 12 Satisfeitos: 20 Interesses: 25
-Taxa_Entrega_Absoluta   Node : 2 Satisfeitos: 20 Interesses: 25
-Taxa_Entrega_Absoluta   Node : 3 Satisfeitos: 20 Interesses: 25
-Taxa_Entrega_Absoluta   Node : 6 Satisfeitos: 20 Interesses: 25
-Taxa_Entrega_Absoluta   Node : 9 Satisfeitos: 20 Interesses: 25
-Taxa_Entrega_Absoluta   Node : 12 Satisfeitos: 20 Interesses: 25
-Taxa_Entrega_Absoluta   Node : 2 Satisfeitos: 20 Interesses: 25
-Taxa_Entrega_Absoluta   Node : 3 Satisfeitos: 20 Interesses: 25
-Taxa_Entrega_Absoluta   Node : 6 Satisfeitos: 20 Interesses: 25
-Taxa_Entrega_Absoluta   Node : 9 Satisfeitos: 20 Interesses: 25
-Taxa_Entrega_Absoluta   Node : 12 Satisfeitos: 20 Interesses: 25
-Taxa_Entrega_Absoluta   Node : 12 Satisfeitos: 20 Interesses: 25
-Taxa_Entrega_Absoluta   Node : 9 Satisfeitos: 20 Interesses: 25
-Taxa_Entrega_Absoluta   Node : 6 Satisfeitos: 20 Interesses: 25
-Taxa_Entrega_Absoluta   Node : 3 Satisfeitos: 20 Interesses: 25
-Taxa_Entrega_Absoluta   Node : 2 Satisfeitos: 21 Interesses: 25
-Taxa_Entrega_Absoluta   Node : 3 Satisfeitos: 21 Interesses: 25
-Taxa_Entrega_Absoluta   Node : 6 Satisfeitos: 21 Interesses: 25
-Taxa_Entrega_Absoluta   Node : 9 Satisfeitos: 21 Interesses: 25
-Taxa_Entrega_Absoluta   Node : 2 Satisfeitos: 21 Interesses: 25
-Taxa_Entrega_Absoluta   Node : 3 Satisfeitos: 21 Interesses: 25
-Taxa_Entrega_Absoluta   Node : 6 Satisfeitos: 21 Interesses: 25
-Taxa_Entrega_Absoluta   Node : 9 Satisfeitos: 21 Interesses: 25
-Taxa_Entrega_Absoluta   Node : 12 Satisfeitos: 21 Interesses: 25
-Taxa_Entrega_Absoluta   Node : 2 Satisfeitos: 21 Interesses: 25
-Taxa_Entrega_Absoluta   Node : 3 Satisfeitos: 21 Interesses: 25
-Taxa_Entrega_Absoluta   Node : 6 Satisfeitos: 21 Interesses: 25
-Taxa_Entrega_Absoluta   Node : 9 Satisfeitos: 21 Interesses: 25
-Taxa_Entrega_Absoluta   Node : 12 Satisfeitos: 21 Interesses: 25
-Taxa_Entrega_Absoluta   Node : 2 Satisfeitos: 21 Interesses: 26
-Taxa_Entrega_Absoluta   Node : 3 Satisfeitos: 21 Interesses: 26
-Taxa_Entrega_Absoluta   Node : 6 Satisfeitos: 21 Interesses: 26
-Taxa_Entrega_Absoluta   Node : 9 Satisfeitos: 21 Interesses: 26
-Taxa_Entrega_Absoluta   Node : 12 Satisfeitos: 21 Interesses: 26
-Taxa_Entrega_Absoluta   Node : 2 Satisfeitos: 21 Interesses: 27
-Taxa_Entrega_Absoluta   Node : 3 Satisfeitos: 21 Interesses: 27
-Taxa_Entrega_Absoluta   Node : 6 Satisfeitos: 21 Interesses: 27
-Taxa_Entrega_Absoluta   Node : 9 Satisfeitos: 21 Interesses: 27
-Taxa_Entrega_Absoluta   Node : 12 Satisfeitos: 21 Interesses: 27
-Taxa_Entrega_Absoluta   Node : 2 Satisfeitos: 21 Interesses: 28
-Taxa_Entrega_Absoluta   Node : 3 Satisfeitos: 21 Interesses: 28
-Taxa_Entrega_Absoluta   Node : 6 Satisfeitos: 21 Interesses: 28
-Taxa_Entrega_Absoluta   Node : 9 Satisfeitos: 21 Interesses: 28
-Taxa_Entrega_Absoluta   Node : 12 Satisfeitos: 21 Interesses: 28
-Taxa_Entrega_Absoluta   Node : 2 Satisfeitos: 21 Interesses: 29
-Taxa_Entrega_Absoluta   Node : 3 Satisfeitos: 21 Interesses: 29
-Taxa_Entrega_Absoluta   Node : 6 Satisfeitos: 21 Interesses: 29
-Taxa_Entrega_Absoluta   Node : 9 Satisfeitos: 21 Interesses: 29
-Taxa_Entrega_Absoluta   Node : 12 Satisfeitos: 21 Interesses: 29
-Taxa_Entrega_Absoluta   Node : 6 Satisfeitos: 21 Interesses: 29
-Taxa_Entrega_Absoluta   Node : 3 Satisfeitos: 21 Interesses: 29
-Taxa_Entrega_Absoluta   Node : 2 Satisfeitos: 21 Interesses: 29
-Taxa_Entrega_Absoluta   Node : 9 Satisfeitos: 21 Interesses: 29
-Taxa_Entrega_Absoluta   Node : 12 Satisfeitos: 21 Interesses: 29
-Taxa_Entrega_Absoluta   Node : 12 Satisfeitos: 21 Interesses: 29
-Taxa_Entrega_Absoluta   Node : 9 Satisfeitos: 21 Interesses: 29
-Taxa_Entrega_Absoluta   Node : 6 Satisfeitos: 21 Interesses: 29
-Taxa_Entrega_Absoluta   Node : 12 Satisfeitos: 21 Interesses: 29
-Taxa_Entrega_Absoluta   Node : 9 Satisfeitos: 21 Interesses: 29
-Taxa_Entrega_Absoluta   Node : 6 Satisfeitos: 21 Interesses: 29
-Taxa_Entrega_Absoluta   Node : 2 Satisfeitos: 21 Interesses: 29
-Taxa_Entrega_Absoluta   Node : 2 Satisfeitos: 22 Interesses: 29
-Taxa_Entrega_Absoluta   Node : 3 Satisfeitos: 22 Interesses: 29
-Taxa_Entrega_Absoluta   Node : 9 Satisfeitos: 22 Interesses: 29
-Taxa_Entrega_Absoluta   Node : 12 Satisfeitos: 22 Interesses: 29
-Taxa_Entrega_Absoluta   Node : 12 Satisfeitos: 22 Interesses: 29
-Taxa_Entrega_Absoluta   Node : 6 Satisfeitos: 21 Interesses: 29
-Taxa_Entrega_Absoluta   Node : 2 Satisfeitos: 22 Interesses: 29
-Taxa_Entrega_Absoluta   Node : 3 Satisfeitos: 22 Interesses: 29
-Taxa_Entrega_Absoluta   Node : 6 Satisfeitos: 21 Interesses: 29
-Taxa_Entrega_Absoluta   Node : 9 Satisfeitos: 22 Interesses: 29
-Taxa_Entrega_Absoluta   Node : 6 Satisfeitos: 22 Interesses: 29
-Taxa_Entrega_Absoluta   Node : 2 Satisfeitos: 22 Interesses: 29
-Taxa_Entrega_Absoluta   Node : 3 Satisfeitos: 22 Interesses: 29
-Taxa_Entrega_Absoluta   Node : 6 Satisfeitos: 22 Interesses: 29
-Taxa_Entrega_Absoluta   Node : 9 Satisfeitos: 22 Interesses: 29
-Taxa_Entrega_Absoluta   Node : 12 Satisfeitos: 22 Interesses: 29
-Taxa_Entrega_Absoluta   Node : 12 Satisfeitos: 22 Interesses: 29
-Taxa_Entrega_Absoluta   Node : 9 Satisfeitos: 22 Interesses: 29
-Taxa_Entrega_Absoluta   Node : 6 Satisfeitos: 22 Interesses: 29
-Taxa_Entrega_Absoluta   Node : 3 Satisfeitos: 22 Interesses: 29
-Taxa_Entrega_Absoluta   Node : 2 Satisfeitos: 22 Interesses: 29
-Taxa_Entrega_Absoluta   Node : 12 Satisfeitos: 22 Interesses: 29
-Taxa_Entrega_Absoluta   Node : 2 Satisfeitos: 23 Interesses: 29
-Taxa_Entrega_Absoluta   Node : 3 Satisfeitos: 23 Interesses: 29
-Taxa_Entrega_Absoluta   Node : 6 Satisfeitos: 23 Interesses: 29
-Taxa_Entrega_Absoluta   Node : 12 Satisfeitos: 23 Interesses: 29
-Taxa_Entrega_Absoluta   Node : 9 Satisfeitos: 23 Interesses: 29
-Taxa_Entrega_Absoluta   Node : 12 Satisfeitos: 23 Interesses: 29
-Taxa_Entrega_Absoluta   Node : 6 Satisfeitos: 23 Interesses: 29
-Taxa_Entrega_Absoluta   Node : 6 Satisfeitos: 23 Interesses: 29
-Taxa_Entrega_Absoluta   Node : 3 Satisfeitos: 23 Interesses: 29
-Taxa_Entrega_Absoluta   Node : 2 Satisfeitos: 23 Interesses: 29
-Taxa_Entrega_Absoluta   Node : 9 Satisfeitos: 23 Interesses: 29
-Taxa_Entrega_Absoluta   Node : 12 Satisfeitos: 23 Interesses: 29
-Taxa_Entrega_Absoluta   Node : 12 Satisfeitos: 23 Interesses: 29
-Taxa_Entrega_Absoluta   Node : 2 Satisfeitos: 23 Interesses: 29
-Taxa_Entrega_Absoluta   Node : 3 Satisfeitos: 23 Interesses: 29
-Taxa_Entrega_Absoluta   Node : 6 Satisfeitos: 23 Interesses: 29
-Taxa_Entrega_Absoluta   Node : 9 Satisfeitos: 23 Interesses: 29
-Taxa_Entrega_Absoluta   Node : 12 Satisfeitos: 23 Interesses: 29
-Taxa_Entrega_Absoluta   Node : 6 Satisfeitos: 23 Interesses: 29
-Taxa_Entrega_Absoluta   Node : 3 Satisfeitos: 23 Interesses: 29
-Taxa_Entrega_Absoluta   Node : 2 Satisfeitos: 23 Interesses: 29
-Taxa_Entrega_Absoluta   Node : 9 Satisfeitos: 23 Interesses: 29
-Taxa_Entrega_Absoluta   Node : 12 Satisfeitos: 23 Interesses: 29
-Taxa_Entrega_Absoluta   Node : 2 Satisfeitos: 24 Interesses: 29
-Taxa_Entrega_Absoluta   Node : 6 Satisfeitos: 24 Interesses: 29
-Taxa_Entrega_Absoluta   Node : 9 Satisfeitos: 24 Interesses: 29
-Taxa_Entrega_Absoluta   Node : 12 Satisfeitos: 24 Interesses: 29
-Taxa_Entrega_Absoluta   Node : 12 Satisfeitos: 24 Interesses: 29
-Taxa_Entrega_Absoluta   Node : 9 Satisfeitos: 24 Interesses: 29
-Taxa_Entrega_Absoluta   Node : 6 Satisfeitos: 24 Interesses: 29
-Taxa_Entrega_Absoluta   Node : 3 Satisfeitos: 23 Interesses: 29
-Taxa_Entrega_Absoluta   Node : 2 Satisfeitos: 24 Interesses: 29
-Taxa_Entrega_Absoluta   Node : 3 Satisfeitos: 24 Interesses: 29
-Taxa_Entrega_Absoluta   Node : 12 Satisfeitos: 24 Interesses: 29
-Taxa_Entrega_Absoluta   Node : 9 Satisfeitos: 24 Interesses: 29
-Taxa_Entrega_Absoluta   Node : 6 Satisfeitos: 24 Interesses: 29
-Taxa_Entrega_Absoluta   Node : 2 Satisfeitos: 24 Interesses: 29
-Taxa_Entrega_Absoluta   Node : 2 Satisfeitos: 24 Interesses: 29
-Taxa_Entrega_Absoluta   Node : 3 Satisfeitos: 24 Interesses: 29
-Taxa_Entrega_Absoluta   Node : 6 Satisfeitos: 24 Interesses: 29
-Taxa_Entrega_Absoluta   Node : 9 Satisfeitos: 24 Interesses: 29
-Taxa_Entrega_Absoluta   Node : 12 Satisfeitos: 24 Interesses: 29
-Taxa_Entrega_Absoluta   Node : 2 Satisfeitos: 24 Interesses: 29
-Taxa_Entrega_Absoluta   Node : 3 Satisfeitos: 24 Interesses: 29
-Taxa_Entrega_Absoluta   Node : 6 Satisfeitos: 24 Interesses: 29
-Taxa_Entrega_Absoluta   Node : 9 Satisfeitos: 24 Interesses: 29
-Taxa_Entrega_Absoluta   Node : 12 Satisfeitos: 24 Interesses: 29
-Taxa_Entrega_Absoluta   Node : 2 Satisfeitos: 24 Interesses: 29
-Taxa_Entrega_Absoluta   Node : 3 Satisfeitos: 24 Interesses: 29
-Taxa_Entrega_Absoluta   Node : 6 Satisfeitos: 24 Interesses: 29
-Taxa_Entrega_Absoluta   Node : 9 Satisfeitos: 24 Interesses: 29
-Taxa_Entrega_Absoluta   Node : 12 Satisfeitos: 24 Interesses: 29
-Taxa_Entrega_Absoluta   Node : 2 Satisfeitos: 24 Interesses: 29
-Taxa_Entrega_Absoluta   Node : 3 Satisfeitos: 24 Interesses: 29
-Taxa_Entrega_Absoluta   Node : 6 Satisfeitos: 24 Interesses: 29
-Taxa_Entrega_Absoluta   Node : 9 Satisfeitos: 24 Interesses: 29
-Taxa_Entrega_Absoluta   Node : 12 Satisfeitos: 24 Interesses: 29
-Taxa_Entrega_Absoluta   Node : 2 Satisfeitos: 24 Interesses: 30
-Taxa_Entrega_Absoluta   Node : 3 Satisfeitos: 24 Interesses: 30
-Taxa_Entrega_Absoluta   Node : 6 Satisfeitos: 24 Interesses: 30
-Taxa_Entrega_Absoluta   Node : 9 Satisfeitos: 24 Interesses: 30
-Taxa_Entrega_Absoluta   Node : 12 Satisfeitos: 24 Interesses: 30
-Taxa_Entrega_Absoluta   Node : 2 Satisfeitos: 24 Interesses: 31
-Taxa_Entrega_Absoluta   Node : 3 Satisfeitos: 24 Interesses: 31
-Taxa_Entrega_Absoluta   Node : 6 Satisfeitos: 24 Interesses: 31
-Taxa_Entrega_Absoluta   Node : 9 Satisfeitos: 24 Interesses: 31
-Taxa_Entrega_Absoluta   Node : 12 Satisfeitos: 24 Interesses: 31
-Taxa_Entrega_Absoluta   Node : 2 Satisfeitos: 24 Interesses: 32
-Taxa_Entrega_Absoluta   Node : 3 Satisfeitos: 24 Interesses: 32
-Taxa_Entrega_Absoluta   Node : 6 Satisfeitos: 24 Interesses: 32
-Taxa_Entrega_Absoluta   Node : 9 Satisfeitos: 24 Interesses: 32
-Taxa_Entrega_Absoluta   Node : 12 Satisfeitos: 24 Interesses: 32
-Taxa_Entrega_Absoluta   Node : 2 Satisfeitos: 24 Interesses: 33
-Taxa_Entrega_Absoluta   Node : 3 Satisfeitos: 24 Interesses: 33
-Taxa_Entrega_Absoluta   Node : 6 Satisfeitos: 24 Interesses: 33
-Taxa_Entrega_Absoluta   Node : 9 Satisfeitos: 24 Interesses: 33
-Taxa_Entrega_Absoluta   Node : 12 Satisfeitos: 24 Interesses: 33
-Taxa_Entrega_Absoluta   Node : 2 Satisfeitos: 24 Interesses: 34
-Taxa_Entrega_Absoluta   Node : 3 Satisfeitos: 24 Interesses: 34
-Taxa_Entrega_Absoluta   Node : 6 Satisfeitos: 24 Interesses: 34
-Taxa_Entrega_Absoluta   Node : 9 Satisfeitos: 24 Interesses: 34
-Taxa_Entrega_Absoluta   Node : 12 Satisfeitos: 24 Interesses: 34
-Taxa_Entrega_Absoluta   Node : 2 Satisfeitos: 24 Interesses: 35
-Taxa_Entrega_Absoluta   Node : 3 Satisfeitos: 24 Interesses: 35
-Taxa_Entrega_Absoluta   Node : 6 Satisfeitos: 24 Interesses: 35
-Taxa_Entrega_Absoluta   Node : 9 Satisfeitos: 24 Interesses: 35
-Taxa_Entrega_Absoluta   Node : 12 Satisfeitos: 24 Interesses: 35
-Taxa_Entrega_Absoluta   Node : 2 Satisfeitos: 24 Interesses: 36
-Taxa_Entrega_Absoluta   Node : 3 Satisfeitos: 24 Interesses: 36
-Taxa_Entrega_Absoluta   Node : 6 Satisfeitos: 24 Interesses: 36
-Taxa_Entrega_Absoluta   Node : 9 Satisfeitos: 24 Interesses: 36
-Taxa_Entrega_Absoluta   Node : 12 Satisfeitos: 24 Interesses: 36
-Taxa_Entrega_Absoluta   Node : 2 Satisfeitos: 24 Interesses: 37
-Taxa_Entrega_Absoluta   Node : 3 Satisfeitos: 24 Interesses: 37
-Taxa_Entrega_Absoluta   Node : 6 Satisfeitos: 24 Interesses: 37
-Taxa_Entrega_Absoluta   Node : 9 Satisfeitos: 24 Interesses: 37
-Taxa_Entrega_Absoluta   Node : 12 Satisfeitos: 24 Interesses: 37
-Taxa_Entrega_Absoluta   Node : 2 Satisfeitos: 24 Interesses: 38
-Taxa_Entrega_Absoluta   Node : 3 Satisfeitos: 24 Interesses: 38
-Taxa_Entrega_Absoluta   Node : 6 Satisfeitos: 24 Interesses: 38
-Taxa_Entrega_Absoluta   Node : 9 Satisfeitos: 24 Interesses: 38
-Taxa_Entrega_Absoluta   Node : 12 Satisfeitos: 24 Interesses: 38
-Taxa_Entrega_Absoluta   Node : 2 Satisfeitos: 24 Interesses: 39
-Taxa_Entrega_Absoluta   Node : 3 Satisfeitos: 24 Interesses: 39
-Taxa_Entrega_Absoluta   Node : 6 Satisfeitos: 24 Interesses: 39
-Taxa_Entrega_Absoluta   Node : 9 Satisfeitos: 24 Interesses: 39
-Taxa_Entrega_Absoluta   Node : 12 Satisfeitos: 24 Interesses: 39
-Taxa_Entrega_Absoluta   Node : 12 Satisfeitos: 24 Interesses: 39
-Taxa_Entrega_Absoluta   Node : 9 Satisfeitos: 24 Interesses: 39
-Taxa_Entrega_Absoluta   Node : 6 Satisfeitos: 24 Interesses: 39
-Taxa_Entrega_Absoluta   Node : 2 Satisfeitos: 24 Interesses: 39
-Taxa_Entrega_Absoluta   Node : 12 Satisfeitos: 24 Interesses: 39
-Taxa_Entrega_Absoluta   Node : 2 Satisfeitos: 25 Interesses: 39
-Taxa_Entrega_Absoluta   Node : 3 Satisfeitos: 25 Interesses: 39
-Taxa_Entrega_Absoluta   Node : 6 Satisfeitos: 25 Interesses: 39
-Taxa_Entrega_Absoluta   Node : 9 Satisfeitos: 24 Interesses: 39
-Taxa_Entrega_Absoluta   Node : 2 Satisfeitos: 25 Interesses: 39
-Taxa_Entrega_Absoluta   Node : 3 Satisfeitos: 25 Interesses: 39
-Taxa_Entrega_Absoluta   Node : 6 Satisfeitos: 25 Interesses: 39
-Taxa_Entrega_Absoluta   Node : 12 Satisfeitos: 24 Interesses: 39
-Taxa_Entrega_Absoluta   Node : 9 Satisfeitos: 24 Interesses: 39
-Taxa_Entrega_Absoluta   Node : 9 Satisfeitos: 25 Interesses: 39
-Taxa_Entrega_Absoluta   Node : 12 Satisfeitos: 25 Interesses: 39
-Taxa_Entrega_Absoluta   Node : 2 Satisfeitos: 25 Interesses: 39
-Taxa_Entrega_Absoluta   Node : 3 Satisfeitos: 25 Interesses: 39
-Taxa_Entrega_Absoluta   Node : 6 Satisfeitos: 25 Interesses: 39
-Taxa_Entrega_Absoluta   Node : 9 Satisfeitos: 25 Interesses: 39
-Taxa_Entrega_Absoluta   Node : 12 Satisfeitos: 25 Interesses: 39
-Taxa_Entrega_Absoluta   Node : 2 Satisfeitos: 25 Interesses: 39
-Taxa_Entrega_Absoluta   Node : 3 Satisfeitos: 25 Interesses: 39
-Taxa_Entrega_Absoluta   Node : 6 Satisfeitos: 25 Interesses: 39
-Taxa_Entrega_Absoluta   Node : 9 Satisfeitos: 25 Interesses: 39
-Taxa_Entrega_Absoluta   Node : 12 Satisfeitos: 25 Interesses: 39
-Taxa_Entrega_Absoluta   Node : 2 Satisfeitos: 25 Interesses: 39
-Taxa_Entrega_Absoluta   Node : 3 Satisfeitos: 25 Interesses: 39
-Taxa_Entrega_Absoluta   Node : 6 Satisfeitos: 25 Interesses: 39
-Taxa_Entrega_Absoluta   Node : 9 Satisfeitos: 25 Interesses: 39
-Taxa_Entrega_Absoluta   Node : 12 Satisfeitos: 25 Interesses: 39
-Taxa_Entrega_Absoluta   Node : 9 Satisfeitos: 25 Interesses: 39
-Taxa_Entrega_Absoluta   Node : 6 Satisfeitos: 25 Interesses: 39
-Taxa_Entrega_Absoluta   Node : 12 Satisfeitos: 25 Interesses: 39
-Taxa_Entrega_Absoluta   Node : 3 Satisfeitos: 25 Interesses: 39
-Taxa_Entrega_Absoluta   Node : 2 Satisfeitos: 25 Interesses: 39
-Taxa_Entrega_Absoluta   Node : 2 Satisfeitos: 26 Interesses: 39
-Taxa_Entrega_Absoluta   Node : 3 Satisfeitos: 26 Interesses: 39
-Taxa_Entrega_Absoluta   Node : 6 Satisfeitos: 26 Interesses: 39
-Taxa_Entrega_Absoluta   Node : 12 Satisfeitos: 26 Interesses: 39
-Taxa_Entrega_Absoluta   Node : 12 Satisfeitos: 26 Interesses: 39
-Taxa_Entrega_Absoluta   Node : 9 Satisfeitos: 25 Interesses: 39
-Taxa_Entrega_Absoluta   Node : 6 Satisfeitos: 26 Interesses: 39
-Taxa_Entrega_Absoluta   Node : 12 Satisfeitos: 26 Interesses: 39
-Taxa_Entrega_Absoluta   Node : 9 Satisfeitos: 26 Interesses: 39
-Taxa_Entrega_Absoluta   Node : 2 Satisfeitos: 26 Interesses: 39
-Taxa_Entrega_Absoluta   Node : 3 Satisfeitos: 26 Interesses: 39
-Taxa_Entrega_Absoluta   Node : 6 Satisfeitos: 26 Interesses: 39
-Taxa_Entrega_Absoluta   Node : 9 Satisfeitos: 26 Interesses: 39
-Taxa_Entrega_Absoluta   Node : 12 Satisfeitos: 26 Interesses: 39
-Taxa_Entrega_Absoluta   Node : 2 Satisfeitos: 26 Interesses: 39
-Taxa_Entrega_Absoluta   Node : 3 Satisfeitos: 26 Interesses: 39
-Taxa_Entrega_Absoluta   Node : 6 Satisfeitos: 26 Interesses: 39
-Taxa_Entrega_Absoluta   Node : 9 Satisfeitos: 26 Interesses: 39
-Taxa_Entrega_Absoluta   Node : 12 Satisfeitos: 26 Interesses: 39
-Taxa_Entrega_Absoluta   Node : 2 Satisfeitos: 26 Interesses: 39
-Taxa_Entrega_Absoluta   Node : 3 Satisfeitos: 26 Interesses: 39
-Taxa_Entrega_Absoluta   Node : 6 Satisfeitos: 26 Interesses: 39
-Taxa_Entrega_Absoluta   Node : 9 Satisfeitos: 26 Interesses: 39
-Taxa_Entrega_Absoluta   Node : 12 Satisfeitos: 26 Interesses: 39
-Taxa_Entrega_Absoluta   Node : 2 Satisfeitos: 26 Interesses: 39
-Taxa_Entrega_Absoluta   Node : 3 Satisfeitos: 26 Interesses: 39
-Taxa_Entrega_Absoluta   Node : 6 Satisfeitos: 26 Interesses: 39
-Taxa_Entrega_Absoluta   Node : 9 Satisfeitos: 26 Interesses: 39
-Taxa_Entrega_Absoluta   Node : 12 Satisfeitos: 26 Interesses: 39
-Taxa_Entrega_Absoluta   Node : 12 Satisfeitos: 26 Interesses: 39
-Taxa_Entrega_Absoluta   Node : 9 Satisfeitos: 26 Interesses: 39
-Taxa_Entrega_Absoluta   Node : 6 Satisfeitos: 26 Interesses: 39
-Taxa_Entrega_Absoluta   Node : 3 Satisfeitos: 26 Interesses: 39
-Taxa_Entrega_Absoluta   Node : 9 Satisfeitos: 26 Interesses: 39
-Taxa_Entrega_Absoluta   Node : 6 Satisfeitos: 26 Interesses: 39
-Taxa_Entrega_Absoluta   Node : 12 Satisfeitos: 26 Interesses: 39
-Taxa_Entrega_Absoluta   Node : 3 Satisfeitos: 26 Interesses: 39
-Taxa_Entrega_Absoluta   Node : 2 Satisfeitos: 26 Interesses: 39
-Taxa_Entrega_Absoluta   Node : 12 Satisfeitos: 26 Interesses: 39
-Taxa_Entrega_Absoluta   Node : 2 Satisfeitos: 27 Interesses: 39
-Taxa_Entrega_Absoluta   Node : 3 Satisfeitos: 27 Interesses: 39
-Taxa_Entrega_Absoluta   Node : 9 Satisfeitos: 27 Interesses: 39
-Taxa_Entrega_Absoluta   Node : 12 Satisfeitos: 27 Interesses: 39
-Taxa_Entrega_Absoluta   Node : 6 Satisfeitos: 27 Interesses: 39
-Taxa_Entrega_Absoluta   Node : 2 Satisfeitos: 27 Interesses: 39
-Taxa_Entrega_Absoluta   Node : 3 Satisfeitos: 27 Interesses: 39
-Taxa_Entrega_Absoluta   Node : 6 Satisfeitos: 27 Interesses: 39
-Taxa_Entrega_Absoluta   Node : 9 Satisfeitos: 27 Interesses: 39
-Taxa_Entrega_Absoluta   Node : 2 Satisfeitos: 27 Interesses: 39
-Taxa_Entrega_Absoluta   Node : 3 Satisfeitos: 27 Interesses: 39
-Taxa_Entrega_Absoluta   Node : 6 Satisfeitos: 27 Interesses: 39
-Taxa_Entrega_Absoluta   Node : 9 Satisfeitos: 27 Interesses: 39
-Taxa_Entrega_Absoluta   Node : 12 Satisfeitos: 27 Interesses: 39
-Taxa_Entrega_Absoluta   Node : 2 Satisfeitos: 27 Interesses: 39
-Taxa_Entrega_Absoluta   Node : 3 Satisfeitos: 27 Interesses: 39
-Taxa_Entrega_Absoluta   Node : 6 Satisfeitos: 27 Interesses: 39
-Taxa_Entrega_Absoluta   Node : 9 Satisfeitos: 27 Interesses: 39
-Taxa_Entrega_Absoluta   Node : 12 Satisfeitos: 27 Interesses: 39
-Taxa_Entrega_Absoluta   Node : 2 Satisfeitos: 27 Interesses: 39
-Taxa_Entrega_Absoluta   Node : 3 Satisfeitos: 27 Interesses: 39
-Taxa_Entrega_Absoluta   Node : 6 Satisfeitos: 27 Interesses: 39
-Taxa_Entrega_Absoluta   Node : 9 Satisfeitos: 27 Interesses: 39
-Taxa_Entrega_Absoluta   Node : 12 Satisfeitos: 27 Interesses: 39
-Taxa_Entrega_Absoluta   Node : 9 Satisfeitos: 27 Interesses: 39
-Taxa_Entrega_Absoluta   Node : 12 Satisfeitos: 27 Interesses: 39
-Taxa_Entrega_Absoluta   Node : 6 Satisfeitos: 27 Interesses: 39
-Taxa_Entrega_Absoluta   Node : 3 Satisfeitos: 27 Interesses: 39
-Taxa_Entrega_Absoluta   Node : 3 Satisfeitos: 27 Interesses: 39
-Taxa_Entrega_Absoluta   Node : 2 Satisfeitos: 28 Interesses: 39
-Taxa_Entrega_Absoluta   Node : 3 Satisfeitos: 28 Interesses: 39
-Taxa_Entrega_Absoluta   Node : 6 Satisfeitos: 28 Interesses: 39
-Taxa_Entrega_Absoluta   Node : 9 Satisfeitos: 28 Interesses: 39
-Taxa_Entrega_Absoluta   Node : 12 Satisfeitos: 27 Interesses: 39
-Taxa_Entrega_Absoluta   Node : 9 Satisfeitos: 28 Interesses: 39
-Taxa_Entrega_Absoluta   Node : 6 Satisfeitos: 28 Interesses: 39
-Taxa_Entrega_Absoluta   Node : 3 Satisfeitos: 28 Interesses: 39
-Taxa_Entrega_Absoluta   Node : 3 Satisfeitos: 28 Interesses: 39
-Taxa_Entrega_Absoluta   Node : 2 Satisfeitos: 28 Interesses: 39
-Taxa_Entrega_Absoluta   Node : 6 Satisfeitos: 28 Interesses: 39
-Taxa_Entrega_Absoluta   Node : 9 Satisfeitos: 28 Interesses: 39
-Taxa_Entrega_Absoluta   Node : 12 Satisfeitos: 28 Interesses: 39
-Taxa_Entrega_Absoluta   Node : 2 Satisfeitos: 28 Interesses: 39
-Taxa_Entrega_Absoluta   Node : 3 Satisfeitos: 28 Interesses: 39
-Taxa_Entrega_Absoluta   Node : 6 Satisfeitos: 28 Interesses: 39
-Taxa_Entrega_Absoluta   Node : 9 Satisfeitos: 28 Interesses: 39
-Taxa_Entrega_Absoluta   Node : 12 Satisfeitos: 28 Interesses: 39
-Taxa_Entrega_Absoluta   Node : 2 Satisfeitos: 28 Interesses: 39
-Taxa_Entrega_Absoluta   Node : 3 Satisfeitos: 28 Interesses: 39
-Taxa_Entrega_Absoluta   Node : 6 Satisfeitos: 28 Interesses: 39
-Taxa_Entrega_Absoluta   Node : 9 Satisfeitos: 28 Interesses: 39
-Taxa_Entrega_Absoluta   Node : 12 Satisfeitos: 28 Interesses: 39
-Taxa_Entrega_Absoluta   Node : 2 Satisfeitos: 28 Interesses: 39
-Taxa_Entrega_Absoluta   Node : 3 Satisfeitos: 28 Interesses: 39
-Taxa_Entrega_Absoluta   Node : 6 Satisfeitos: 28 Interesses: 39
-Taxa_Entrega_Absoluta   Node : 9 Satisfeitos: 28 Interesses: 39
-Taxa_Entrega_Absoluta   Node : 12 Satisfeitos: 28 Interesses: 39
-Taxa_Entrega_Absoluta   Node : 2 Satisfeitos: 28 Interesses: 39
-Taxa_Entrega_Absoluta   Node : 3 Satisfeitos: 28 Interesses: 39
-Taxa_Entrega_Absoluta   Node : 6 Satisfeitos: 28 Interesses: 39
-Taxa_Entrega_Absoluta   Node : 9 Satisfeitos: 28 Interesses: 39
-Taxa_Entrega_Absoluta   Node : 12 Satisfeitos: 28 Interesses: 39
-Taxa_Entrega_Absoluta   Node : 2 Satisfeitos: 28 Interesses: 39
-Taxa_Entrega_Absoluta   Node : 3 Satisfeitos: 28 Interesses: 39
-Taxa_Entrega_Absoluta   Node : 6 Satisfeitos: 28 Interesses: 39
-Taxa_Entrega_Absoluta   Node : 12 Satisfeitos: 28 Interesses: 39
-Taxa_Entrega_Absoluta   Node : 2 Satisfeitos: 29 Interesses: 39
-Taxa_Entrega_Absoluta   Node : 3 Satisfeitos: 29 Interesses: 39
-Taxa_Entrega_Absoluta   Node : 12 Satisfeitos: 28 Interesses: 39
-Taxa_Entrega_Absoluta   Node : 2 Satisfeitos: 29 Interesses: 39
-Taxa_Entrega_Absoluta   Node : 12 Satisfeitos: 28 Interesses: 39
-Taxa_Entrega_Absoluta   Node : 9 Satisfeitos: 28 Interesses: 39
-Taxa_Entrega_Absoluta   Node : 2 Satisfeitos: 29 Interesses: 39
-Taxa_Entrega_Absoluta   Node : 12 Satisfeitos: 29 Interesses: 39
-Taxa_Entrega_Absoluta   Node : 6 Satisfeitos: 29 Interesses: 39
-Taxa_Entrega_Absoluta   Node : 9 Satisfeitos: 29 Interesses: 39
-Taxa_Entrega_Absoluta   Node : 2 Satisfeitos: 29 Interesses: 40
-Taxa_Entrega_Absoluta   Node : 3 Satisfeitos: 29 Interesses: 40
-Taxa_Entrega_Absoluta   Node : 6 Satisfeitos: 29 Interesses: 40
-Taxa_Entrega_Absoluta   Node : 9 Satisfeitos: 29 Interesses: 40
-Taxa_Entrega_Absoluta   Node : 12 Satisfeitos: 29 Interesses: 40
-Taxa_Entrega_Absoluta   Node : 2 Satisfeitos: 29 Interesses: 40
-Taxa_Entrega_Absoluta   Node : 3 Satisfeitos: 29 Interesses: 40
-Taxa_Entrega_Absoluta   Node : 6 Satisfeitos: 29 Interesses: 40
-Taxa_Entrega_Absoluta   Node : 9 Satisfeitos: 29 Interesses: 40
-Taxa_Entrega_Absoluta   Node : 12 Satisfeitos: 29 Interesses: 40
-Taxa_Entrega_Absoluta   Node : 9 Satisfeitos: 29 Interesses: 40
-Taxa_Entrega_Absoluta   Node : 2 Satisfeitos: 30 Interesses: 40
-Taxa_Entrega_Absoluta   Node : 3 Satisfeitos: 30 Interesses: 40
-Taxa_Entrega_Absoluta   Node : 6 Satisfeitos: 30 Interesses: 40
-Taxa_Entrega_Absoluta   Node : 9 Satisfeitos: 30 Interesses: 40
-Taxa_Entrega_Absoluta   Node : 9 Satisfeitos: 30 Interesses: 40
-Taxa_Entrega_Absoluta   Node : 12 Satisfeitos: 29 Interesses: 40
-Taxa_Entrega_Absoluta   Node : 6 Satisfeitos: 30 Interesses: 40
-Taxa_Entrega_Absoluta   Node : 3 Satisfeitos: 30 Interesses: 40
-Taxa_Entrega_Absoluta   Node : 12 Satisfeitos: 30 Interesses: 40
-Taxa_Entrega_Absoluta   Node : 2 Satisfeitos: 30 Interesses: 40
-Taxa_Entrega_Absoluta   Node : 3 Satisfeitos: 30 Interesses: 40
-Taxa_Entrega_Absoluta   Node : 6 Satisfeitos: 30 Interesses: 40
-Taxa_Entrega_Absoluta   Node : 9 Satisfeitos: 30 Interesses: 40
-Taxa_Entrega_Absoluta   Node : 12 Satisfeitos: 30 Interesses: 40
-Taxa_Entrega_Absoluta   Node : 2 Satisfeitos: 30 Interesses: 40
-Taxa_Entrega_Absoluta   Node : 3 Satisfeitos: 30 Interesses: 40
-Taxa_Entrega_Absoluta   Node : 6 Satisfeitos: 30 Interesses: 40
-Taxa_Entrega_Absoluta   Node : 9 Satisfeitos: 30 Interesses: 40
-Taxa_Entrega_Absoluta   Node : 12 Satisfeitos: 30 Interesses: 40
-Taxa_Entrega_Absoluta   Node : 2 Satisfeitos: 30 Interesses: 40
-Taxa_Entrega_Absoluta   Node : 3 Satisfeitos: 30 Interesses: 40
-Taxa_Entrega_Absoluta   Node : 6 Satisfeitos: 30 Interesses: 40
-Taxa_Entrega_Absoluta   Node : 9 Satisfeitos: 30 Interesses: 40
-Taxa_Entrega_Absoluta   Node : 12 Satisfeitos: 30 Interesses: 40
-Taxa_Entrega_Absoluta   Node : 2 Satisfeitos: 30 Interesses: 40
-Taxa_Entrega_Absoluta   Node : 3 Satisfeitos: 30 Interesses: 40
-Taxa_Entrega_Absoluta   Node : 6 Satisfeitos: 30 Interesses: 40
-Taxa_Entrega_Absoluta   Node : 9 Satisfeitos: 30 Interesses: 40
-Taxa_Entrega_Absoluta   Node : 12 Satisfeitos: 30 Interesses: 40
-Taxa_Entrega_Absoluta   Node : 2 Satisfeitos: 30 Interesses: 40
-Taxa_Entrega_Absoluta   Node : 3 Satisfeitos: 30 Interesses: 40
-Taxa_Entrega_Absoluta   Node : 6 Satisfeitos: 30 Interesses: 40
-Taxa_Entrega_Absoluta   Node : 9 Satisfeitos: 30 Interesses: 40
-Taxa_Entrega_Absoluta   Node : 12 Satisfeitos: 30 Interesses: 40
+Taxa_Entrega_Absoluta   Node: 2 Satisfeitos: 0 Interesses: 1
+Taxa_Entrega_Absoluta   Node: 3 Satisfeitos: 0 Interesses: 1
+Taxa_Entrega_Absoluta   Node: 6 Satisfeitos: 0 Interesses: 1
+Taxa_Entrega_Absoluta   Node: 9 Satisfeitos: 0 Interesses: 1
+Taxa_Entrega_Absoluta   Node: 12 Satisfeitos: 0 Interesses: 1
+Taxa_Entrega_Absoluta   Node: 3 Satisfeitos: 0 Interesses: 1
+Taxa_Entrega_Absoluta   Node: 12 Satisfeitos: 0 Interesses: 1
+Taxa_Entrega_Absoluta   Node: 9 Satisfeitos: 0 Interesses: 1
+Taxa_Entrega_Absoluta   Node: 6 Satisfeitos: 0 Interesses: 1
+Taxa_Entrega_Absoluta   Node: 3 Satisfeitos: 0 Interesses: 1
+Taxa_Entrega_Absoluta   Node: 2 Satisfeitos: 0 Interesses: 1
+Taxa_Entrega_Absoluta   Node: 3 Satisfeitos: 0 Interesses: 1
+Taxa_Entrega_Absoluta   Node: 9 Satisfeitos: 0 Interesses: 1
+Taxa_Entrega_Absoluta   Node: 2 Satisfeitos: 0 Interesses: 1
+Taxa_Entrega_Absoluta   Node: 12 Satisfeitos: 0 Interesses: 1
+Taxa_Entrega_Absoluta   Node: 2 Satisfeitos: 0 Interesses: 1
+Taxa_Entrega_Absoluta   Node: 6 Satisfeitos: 0 Interesses: 1
+Taxa_Entrega_Absoluta   Node: 9 Satisfeitos: 0 Interesses: 1
+Taxa_Entrega_Absoluta   Node: 12 Satisfeitos: 0 Interesses: 1
+Taxa_Entrega_Absoluta   Node: 12 Satisfeitos: 0 Interesses: 1
+Taxa_Entrega_Absoluta   Node: 9 Satisfeitos: 0 Interesses: 1
+Taxa_Entrega_Absoluta   Node: 6 Satisfeitos: 0 Interesses: 1
+Taxa_Entrega_Absoluta   Node: 3 Satisfeitos: 0 Interesses: 1
+Taxa_Entrega_Absoluta   Node: 2 Satisfeitos: 0 Interesses: 1
+Taxa_Entrega_Absoluta   Node: 12 Satisfeitos: 0 Interesses: 1
+Taxa_Entrega_Absoluta   Node: 9 Satisfeitos: 0 Interesses: 1
+Taxa_Entrega_Absoluta   Node: 12 Satisfeitos: 0 Interesses: 1
+Taxa_Entrega_Absoluta   Node: 12 Satisfeitos: 0 Interesses: 1
+Taxa_Entrega_Absoluta   Node: 6 Satisfeitos: 0 Interesses: 1
+Taxa_Entrega_Absoluta   Node: 6 Satisfeitos: 0 Interesses: 1
+Taxa_Entrega_Absoluta   Node: 3 Satisfeitos: 0 Interesses: 1
+Taxa_Entrega_Absoluta   Node: 2 Satisfeitos: 0 Interesses: 1
+Taxa_Entrega_Absoluta   Node: 9 Satisfeitos: 0 Interesses: 1
+Taxa_Entrega_Absoluta   Node: 12 Satisfeitos: 0 Interesses: 1
+Taxa_Entrega_Absoluta   Node: 2 Satisfeitos: 1 Interesses: 1
+Taxa_Entrega_Absoluta   Node: 3 Satisfeitos: 1 Interesses: 1
+Taxa_Entrega_Absoluta   Node: 9 Satisfeitos: 1 Interesses: 1
+Taxa_Entrega_Absoluta   Node: 12 Satisfeitos: 1 Interesses: 1
+Taxa_Entrega_Absoluta   Node: 6 Satisfeitos: 1 Interesses: 1
+Taxa_Entrega_Absoluta   Node: 12 Satisfeitos: 1 Interesses: 1
+Taxa_Entrega_Absoluta   Node: 9 Satisfeitos: 1 Interesses: 1
+Taxa_Entrega_Absoluta   Node: 6 Satisfeitos: 1 Interesses: 1
+Taxa_Entrega_Absoluta   Node: 2 Satisfeitos: 1 Interesses: 1
+Taxa_Entrega_Absoluta   Node: 6 Satisfeitos: 1 Interesses: 1
+Taxa_Entrega_Absoluta   Node: 12 Satisfeitos: 1 Interesses: 1
+Taxa_Entrega_Absoluta   Node: 6 Satisfeitos: 1 Interesses: 1
+Taxa_Entrega_Absoluta   Node: 12 Satisfeitos: 1 Interesses: 1
+Taxa_Entrega_Absoluta   Node: 2 Satisfeitos: 1 Interesses: 2
+Taxa_Entrega_Absoluta   Node: 3 Satisfeitos: 1 Interesses: 2
+Taxa_Entrega_Absoluta   Node: 6 Satisfeitos: 1 Interesses: 2
+Taxa_Entrega_Absoluta   Node: 9 Satisfeitos: 1 Interesses: 2
+Taxa_Entrega_Absoluta   Node: 12 Satisfeitos: 1 Interesses: 2
+Taxa_Entrega_Absoluta   Node: 2 Satisfeitos: 1 Interesses: 3
+Taxa_Entrega_Absoluta   Node: 3 Satisfeitos: 1 Interesses: 3
+Taxa_Entrega_Absoluta   Node: 6 Satisfeitos: 1 Interesses: 3
+Taxa_Entrega_Absoluta   Node: 9 Satisfeitos: 1 Interesses: 3
+Taxa_Entrega_Absoluta   Node: 12 Satisfeitos: 1 Interesses: 3
+Taxa_Entrega_Absoluta   Node: 2 Satisfeitos: 1 Interesses: 4
+Taxa_Entrega_Absoluta   Node: 3 Satisfeitos: 1 Interesses: 4
+Taxa_Entrega_Absoluta   Node: 6 Satisfeitos: 1 Interesses: 4
+Taxa_Entrega_Absoluta   Node: 9 Satisfeitos: 1 Interesses: 4
+Taxa_Entrega_Absoluta   Node: 12 Satisfeitos: 1 Interesses: 4
+Taxa_Entrega_Absoluta   Node: 12 Satisfeitos: 1 Interesses: 4
+Taxa_Entrega_Absoluta   Node: 6 Satisfeitos: 1 Interesses: 4
+Taxa_Entrega_Absoluta   Node: 3 Satisfeitos: 1 Interesses: 4
+Taxa_Entrega_Absoluta   Node: 12 Satisfeitos: 1 Interesses: 4
+Taxa_Entrega_Absoluta   Node: 6 Satisfeitos: 1 Interesses: 4
+Taxa_Entrega_Absoluta   Node: 9 Satisfeitos: 1 Interesses: 4
+Taxa_Entrega_Absoluta   Node: 2 Satisfeitos: 1 Interesses: 4
+Taxa_Entrega_Absoluta   Node: 3 Satisfeitos: 1 Interesses: 4
+Taxa_Entrega_Absoluta   Node: 6 Satisfeitos: 1 Interesses: 4
+Taxa_Entrega_Absoluta   Node: 9 Satisfeitos: 1 Interesses: 4
+Taxa_Entrega_Absoluta   Node: 2 Satisfeitos: 2 Interesses: 4
+Taxa_Entrega_Absoluta   Node: 3 Satisfeitos: 2 Interesses: 4
+Taxa_Entrega_Absoluta   Node: 6 Satisfeitos: 2 Interesses: 4
+Taxa_Entrega_Absoluta   Node: 9 Satisfeitos: 2 Interesses: 4
+Taxa_Entrega_Absoluta   Node: 12 Satisfeitos: 1 Interesses: 4
+Taxa_Entrega_Absoluta   Node: 9 Satisfeitos: 2 Interesses: 4
+Taxa_Entrega_Absoluta   Node: 2 Satisfeitos: 2 Interesses: 4
+Taxa_Entrega_Absoluta   Node: 12 Satisfeitos: 2 Interesses: 4
+Taxa_Entrega_Absoluta   Node: 12 Satisfeitos: 2 Interesses: 4
+Taxa_Entrega_Absoluta   Node: 2 Satisfeitos: 2 Interesses: 4
+Taxa_Entrega_Absoluta   Node: 9 Satisfeitos: 2 Interesses: 4
+Taxa_Entrega_Absoluta   Node: 2 Satisfeitos: 2 Interesses: 4
+Taxa_Entrega_Absoluta   Node: 3 Satisfeitos: 2 Interesses: 4
+Taxa_Entrega_Absoluta   Node: 6 Satisfeitos: 2 Interesses: 4
+Taxa_Entrega_Absoluta   Node: 9 Satisfeitos: 2 Interesses: 4
+Taxa_Entrega_Absoluta   Node: 12 Satisfeitos: 2 Interesses: 4
+Taxa_Entrega_Absoluta   Node: 2 Satisfeitos: 2 Interesses: 4
+Taxa_Entrega_Absoluta   Node: 3 Satisfeitos: 2 Interesses: 4
+Taxa_Entrega_Absoluta   Node: 6 Satisfeitos: 2 Interesses: 4
+Taxa_Entrega_Absoluta   Node: 9 Satisfeitos: 2 Interesses: 4
+Taxa_Entrega_Absoluta   Node: 12 Satisfeitos: 2 Interesses: 4
+Taxa_Entrega_Absoluta   Node: 12 Satisfeitos: 2 Interesses: 4
+Taxa_Entrega_Absoluta   Node: 9 Satisfeitos: 2 Interesses: 4
+Taxa_Entrega_Absoluta   Node: 6 Satisfeitos: 2 Interesses: 4
+Taxa_Entrega_Absoluta   Node: 3 Satisfeitos: 2 Interesses: 4
+Taxa_Entrega_Absoluta   Node: 12 Satisfeitos: 2 Interesses: 4
+Taxa_Entrega_Absoluta   Node: 6 Satisfeitos: 2 Interesses: 4
+Taxa_Entrega_Absoluta   Node: 3 Satisfeitos: 2 Interesses: 4
+Taxa_Entrega_Absoluta   Node: 2 Satisfeitos: 2 Interesses: 4
+Taxa_Entrega_Absoluta   Node: 6 Satisfeitos: 2 Interesses: 4
+Taxa_Entrega_Absoluta   Node: 9 Satisfeitos: 2 Interesses: 4
+Taxa_Entrega_Absoluta   Node: 12 Satisfeitos: 2 Interesses: 4
+Taxa_Entrega_Absoluta   Node: 2 Satisfeitos: 3 Interesses: 4
+Taxa_Entrega_Absoluta   Node: 3 Satisfeitos: 3 Interesses: 4
+Taxa_Entrega_Absoluta   Node: 6 Satisfeitos: 3 Interesses: 4
+Taxa_Entrega_Absoluta   Node: 12 Satisfeitos: 3 Interesses: 4
+Taxa_Entrega_Absoluta   Node: 12 Satisfeitos: 3 Interesses: 4
+Taxa_Entrega_Absoluta   Node: 9 Satisfeitos: 3 Interesses: 4
+Taxa_Entrega_Absoluta   Node: 12 Satisfeitos: 3 Interesses: 4
+Taxa_Entrega_Absoluta   Node: 2 Satisfeitos: 3 Interesses: 5
+Taxa_Entrega_Absoluta   Node: 3 Satisfeitos: 3 Interesses: 5
+Taxa_Entrega_Absoluta   Node: 6 Satisfeitos: 3 Interesses: 5
+Taxa_Entrega_Absoluta   Node: 9 Satisfeitos: 3 Interesses: 5
+Taxa_Entrega_Absoluta   Node: 12 Satisfeitos: 3 Interesses: 5
+Taxa_Entrega_Absoluta   Node: 12 Satisfeitos: 3 Interesses: 5
+Taxa_Entrega_Absoluta   Node: 9 Satisfeitos: 3 Interesses: 5
+Taxa_Entrega_Absoluta   Node: 2 Satisfeitos: 3 Interesses: 5
+Taxa_Entrega_Absoluta   Node: 3 Satisfeitos: 3 Interesses: 5
+Taxa_Entrega_Absoluta   Node: 6 Satisfeitos: 3 Interesses: 5
+Taxa_Entrega_Absoluta   Node: 9 Satisfeitos: 3 Interesses: 5
+Taxa_Entrega_Absoluta   Node: 12 Satisfeitos: 3 Interesses: 5
+Taxa_Entrega_Absoluta   Node: 6 Satisfeitos: 3 Interesses: 5
+Taxa_Entrega_Absoluta   Node: 2 Satisfeitos: 4 Interesses: 5
+Taxa_Entrega_Absoluta   Node: 3 Satisfeitos: 4 Interesses: 5
+Taxa_Entrega_Absoluta   Node: 6 Satisfeitos: 4 Interesses: 5
+Taxa_Entrega_Absoluta   Node: 12 Satisfeitos: 4 Interesses: 5
+Taxa_Entrega_Absoluta   Node: 9 Satisfeitos: 4 Interesses: 5
+Taxa_Entrega_Absoluta   Node: 2 Satisfeitos: 4 Interesses: 5
+Taxa_Entrega_Absoluta   Node: 3 Satisfeitos: 4 Interesses: 5
+Taxa_Entrega_Absoluta   Node: 6 Satisfeitos: 4 Interesses: 5
+Taxa_Entrega_Absoluta   Node: 9 Satisfeitos: 4 Interesses: 5
+Taxa_Entrega_Absoluta   Node: 12 Satisfeitos: 4 Interesses: 5
+Taxa_Entrega_Absoluta   Node: 2 Satisfeitos: 4 Interesses: 6
+Taxa_Entrega_Absoluta   Node: 3 Satisfeitos: 4 Interesses: 6
+Taxa_Entrega_Absoluta   Node: 6 Satisfeitos: 4 Interesses: 6
+Taxa_Entrega_Absoluta   Node: 9 Satisfeitos: 4 Interesses: 6
+Taxa_Entrega_Absoluta   Node: 12 Satisfeitos: 4 Interesses: 6
+Taxa_Entrega_Absoluta   Node: 2 Satisfeitos: 4 Interesses: 7
+Taxa_Entrega_Absoluta   Node: 3 Satisfeitos: 4 Interesses: 7
+Taxa_Entrega_Absoluta   Node: 6 Satisfeitos: 4 Interesses: 7
+Taxa_Entrega_Absoluta   Node: 9 Satisfeitos: 4 Interesses: 7
+Taxa_Entrega_Absoluta   Node: 12 Satisfeitos: 4 Interesses: 7
+Taxa_Entrega_Absoluta   Node: 2 Satisfeitos: 4 Interesses: 8
+Taxa_Entrega_Absoluta   Node: 3 Satisfeitos: 4 Interesses: 8
+Taxa_Entrega_Absoluta   Node: 6 Satisfeitos: 4 Interesses: 8
+Taxa_Entrega_Absoluta   Node: 9 Satisfeitos: 4 Interesses: 8
+Taxa_Entrega_Absoluta   Node: 12 Satisfeitos: 4 Interesses: 8
+Taxa_Entrega_Absoluta   Node: 12 Satisfeitos: 4 Interesses: 8
+Taxa_Entrega_Absoluta   Node: 9 Satisfeitos: 4 Interesses: 8
+Taxa_Entrega_Absoluta   Node: 6 Satisfeitos: 4 Interesses: 8
+Taxa_Entrega_Absoluta   Node: 3 Satisfeitos: 4 Interesses: 8
+Taxa_Entrega_Absoluta   Node: 2 Satisfeitos: 4 Interesses: 8
+Taxa_Entrega_Absoluta   Node: 9 Satisfeitos: 4 Interesses: 8
+Taxa_Entrega_Absoluta   Node: 12 Satisfeitos: 4 Interesses: 8
+Taxa_Entrega_Absoluta   Node: 9 Satisfeitos: 4 Interesses: 8
+Taxa_Entrega_Absoluta   Node: 2 Satisfeitos: 5 Interesses: 8
+Taxa_Entrega_Absoluta   Node: 3 Satisfeitos: 5 Interesses: 8
+Taxa_Entrega_Absoluta   Node: 6 Satisfeitos: 5 Interesses: 8
+Taxa_Entrega_Absoluta   Node: 9 Satisfeitos: 5 Interesses: 8
+Taxa_Entrega_Absoluta   Node: 12 Satisfeitos: 5 Interesses: 8
+Taxa_Entrega_Absoluta   Node: 12 Satisfeitos: 5 Interesses: 8
+Taxa_Entrega_Absoluta   Node: 9 Satisfeitos: 5 Interesses: 8
+Taxa_Entrega_Absoluta   Node: 6 Satisfeitos: 5 Interesses: 8
+Taxa_Entrega_Absoluta   Node: 2 Satisfeitos: 5 Interesses: 8
+Taxa_Entrega_Absoluta   Node: 2 Satisfeitos: 5 Interesses: 8
+Taxa_Entrega_Absoluta   Node: 3 Satisfeitos: 5 Interesses: 8
+Taxa_Entrega_Absoluta   Node: 6 Satisfeitos: 5 Interesses: 8
+Taxa_Entrega_Absoluta   Node: 9 Satisfeitos: 5 Interesses: 8
+Taxa_Entrega_Absoluta   Node: 12 Satisfeitos: 5 Interesses: 8
+Taxa_Entrega_Absoluta   Node: 2 Satisfeitos: 5 Interesses: 8
+Taxa_Entrega_Absoluta   Node: 3 Satisfeitos: 5 Interesses: 8
+Taxa_Entrega_Absoluta   Node: 6 Satisfeitos: 5 Interesses: 8
+Taxa_Entrega_Absoluta   Node: 9 Satisfeitos: 5 Interesses: 8
+Taxa_Entrega_Absoluta   Node: 12 Satisfeitos: 5 Interesses: 8
+Taxa_Entrega_Absoluta   Node: 12 Satisfeitos: 5 Interesses: 8
+Taxa_Entrega_Absoluta   Node: 9 Satisfeitos: 5 Interesses: 8
+Taxa_Entrega_Absoluta   Node: 6 Satisfeitos: 5 Interesses: 8
+Taxa_Entrega_Absoluta   Node: 3 Satisfeitos: 5 Interesses: 8
+Taxa_Entrega_Absoluta   Node: 2 Satisfeitos: 5 Interesses: 8
+Taxa_Entrega_Absoluta   Node: 12 Satisfeitos: 5 Interesses: 8
+Taxa_Entrega_Absoluta   Node: 6 Satisfeitos: 5 Interesses: 8
+Taxa_Entrega_Absoluta   Node: 2 Satisfeitos: 6 Interesses: 8
+Taxa_Entrega_Absoluta   Node: 3 Satisfeitos: 6 Interesses: 8
+Taxa_Entrega_Absoluta   Node: 6 Satisfeitos: 6 Interesses: 8
+Taxa_Entrega_Absoluta   Node: 9 Satisfeitos: 6 Interesses: 8
+Taxa_Entrega_Absoluta   Node: 12 Satisfeitos: 6 Interesses: 8
+Taxa_Entrega_Absoluta   Node: 6 Satisfeitos: 6 Interesses: 8
+Taxa_Entrega_Absoluta   Node: 3 Satisfeitos: 6 Interesses: 8
+Taxa_Entrega_Absoluta   Node: 2 Satisfeitos: 6 Interesses: 8
+Taxa_Entrega_Absoluta   Node: 9 Satisfeitos: 6 Interesses: 8
+Taxa_Entrega_Absoluta   Node: 12 Satisfeitos: 6 Interesses: 8
+Taxa_Entrega_Absoluta   Node: 2 Satisfeitos: 6 Interesses: 9
+Taxa_Entrega_Absoluta   Node: 3 Satisfeitos: 6 Interesses: 9
+Taxa_Entrega_Absoluta   Node: 6 Satisfeitos: 6 Interesses: 9
+Taxa_Entrega_Absoluta   Node: 9 Satisfeitos: 6 Interesses: 9
+Taxa_Entrega_Absoluta   Node: 12 Satisfeitos: 6 Interesses: 9
+Taxa_Entrega_Absoluta   Node: 2 Satisfeitos: 6 Interesses: 10
+Taxa_Entrega_Absoluta   Node: 3 Satisfeitos: 6 Interesses: 10
+Taxa_Entrega_Absoluta   Node: 6 Satisfeitos: 6 Interesses: 10
+Taxa_Entrega_Absoluta   Node: 9 Satisfeitos: 6 Interesses: 10
+Taxa_Entrega_Absoluta   Node: 12 Satisfeitos: 6 Interesses: 10
+Taxa_Entrega_Absoluta   Node: 2 Satisfeitos: 6 Interesses: 11
+Taxa_Entrega_Absoluta   Node: 3 Satisfeitos: 6 Interesses: 11
+Taxa_Entrega_Absoluta   Node: 6 Satisfeitos: 6 Interesses: 11
+Taxa_Entrega_Absoluta   Node: 9 Satisfeitos: 6 Interesses: 11
+Taxa_Entrega_Absoluta   Node: 12 Satisfeitos: 6 Interesses: 11
+Taxa_Entrega_Absoluta   Node: 2 Satisfeitos: 6 Interesses: 12
+Taxa_Entrega_Absoluta   Node: 3 Satisfeitos: 6 Interesses: 12
+Taxa_Entrega_Absoluta   Node: 6 Satisfeitos: 6 Interesses: 12
+Taxa_Entrega_Absoluta   Node: 9 Satisfeitos: 6 Interesses: 12
+Taxa_Entrega_Absoluta   Node: 12 Satisfeitos: 6 Interesses: 12
+Taxa_Entrega_Absoluta   Node: 12 Satisfeitos: 6 Interesses: 12
+Taxa_Entrega_Absoluta   Node: 9 Satisfeitos: 6 Interesses: 12
+Taxa_Entrega_Absoluta   Node: 6 Satisfeitos: 6 Interesses: 12
+Taxa_Entrega_Absoluta   Node: 3 Satisfeitos: 6 Interesses: 12
+Taxa_Entrega_Absoluta   Node: 2 Satisfeitos: 6 Interesses: 12
+Taxa_Entrega_Absoluta   Node: 2 Satisfeitos: 7 Interesses: 12
+Taxa_Entrega_Absoluta   Node: 3 Satisfeitos: 7 Interesses: 12
+Taxa_Entrega_Absoluta   Node: 6 Satisfeitos: 7 Interesses: 12
+Taxa_Entrega_Absoluta   Node: 12 Satisfeitos: 7 Interesses: 12
+Taxa_Entrega_Absoluta   Node: 2 Satisfeitos: 7 Interesses: 12
+Taxa_Entrega_Absoluta   Node: 3 Satisfeitos: 7 Interesses: 12
+Taxa_Entrega_Absoluta   Node: 6 Satisfeitos: 7 Interesses: 12
+Taxa_Entrega_Absoluta   Node: 12 Satisfeitos: 7 Interesses: 12
+Taxa_Entrega_Absoluta   Node: 9 Satisfeitos: 6 Interesses: 12
+Taxa_Entrega_Absoluta   Node: 3 Satisfeitos: 7 Interesses: 12
+Taxa_Entrega_Absoluta   Node: 9 Satisfeitos: 7 Interesses: 12
+Taxa_Entrega_Absoluta   Node: 9 Satisfeitos: 7 Interesses: 12
+Taxa_Entrega_Absoluta   Node: 2 Satisfeitos: 7 Interesses: 12
+Taxa_Entrega_Absoluta   Node: 2 Satisfeitos: 7 Interesses: 12
+Taxa_Entrega_Absoluta   Node: 3 Satisfeitos: 7 Interesses: 12
+Taxa_Entrega_Absoluta   Node: 6 Satisfeitos: 7 Interesses: 12
+Taxa_Entrega_Absoluta   Node: 9 Satisfeitos: 7 Interesses: 12
+Taxa_Entrega_Absoluta   Node: 12 Satisfeitos: 7 Interesses: 12
+Taxa_Entrega_Absoluta   Node: 2 Satisfeitos: 7 Interesses: 12
+Taxa_Entrega_Absoluta   Node: 3 Satisfeitos: 7 Interesses: 12
+Taxa_Entrega_Absoluta   Node: 6 Satisfeitos: 7 Interesses: 12
+Taxa_Entrega_Absoluta   Node: 9 Satisfeitos: 7 Interesses: 12
+Taxa_Entrega_Absoluta   Node: 12 Satisfeitos: 7 Interesses: 12
+Taxa_Entrega_Absoluta   Node: 2 Satisfeitos: 7 Interesses: 12
+Taxa_Entrega_Absoluta   Node: 3 Satisfeitos: 7 Interesses: 12
+Taxa_Entrega_Absoluta   Node: 6 Satisfeitos: 7 Interesses: 12
+Taxa_Entrega_Absoluta   Node: 9 Satisfeitos: 7 Interesses: 12
+Taxa_Entrega_Absoluta   Node: 12 Satisfeitos: 7 Interesses: 12
+Taxa_Entrega_Absoluta   Node: 2 Satisfeitos: 7 Interesses: 12
+Taxa_Entrega_Absoluta   Node: 3 Satisfeitos: 7 Interesses: 12
+Taxa_Entrega_Absoluta   Node: 6 Satisfeitos: 7 Interesses: 12
+Taxa_Entrega_Absoluta   Node: 9 Satisfeitos: 7 Interesses: 12
+Taxa_Entrega_Absoluta   Node: 12 Satisfeitos: 7 Interesses: 12
+Taxa_Entrega_Absoluta   Node: 2 Satisfeitos: 7 Interesses: 13
+Taxa_Entrega_Absoluta   Node: 3 Satisfeitos: 7 Interesses: 13
+Taxa_Entrega_Absoluta   Node: 6 Satisfeitos: 7 Interesses: 13
+Taxa_Entrega_Absoluta   Node: 9 Satisfeitos: 7 Interesses: 13
+Taxa_Entrega_Absoluta   Node: 12 Satisfeitos: 7 Interesses: 13
+Taxa_Entrega_Absoluta   Node: 2 Satisfeitos: 7 Interesses: 14
+Taxa_Entrega_Absoluta   Node: 3 Satisfeitos: 7 Interesses: 14
+Taxa_Entrega_Absoluta   Node: 6 Satisfeitos: 7 Interesses: 14
+Taxa_Entrega_Absoluta   Node: 9 Satisfeitos: 7 Interesses: 14
+Taxa_Entrega_Absoluta   Node: 12 Satisfeitos: 7 Interesses: 14
+Taxa_Entrega_Absoluta   Node: 12 Satisfeitos: 7 Interesses: 14
+Taxa_Entrega_Absoluta   Node: 9 Satisfeitos: 7 Interesses: 14
+Taxa_Entrega_Absoluta   Node: 2 Satisfeitos: 7 Interesses: 14
+Taxa_Entrega_Absoluta   Node: 12 Satisfeitos: 7 Interesses: 14
+Taxa_Entrega_Absoluta   Node: 9 Satisfeitos: 7 Interesses: 14
+Taxa_Entrega_Absoluta   Node: 2 Satisfeitos: 8 Interesses: 14
+Taxa_Entrega_Absoluta   Node: 3 Satisfeitos: 8 Interesses: 14
+Taxa_Entrega_Absoluta   Node: 6 Satisfeitos: 8 Interesses: 14
+Taxa_Entrega_Absoluta   Node: 9 Satisfeitos: 8 Interesses: 14
+Taxa_Entrega_Absoluta   Node: 12 Satisfeitos: 8 Interesses: 14
+Taxa_Entrega_Absoluta   Node: 2 Satisfeitos: 8 Interesses: 14
+Taxa_Entrega_Absoluta   Node: 12 Satisfeitos: 8 Interesses: 14
+Taxa_Entrega_Absoluta   Node: 6 Satisfeitos: 8 Interesses: 14
+Taxa_Entrega_Absoluta   Node: 9 Satisfeitos: 8 Interesses: 14
+Taxa_Entrega_Absoluta   Node: 3 Satisfeitos: 8 Interesses: 14
+Taxa_Entrega_Absoluta   Node: 2 Satisfeitos: 8 Interesses: 14
+Taxa_Entrega_Absoluta   Node: 12 Satisfeitos: 8 Interesses: 14
+Taxa_Entrega_Absoluta   Node: 6 Satisfeitos: 8 Interesses: 14
+Taxa_Entrega_Absoluta   Node: 2 Satisfeitos: 8 Interesses: 14
+Taxa_Entrega_Absoluta   Node: 3 Satisfeitos: 8 Interesses: 14
+Taxa_Entrega_Absoluta   Node: 6 Satisfeitos: 8 Interesses: 14
+Taxa_Entrega_Absoluta   Node: 9 Satisfeitos: 8 Interesses: 14
+Taxa_Entrega_Absoluta   Node: 12 Satisfeitos: 8 Interesses: 14
+Taxa_Entrega_Absoluta   Node: 12 Satisfeitos: 8 Interesses: 14
+Taxa_Entrega_Absoluta   Node: 2 Satisfeitos: 8 Interesses: 14
+Taxa_Entrega_Absoluta   Node: 3 Satisfeitos: 8 Interesses: 14
+Taxa_Entrega_Absoluta   Node: 6 Satisfeitos: 8 Interesses: 14
+Taxa_Entrega_Absoluta   Node: 9 Satisfeitos: 8 Interesses: 14
+Taxa_Entrega_Absoluta   Node: 12 Satisfeitos: 8 Interesses: 14
+Taxa_Entrega_Absoluta   Node: 12 Satisfeitos: 8 Interesses: 14
+Taxa_Entrega_Absoluta   Node: 9 Satisfeitos: 8 Interesses: 14
+Taxa_Entrega_Absoluta   Node: 6 Satisfeitos: 8 Interesses: 14
+Taxa_Entrega_Absoluta   Node: 3 Satisfeitos: 8 Interesses: 14
+Taxa_Entrega_Absoluta   Node: 2 Satisfeitos: 8 Interesses: 14
+Taxa_Entrega_Absoluta   Node: 3 Satisfeitos: 8 Interesses: 14
+Taxa_Entrega_Absoluta   Node: 2 Satisfeitos: 8 Interesses: 14
+Taxa_Entrega_Absoluta   Node: 6 Satisfeitos: 8 Interesses: 14
+Taxa_Entrega_Absoluta   Node: 9 Satisfeitos: 8 Interesses: 14
+Taxa_Entrega_Absoluta   Node: 12 Satisfeitos: 8 Interesses: 14
+Taxa_Entrega_Absoluta   Node: 2 Satisfeitos: 8 Interesses: 14
+Taxa_Entrega_Absoluta   Node: 3 Satisfeitos: 8 Interesses: 14
+Taxa_Entrega_Absoluta   Node: 6 Satisfeitos: 8 Interesses: 14
+Taxa_Entrega_Absoluta   Node: 9 Satisfeitos: 8 Interesses: 14
+Taxa_Entrega_Absoluta   Node: 12 Satisfeitos: 8 Interesses: 14
+Taxa_Entrega_Absoluta   Node: 9 Satisfeitos: 8 Interesses: 14
+Taxa_Entrega_Absoluta   Node: 3 Satisfeitos: 8 Interesses: 14
+Taxa_Entrega_Absoluta   Node: 2 Satisfeitos: 8 Interesses: 14
+Taxa_Entrega_Absoluta   Node: 2 Satisfeitos: 9 Interesses: 14
+Taxa_Entrega_Absoluta   Node: 3 Satisfeitos: 9 Interesses: 14
+Taxa_Entrega_Absoluta   Node: 6 Satisfeitos: 9 Interesses: 14
+Taxa_Entrega_Absoluta   Node: 9 Satisfeitos: 9 Interesses: 14
+Taxa_Entrega_Absoluta   Node: 12 Satisfeitos: 9 Interesses: 14
+Taxa_Entrega_Absoluta   Node: 12 Satisfeitos: 9 Interesses: 14
+Taxa_Entrega_Absoluta   Node: 2 Satisfeitos: 9 Interesses: 14
+Taxa_Entrega_Absoluta   Node: 3 Satisfeitos: 9 Interesses: 14
+Taxa_Entrega_Absoluta   Node: 6 Satisfeitos: 9 Interesses: 14
+Taxa_Entrega_Absoluta   Node: 9 Satisfeitos: 9 Interesses: 14
+Taxa_Entrega_Absoluta   Node: 12 Satisfeitos: 9 Interesses: 14
+Taxa_Entrega_Absoluta   Node: 2 Satisfeitos: 9 Interesses: 14
+Taxa_Entrega_Absoluta   Node: 3 Satisfeitos: 9 Interesses: 14
+Taxa_Entrega_Absoluta   Node: 6 Satisfeitos: 9 Interesses: 14
+Taxa_Entrega_Absoluta   Node: 9 Satisfeitos: 9 Interesses: 14
+Taxa_Entrega_Absoluta   Node: 12 Satisfeitos: 9 Interesses: 14
+Taxa_Entrega_Absoluta   Node: 2 Satisfeitos: 9 Interesses: 14
+Taxa_Entrega_Absoluta   Node: 3 Satisfeitos: 9 Interesses: 14
+Taxa_Entrega_Absoluta   Node: 6 Satisfeitos: 9 Interesses: 14
+Taxa_Entrega_Absoluta   Node: 9 Satisfeitos: 9 Interesses: 14
+Taxa_Entrega_Absoluta   Node: 12 Satisfeitos: 9 Interesses: 14
+Taxa_Entrega_Absoluta   Node: 2 Satisfeitos: 9 Interesses: 15
+Taxa_Entrega_Absoluta   Node: 3 Satisfeitos: 9 Interesses: 15
+Taxa_Entrega_Absoluta   Node: 6 Satisfeitos: 9 Interesses: 15
+Taxa_Entrega_Absoluta   Node: 9 Satisfeitos: 9 Interesses: 15
+Taxa_Entrega_Absoluta   Node: 12 Satisfeitos: 9 Interesses: 15
+Taxa_Entrega_Absoluta   Node: 2 Satisfeitos: 9 Interesses: 15
+Taxa_Entrega_Absoluta   Node: 3 Satisfeitos: 9 Interesses: 15
+Taxa_Entrega_Absoluta   Node: 6 Satisfeitos: 9 Interesses: 15
+Taxa_Entrega_Absoluta   Node: 9 Satisfeitos: 9 Interesses: 15
+Taxa_Entrega_Absoluta   Node: 12 Satisfeitos: 9 Interesses: 15
+Taxa_Entrega_Absoluta   Node: 2 Satisfeitos: 10 Interesses: 15
+Taxa_Entrega_Absoluta   Node: 3 Satisfeitos: 10 Interesses: 15
+Taxa_Entrega_Absoluta   Node: 6 Satisfeitos: 10 Interesses: 15
+Taxa_Entrega_Absoluta   Node: 9 Satisfeitos: 10 Interesses: 15
+Taxa_Entrega_Absoluta   Node: 12 Satisfeitos: 10 Interesses: 15
+Taxa_Entrega_Absoluta   Node: 9 Satisfeitos: 10 Interesses: 15
+Taxa_Entrega_Absoluta   Node: 12 Satisfeitos: 10 Interesses: 15
+Taxa_Entrega_Absoluta   Node: 6 Satisfeitos: 10 Interesses: 15
+Taxa_Entrega_Absoluta   Node: 3 Satisfeitos: 10 Interesses: 15
+Taxa_Entrega_Absoluta   Node: 12 Satisfeitos: 10 Interesses: 15
+Taxa_Entrega_Absoluta   Node: 9 Satisfeitos: 10 Interesses: 15
+Taxa_Entrega_Absoluta   Node: 12 Satisfeitos: 10 Interesses: 15
+Taxa_Entrega_Absoluta   Node: 9 Satisfeitos: 10 Interesses: 15
+Taxa_Entrega_Absoluta   Node: 6 Satisfeitos: 10 Interesses: 15
+Taxa_Entrega_Absoluta   Node: 2 Satisfeitos: 10 Interesses: 15
+Taxa_Entrega_Absoluta   Node: 3 Satisfeitos: 10 Interesses: 15
+Taxa_Entrega_Absoluta   Node: 6 Satisfeitos: 10 Interesses: 15
+Taxa_Entrega_Absoluta   Node: 9 Satisfeitos: 10 Interesses: 15
+Taxa_Entrega_Absoluta   Node: 12 Satisfeitos: 10 Interesses: 15
+Taxa_Entrega_Absoluta   Node: 12 Satisfeitos: 10 Interesses: 15
+Taxa_Entrega_Absoluta   Node: 9 Satisfeitos: 10 Interesses: 15
+Taxa_Entrega_Absoluta   Node: 6 Satisfeitos: 10 Interesses: 15
+Taxa_Entrega_Absoluta   Node: 3 Satisfeitos: 10 Interesses: 15
+Taxa_Entrega_Absoluta   Node: 2 Satisfeitos: 10 Interesses: 15
+Taxa_Entrega_Absoluta   Node: 2 Satisfeitos: 10 Interesses: 15
+Taxa_Entrega_Absoluta   Node: 3 Satisfeitos: 10 Interesses: 15
+Taxa_Entrega_Absoluta   Node: 6 Satisfeitos: 10 Interesses: 15
+Taxa_Entrega_Absoluta   Node: 9 Satisfeitos: 10 Interesses: 15
+Taxa_Entrega_Absoluta   Node: 12 Satisfeitos: 10 Interesses: 15
+Taxa_Entrega_Absoluta   Node: 12 Satisfeitos: 10 Interesses: 15
+Taxa_Entrega_Absoluta   Node: 2 Satisfeitos: 10 Interesses: 15
+Taxa_Entrega_Absoluta   Node: 2 Satisfeitos: 11 Interesses: 15
+Taxa_Entrega_Absoluta   Node: 3 Satisfeitos: 11 Interesses: 15
+Taxa_Entrega_Absoluta   Node: 6 Satisfeitos: 11 Interesses: 15
+Taxa_Entrega_Absoluta   Node: 9 Satisfeitos: 11 Interesses: 15
+Taxa_Entrega_Absoluta   Node: 12 Satisfeitos: 11 Interesses: 15
+Taxa_Entrega_Absoluta   Node: 12 Satisfeitos: 11 Interesses: 15
+Taxa_Entrega_Absoluta   Node: 6 Satisfeitos: 11 Interesses: 15
+Taxa_Entrega_Absoluta   Node: 2 Satisfeitos: 11 Interesses: 15
+Taxa_Entrega_Absoluta   Node: 3 Satisfeitos: 11 Interesses: 15
+Taxa_Entrega_Absoluta   Node: 6 Satisfeitos: 11 Interesses: 15
+Taxa_Entrega_Absoluta   Node: 9 Satisfeitos: 11 Interesses: 15
+Taxa_Entrega_Absoluta   Node: 12 Satisfeitos: 11 Interesses: 15
+Taxa_Entrega_Absoluta   Node: 2 Satisfeitos: 11 Interesses: 15
+Taxa_Entrega_Absoluta   Node: 3 Satisfeitos: 11 Interesses: 15
+Taxa_Entrega_Absoluta   Node: 6 Satisfeitos: 11 Interesses: 15
+Taxa_Entrega_Absoluta   Node: 9 Satisfeitos: 11 Interesses: 15
+Taxa_Entrega_Absoluta   Node: 12 Satisfeitos: 11 Interesses: 15
+Taxa_Entrega_Absoluta   Node: 2 Satisfeitos: 11 Interesses: 15
+Taxa_Entrega_Absoluta   Node: 3 Satisfeitos: 11 Interesses: 15
+Taxa_Entrega_Absoluta   Node: 6 Satisfeitos: 11 Interesses: 15
+Taxa_Entrega_Absoluta   Node: 9 Satisfeitos: 11 Interesses: 15
+Taxa_Entrega_Absoluta   Node: 12 Satisfeitos: 11 Interesses: 15
+Taxa_Entrega_Absoluta   Node: 2 Satisfeitos: 11 Interesses: 16
+Taxa_Entrega_Absoluta   Node: 3 Satisfeitos: 11 Interesses: 16
+Taxa_Entrega_Absoluta   Node: 6 Satisfeitos: 11 Interesses: 16
+Taxa_Entrega_Absoluta   Node: 9 Satisfeitos: 11 Interesses: 16
+Taxa_Entrega_Absoluta   Node: 12 Satisfeitos: 11 Interesses: 16
+Taxa_Entrega_Absoluta   Node: 12 Satisfeitos: 11 Interesses: 16
+Taxa_Entrega_Absoluta   Node: 9 Satisfeitos: 11 Interesses: 16
+Taxa_Entrega_Absoluta   Node: 6 Satisfeitos: 11 Interesses: 16
+Taxa_Entrega_Absoluta   Node: 3 Satisfeitos: 11 Interesses: 16
+Taxa_Entrega_Absoluta   Node: 2 Satisfeitos: 11 Interesses: 16
+Taxa_Entrega_Absoluta   Node: 2 Satisfeitos: 12 Interesses: 16
+Taxa_Entrega_Absoluta   Node: 3 Satisfeitos: 12 Interesses: 16
+Taxa_Entrega_Absoluta   Node: 9 Satisfeitos: 12 Interesses: 16
+Taxa_Entrega_Absoluta   Node: 6 Satisfeitos: 12 Interesses: 16
+Taxa_Entrega_Absoluta   Node: 12 Satisfeitos: 12 Interesses: 16
+Taxa_Entrega_Absoluta   Node: 2 Satisfeitos: 12 Interesses: 16
+Taxa_Entrega_Absoluta   Node: 3 Satisfeitos: 12 Interesses: 16
+Taxa_Entrega_Absoluta   Node: 6 Satisfeitos: 12 Interesses: 16
+Taxa_Entrega_Absoluta   Node: 9 Satisfeitos: 12 Interesses: 16
+Taxa_Entrega_Absoluta   Node: 12 Satisfeitos: 12 Interesses: 16
+Taxa_Entrega_Absoluta   Node: 12 Satisfeitos: 12 Interesses: 16
+Taxa_Entrega_Absoluta   Node: 12 Satisfeitos: 12 Interesses: 16
+Taxa_Entrega_Absoluta   Node: 6 Satisfeitos: 12 Interesses: 16
+Taxa_Entrega_Absoluta   Node: 2 Satisfeitos: 12 Interesses: 16
+Taxa_Entrega_Absoluta   Node: 3 Satisfeitos: 12 Interesses: 16
+Taxa_Entrega_Absoluta   Node: 6 Satisfeitos: 12 Interesses: 16
+Taxa_Entrega_Absoluta   Node: 9 Satisfeitos: 12 Interesses: 16
+Taxa_Entrega_Absoluta   Node: 12 Satisfeitos: 12 Interesses: 16
+Taxa_Entrega_Absoluta   Node: 2 Satisfeitos: 12 Interesses: 16
+Taxa_Entrega_Absoluta   Node: 3 Satisfeitos: 12 Interesses: 16
+Taxa_Entrega_Absoluta   Node: 6 Satisfeitos: 12 Interesses: 16
+Taxa_Entrega_Absoluta   Node: 9 Satisfeitos: 12 Interesses: 16
+Taxa_Entrega_Absoluta   Node: 12 Satisfeitos: 12 Interesses: 16
+Taxa_Entrega_Absoluta   Node: 2 Satisfeitos: 12 Interesses: 16
+Taxa_Entrega_Absoluta   Node: 3 Satisfeitos: 12 Interesses: 16
+Taxa_Entrega_Absoluta   Node: 6 Satisfeitos: 12 Interesses: 16
+Taxa_Entrega_Absoluta   Node: 9 Satisfeitos: 12 Interesses: 16
+Taxa_Entrega_Absoluta   Node: 12 Satisfeitos: 12 Interesses: 16
+Taxa_Entrega_Absoluta   Node: 2 Satisfeitos: 12 Interesses: 17
+Taxa_Entrega_Absoluta   Node: 3 Satisfeitos: 12 Interesses: 17
+Taxa_Entrega_Absoluta   Node: 6 Satisfeitos: 12 Interesses: 17
+Taxa_Entrega_Absoluta   Node: 9 Satisfeitos: 12 Interesses: 17
+Taxa_Entrega_Absoluta   Node: 12 Satisfeitos: 12 Interesses: 17
+Taxa_Entrega_Absoluta   Node: 2 Satisfeitos: 12 Interesses: 18
+Taxa_Entrega_Absoluta   Node: 3 Satisfeitos: 12 Interesses: 18
+Taxa_Entrega_Absoluta   Node: 6 Satisfeitos: 12 Interesses: 18
+Taxa_Entrega_Absoluta   Node: 9 Satisfeitos: 12 Interesses: 18
+Taxa_Entrega_Absoluta   Node: 12 Satisfeitos: 12 Interesses: 18
+Taxa_Entrega_Absoluta   Node: 12 Satisfeitos: 12 Interesses: 18
+Taxa_Entrega_Absoluta   Node: 9 Satisfeitos: 12 Interesses: 18
+Taxa_Entrega_Absoluta   Node: 6 Satisfeitos: 12 Interesses: 18
+Taxa_Entrega_Absoluta   Node: 3 Satisfeitos: 12 Interesses: 18
+Taxa_Entrega_Absoluta   Node: 2 Satisfeitos: 12 Interesses: 18
+Taxa_Entrega_Absoluta   Node: 2 Satisfeitos: 13 Interesses: 18
+Taxa_Entrega_Absoluta   Node: 3 Satisfeitos: 13 Interesses: 18
+Taxa_Entrega_Absoluta   Node: 6 Satisfeitos: 13 Interesses: 18
+Taxa_Entrega_Absoluta   Node: 9 Satisfeitos: 13 Interesses: 18
+Taxa_Entrega_Absoluta   Node: 9 Satisfeitos: 13 Interesses: 18
+Taxa_Entrega_Absoluta   Node: 6 Satisfeitos: 13 Interesses: 18
+Taxa_Entrega_Absoluta   Node: 6 Satisfeitos: 13 Interesses: 18
+Taxa_Entrega_Absoluta   Node: 3 Satisfeitos: 13 Interesses: 18
+Taxa_Entrega_Absoluta   Node: 2 Satisfeitos: 13 Interesses: 18
+Taxa_Entrega_Absoluta   Node: 9 Satisfeitos: 13 Interesses: 18
+Taxa_Entrega_Absoluta   Node: 12 Satisfeitos: 12 Interesses: 18
+Taxa_Entrega_Absoluta   Node: 12 Satisfeitos: 13 Interesses: 18
+Taxa_Entrega_Absoluta   Node: 3 Satisfeitos: 13 Interesses: 18
+Taxa_Entrega_Absoluta   Node: 2 Satisfeitos: 13 Interesses: 18
+Taxa_Entrega_Absoluta   Node: 6 Satisfeitos: 13 Interesses: 18
+Taxa_Entrega_Absoluta   Node: 9 Satisfeitos: 13 Interesses: 18
+Taxa_Entrega_Absoluta   Node: 12 Satisfeitos: 13 Interesses: 18
+Taxa_Entrega_Absoluta   Node: 12 Satisfeitos: 13 Interesses: 18
+Taxa_Entrega_Absoluta   Node: 9 Satisfeitos: 13 Interesses: 18
+Taxa_Entrega_Absoluta   Node: 6 Satisfeitos: 13 Interesses: 18
+Taxa_Entrega_Absoluta   Node: 2 Satisfeitos: 13 Interesses: 18
+Taxa_Entrega_Absoluta   Node: 3 Satisfeitos: 13 Interesses: 18
+Taxa_Entrega_Absoluta   Node: 6 Satisfeitos: 13 Interesses: 18
+Taxa_Entrega_Absoluta   Node: 9 Satisfeitos: 13 Interesses: 18
+Taxa_Entrega_Absoluta   Node: 12 Satisfeitos: 13 Interesses: 18
+Taxa_Entrega_Absoluta   Node: 2 Satisfeitos: 13 Interesses: 18
+Taxa_Entrega_Absoluta   Node: 3 Satisfeitos: 13 Interesses: 18
+Taxa_Entrega_Absoluta   Node: 6 Satisfeitos: 13 Interesses: 18
+Taxa_Entrega_Absoluta   Node: 9 Satisfeitos: 13 Interesses: 18
+Taxa_Entrega_Absoluta   Node: 12 Satisfeitos: 13 Interesses: 18
+Taxa_Entrega_Absoluta   Node: 12 Satisfeitos: 13 Interesses: 18
+Taxa_Entrega_Absoluta   Node: 9 Satisfeitos: 13 Interesses: 18
+Taxa_Entrega_Absoluta   Node: 6 Satisfeitos: 13 Interesses: 18
+Taxa_Entrega_Absoluta   Node: 2 Satisfeitos: 13 Interesses: 18
+Taxa_Entrega_Absoluta   Node: 2 Satisfeitos: 14 Interesses: 18
+Taxa_Entrega_Absoluta   Node: 3 Satisfeitos: 14 Interesses: 18
+Taxa_Entrega_Absoluta   Node: 6 Satisfeitos: 14 Interesses: 18
+Taxa_Entrega_Absoluta   Node: 12 Satisfeitos: 14 Interesses: 18
+Taxa_Entrega_Absoluta   Node: 6 Satisfeitos: 14 Interesses: 18
+Taxa_Entrega_Absoluta   Node: 3 Satisfeitos: 14 Interesses: 18
+Taxa_Entrega_Absoluta   Node: 2 Satisfeitos: 14 Interesses: 18
+Taxa_Entrega_Absoluta   Node: 9 Satisfeitos: 13 Interesses: 18
+Taxa_Entrega_Absoluta   Node: 3 Satisfeitos: 14 Interesses: 18
+Taxa_Entrega_Absoluta   Node: 2 Satisfeitos: 14 Interesses: 18
+Taxa_Entrega_Absoluta   Node: 6 Satisfeitos: 14 Interesses: 18
+Taxa_Entrega_Absoluta   Node: 9 Satisfeitos: 13 Interesses: 18
+Taxa_Entrega_Absoluta   Node: 12 Satisfeitos: 14 Interesses: 18
+Taxa_Entrega_Absoluta   Node: 2 Satisfeitos: 14 Interesses: 18
+Taxa_Entrega_Absoluta   Node: 3 Satisfeitos: 14 Interesses: 18
+Taxa_Entrega_Absoluta   Node: 6 Satisfeitos: 14 Interesses: 18
+Taxa_Entrega_Absoluta   Node: 12 Satisfeitos: 14 Interesses: 18
+Taxa_Entrega_Absoluta   Node: 9 Satisfeitos: 14 Interesses: 18
+Taxa_Entrega_Absoluta   Node: 12 Satisfeitos: 14 Interesses: 18
+Taxa_Entrega_Absoluta   Node: 9 Satisfeitos: 14 Interesses: 18
+Taxa_Entrega_Absoluta   Node: 3 Satisfeitos: 14 Interesses: 18
+Taxa_Entrega_Absoluta   Node: 2 Satisfeitos: 14 Interesses: 18
+Taxa_Entrega_Absoluta   Node: 3 Satisfeitos: 14 Interesses: 18
+Taxa_Entrega_Absoluta   Node: 6 Satisfeitos: 14 Interesses: 18
+Taxa_Entrega_Absoluta   Node: 9 Satisfeitos: 14 Interesses: 18
+Taxa_Entrega_Absoluta   Node: 12 Satisfeitos: 14 Interesses: 18
+Taxa_Entrega_Absoluta   Node: 2 Satisfeitos: 14 Interesses: 18
+Taxa_Entrega_Absoluta   Node: 3 Satisfeitos: 14 Interesses: 18
+Taxa_Entrega_Absoluta   Node: 6 Satisfeitos: 14 Interesses: 18
+Taxa_Entrega_Absoluta   Node: 9 Satisfeitos: 14 Interesses: 18
+Taxa_Entrega_Absoluta   Node: 12 Satisfeitos: 14 Interesses: 18
+Taxa_Entrega_Absoluta   Node: 12 Satisfeitos: 14 Interesses: 18
+Taxa_Entrega_Absoluta   Node: 9 Satisfeitos: 14 Interesses: 18
+Taxa_Entrega_Absoluta   Node: 6 Satisfeitos: 14 Interesses: 18
+Taxa_Entrega_Absoluta   Node: 3 Satisfeitos: 14 Interesses: 18
+Taxa_Entrega_Absoluta   Node: 2 Satisfeitos: 14 Interesses: 18
+Taxa_Entrega_Absoluta   Node: 12 Satisfeitos: 14 Interesses: 18
+Taxa_Entrega_Absoluta   Node: 9 Satisfeitos: 14 Interesses: 18
+Taxa_Entrega_Absoluta   Node: 6 Satisfeitos: 14 Interesses: 18
+Taxa_Entrega_Absoluta   Node: 3 Satisfeitos: 14 Interesses: 18
+Taxa_Entrega_Absoluta   Node: 2 Satisfeitos: 14 Interesses: 18
+Taxa_Entrega_Absoluta   Node: 9 Satisfeitos: 14 Interesses: 18
+Taxa_Entrega_Absoluta   Node: 12 Satisfeitos: 14 Interesses: 18
+Taxa_Entrega_Absoluta   Node: 9 Satisfeitos: 14 Interesses: 18
+Taxa_Entrega_Absoluta   Node: 6 Satisfeitos: 14 Interesses: 18
+Taxa_Entrega_Absoluta   Node: 12 Satisfeitos: 14 Interesses: 18
+Taxa_Entrega_Absoluta   Node: 9 Satisfeitos: 14 Interesses: 18
+Taxa_Entrega_Absoluta   Node: 6 Satisfeitos: 14 Interesses: 18
+Taxa_Entrega_Absoluta   Node: 2 Satisfeitos: 15 Interesses: 18
+Taxa_Entrega_Absoluta   Node: 3 Satisfeitos: 15 Interesses: 18
+Taxa_Entrega_Absoluta   Node: 6 Satisfeitos: 15 Interesses: 18
+Taxa_Entrega_Absoluta   Node: 9 Satisfeitos: 15 Interesses: 18
+Taxa_Entrega_Absoluta   Node: 12 Satisfeitos: 15 Interesses: 18
+Taxa_Entrega_Absoluta   Node: 2 Satisfeitos: 15 Interesses: 18
+Taxa_Entrega_Absoluta   Node: 3 Satisfeitos: 15 Interesses: 18
+Taxa_Entrega_Absoluta   Node: 6 Satisfeitos: 15 Interesses: 18
+Taxa_Entrega_Absoluta   Node: 9 Satisfeitos: 15 Interesses: 18
+Taxa_Entrega_Absoluta   Node: 12 Satisfeitos: 15 Interesses: 18
+Taxa_Entrega_Absoluta   Node: 2 Satisfeitos: 15 Interesses: 18
+Taxa_Entrega_Absoluta   Node: 3 Satisfeitos: 15 Interesses: 18
+Taxa_Entrega_Absoluta   Node: 6 Satisfeitos: 15 Interesses: 18
+Taxa_Entrega_Absoluta   Node: 9 Satisfeitos: 15 Interesses: 18
+Taxa_Entrega_Absoluta   Node: 2 Satisfeitos: 15 Interesses: 19
+Taxa_Entrega_Absoluta   Node: 3 Satisfeitos: 15 Interesses: 19
+Taxa_Entrega_Absoluta   Node: 6 Satisfeitos: 15 Interesses: 19
+Taxa_Entrega_Absoluta   Node: 9 Satisfeitos: 15 Interesses: 19
+Taxa_Entrega_Absoluta   Node: 12 Satisfeitos: 15 Interesses: 19
+Taxa_Entrega_Absoluta   Node: 2 Satisfeitos: 15 Interesses: 19
+Taxa_Entrega_Absoluta   Node: 3 Satisfeitos: 15 Interesses: 19
+Taxa_Entrega_Absoluta   Node: 6 Satisfeitos: 15 Interesses: 19
+Taxa_Entrega_Absoluta   Node: 9 Satisfeitos: 15 Interesses: 19
+Taxa_Entrega_Absoluta   Node: 2 Satisfeitos: 15 Interesses: 19
+Taxa_Entrega_Absoluta   Node: 3 Satisfeitos: 15 Interesses: 19
+Taxa_Entrega_Absoluta   Node: 6 Satisfeitos: 15 Interesses: 19
+Taxa_Entrega_Absoluta   Node: 9 Satisfeitos: 15 Interesses: 19
+Taxa_Entrega_Absoluta   Node: 2 Satisfeitos: 15 Interesses: 20
+Taxa_Entrega_Absoluta   Node: 3 Satisfeitos: 15 Interesses: 20
+Taxa_Entrega_Absoluta   Node: 6 Satisfeitos: 15 Interesses: 20
+Taxa_Entrega_Absoluta   Node: 9 Satisfeitos: 15 Interesses: 20
+Taxa_Entrega_Absoluta   Node: 12 Satisfeitos: 15 Interesses: 20
+Taxa_Entrega_Absoluta   Node: 9 Satisfeitos: 15 Interesses: 20
+Taxa_Entrega_Absoluta   Node: 12 Satisfeitos: 15 Interesses: 20
+Taxa_Entrega_Absoluta   Node: 2 Satisfeitos: 15 Interesses: 20
+Taxa_Entrega_Absoluta   Node: 3 Satisfeitos: 15 Interesses: 20
+Taxa_Entrega_Absoluta   Node: 6 Satisfeitos: 15 Interesses: 20
+Taxa_Entrega_Absoluta   Node: 2 Satisfeitos: 15 Interesses: 21
+Taxa_Entrega_Absoluta   Node: 3 Satisfeitos: 15 Interesses: 21
+Taxa_Entrega_Absoluta   Node: 6 Satisfeitos: 15 Interesses: 21
+Taxa_Entrega_Absoluta   Node: 9 Satisfeitos: 15 Interesses: 21
+Taxa_Entrega_Absoluta   Node: 12 Satisfeitos: 15 Interesses: 21
+Taxa_Entrega_Absoluta   Node: 2 Satisfeitos: 15 Interesses: 21
+Taxa_Entrega_Absoluta   Node: 3 Satisfeitos: 15 Interesses: 21
+Taxa_Entrega_Absoluta   Node: 6 Satisfeitos: 15 Interesses: 21
+Taxa_Entrega_Absoluta   Node: 9 Satisfeitos: 15 Interesses: 21
+Taxa_Entrega_Absoluta   Node: 12 Satisfeitos: 15 Interesses: 21
+Taxa_Entrega_Absoluta   Node: 2 Satisfeitos: 15 Interesses: 21
+Taxa_Entrega_Absoluta   Node: 3 Satisfeitos: 15 Interesses: 21
+Taxa_Entrega_Absoluta   Node: 6 Satisfeitos: 15 Interesses: 21
+Taxa_Entrega_Absoluta   Node: 2 Satisfeitos: 15 Interesses: 22
+Taxa_Entrega_Absoluta   Node: 3 Satisfeitos: 15 Interesses: 22
+Taxa_Entrega_Absoluta   Node: 6 Satisfeitos: 15 Interesses: 22
+Taxa_Entrega_Absoluta   Node: 9 Satisfeitos: 15 Interesses: 22
+Taxa_Entrega_Absoluta   Node: 12 Satisfeitos: 15 Interesses: 22
+Taxa_Entrega_Absoluta   Node: 2 Satisfeitos: 15 Interesses: 23
+Taxa_Entrega_Absoluta   Node: 3 Satisfeitos: 15 Interesses: 23
+Taxa_Entrega_Absoluta   Node: 6 Satisfeitos: 15 Interesses: 23
+Taxa_Entrega_Absoluta   Node: 9 Satisfeitos: 15 Interesses: 23
+Taxa_Entrega_Absoluta   Node: 12 Satisfeitos: 15 Interesses: 23
+Taxa_Entrega_Absoluta   Node: 9 Satisfeitos: 15 Interesses: 23
+Taxa_Entrega_Absoluta   Node: 12 Satisfeitos: 15 Interesses: 23
+Taxa_Entrega_Absoluta   Node: 6 Satisfeitos: 15 Interesses: 23
+Taxa_Entrega_Absoluta   Node: 3 Satisfeitos: 15 Interesses: 23
+Taxa_Entrega_Absoluta   Node: 2 Satisfeitos: 15 Interesses: 23
+Taxa_Entrega_Absoluta   Node: 12 Satisfeitos: 15 Interesses: 23
+Taxa_Entrega_Absoluta   Node: 2 Satisfeitos: 16 Interesses: 23
+Taxa_Entrega_Absoluta   Node: 3 Satisfeitos: 16 Interesses: 23
+Taxa_Entrega_Absoluta   Node: 12 Satisfeitos: 15 Interesses: 23
+Taxa_Entrega_Absoluta   Node: 9 Satisfeitos: 15 Interesses: 23
+Taxa_Entrega_Absoluta   Node: 6 Satisfeitos: 15 Interesses: 23
+Taxa_Entrega_Absoluta   Node: 3 Satisfeitos: 16 Interesses: 23
+Taxa_Entrega_Absoluta   Node: 2 Satisfeitos: 16 Interesses: 23
+Taxa_Entrega_Absoluta   Node: 12 Satisfeitos: 15 Interesses: 23
+Taxa_Entrega_Absoluta   Node: 3 Satisfeitos: 16 Interesses: 23
+Taxa_Entrega_Absoluta   Node: 6 Satisfeitos: 16 Interesses: 23
+Taxa_Entrega_Absoluta   Node: 9 Satisfeitos: 16 Interesses: 23
+Taxa_Entrega_Absoluta   Node: 12 Satisfeitos: 16 Interesses: 23
+Taxa_Entrega_Absoluta   Node: 12 Satisfeitos: 16 Interesses: 23
+Taxa_Entrega_Absoluta   Node: 12 Satisfeitos: 16 Interesses: 23
+Taxa_Entrega_Absoluta   Node: 9 Satisfeitos: 16 Interesses: 23
+Taxa_Entrega_Absoluta   Node: 3 Satisfeitos: 16 Interesses: 23
+Taxa_Entrega_Absoluta   Node: 12 Satisfeitos: 16 Interesses: 23
+Taxa_Entrega_Absoluta   Node: 2 Satisfeitos: 16 Interesses: 23
+Taxa_Entrega_Absoluta   Node: 3 Satisfeitos: 16 Interesses: 23
+Taxa_Entrega_Absoluta   Node: 6 Satisfeitos: 16 Interesses: 23
+Taxa_Entrega_Absoluta   Node: 9 Satisfeitos: 16 Interesses: 23
+Taxa_Entrega_Absoluta   Node: 12 Satisfeitos: 16 Interesses: 23
+Taxa_Entrega_Absoluta   Node: 2 Satisfeitos: 16 Interesses: 23
+Taxa_Entrega_Absoluta   Node: 3 Satisfeitos: 16 Interesses: 23
+Taxa_Entrega_Absoluta   Node: 6 Satisfeitos: 16 Interesses: 23
+Taxa_Entrega_Absoluta   Node: 9 Satisfeitos: 16 Interesses: 23
+Taxa_Entrega_Absoluta   Node: 12 Satisfeitos: 16 Interesses: 23
+Taxa_Entrega_Absoluta   Node: 12 Satisfeitos: 16 Interesses: 23
+Taxa_Entrega_Absoluta   Node: 9 Satisfeitos: 16 Interesses: 23
+Taxa_Entrega_Absoluta   Node: 6 Satisfeitos: 16 Interesses: 23
+Taxa_Entrega_Absoluta   Node: 3 Satisfeitos: 16 Interesses: 23
+Taxa_Entrega_Absoluta   Node: 2 Satisfeitos: 17 Interesses: 23
+Taxa_Entrega_Absoluta   Node: 3 Satisfeitos: 17 Interesses: 23
+Taxa_Entrega_Absoluta   Node: 6 Satisfeitos: 17 Interesses: 23
+Taxa_Entrega_Absoluta   Node: 9 Satisfeitos: 17 Interesses: 23
+Taxa_Entrega_Absoluta   Node: 12 Satisfeitos: 16 Interesses: 23
+Taxa_Entrega_Absoluta   Node: 2 Satisfeitos: 17 Interesses: 23
+Taxa_Entrega_Absoluta   Node: 3 Satisfeitos: 17 Interesses: 23
+Taxa_Entrega_Absoluta   Node: 6 Satisfeitos: 17 Interesses: 23
+Taxa_Entrega_Absoluta   Node: 12 Satisfeitos: 16 Interesses: 23
+Taxa_Entrega_Absoluta   Node: 9 Satisfeitos: 17 Interesses: 23
+Taxa_Entrega_Absoluta   Node: 12 Satisfeitos: 17 Interesses: 23
+Taxa_Entrega_Absoluta   Node: 12 Satisfeitos: 17 Interesses: 23
+Taxa_Entrega_Absoluta   Node: 2 Satisfeitos: 17 Interesses: 23
+Taxa_Entrega_Absoluta   Node: 3 Satisfeitos: 17 Interesses: 23
+Taxa_Entrega_Absoluta   Node: 6 Satisfeitos: 17 Interesses: 23
+Taxa_Entrega_Absoluta   Node: 9 Satisfeitos: 17 Interesses: 23
+Taxa_Entrega_Absoluta   Node: 12 Satisfeitos: 17 Interesses: 23
+Taxa_Entrega_Absoluta   Node: 2 Satisfeitos: 17 Interesses: 23
+Taxa_Entrega_Absoluta   Node: 3 Satisfeitos: 17 Interesses: 23
+Taxa_Entrega_Absoluta   Node: 6 Satisfeitos: 17 Interesses: 23
+Taxa_Entrega_Absoluta   Node: 9 Satisfeitos: 17 Interesses: 23
+Taxa_Entrega_Absoluta   Node: 12 Satisfeitos: 17 Interesses: 23
+Taxa_Entrega_Absoluta   Node: 2 Satisfeitos: 17 Interesses: 23
+Taxa_Entrega_Absoluta   Node: 3 Satisfeitos: 17 Interesses: 23
+Taxa_Entrega_Absoluta   Node: 6 Satisfeitos: 17 Interesses: 23
+Taxa_Entrega_Absoluta   Node: 9 Satisfeitos: 17 Interesses: 23
+Taxa_Entrega_Absoluta   Node: 12 Satisfeitos: 17 Interesses: 23
+Taxa_Entrega_Absoluta   Node: 2 Satisfeitos: 17 Interesses: 23
+Taxa_Entrega_Absoluta   Node: 3 Satisfeitos: 17 Interesses: 23
+Taxa_Entrega_Absoluta   Node: 6 Satisfeitos: 17 Interesses: 23
+Taxa_Entrega_Absoluta   Node: 9 Satisfeitos: 17 Interesses: 23
+Taxa_Entrega_Absoluta   Node: 12 Satisfeitos: 17 Interesses: 23
+Taxa_Entrega_Absoluta   Node: 12 Satisfeitos: 17 Interesses: 23
+Taxa_Entrega_Absoluta   Node: 9 Satisfeitos: 17 Interesses: 23
+Taxa_Entrega_Absoluta   Node: 6 Satisfeitos: 17 Interesses: 23
+Taxa_Entrega_Absoluta   Node: 3 Satisfeitos: 17 Interesses: 23
+Taxa_Entrega_Absoluta   Node: 2 Satisfeitos: 17 Interesses: 23
+Taxa_Entrega_Absoluta   Node: 12 Satisfeitos: 17 Interesses: 23
+Taxa_Entrega_Absoluta   Node: 9 Satisfeitos: 17 Interesses: 23
+Taxa_Entrega_Absoluta   Node: 2 Satisfeitos: 17 Interesses: 23
+Taxa_Entrega_Absoluta   Node: 6 Satisfeitos: 17 Interesses: 23
+Taxa_Entrega_Absoluta   Node: 3 Satisfeitos: 17 Interesses: 23
+Taxa_Entrega_Absoluta   Node: 2 Satisfeitos: 17 Interesses: 23
+Taxa_Entrega_Absoluta   Node: 2 Satisfeitos: 17 Interesses: 23
+Taxa_Entrega_Absoluta   Node: 3 Satisfeitos: 17 Interesses: 23
+Taxa_Entrega_Absoluta   Node: 6 Satisfeitos: 17 Interesses: 23
+Taxa_Entrega_Absoluta   Node: 9 Satisfeitos: 17 Interesses: 23
+Taxa_Entrega_Absoluta   Node: 12 Satisfeitos: 17 Interesses: 23
+Taxa_Entrega_Absoluta   Node: 2 Satisfeitos: 18 Interesses: 23
+Taxa_Entrega_Absoluta   Node: 3 Satisfeitos: 18 Interesses: 23
+Taxa_Entrega_Absoluta   Node: 6 Satisfeitos: 18 Interesses: 23
+Taxa_Entrega_Absoluta   Node: 12 Satisfeitos: 18 Interesses: 23
+Taxa_Entrega_Absoluta   Node: 9 Satisfeitos: 18 Interesses: 23
+Taxa_Entrega_Absoluta   Node: 12 Satisfeitos: 18 Interesses: 23
+Taxa_Entrega_Absoluta   Node: 2 Satisfeitos: 18 Interesses: 24
+Taxa_Entrega_Absoluta   Node: 3 Satisfeitos: 18 Interesses: 24
+Taxa_Entrega_Absoluta   Node: 6 Satisfeitos: 18 Interesses: 24
+Taxa_Entrega_Absoluta   Node: 9 Satisfeitos: 18 Interesses: 24
+Taxa_Entrega_Absoluta   Node: 12 Satisfeitos: 18 Interesses: 24
+Taxa_Entrega_Absoluta   Node: 2 Satisfeitos: 18 Interesses: 25
+Taxa_Entrega_Absoluta   Node: 3 Satisfeitos: 18 Interesses: 25
+Taxa_Entrega_Absoluta   Node: 6 Satisfeitos: 18 Interesses: 25
+Taxa_Entrega_Absoluta   Node: 9 Satisfeitos: 18 Interesses: 25
+Taxa_Entrega_Absoluta   Node: 12 Satisfeitos: 18 Interesses: 25
+Taxa_Entrega_Absoluta   Node: 9 Satisfeitos: 18 Interesses: 25
+Taxa_Entrega_Absoluta   Node: 12 Satisfeitos: 18 Interesses: 25
+Taxa_Entrega_Absoluta   Node: 6 Satisfeitos: 18 Interesses: 25
+Taxa_Entrega_Absoluta   Node: 3 Satisfeitos: 18 Interesses: 25
+Taxa_Entrega_Absoluta   Node: 2 Satisfeitos: 18 Interesses: 25
+Taxa_Entrega_Absoluta   Node: 12 Satisfeitos: 18 Interesses: 25
+Taxa_Entrega_Absoluta   Node: 9 Satisfeitos: 18 Interesses: 25
+Taxa_Entrega_Absoluta   Node: 2 Satisfeitos: 19 Interesses: 25
+Taxa_Entrega_Absoluta   Node: 3 Satisfeitos: 19 Interesses: 25
+Taxa_Entrega_Absoluta   Node: 9 Satisfeitos: 19 Interesses: 25
+Taxa_Entrega_Absoluta   Node: 12 Satisfeitos: 19 Interesses: 25
+Taxa_Entrega_Absoluta   Node: 6 Satisfeitos: 19 Interesses: 25
+Taxa_Entrega_Absoluta   Node: 3 Satisfeitos: 19 Interesses: 25
+Taxa_Entrega_Absoluta   Node: 2 Satisfeitos: 19 Interesses: 25
+Taxa_Entrega_Absoluta   Node: 6 Satisfeitos: 19 Interesses: 25
+Taxa_Entrega_Absoluta   Node: 9 Satisfeitos: 19 Interesses: 25
+Taxa_Entrega_Absoluta   Node: 12 Satisfeitos: 19 Interesses: 25
+Taxa_Entrega_Absoluta   Node: 2 Satisfeitos: 19 Interesses: 25
+Taxa_Entrega_Absoluta   Node: 3 Satisfeitos: 19 Interesses: 25
+Taxa_Entrega_Absoluta   Node: 6 Satisfeitos: 19 Interesses: 25
+Taxa_Entrega_Absoluta   Node: 9 Satisfeitos: 19 Interesses: 25
+Taxa_Entrega_Absoluta   Node: 12 Satisfeitos: 19 Interesses: 25
+Taxa_Entrega_Absoluta   Node: 2 Satisfeitos: 19 Interesses: 25
+Taxa_Entrega_Absoluta   Node: 3 Satisfeitos: 19 Interesses: 25
+Taxa_Entrega_Absoluta   Node: 6 Satisfeitos: 19 Interesses: 25
+Taxa_Entrega_Absoluta   Node: 9 Satisfeitos: 19 Interesses: 25
+Taxa_Entrega_Absoluta   Node: 12 Satisfeitos: 19 Interesses: 25
+Taxa_Entrega_Absoluta   Node: 12 Satisfeitos: 19 Interesses: 25
+Taxa_Entrega_Absoluta   Node: 9 Satisfeitos: 19 Interesses: 25
+Taxa_Entrega_Absoluta   Node: 6 Satisfeitos: 19 Interesses: 25
+Taxa_Entrega_Absoluta   Node: 2 Satisfeitos: 19 Interesses: 25
+Taxa_Entrega_Absoluta   Node: 2 Satisfeitos: 20 Interesses: 25
+Taxa_Entrega_Absoluta   Node: 3 Satisfeitos: 20 Interesses: 25
+Taxa_Entrega_Absoluta   Node: 6 Satisfeitos: 20 Interesses: 25
+Taxa_Entrega_Absoluta   Node: 9 Satisfeitos: 20 Interesses: 25
+Taxa_Entrega_Absoluta   Node: 2 Satisfeitos: 20 Interesses: 25
+Taxa_Entrega_Absoluta   Node: 3 Satisfeitos: 20 Interesses: 25
+Taxa_Entrega_Absoluta   Node: 6 Satisfeitos: 20 Interesses: 25
+Taxa_Entrega_Absoluta   Node: 12 Satisfeitos: 19 Interesses: 25
+Taxa_Entrega_Absoluta   Node: 9 Satisfeitos: 20 Interesses: 25
+Taxa_Entrega_Absoluta   Node: 12 Satisfeitos: 20 Interesses: 25
+Taxa_Entrega_Absoluta   Node: 2 Satisfeitos: 20 Interesses: 25
+Taxa_Entrega_Absoluta   Node: 3 Satisfeitos: 20 Interesses: 25
+Taxa_Entrega_Absoluta   Node: 6 Satisfeitos: 20 Interesses: 25
+Taxa_Entrega_Absoluta   Node: 9 Satisfeitos: 20 Interesses: 25
+Taxa_Entrega_Absoluta   Node: 12 Satisfeitos: 20 Interesses: 25
+Taxa_Entrega_Absoluta   Node: 2 Satisfeitos: 20 Interesses: 25
+Taxa_Entrega_Absoluta   Node: 3 Satisfeitos: 20 Interesses: 25
+Taxa_Entrega_Absoluta   Node: 6 Satisfeitos: 20 Interesses: 25
+Taxa_Entrega_Absoluta   Node: 9 Satisfeitos: 20 Interesses: 25
+Taxa_Entrega_Absoluta   Node: 12 Satisfeitos: 20 Interesses: 25
+Taxa_Entrega_Absoluta   Node: 12 Satisfeitos: 20 Interesses: 25
+Taxa_Entrega_Absoluta   Node: 9 Satisfeitos: 20 Interesses: 25
+Taxa_Entrega_Absoluta   Node: 6 Satisfeitos: 20 Interesses: 25
+Taxa_Entrega_Absoluta   Node: 3 Satisfeitos: 20 Interesses: 25
+Taxa_Entrega_Absoluta   Node: 2 Satisfeitos: 21 Interesses: 25
+Taxa_Entrega_Absoluta   Node: 3 Satisfeitos: 21 Interesses: 25
+Taxa_Entrega_Absoluta   Node: 6 Satisfeitos: 21 Interesses: 25
+Taxa_Entrega_Absoluta   Node: 9 Satisfeitos: 21 Interesses: 25
+Taxa_Entrega_Absoluta   Node: 2 Satisfeitos: 21 Interesses: 25
+Taxa_Entrega_Absoluta   Node: 3 Satisfeitos: 21 Interesses: 25
+Taxa_Entrega_Absoluta   Node: 6 Satisfeitos: 21 Interesses: 25
+Taxa_Entrega_Absoluta   Node: 9 Satisfeitos: 21 Interesses: 25
+Taxa_Entrega_Absoluta   Node: 12 Satisfeitos: 21 Interesses: 25
+Taxa_Entrega_Absoluta   Node: 2 Satisfeitos: 21 Interesses: 25
+Taxa_Entrega_Absoluta   Node: 3 Satisfeitos: 21 Interesses: 25
+Taxa_Entrega_Absoluta   Node: 6 Satisfeitos: 21 Interesses: 25
+Taxa_Entrega_Absoluta   Node: 9 Satisfeitos: 21 Interesses: 25
+Taxa_Entrega_Absoluta   Node: 12 Satisfeitos: 21 Interesses: 25
+Taxa_Entrega_Absoluta   Node: 2 Satisfeitos: 21 Interesses: 26
+Taxa_Entrega_Absoluta   Node: 3 Satisfeitos: 21 Interesses: 26
+Taxa_Entrega_Absoluta   Node: 6 Satisfeitos: 21 Interesses: 26
+Taxa_Entrega_Absoluta   Node: 9 Satisfeitos: 21 Interesses: 26
+Taxa_Entrega_Absoluta   Node: 12 Satisfeitos: 21 Interesses: 26
+Taxa_Entrega_Absoluta   Node: 2 Satisfeitos: 21 Interesses: 27
+Taxa_Entrega_Absoluta   Node: 3 Satisfeitos: 21 Interesses: 27
+Taxa_Entrega_Absoluta   Node: 6 Satisfeitos: 21 Interesses: 27
+Taxa_Entrega_Absoluta   Node: 9 Satisfeitos: 21 Interesses: 27
+Taxa_Entrega_Absoluta   Node: 12 Satisfeitos: 21 Interesses: 27
+Taxa_Entrega_Absoluta   Node: 2 Satisfeitos: 21 Interesses: 28
+Taxa_Entrega_Absoluta   Node: 3 Satisfeitos: 21 Interesses: 28
+Taxa_Entrega_Absoluta   Node: 6 Satisfeitos: 21 Interesses: 28
+Taxa_Entrega_Absoluta   Node: 9 Satisfeitos: 21 Interesses: 28
+Taxa_Entrega_Absoluta   Node: 12 Satisfeitos: 21 Interesses: 28
+Taxa_Entrega_Absoluta   Node: 2 Satisfeitos: 21 Interesses: 29
+Taxa_Entrega_Absoluta   Node: 3 Satisfeitos: 21 Interesses: 29
+Taxa_Entrega_Absoluta   Node: 6 Satisfeitos: 21 Interesses: 29
+Taxa_Entrega_Absoluta   Node: 9 Satisfeitos: 21 Interesses: 29
+Taxa_Entrega_Absoluta   Node: 12 Satisfeitos: 21 Interesses: 29
+Taxa_Entrega_Absoluta   Node: 6 Satisfeitos: 21 Interesses: 29
+Taxa_Entrega_Absoluta   Node: 3 Satisfeitos: 21 Interesses: 29
+Taxa_Entrega_Absoluta   Node: 2 Satisfeitos: 21 Interesses: 29
+Taxa_Entrega_Absoluta   Node: 9 Satisfeitos: 21 Interesses: 29
+Taxa_Entrega_Absoluta   Node: 12 Satisfeitos: 21 Interesses: 29
+Taxa_Entrega_Absoluta   Node: 12 Satisfeitos: 21 Interesses: 29
+Taxa_Entrega_Absoluta   Node: 9 Satisfeitos: 21 Interesses: 29
+Taxa_Entrega_Absoluta   Node: 6 Satisfeitos: 21 Interesses: 29
+Taxa_Entrega_Absoluta   Node: 12 Satisfeitos: 21 Interesses: 29
+Taxa_Entrega_Absoluta   Node: 9 Satisfeitos: 21 Interesses: 29
+Taxa_Entrega_Absoluta   Node: 6 Satisfeitos: 21 Interesses: 29
+Taxa_Entrega_Absoluta   Node: 2 Satisfeitos: 21 Interesses: 29
+Taxa_Entrega_Absoluta   Node: 2 Satisfeitos: 22 Interesses: 29
+Taxa_Entrega_Absoluta   Node: 3 Satisfeitos: 22 Interesses: 29
+Taxa_Entrega_Absoluta   Node: 9 Satisfeitos: 22 Interesses: 29
+Taxa_Entrega_Absoluta   Node: 12 Satisfeitos: 22 Interesses: 29
+Taxa_Entrega_Absoluta   Node: 12 Satisfeitos: 22 Interesses: 29
+Taxa_Entrega_Absoluta   Node: 6 Satisfeitos: 21 Interesses: 29
+Taxa_Entrega_Absoluta   Node: 2 Satisfeitos: 22 Interesses: 29
+Taxa_Entrega_Absoluta   Node: 3 Satisfeitos: 22 Interesses: 29
+Taxa_Entrega_Absoluta   Node: 6 Satisfeitos: 21 Interesses: 29
+Taxa_Entrega_Absoluta   Node: 9 Satisfeitos: 22 Interesses: 29
+Taxa_Entrega_Absoluta   Node: 6 Satisfeitos: 22 Interesses: 29
+Taxa_Entrega_Absoluta   Node: 2 Satisfeitos: 22 Interesses: 29
+Taxa_Entrega_Absoluta   Node: 3 Satisfeitos: 22 Interesses: 29
+Taxa_Entrega_Absoluta   Node: 6 Satisfeitos: 22 Interesses: 29
+Taxa_Entrega_Absoluta   Node: 9 Satisfeitos: 22 Interesses: 29
+Taxa_Entrega_Absoluta   Node: 12 Satisfeitos: 22 Interesses: 29
+Taxa_Entrega_Absoluta   Node: 12 Satisfeitos: 22 Interesses: 29
+Taxa_Entrega_Absoluta   Node: 9 Satisfeitos: 22 Interesses: 29
+Taxa_Entrega_Absoluta   Node: 6 Satisfeitos: 22 Interesses: 29
+Taxa_Entrega_Absoluta   Node: 3 Satisfeitos: 22 Interesses: 29
+Taxa_Entrega_Absoluta   Node: 2 Satisfeitos: 22 Interesses: 29
+Taxa_Entrega_Absoluta   Node: 12 Satisfeitos: 22 Interesses: 29
+Taxa_Entrega_Absoluta   Node: 2 Satisfeitos: 23 Interesses: 29
+Taxa_Entrega_Absoluta   Node: 3 Satisfeitos: 23 Interesses: 29
+Taxa_Entrega_Absoluta   Node: 6 Satisfeitos: 23 Interesses: 29
+Taxa_Entrega_Absoluta   Node: 12 Satisfeitos: 23 Interesses: 29
+Taxa_Entrega_Absoluta   Node: 9 Satisfeitos: 23 Interesses: 29
+Taxa_Entrega_Absoluta   Node: 12 Satisfeitos: 23 Interesses: 29
+Taxa_Entrega_Absoluta   Node: 6 Satisfeitos: 23 Interesses: 29
+Taxa_Entrega_Absoluta   Node: 6 Satisfeitos: 23 Interesses: 29
+Taxa_Entrega_Absoluta   Node: 3 Satisfeitos: 23 Interesses: 29
+Taxa_Entrega_Absoluta   Node: 2 Satisfeitos: 23 Interesses: 29
+Taxa_Entrega_Absoluta   Node: 9 Satisfeitos: 23 Interesses: 29
+Taxa_Entrega_Absoluta   Node: 12 Satisfeitos: 23 Interesses: 29
+Taxa_Entrega_Absoluta   Node: 12 Satisfeitos: 23 Interesses: 29
+Taxa_Entrega_Absoluta   Node: 2 Satisfeitos: 23 Interesses: 29
+Taxa_Entrega_Absoluta   Node: 3 Satisfeitos: 23 Interesses: 29
+Taxa_Entrega_Absoluta   Node: 6 Satisfeitos: 23 Interesses: 29
+Taxa_Entrega_Absoluta   Node: 9 Satisfeitos: 23 Interesses: 29
+Taxa_Entrega_Absoluta   Node: 12 Satisfeitos: 23 Interesses: 29
+Taxa_Entrega_Absoluta   Node: 6 Satisfeitos: 23 Interesses: 29
+Taxa_Entrega_Absoluta   Node: 3 Satisfeitos: 23 Interesses: 29
+Taxa_Entrega_Absoluta   Node: 2 Satisfeitos: 23 Interesses: 29
+Taxa_Entrega_Absoluta   Node: 9 Satisfeitos: 23 Interesses: 29
+Taxa_Entrega_Absoluta   Node: 12 Satisfeitos: 23 Interesses: 29
+Taxa_Entrega_Absoluta   Node: 2 Satisfeitos: 24 Interesses: 29
+Taxa_Entrega_Absoluta   Node: 6 Satisfeitos: 24 Interesses: 29
+Taxa_Entrega_Absoluta   Node: 9 Satisfeitos: 24 Interesses: 29
+Taxa_Entrega_Absoluta   Node: 12 Satisfeitos: 24 Interesses: 29
+Taxa_Entrega_Absoluta   Node: 12 Satisfeitos: 24 Interesses: 29
+Taxa_Entrega_Absoluta   Node: 9 Satisfeitos: 24 Interesses: 29
+Taxa_Entrega_Absoluta   Node: 6 Satisfeitos: 24 Interesses: 29
+Taxa_Entrega_Absoluta   Node: 3 Satisfeitos: 23 Interesses: 29
+Taxa_Entrega_Absoluta   Node: 2 Satisfeitos: 24 Interesses: 29
+Taxa_Entrega_Absoluta   Node: 3 Satisfeitos: 24 Interesses: 29
+Taxa_Entrega_Absoluta   Node: 12 Satisfeitos: 24 Interesses: 29
+Taxa_Entrega_Absoluta   Node: 9 Satisfeitos: 24 Interesses: 29
+Taxa_Entrega_Absoluta   Node: 6 Satisfeitos: 24 Interesses: 29
+Taxa_Entrega_Absoluta   Node: 2 Satisfeitos: 24 Interesses: 29
+Taxa_Entrega_Absoluta   Node: 2 Satisfeitos: 24 Interesses: 29
+Taxa_Entrega_Absoluta   Node: 3 Satisfeitos: 24 Interesses: 29
+Taxa_Entrega_Absoluta   Node: 6 Satisfeitos: 24 Interesses: 29
+Taxa_Entrega_Absoluta   Node: 9 Satisfeitos: 24 Interesses: 29
+Taxa_Entrega_Absoluta   Node: 12 Satisfeitos: 24 Interesses: 29
+Taxa_Entrega_Absoluta   Node: 2 Satisfeitos: 24 Interesses: 29
+Taxa_Entrega_Absoluta   Node: 3 Satisfeitos: 24 Interesses: 29
+Taxa_Entrega_Absoluta   Node: 6 Satisfeitos: 24 Interesses: 29
+Taxa_Entrega_Absoluta   Node: 9 Satisfeitos: 24 Interesses: 29
+Taxa_Entrega_Absoluta   Node: 12 Satisfeitos: 24 Interesses: 29
+Taxa_Entrega_Absoluta   Node: 2 Satisfeitos: 24 Interesses: 29
+Taxa_Entrega_Absoluta   Node: 3 Satisfeitos: 24 Interesses: 29
+Taxa_Entrega_Absoluta   Node: 6 Satisfeitos: 24 Interesses: 29
+Taxa_Entrega_Absoluta   Node: 9 Satisfeitos: 24 Interesses: 29
+Taxa_Entrega_Absoluta   Node: 12 Satisfeitos: 24 Interesses: 29
+Taxa_Entrega_Absoluta   Node: 2 Satisfeitos: 24 Interesses: 29
+Taxa_Entrega_Absoluta   Node: 3 Satisfeitos: 24 Interesses: 29
+Taxa_Entrega_Absoluta   Node: 6 Satisfeitos: 24 Interesses: 29
+Taxa_Entrega_Absoluta   Node: 9 Satisfeitos: 24 Interesses: 29
+Taxa_Entrega_Absoluta   Node: 12 Satisfeitos: 24 Interesses: 29
+Taxa_Entrega_Absoluta   Node: 2 Satisfeitos: 24 Interesses: 30
+Taxa_Entrega_Absoluta   Node: 3 Satisfeitos: 24 Interesses: 30
+Taxa_Entrega_Absoluta   Node: 6 Satisfeitos: 24 Interesses: 30
+Taxa_Entrega_Absoluta   Node: 9 Satisfeitos: 24 Interesses: 30
+Taxa_Entrega_Absoluta   Node: 12 Satisfeitos: 24 Interesses: 30
+Taxa_Entrega_Absoluta   Node: 2 Satisfeitos: 24 Interesses: 31
+Taxa_Entrega_Absoluta   Node: 3 Satisfeitos: 24 Interesses: 31
+Taxa_Entrega_Absoluta   Node: 6 Satisfeitos: 24 Interesses: 31
+Taxa_Entrega_Absoluta   Node: 9 Satisfeitos: 24 Interesses: 31
+Taxa_Entrega_Absoluta   Node: 12 Satisfeitos: 24 Interesses: 31
+Taxa_Entrega_Absoluta   Node: 2 Satisfeitos: 24 Interesses: 32
+Taxa_Entrega_Absoluta   Node: 3 Satisfeitos: 24 Interesses: 32
+Taxa_Entrega_Absoluta   Node: 6 Satisfeitos: 24 Interesses: 32
+Taxa_Entrega_Absoluta   Node: 9 Satisfeitos: 24 Interesses: 32
+Taxa_Entrega_Absoluta   Node: 12 Satisfeitos: 24 Interesses: 32
+Taxa_Entrega_Absoluta   Node: 2 Satisfeitos: 24 Interesses: 33
+Taxa_Entrega_Absoluta   Node: 3 Satisfeitos: 24 Interesses: 33
+Taxa_Entrega_Absoluta   Node: 6 Satisfeitos: 24 Interesses: 33
+Taxa_Entrega_Absoluta   Node: 9 Satisfeitos: 24 Interesses: 33
+Taxa_Entrega_Absoluta   Node: 12 Satisfeitos: 24 Interesses: 33
+Taxa_Entrega_Absoluta   Node: 2 Satisfeitos: 24 Interesses: 34
+Taxa_Entrega_Absoluta   Node: 3 Satisfeitos: 24 Interesses: 34
+Taxa_Entrega_Absoluta   Node: 6 Satisfeitos: 24 Interesses: 34
+Taxa_Entrega_Absoluta   Node: 9 Satisfeitos: 24 Interesses: 34
+Taxa_Entrega_Absoluta   Node: 12 Satisfeitos: 24 Interesses: 34
+Taxa_Entrega_Absoluta   Node: 2 Satisfeitos: 24 Interesses: 35
+Taxa_Entrega_Absoluta   Node: 3 Satisfeitos: 24 Interesses: 35
+Taxa_Entrega_Absoluta   Node: 6 Satisfeitos: 24 Interesses: 35
+Taxa_Entrega_Absoluta   Node: 9 Satisfeitos: 24 Interesses: 35
+Taxa_Entrega_Absoluta   Node: 12 Satisfeitos: 24 Interesses: 35
+Taxa_Entrega_Absoluta   Node: 2 Satisfeitos: 24 Interesses: 36
+Taxa_Entrega_Absoluta   Node: 3 Satisfeitos: 24 Interesses: 36
+Taxa_Entrega_Absoluta   Node: 6 Satisfeitos: 24 Interesses: 36
+Taxa_Entrega_Absoluta   Node: 9 Satisfeitos: 24 Interesses: 36
+Taxa_Entrega_Absoluta   Node: 12 Satisfeitos: 24 Interesses: 36
+Taxa_Entrega_Absoluta   Node: 2 Satisfeitos: 24 Interesses: 37
+Taxa_Entrega_Absoluta   Node: 3 Satisfeitos: 24 Interesses: 37
+Taxa_Entrega_Absoluta   Node: 6 Satisfeitos: 24 Interesses: 37
+Taxa_Entrega_Absoluta   Node: 9 Satisfeitos: 24 Interesses: 37
+Taxa_Entrega_Absoluta   Node: 12 Satisfeitos: 24 Interesses: 37
+Taxa_Entrega_Absoluta   Node: 2 Satisfeitos: 24 Interesses: 38
+Taxa_Entrega_Absoluta   Node: 3 Satisfeitos: 24 Interesses: 38
+Taxa_Entrega_Absoluta   Node: 6 Satisfeitos: 24 Interesses: 38
+Taxa_Entrega_Absoluta   Node: 9 Satisfeitos: 24 Interesses: 38
+Taxa_Entrega_Absoluta   Node: 12 Satisfeitos: 24 Interesses: 38
+Taxa_Entrega_Absoluta   Node: 2 Satisfeitos: 24 Interesses: 39
+Taxa_Entrega_Absoluta   Node: 3 Satisfeitos: 24 Interesses: 39
+Taxa_Entrega_Absoluta   Node: 6 Satisfeitos: 24 Interesses: 39
+Taxa_Entrega_Absoluta   Node: 9 Satisfeitos: 24 Interesses: 39
+Taxa_Entrega_Absoluta   Node: 12 Satisfeitos: 24 Interesses: 39
+Taxa_Entrega_Absoluta   Node: 12 Satisfeitos: 24 Interesses: 39
+Taxa_Entrega_Absoluta   Node: 9 Satisfeitos: 24 Interesses: 39
+Taxa_Entrega_Absoluta   Node: 6 Satisfeitos: 24 Interesses: 39
+Taxa_Entrega_Absoluta   Node: 2 Satisfeitos: 24 Interesses: 39
+Taxa_Entrega_Absoluta   Node: 12 Satisfeitos: 24 Interesses: 39
+Taxa_Entrega_Absoluta   Node: 2 Satisfeitos: 25 Interesses: 39
+Taxa_Entrega_Absoluta   Node: 3 Satisfeitos: 25 Interesses: 39
+Taxa_Entrega_Absoluta   Node: 6 Satisfeitos: 25 Interesses: 39
+Taxa_Entrega_Absoluta   Node: 9 Satisfeitos: 24 Interesses: 39
+Taxa_Entrega_Absoluta   Node: 2 Satisfeitos: 25 Interesses: 39
+Taxa_Entrega_Absoluta   Node: 3 Satisfeitos: 25 Interesses: 39
+Taxa_Entrega_Absoluta   Node: 6 Satisfeitos: 25 Interesses: 39
+Taxa_Entrega_Absoluta   Node: 12 Satisfeitos: 24 Interesses: 39
+Taxa_Entrega_Absoluta   Node: 9 Satisfeitos: 24 Interesses: 39
+Taxa_Entrega_Absoluta   Node: 9 Satisfeitos: 25 Interesses: 39
+Taxa_Entrega_Absoluta   Node: 12 Satisfeitos: 25 Interesses: 39
+Taxa_Entrega_Absoluta   Node: 2 Satisfeitos: 25 Interesses: 39
+Taxa_Entrega_Absoluta   Node: 3 Satisfeitos: 25 Interesses: 39
+Taxa_Entrega_Absoluta   Node: 6 Satisfeitos: 25 Interesses: 39
+Taxa_Entrega_Absoluta   Node: 9 Satisfeitos: 25 Interesses: 39
+Taxa_Entrega_Absoluta   Node: 12 Satisfeitos: 25 Interesses: 39
+Taxa_Entrega_Absoluta   Node: 2 Satisfeitos: 25 Interesses: 39
+Taxa_Entrega_Absoluta   Node: 3 Satisfeitos: 25 Interesses: 39
+Taxa_Entrega_Absoluta   Node: 6 Satisfeitos: 25 Interesses: 39
+Taxa_Entrega_Absoluta   Node: 9 Satisfeitos: 25 Interesses: 39
+Taxa_Entrega_Absoluta   Node: 12 Satisfeitos: 25 Interesses: 39
+Taxa_Entrega_Absoluta   Node: 2 Satisfeitos: 25 Interesses: 39
+Taxa_Entrega_Absoluta   Node: 3 Satisfeitos: 25 Interesses: 39
+Taxa_Entrega_Absoluta   Node: 6 Satisfeitos: 25 Interesses: 39
+Taxa_Entrega_Absoluta   Node: 9 Satisfeitos: 25 Interesses: 39
+Taxa_Entrega_Absoluta   Node: 12 Satisfeitos: 25 Interesses: 39
+Taxa_Entrega_Absoluta   Node: 9 Satisfeitos: 25 Interesses: 39
+Taxa_Entrega_Absoluta   Node: 6 Satisfeitos: 25 Interesses: 39
+Taxa_Entrega_Absoluta   Node: 12 Satisfeitos: 25 Interesses: 39
+Taxa_Entrega_Absoluta   Node: 3 Satisfeitos: 25 Interesses: 39
+Taxa_Entrega_Absoluta   Node: 2 Satisfeitos: 25 Interesses: 39
+Taxa_Entrega_Absoluta   Node: 2 Satisfeitos: 26 Interesses: 39
+Taxa_Entrega_Absoluta   Node: 3 Satisfeitos: 26 Interesses: 39
+Taxa_Entrega_Absoluta   Node: 6 Satisfeitos: 26 Interesses: 39
+Taxa_Entrega_Absoluta   Node: 12 Satisfeitos: 26 Interesses: 39
+Taxa_Entrega_Absoluta   Node: 12 Satisfeitos: 26 Interesses: 39
+Taxa_Entrega_Absoluta   Node: 9 Satisfeitos: 25 Interesses: 39
+Taxa_Entrega_Absoluta   Node: 6 Satisfeitos: 26 Interesses: 39
+Taxa_Entrega_Absoluta   Node: 12 Satisfeitos: 26 Interesses: 39
+Taxa_Entrega_Absoluta   Node: 9 Satisfeitos: 26 Interesses: 39
+Taxa_Entrega_Absoluta   Node: 2 Satisfeitos: 26 Interesses: 39
+Taxa_Entrega_Absoluta   Node: 3 Satisfeitos: 26 Interesses: 39
+Taxa_Entrega_Absoluta   Node: 6 Satisfeitos: 26 Interesses: 39
+Taxa_Entrega_Absoluta   Node: 9 Satisfeitos: 26 Interesses: 39
+Taxa_Entrega_Absoluta   Node: 12 Satisfeitos: 26 Interesses: 39
+Taxa_Entrega_Absoluta   Node: 2 Satisfeitos: 26 Interesses: 39
+Taxa_Entrega_Absoluta   Node: 3 Satisfeitos: 26 Interesses: 39
+Taxa_Entrega_Absoluta   Node: 6 Satisfeitos: 26 Interesses: 39
+Taxa_Entrega_Absoluta   Node: 9 Satisfeitos: 26 Interesses: 39
+Taxa_Entrega_Absoluta   Node: 12 Satisfeitos: 26 Interesses: 39
+Taxa_Entrega_Absoluta   Node: 2 Satisfeitos: 26 Interesses: 39
+Taxa_Entrega_Absoluta   Node: 3 Satisfeitos: 26 Interesses: 39
+Taxa_Entrega_Absoluta   Node: 6 Satisfeitos: 26 Interesses: 39
+Taxa_Entrega_Absoluta   Node: 9 Satisfeitos: 26 Interesses: 39
+Taxa_Entrega_Absoluta   Node: 12 Satisfeitos: 26 Interesses: 39
+Taxa_Entrega_Absoluta   Node: 2 Satisfeitos: 26 Interesses: 39
+Taxa_Entrega_Absoluta   Node: 3 Satisfeitos: 26 Interesses: 39
+Taxa_Entrega_Absoluta   Node: 6 Satisfeitos: 26 Interesses: 39
+Taxa_Entrega_Absoluta   Node: 9 Satisfeitos: 26 Interesses: 39
+Taxa_Entrega_Absoluta   Node: 12 Satisfeitos: 26 Interesses: 39
+Taxa_Entrega_Absoluta   Node: 12 Satisfeitos: 26 Interesses: 39
+Taxa_Entrega_Absoluta   Node: 9 Satisfeitos: 26 Interesses: 39
+Taxa_Entrega_Absoluta   Node: 6 Satisfeitos: 26 Interesses: 39
+Taxa_Entrega_Absoluta   Node: 3 Satisfeitos: 26 Interesses: 39
+Taxa_Entrega_Absoluta   Node: 9 Satisfeitos: 26 Interesses: 39
+Taxa_Entrega_Absoluta   Node: 6 Satisfeitos: 26 Interesses: 39
+Taxa_Entrega_Absoluta   Node: 12 Satisfeitos: 26 Interesses: 39
+Taxa_Entrega_Absoluta   Node: 3 Satisfeitos: 26 Interesses: 39
+Taxa_Entrega_Absoluta   Node: 2 Satisfeitos: 26 Interesses: 39
+Taxa_Entrega_Absoluta   Node: 12 Satisfeitos: 26 Interesses: 39
+Taxa_Entrega_Absoluta   Node: 2 Satisfeitos: 27 Interesses: 39
+Taxa_Entrega_Absoluta   Node: 3 Satisfeitos: 27 Interesses: 39
+Taxa_Entrega_Absoluta   Node: 9 Satisfeitos: 27 Interesses: 39
+Taxa_Entrega_Absoluta   Node: 12 Satisfeitos: 27 Interesses: 39
+Taxa_Entrega_Absoluta   Node: 6 Satisfeitos: 27 Interesses: 39
+Taxa_Entrega_Absoluta   Node: 2 Satisfeitos: 27 Interesses: 39
+Taxa_Entrega_Absoluta   Node: 3 Satisfeitos: 27 Interesses: 39
+Taxa_Entrega_Absoluta   Node: 6 Satisfeitos: 27 Interesses: 39
+Taxa_Entrega_Absoluta   Node: 9 Satisfeitos: 27 Interesses: 39
+Taxa_Entrega_Absoluta   Node: 2 Satisfeitos: 27 Interesses: 39
+Taxa_Entrega_Absoluta   Node: 3 Satisfeitos: 27 Interesses: 39
+Taxa_Entrega_Absoluta   Node: 6 Satisfeitos: 27 Interesses: 39
+Taxa_Entrega_Absoluta   Node: 9 Satisfeitos: 27 Interesses: 39
+Taxa_Entrega_Absoluta   Node: 12 Satisfeitos: 27 Interesses: 39
+Taxa_Entrega_Absoluta   Node: 2 Satisfeitos: 27 Interesses: 39
+Taxa_Entrega_Absoluta   Node: 3 Satisfeitos: 27 Interesses: 39
+Taxa_Entrega_Absoluta   Node: 6 Satisfeitos: 27 Interesses: 39
+Taxa_Entrega_Absoluta   Node: 9 Satisfeitos: 27 Interesses: 39
+Taxa_Entrega_Absoluta   Node: 12 Satisfeitos: 27 Interesses: 39
+Taxa_Entrega_Absoluta   Node: 2 Satisfeitos: 27 Interesses: 39
+Taxa_Entrega_Absoluta   Node: 3 Satisfeitos: 27 Interesses: 39
+Taxa_Entrega_Absoluta   Node: 6 Satisfeitos: 27 Interesses: 39
+Taxa_Entrega_Absoluta   Node: 9 Satisfeitos: 27 Interesses: 39
+Taxa_Entrega_Absoluta   Node: 12 Satisfeitos: 27 Interesses: 39
+Taxa_Entrega_Absoluta   Node: 9 Satisfeitos: 27 Interesses: 39
+Taxa_Entrega_Absoluta   Node: 12 Satisfeitos: 27 Interesses: 39
+Taxa_Entrega_Absoluta   Node: 6 Satisfeitos: 27 Interesses: 39
+Taxa_Entrega_Absoluta   Node: 3 Satisfeitos: 27 Interesses: 39
+Taxa_Entrega_Absoluta   Node: 3 Satisfeitos: 27 Interesses: 39
+Taxa_Entrega_Absoluta   Node: 2 Satisfeitos: 28 Interesses: 39
+Taxa_Entrega_Absoluta   Node: 3 Satisfeitos: 28 Interesses: 39
+Taxa_Entrega_Absoluta   Node: 6 Satisfeitos: 28 Interesses: 39
+Taxa_Entrega_Absoluta   Node: 9 Satisfeitos: 28 Interesses: 39
+Taxa_Entrega_Absoluta   Node: 12 Satisfeitos: 27 Interesses: 39
+Taxa_Entrega_Absoluta   Node: 9 Satisfeitos: 28 Interesses: 39
+Taxa_Entrega_Absoluta   Node: 6 Satisfeitos: 28 Interesses: 39
+Taxa_Entrega_Absoluta   Node: 3 Satisfeitos: 28 Interesses: 39
+Taxa_Entrega_Absoluta   Node: 3 Satisfeitos: 28 Interesses: 39
+Taxa_Entrega_Absoluta   Node: 2 Satisfeitos: 28 Interesses: 39
+Taxa_Entrega_Absoluta   Node: 6 Satisfeitos: 28 Interesses: 39
+Taxa_Entrega_Absoluta   Node: 9 Satisfeitos: 28 Interesses: 39
+Taxa_Entrega_Absoluta   Node: 12 Satisfeitos: 28 Interesses: 39
+Taxa_Entrega_Absoluta   Node: 2 Satisfeitos: 28 Interesses: 39
+Taxa_Entrega_Absoluta   Node: 3 Satisfeitos: 28 Interesses: 39
+Taxa_Entrega_Absoluta   Node: 6 Satisfeitos: 28 Interesses: 39
+Taxa_Entrega_Absoluta   Node: 9 Satisfeitos: 28 Interesses: 39
+Taxa_Entrega_Absoluta   Node: 12 Satisfeitos: 28 Interesses: 39
+Taxa_Entrega_Absoluta   Node: 2 Satisfeitos: 28 Interesses: 39
+Taxa_Entrega_Absoluta   Node: 3 Satisfeitos: 28 Interesses: 39
+Taxa_Entrega_Absoluta   Node: 6 Satisfeitos: 28 Interesses: 39
+Taxa_Entrega_Absoluta   Node: 9 Satisfeitos: 28 Interesses: 39
+Taxa_Entrega_Absoluta   Node: 12 Satisfeitos: 28 Interesses: 39
+Taxa_Entrega_Absoluta   Node: 2 Satisfeitos: 28 Interesses: 39
+Taxa_Entrega_Absoluta   Node: 3 Satisfeitos: 28 Interesses: 39
+Taxa_Entrega_Absoluta   Node: 6 Satisfeitos: 28 Interesses: 39
+Taxa_Entrega_Absoluta   Node: 9 Satisfeitos: 28 Interesses: 39
+Taxa_Entrega_Absoluta   Node: 12 Satisfeitos: 28 Interesses: 39
+Taxa_Entrega_Absoluta   Node: 2 Satisfeitos: 28 Interesses: 39
+Taxa_Entrega_Absoluta   Node: 3 Satisfeitos: 28 Interesses: 39
+Taxa_Entrega_Absoluta   Node: 6 Satisfeitos: 28 Interesses: 39
+Taxa_Entrega_Absoluta   Node: 9 Satisfeitos: 28 Interesses: 39
+Taxa_Entrega_Absoluta   Node: 12 Satisfeitos: 28 Interesses: 39
+Taxa_Entrega_Absoluta   Node: 2 Satisfeitos: 28 Interesses: 39
+Taxa_Entrega_Absoluta   Node: 3 Satisfeitos: 28 Interesses: 39
+Taxa_Entrega_Absoluta   Node: 6 Satisfeitos: 28 Interesses: 39
+Taxa_Entrega_Absoluta   Node: 12 Satisfeitos: 28 Interesses: 39
+Taxa_Entrega_Absoluta   Node: 2 Satisfeitos: 29 Interesses: 39
+Taxa_Entrega_Absoluta   Node: 3 Satisfeitos: 29 Interesses: 39
+Taxa_Entrega_Absoluta   Node: 12 Satisfeitos: 28 Interesses: 39
+Taxa_Entrega_Absoluta   Node: 2 Satisfeitos: 29 Interesses: 39
+Taxa_Entrega_Absoluta   Node: 12 Satisfeitos: 28 Interesses: 39
+Taxa_Entrega_Absoluta   Node: 9 Satisfeitos: 28 Interesses: 39
+Taxa_Entrega_Absoluta   Node: 2 Satisfeitos: 29 Interesses: 39
+Taxa_Entrega_Absoluta   Node: 12 Satisfeitos: 29 Interesses: 39
+Taxa_Entrega_Absoluta   Node: 6 Satisfeitos: 29 Interesses: 39
+Taxa_Entrega_Absoluta   Node: 9 Satisfeitos: 29 Interesses: 39
+Taxa_Entrega_Absoluta   Node: 2 Satisfeitos: 29 Interesses: 40
+Taxa_Entrega_Absoluta   Node: 3 Satisfeitos: 29 Interesses: 40
+Taxa_Entrega_Absoluta   Node: 6 Satisfeitos: 29 Interesses: 40
+Taxa_Entrega_Absoluta   Node: 9 Satisfeitos: 29 Interesses: 40
+Taxa_Entrega_Absoluta   Node: 12 Satisfeitos: 29 Interesses: 40
+Taxa_Entrega_Absoluta   Node: 2 Satisfeitos: 29 Interesses: 40
+Taxa_Entrega_Absoluta   Node: 3 Satisfeitos: 29 Interesses: 40
+Taxa_Entrega_Absoluta   Node: 6 Satisfeitos: 29 Interesses: 40
+Taxa_Entrega_Absoluta   Node: 9 Satisfeitos: 29 Interesses: 40
+Taxa_Entrega_Absoluta   Node: 12 Satisfeitos: 29 Interesses: 40
+Taxa_Entrega_Absoluta   Node: 9 Satisfeitos: 29 Interesses: 40
+Taxa_Entrega_Absoluta   Node: 2 Satisfeitos: 30 Interesses: 40
+Taxa_Entrega_Absoluta   Node: 3 Satisfeitos: 30 Interesses: 40
+Taxa_Entrega_Absoluta   Node: 6 Satisfeitos: 30 Interesses: 40
+Taxa_Entrega_Absoluta   Node: 9 Satisfeitos: 30 Interesses: 40
+Taxa_Entrega_Absoluta   Node: 9 Satisfeitos: 30 Interesses: 40
+Taxa_Entrega_Absoluta   Node: 12 Satisfeitos: 29 Interesses: 40
+Taxa_Entrega_Absoluta   Node: 6 Satisfeitos: 30 Interesses: 40
+Taxa_Entrega_Absoluta   Node: 3 Satisfeitos: 30 Interesses: 40
+Taxa_Entrega_Absoluta   Node: 12 Satisfeitos: 30 Interesses: 40
+Taxa_Entrega_Absoluta   Node: 2 Satisfeitos: 30 Interesses: 40
+Taxa_Entrega_Absoluta   Node: 3 Satisfeitos: 30 Interesses: 40
+Taxa_Entrega_Absoluta   Node: 6 Satisfeitos: 30 Interesses: 40
+Taxa_Entrega_Absoluta   Node: 9 Satisfeitos: 30 Interesses: 40
+Taxa_Entrega_Absoluta   Node: 12 Satisfeitos: 30 Interesses: 40
+Taxa_Entrega_Absoluta   Node: 2 Satisfeitos: 30 Interesses: 40
+Taxa_Entrega_Absoluta   Node: 3 Satisfeitos: 30 Interesses: 40
+Taxa_Entrega_Absoluta   Node: 6 Satisfeitos: 30 Interesses: 40
+Taxa_Entrega_Absoluta   Node: 9 Satisfeitos: 30 Interesses: 40
+Taxa_Entrega_Absoluta   Node: 12 Satisfeitos: 30 Interesses: 40
+Taxa_Entrega_Absoluta   Node: 2 Satisfeitos: 30 Interesses: 40
+Taxa_Entrega_Absoluta   Node: 3 Satisfeitos: 30 Interesses: 40
+Taxa_Entrega_Absoluta   Node: 6 Satisfeitos: 30 Interesses: 40
+Taxa_Entrega_Absoluta   Node: 9 Satisfeitos: 30 Interesses: 40
+Taxa_Entrega_Absoluta   Node: 12 Satisfeitos: 30 Interesses: 40
+Taxa_Entrega_Absoluta   Node: 2 Satisfeitos: 30 Interesses: 40
+Taxa_Entrega_Absoluta   Node: 3 Satisfeitos: 30 Interesses: 40
+Taxa_Entrega_Absoluta   Node: 6 Satisfeitos: 30 Interesses: 40
+Taxa_Entrega_Absoluta   Node: 9 Satisfeitos: 30 Interesses: 40
+Taxa_Entrega_Absoluta   Node: 12 Satisfeitos: 30 Interesses: 40
+Taxa_Entrega_Absoluta   Node: 2 Satisfeitos: 30 Interesses: 40
+Taxa_Entrega_Absoluta   Node: 3 Satisfeitos: 30 Interesses: 40
+Taxa_Entrega_Absoluta   Node: 6 Satisfeitos: 30 Interesses: 40
+Taxa_Entrega_Absoluta   Node: 9 Satisfeitos: 30 Interesses: 40
+Taxa_Entrega_Absoluta   Node: 12 Satisfeitos: 30 Interesses: 40
