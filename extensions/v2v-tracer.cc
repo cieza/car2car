@@ -200,7 +200,7 @@ V2vTracer::DidAddEntry (Ptr<const cs::Entry> csEntry)
 
       double taxa_absoluta = satisfied_data_map.size();
       taxa_absoluta = taxa_absoluta/interest_map.size();
-      cout << "Taxa_Entrega_Absoluta   Node : " << m_node << " Satisfeitos: " << satisfied_data_map.size() << " Interesses: " << interest_map.size() << "\n";
+      cout << "Taxa_Entrega_Absoluta   Node: " << m_node << " Satisfeitos: " << satisfied_data_map.size() << " Interesses: " << interest_map.size()<< "\n";
   }
   
   //cout << "Node: " << m_node << " Num de dados totais: " << data_map.size() << "\n";
@@ -254,7 +254,7 @@ V2vTracer::InInterest (Ptr<const Interest> header, Ptr<const Face> face)
 
       double taxa_absoluta = satisfied_data_map.size();
       taxa_absoluta = taxa_absoluta/interest_map.size();
-      cout << "Taxa_Entrega_Absoluta   Node : " << m_node << " Satisfeitos: " << satisfied_data_map.size() << " Interesses: " << interest_map.size() << "\n";
+      cout << "Taxa_Entrega_Absoluta   Node: " << m_node << " Satisfeitos: " << satisfied_data_map.size() << " Interesses: " << interest_map.size()<< "\n";
   }
   
 }
