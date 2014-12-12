@@ -181,21 +181,21 @@ namespace ns3 {
                 
                 
                 /* ESSE TRECHO ABAIXO DEVE SER COMENTADO PARA DESABILITAR O COMPORTAMENTO PROATIVO*/
-                 if (didCreateCacheEntry)
-                 {
-                 // initiate low priority "pushing" only for "new data packets"
-                 
-                 Ptr<L3Protocol> l3 = this->GetObject<L3Protocol> ();
-                 NS_ASSERT (l3 != 0);
-                 
-                 // Push interest using low-priority send method
-                 for (uint32_t faceId = 0; faceId < l3->GetNFaces (); faceId++)
-                 {
-                 NS_LOG_INFO("Tentando Enviar Conteudo (Nao Solicitado) " << header->GetName().GetComponents());
-                 TrySendLowPriority (l3->GetFace (faceId), origPacket);
-                 }
-                 }
-                 
+                /*if (didCreateCacheEntry)
+                {
+                    // initiate low priority "pushing" only for "new data packets"
+                    
+                    Ptr<L3Protocol> l3 = this->GetObject<L3Protocol> ();
+                    NS_ASSERT (l3 != 0);
+                    
+                    // Push interest using low-priority send method
+                    for (uint32_t faceId = 0; faceId < l3->GetNFaces (); faceId++)
+                    {
+                        NS_LOG_INFO("Tentando Enviar Conteudo (Nao Solicitado) " << header->GetName().GetComponents());
+                        TrySendLowPriority (l3->GetFace (faceId), origPacket);
+                    }
+                }*/
+                
                 
             }
             
