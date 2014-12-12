@@ -1,6 +1,6 @@
 #!/usr/bin/perl
 
-$diretorio = "/home/wallace/elise/resultados";
+$diretorio = "/home/elise/car2car/resultados";
 #$diretorio = "/home/elise/ndnSIM/ns-3/resultados/ndn-no-cache-no-mob-pollution/experimento_1";
 #$diretorio = "/home/elise/ndnSIM/ns-3/resultados/ndn-with-cache-no-mob/experimento_1";
 #$diretorio = "/home/elise/ndnSIM/ns-3/resultados/ndn-with-cache-no-mob-pollution/experimento_1";
@@ -123,7 +123,7 @@ foreach $dir_scenario(@lista)
 }
 
 
-$file_name = "/home/wallace/elise/txentrega.txt";
+$diretorio = "/home/elise/car2car/resultados";
 open ARK, ">".$file_name;
 select ARK;
 $i = 0;
