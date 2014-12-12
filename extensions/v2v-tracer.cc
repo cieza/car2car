@@ -153,7 +153,7 @@ V2vTracer::DidAddEntry (Ptr<const cs::Entry> csEntry)
       {
         satisfied_data_map[csEntry->GetName ().GetLastComponent ()]  = 1;
         delay_map[csEntry->GetName ().GetLastComponent ()]  = (Simulator::Now ().ToDouble (Time::S)) - init_time_map[csEntry->GetName ().GetLastComponent ()];
-        //cout<<"Node: "<<m_node<<" Delay do "<<csEntry->GetName ()<<" : "<<delay_map[csEntry->GetName ().GetLastComponent ()]<<"\n";
+        cout<<"Atraso Node: "<<m_node<<" Delay: "<<delay_map[csEntry->GetName ().GetLastComponent ()]<<"\n";
       }
   }
 
@@ -178,7 +178,7 @@ V2vTracer::DidAddEntry (Ptr<const cs::Entry> csEntry)
        }while(auxEntry != NULL);
        double ocupacao_maliciosa = num_poluidos;
        ocupacao_maliciosa = ocupacao_maliciosa/num_total;
-       //cout<<"Ocupacao Maliciosa: "<<ocupacao_maliciosa<<"\n";
+       cout<<"Ocupacao_Maliciosa  Node: "<<m_node<<"  num_poluidos: "<<num_poluidos<<" num_total: "<<num_total<<"\n";
    }
    else
    {
