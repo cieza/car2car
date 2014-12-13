@@ -221,8 +221,8 @@ V2vTracer::InInterest (Ptr<const Interest> header, Ptr<const Face> face)
   
   //cout << "Node: " << m_node << " Interesse: " << header->GetName () << " SeqNum: " << header->GetName ().GetLastComponent () << " Face: " << face->GetId() << "\n";
   
-  //verifica se a face igual a 1, ou seja, a face da aplicacao
-  if(face->GetId() == 1)
+  //verifica se a face igual a 1, ou seja, a face da aplicacao e se o prefixo e diferente de polluted, so contabiliza se for prefix
+  if(face->GetId() == 1 && (header->GetName ().GetComponents().front().compare("polluted") != 0))
   {
     //verifica se interesse já se encontra no mapa de interesses
     if (interest_map.find(header->GetName ().GetLastComponent ()) != interest_map.end())
