@@ -153,7 +153,7 @@ namespace ns3 {
                 {
                     satisfied_data_map[csEntry->GetName ().GetLastComponent ()]  = 1;
                     delay_map[csEntry->GetName ().GetLastComponent ()]  = (Simulator::Now ().ToDouble (Time::S)) - init_time_map[csEntry->GetName ().GetLastComponent ()];
-                    cout<<"Atraso Node: "<<m_node<<" Delay: "<<delay_map[csEntry->GetName ().GetLastComponent ()]<<"\n";
+                    cout<<"Atraso Node: "<<m_node<<" Delay: "<<delay_map[csEntry->GetName ().GetLastComponent ()]<< " Tempo: " << Simulator::Now ().ToDouble (Time::S)<<"\n";
                 }
             }
             
@@ -178,7 +178,7 @@ namespace ns3 {
                 }while(auxEntry != NULL);
                 double ocupacao_maliciosa = num_poluidos;
                 ocupacao_maliciosa = ocupacao_maliciosa/num_total;
-                cout<<"Ocupacao_Maliciosa  Node: "<<m_node<<"  num_poluidos: "<<num_poluidos<<" num_total: "<<num_total<<"\n";
+                cout<<"Ocupacao_Maliciosa  Node: "<<m_node<<"  num_poluidos: "<<num_poluidos<<" num_total: "<<num_total<< " Tempo: " << Simulator::Now ().ToDouble (Time::S)<<"\n";
             }
             else
             {
@@ -200,7 +200,7 @@ namespace ns3 {
                 
                 double taxa_absoluta = satisfied_data_map.size();
                 taxa_absoluta = taxa_absoluta/interest_map.size();
-                cout << "Taxa_Entrega_Absoluta   Node: " << m_node << " Satisfeitos: " << satisfied_data_map.size() << " Interesses: " << interest_map.size()<< "\n";
+                cout << "Taxa_Entrega_Absoluta   Node: " << m_node << " Satisfeitos: " << satisfied_data_map.size() << " Interesses: " << interest_map.size() << " Tempo: " << Simulator::Now ().ToDouble (Time::S) << "\n";
             }
             
             //cout << "Node: " << m_node << " Num de dados totais: " << data_map.size() << "\n";
@@ -254,7 +254,7 @@ namespace ns3 {
                 
                 double taxa_absoluta = satisfied_data_map.size();
                 taxa_absoluta = taxa_absoluta/interest_map.size();
-                cout << "Taxa_Entrega_Absoluta   Node: " << m_node << " Satisfeitos: " << satisfied_data_map.size() << " Interesses: " << interest_map.size()<< "\n";
+                cout << "Taxa_Entrega_Absoluta   Node: " << m_node << " Satisfeitos: " << satisfied_data_map.size() << " Interesses: " << interest_map.size() << " Tempo: " << Simulator::Now ().ToDouble (Time::S) << "\n";
             }
             
         }
