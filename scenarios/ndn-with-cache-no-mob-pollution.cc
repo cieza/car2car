@@ -283,7 +283,7 @@ main (int argc, char *argv[])
 
   //cout << "Linha 175" << "\n";
 
-  Simulator::Stop (Seconds (10.0));
+  Simulator::Stop (Seconds (180.0));
 
   NS_LOG_INFO ("Starting");
 
