@@ -28,13 +28,6 @@ $sum_satisfied_packet_raw = 0;
 $count = 0;
 @scenarios = ();
 $scenarios[0] = ["Politica","NaoProativo","ProAtivo"];
-
-@scenarios_ocupacao_maliciosa = ();
-$scenarios_ocupacao_maliciosa[0] = ["Politica","NaoProativo","ProAtivo"];
-
-@scenarios_delay = ();
-$scenarios_delay[0] = ["Politica","NaoProativo","ProAtivo"];
-
 $k = 1;
 foreach $dir_scenario(@lista)
 {
@@ -51,8 +44,6 @@ foreach $dir_scenario(@lista)
         
         $i = 1;
         @experimentos = ();
-        @experimentos_ocupacao_maliciosa = ();
-        @experimentos_delays = ();
         foreach $experimento_dir(@experimentos_dirs)
         {
             
@@ -65,12 +56,6 @@ foreach $dir_scenario(@lista)
             $count = 0;
             $satisfeitos = 0;
             $interesses = 0;
-            
-            $soma_num_poluidos = 0;
-            $soma_num_total = 0;
-            
-            $soma_delays = 0;
-            
             foreach $dir_exp(@lista_experimento)
             {
         
@@ -85,12 +70,6 @@ foreach $dir_scenario(@lista)
                     $insatisfiedinterest_packet_raw = 0;
                     %taxas_entrega_satisfeitos = ();
                     %taxas_entrega_interesses = ();
-                    
-                    %ocupacao_num_poluidos = ();
-                    %ocupacao_num_total = ();
-                    
-                    %delays = ();
-                    
                     open ARK, $file_name;
                     foreach(<ARK>)
                     {
@@ -103,15 +82,6 @@ foreach $dir_scenario(@lista)
                             $taxas_entrega_satisfeitos{$linha[2]} = $linha[4];
                             $taxas_entrega_interesses{$linha[2]} = $linha[6];
                             
-                        }
-                        if($linha[0] eq "Ocupacao_Maliciosa")
-                        {
-                            $ocupacao_num_poluidos{$linha[2]} = $linha[4];
-                            $ocupacao_num_total{$linha[2]} = $linha[6];
-                        }
-                        if($linha[0] eq "Atraso")
-                        {
-                            $delays{$linha[2]} = $linha[4];
                         }
 
                     }
@@ -129,31 +99,6 @@ foreach $dir_scenario(@lista)
                     {
                         $interesses = $interesses + $_;
                     }
-                    
-                    
-                    @valores = values %ocupacao_num_poluidos;
-                    
-                    foreach(@valores)
-                    {
-                        $soma_num_poluidos = $soma_num_poluidos + $_;
-                    }
-                    
-                    @valores = values %ocupacao_num_total;
-                    
-                    foreach(@valores)
-                    {
-                        $soma_num_total = $soma_num_total + $_;
-                    }
-                    
-                    @valores = values %delays;
-                    
-                    $soma_aux = 0;
-                    foreach(@valores)
-                    {
-                        $soma_aux = $soma_aux + $_;
-                    }
-                    $soma_aux = $soma_aux/(scalar @valores);
-                    $soma_delays = $soma_delays + $soma_aux;
 
 
         
@@ -165,31 +110,12 @@ foreach $dir_scenario(@lista)
             
             $taxa_entrega = $satisfeitos/$interesses;
             $experimentos[$i] = $taxa_entrega;
-            
-            
-            $media_ocupacao_maliciosa = $soma_num_poluidos/$soma_num_total;
-            $experimentos_ocupacao_maliciosa[$i] = $media_ocupacao_maliciosa;
-            
-            
-            $media_delay = $soma_delays/$count;
-            $experimentos_delays[$i] = $media_delay;
-            
-            
-            
             $i = $i + 1;
         
         }
         
         $experimentos[0] = $dir_scenario;
         $scenarios[$k] = [@experimentos];
-        
-        $experimentos_ocupacao_maliciosa[0] = $dir_scenario;
-        $scenarios_ocupacao_maliciosa[$k] = [@experimentos_ocupacao_maliciosa];
-        
-        $experimentos_delays[0] = $dir_scenario;
-        $scenarios_delay[$k] = [@experimentos_delays];
-        
-        
         $k = $k + 1;
     }
     
@@ -206,6 +132,7 @@ while($i < 3)
     $j = 0;
     while($j < $k)
     {
+        @experimentos = @scenarios[$i];
         print("$scenarios[$j][$i]      \t");
         $j = $j + 1;
     }
@@ -217,52 +144,4 @@ while($i < 3)
 close ARK;
 #medias
 #$x =  $sum_packets/$count;
-$file_name = "/home/elise/car2car/ocupacao.txt";
-open ARK, ">".$file_name;
-select ARK;
-$i = 0;
-while($i < 3)
-{
-    $j = 0;
-    while($j < $k)
-    {
-        print("$scenarios_ocupacao_maliciosa[$j][$i]      \t");
-        $j = $j + 1;
-    }
-    print("\n");
-    $i = $i + 1;
-}
-
-
-close ARK;
-
-
-
-
-
-$file_name = "/home/elise/car2car/atraso.txt";
-open ARK, ">".$file_name;
-select ARK;
-$i = 0;
-while($i < 3)
-{
-    $j = 0;
-    while($j < $k)
-    {
-        print("$scenarios_delay[$j][$i]      \t");
-        $j = $j + 1;
-    }
-    print("\n");
-    $i = $i + 1;
-}
-
-
-close ARK;
-
-
-
-
-
-
-
 

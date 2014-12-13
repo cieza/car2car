@@ -249,7 +249,7 @@ while($i < 3)
     $j = 0;
     while($j < $k)
     {
-        print("$scenarios_delay[$j][$i]      \t");
+        print("$scenarios_delays[$j][$i]      \t");
         $j = $j + 1;
     }
     print("\n");
