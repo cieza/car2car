@@ -212,7 +212,7 @@ main (int argc, char *argv[])
   ndn::StackHelper ndnHelper;
   ndnHelper.AddNetDeviceFaceCreateCallback (WifiNetDevice::GetTypeId (), MakeCallback (V2vNetDeviceFaceCallback));
   ndnHelper.SetForwardingStrategy ("ns3::ndn::fw::V2v");
-  ndnHelper.SetContentStore ("ns3::ndn::cs::Lru", "MaxSize", "50");// size=#seqnumbers
+  ndnHelper.SetContentStore ("ns3::ndn::cs::Lru", "MaxSize", "1000");// size=#seqnumbers
   //ndnHelper.SetContentStore ("ns3::ndn::cs::Nocache");
   ndnHelper.SetDefaultRoutes(true);
   ndnHelper.Install(nodes);
@@ -227,7 +227,7 @@ main (int argc, char *argv[])
   ndn::AppHelper consumerHelper ("ns3::ndn::ConsumerCbr");
   consumerHelper.SetPrefix (prefix);
   consumerHelper.SetAttribute ("Frequency", DoubleValue (10.0));
-  consumerHelper.SetAttribute ("MaxSeq", IntegerValue (50));
+  consumerHelper.SetAttribute ("MaxSeq", IntegerValue (1000));
   consumerHelper.Install (nodes.Get (2));
   consumerHelper.Install (nodes.Get (3));
   consumerHelper.Install (nodes.Get (6));
@@ -283,7 +283,7 @@ main (int argc, char *argv[])
 
   //cout << "Linha 175" << "\n";
 
-  Simulator::Stop (Seconds (180.0));
+  Simulator::Stop (Seconds (10.0));
 
   NS_LOG_INFO ("Starting");
 
