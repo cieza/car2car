@@ -227,6 +227,7 @@ main (int argc, char *argv[])
   ndn::AppHelper consumerHelper ("ns3::ndn::ConsumerCbr");
   consumerHelper.SetPrefix (prefix);
   consumerHelper.SetAttribute ("Frequency", DoubleValue (10.0));
+  consumerHelper.SetAttribute ("Randomize", StringValue ("exponential"));
   consumerHelper.SetAttribute ("MaxSeq", IntegerValue (1000));
   consumerHelper.Install (nodes.Get (2));
   consumerHelper.Install (nodes.Get (3));
