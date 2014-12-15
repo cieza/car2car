@@ -25,7 +25,7 @@ set style histogram clustered
 #set bars front
 
 #plot for [COL=2:5] 'txentrega.tsv' using COL:xticlabels(1) title columnheader
-plot 'txentrega.txt' using 2:xtic(1) title "no-mob-pollution" fill pattern 5, \
-'' using 3 title "with-mob-v2v-pollution" fill pattern 2, \
-'' using 4 title "no-mob" fill pattern 6, \
-'' using 5 title "with-mob-v2v" fill pattern 4
+plot 'txentrega.txt' using 2:xtic(1) title "with-mob-v2v-pollution" fill pattern 5, \
+'' using 3 title "no-mob" fill pattern 2, \
+'' using 4 title "with-mob-v2v" fill pattern 6, \
+'' using 5 title "no-mob-pollution" fill pattern 4

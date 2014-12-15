@@ -3,15 +3,15 @@ reset
 #unset key
 fontsize = 12
 set terminal png size 520,400 enhanced font "Helvetica,13"
-set output "ocupacao.png"
+set output "atraso.png"
 
 # Select histogram data
 set style data histogram
 
 set grid ytics
 set key left top reverse Left
-set ylabel "Ocupação Maliciosa"
-set yrange [0:1]
+set ylabel "Atraso"
+#set yrange [0:1]
 
 # Give the bars a plain fill pattern, and draw a solid line around them.
 #set style fill solid border
@@ -25,7 +25,7 @@ set style histogram clustered
 #set bars front
 
 #plot for [COL=2:5] 'txentrega.tsv' using COL:xticlabels(1) title columnheader
-plot 'ocupacao.txt' using 2:xtic(1) title "with-mob-v2v-pollution" fill pattern 5, \
+plot 'atraso.txt' using 2:xtic(1) title "with-mob-v2v-pollution" fill pattern 5, \
 '' using 3 title "no-mob" fill pattern 2, \
 '' using 4 title "with-mob-v2v" fill pattern 6, \
 '' using 5 title "no-mob-pollution" fill pattern 4
