@@ -132,28 +132,37 @@ namespace ns3 {
             
             //cout << "Node: " << m_node << " Dado: " << csEntry->GetName () << " SeqNum: " << csEntry->GetName ().GetLastComponent () << "\n";
             
-            if (data_map.find(csEntry->GetName ().GetLastComponent ()) != data_map.end())
+           std::string interest_name("");
+           std::list<std::string> components = csEntry->GetName ().GetComponents();
+           std::list<std::string>::const_iterator i;
+           for (i=components.begin(); i!=components.end(); i++)
+           {
+             interest_name = interest_name.append("/");
+             interest_name = interest_name.append(*i);
+           }
+
+            if (data_map.find(interest_name) != data_map.end())
             {
-                int num = data_map[csEntry->GetName ().GetLastComponent ()];
+                int num = data_map[interest_name];
                 num++;
-                data_map[csEntry->GetName ().GetLastComponent ()] = num;   }
+                data_map[interest_name] = num;   }
             else
             {
-                data_map[csEntry->GetName ().GetLastComponent ()]  = 1;
+                data_map[interest_name]  = 1;
             }
             
-            if(interest_map.find(csEntry->GetName ().GetLastComponent ()) != interest_map.end())
+            if(interest_map.find(interest_name) != interest_map.end())
             {
-                if (satisfied_data_map.find(csEntry->GetName ().GetLastComponent ()) != satisfied_data_map.end())
+                if (satisfied_data_map.find(interest_name) != satisfied_data_map.end())
                 {
-                    int num = satisfied_data_map[csEntry->GetName ().GetLastComponent ()];
+                    int num = satisfied_data_map[interest_name];
                     num++;
-                    satisfied_data_map[csEntry->GetName ().GetLastComponent ()] = num;   }
+                    satisfied_data_map[interest_name] = num;   }
                 else
                 {
-                    satisfied_data_map[csEntry->GetName ().GetLastComponent ()]  = 1;
-                    delay_map[csEntry->GetName ().GetLastComponent ()]  = (Simulator::Now ().ToDouble (Time::S)) - init_time_map[csEntry->GetName ().GetLastComponent ()];
-                    cout<<"Atraso Node: "<<m_node<<" Delay: "<<delay_map[csEntry->GetName ().GetLastComponent ()]<< " Tempo: " << Simulator::Now ().ToDouble (Time::S)<<"\n";
+                    satisfied_data_map[interest_name]  = 1;
+                    delay_map[interest_name]  = (Simulator::Now ().ToDouble (Time::S)) - init_time_map[interest_name];
+                    cout<<"Atraso Node: "<<m_node<<" Delay: "<<delay_map[interest_name]<< " Tempo: " << Simulator::Now ().ToDouble (Time::S)<<"\n";
                 }
             }
             
@@ -220,21 +229,33 @@ namespace ns3 {
             << m_node << "\t" << "Incoming interest" << "\t" << header->GetName ().GetLastComponent () << "\n";
             
             //cout << "Node: " << m_node << " Interesse: " << header->GetName () << " SeqNum: " << header->GetName ().GetLastComponent () << " Face: " << face->GetId() << "\n";
+
+        std::string interest_name("");
+           std::list<std::string> components = header->GetName ().GetComponents();
+           std::list<std::string>::const_iterator i;
+           for (i=components.begin(); i!=components.end(); i++)
+           {
+             interest_name = interest_name.append("/");
+             interest_name = interest_name.append(*i);
+           }
+           
+           //cout<<"Nome completo: "<<interest_name<<"\n";
+           //cout<<"Nome completo no original: "<<header->GetName ()<<"\n";
             
             //verifica se a face igual a 1, ou seja, a face da aplicacao e se o prefixo e diferente de polluted, so contabiliza se for prefix
             if(face->GetId() == 1 && (header->GetName ().GetComponents().front().compare("polluted") != 0))
             {
                 //verifica se interesse já se encontra no mapa de interesses
-                if (interest_map.find(header->GetName ().GetLastComponent ()) != interest_map.end())
+                if (interest_map.find(interest_name) != interest_map.end())
                 {
-                    int num = interest_map[header->GetName ().GetLastComponent ()];
+                    int num = interest_map[interest_name];
                     num++;
-                    interest_map[header->GetName ().GetLastComponent ()] = num;
+                    interest_map[interest_name] = num;
                 }
                 else
                 {
-                    interest_map[header->GetName ().GetLastComponent ()]  = 1;
-                    init_time_map[header->GetName ().GetLastComponent ()] = Simulator::Now ().ToDouble (Time::S);
+                    interest_map[interest_name]  = 1;
+                    init_time_map[interest_name] = Simulator::Now ().ToDouble (Time::S);
                 }
             }
             
