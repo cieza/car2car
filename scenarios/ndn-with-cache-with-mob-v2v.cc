@@ -224,36 +224,41 @@ main (int argc, char *argv[])
     
     // Consumer will request /prefix/0, /prefix/1, ...
     
-    /*ndn::AppHelper consumerHelper ("ns3::ndn::ConsumerCbr");
+    ndn::AppHelper consumerHelper ("ns3::ndn::ConsumerCbr");
     consumerHelper.SetPrefix (prefix);
     consumerHelper.SetAttribute ("Frequency", DoubleValue (10.0));
-    consumerHelper.SetAttribute ("Randomize", StringValue ("uniform"))
-    consumerHelper.SetAttribute ("MaxSeq", IntegerValue (1000));;*/
+    //consumerHelper.SetAttribute ("Randomize", StringValue ("uniform"))
+    consumerHelper.SetAttribute ("MaxSeq", IntegerValue (1000));;
+    consumerHelper.Install (nodes.Get (2));
+    consumerHelper.Install (nodes.Get (3));
+    consumerHelper.Install (nodes.Get (6));
+    consumerHelper.Install (nodes.Get (9));
+    consumerHelper.Install (nodes.Get (12));
     
-    ndn::AppHelper consumerHelper1 ("ns3::ndn::ConsumerBatches");
-    consumerHelper1.SetPrefix (prefix);
-    consumerHelper1.SetAttribute ("Batches", StringValue ("1s 1 2s 2 5s 5 10s 2"));
-    consumerHelper1.Install (nodes.Get (2));
-    
-    ndn::AppHelper consumerHelper2 ("ns3::ndn::ConsumerBatches");
-    consumerHelper2.SetPrefix (prefix);
-    consumerHelper2.SetAttribute ("Batches", StringValue ("20s 5 25s 3"));
-    consumerHelper2.Install (nodes.Get (3));
-    
-    ndn::AppHelper consumerHelper3 ("ns3::ndn::ConsumerBatches");
-    consumerHelper3.SetPrefix (prefix);
-    consumerHelper3.SetAttribute ("Batches", StringValue ("30s 7"));
-    consumerHelper3.Install (nodes.Get (6));
-    
-    ndn::AppHelper consumerHelper4 ("ns3::ndn::ConsumerBatches");
-    consumerHelper4.SetPrefix (prefix);
-    consumerHelper4.SetAttribute ("Batches", StringValue ("40s 8 90s 4"));
-    consumerHelper4.Install (nodes.Get (9));
-    
-    ndn::AppHelper consumerHelper5 ("ns3::ndn::ConsumerBatches");
-    consumerHelper5.SetPrefix (prefix);
-    consumerHelper5.SetAttribute ("Batches", StringValue ("50s 10 100s 1"));
-    consumerHelper5.Install (nodes.Get (12));
+    /*ndn::AppHelper consumerHelper1 ("ns3::ndn::ConsumerBatches");
+     consumerHelper1.SetPrefix (prefix);
+     consumerHelper1.SetAttribute ("Batches", StringValue ("1s 1 2s 2 5s 5 10s 2"));
+     consumerHelper1.Install (nodes.Get (2));
+     
+     ndn::AppHelper consumerHelper2 ("ns3::ndn::ConsumerBatches");
+     consumerHelper2.SetPrefix (prefix);
+     consumerHelper2.SetAttribute ("Batches", StringValue ("20s 5 25s 3"));
+     consumerHelper2.Install (nodes.Get (3));
+     
+     ndn::AppHelper consumerHelper3 ("ns3::ndn::ConsumerBatches");
+     consumerHelper3.SetPrefix (prefix);
+     consumerHelper3.SetAttribute ("Batches", StringValue ("30s 7"));
+     consumerHelper3.Install (nodes.Get (6));
+     
+     ndn::AppHelper consumerHelper4 ("ns3::ndn::ConsumerBatches");
+     consumerHelper4.SetPrefix (prefix);
+     consumerHelper4.SetAttribute ("Batches", StringValue ("40s 8 90s 4"));
+     consumerHelper4.Install (nodes.Get (9));
+     
+     ndn::AppHelper consumerHelper5 ("ns3::ndn::ConsumerBatches");
+     consumerHelper5.SetPrefix (prefix);
+     consumerHelper5.SetAttribute ("Batches", StringValue ("50s 10 100s 1"));
+     consumerHelper5.Install (nodes.Get (12));*/
     
     // Producer will reply to all requests starting with /prefix
     
