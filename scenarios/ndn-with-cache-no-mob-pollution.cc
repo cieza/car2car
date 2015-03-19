@@ -72,45 +72,22 @@ main (int argc, char *argv[])
     
     // vanet hacks to CcnxL3Protocol
     Config::SetDefault ("ns3::ndn::V2vNetDeviceFace::MaxDelay", StringValue ("2ms"));
-    Config::SetDefault ("ns3::ndn::V2vNetDeviceFace::MaxDelayLowPriority", StringValue ("5ms"));
+    Config::SetDefault ("ns3::ndn::V2vNetDeviceFace::MaxDelayLowPriority", StringValue ("2ms"));
     Config::SetDefault ("ns3::ndn::V2vNetDeviceFace::MaxDistance", StringValue ("150"));
     
     // !!! very important parameter !!!
     // Should keep PIT entry to prevent duplicate interests from re-propagating
     Config::SetDefault ("ns3::ndn::Pit::PitEntryPruningTimout", StringValue ("1s"));
     
-    CommandLine cmd;
-    
     uint32_t numberOfCars = 3;
     
     if(argc > 1)
     {
         numberOfCars = atoi(argv[1]);
-        //cout<<"Numero: "<<atoi(argv[1])<<"\n";
-        //cout<<"Primeiro parametro: "<<argv[0]<<"\n";
     }
     
-    uint32_t run = 1;
-    cmd.AddValue ("run", "Run", run);
-    
-    //string batches = "2s 1";
-    //cmd.AddValue ("batches", "Consumer interest batches", batches);
-    
-    double distance = 10;
-    cmd.AddValue ("distance", "Distance between cars (default 10 meters)", distance);
-    
-    double fixedDistance = -1;
-    cmd.AddValue ("fixedDistance", "Length of the highway. Number of cars will be set as (fixedDistance / distance + 1). If not set, there are 1000 cars", fixedDistance);
-    
+    CommandLine cmd;
     cmd.Parse (argc,argv);
-    
-    //uint32_t numberOfCars = 3;
-    /*if (fixedDistance > 0)
-     {
-     numberOfCars = fixedDistance / distance + 1;
-     }*/
-    
-    Config::SetGlobal ("RngRun", IntegerValue (run));
     
     //--------------------------------------------------------------------------
     //
@@ -158,37 +135,46 @@ main (int argc, char *argv[])
     //fim teste
     
     //area baseada no shopping mall at millenia de 103.866 metros quadrados, estacionamento (320X360)
-    //sem mobilidade - RANDOM BOX
-    Ptr<UniformRandomVariable> randomizer = CreateObject<UniformRandomVariable> ();
-    randomizer->SetAttribute ("Min", DoubleValue (320));
-    randomizer->SetAttribute ("Max", DoubleValue (360));
+    
+    //sem mobilidade - GRID 7 x 7 CONSTANT POSITION
     
     MobilityHelper mobility;
-    mobility.SetPositionAllocator ("ns3::RandomBoxPositionAllocator",
-                                   "X", PointerValue (randomizer),
-                                   "Y", PointerValue (randomizer),
-                                   "Z", PointerValue (NULL));
-    
-    mobility.SetMobilityModel ("ns3::ConstantPositionMobilityModel");
-    
-    //com mobilidade - NAO VEICULAR
-    /*mobility.SetMobilityModel ("ns3::RandomWalk2dMobilityModel",
-     "Bounds", StringValue ("0|400|0|483"),
-     "Time", StringValue ("10s"),
-     "Speed", StringValue ("ns3::ConstantRandomVariable[Constant=2.0]"));
-     */
-    
-    ////com mobilidade - VEICULAR
-    /*MobilityHelper mobility;
-     mobility.SetPositionAllocator ("ns3::HighwayPositionAllocator",
-     "Start", VectorValue(Vector(0.0, 0.0, 0.0)),
-     "Direction", DoubleValue(0.0),
-     "Length", DoubleValue(1000.0),
-     "MinGap", DoubleValue(distance),
-     "MaxGap", DoubleValue(distance));
+     // setup the grid itself: objects are layed out
+     // started from (0,0) with 7 objects per row,
+     // the x interval between each object is 45,7 meters
+     // and the y interval between each object is 51,4 meters
+     mobility.SetPositionAllocator ("ns3::GridPositionAllocator",
+     "MinX", DoubleValue (0.0),
+     "MinY", DoubleValue (0.0),
+     "DeltaX", DoubleValue (45.7),
+     "DeltaY", DoubleValue (51.4),
+     "GridWidth", UintegerValue (7),
+     "LayoutType", StringValue ("RowFirst"));
      
-     mobility.SetMobilityModel("ns3::CustomConstantVelocityMobilityModel",
-     "ConstantVelocity", VectorValue(Vector(26.8224, 0, 0)));*/
+     mobility.SetMobilityModel ("ns3::ConstantPositionMobilityModel");
+    
+    //com mobilidade - GRID 7 X 7 VEICULAR
+    
+    /*MobilityHelper mobility;
+    // setup the grid itself: objects are layed out
+    // started from (0,0) with 7 objects per row,
+    // the x interval between each object is 45,7 meters
+    // and the y interval between each object is 51,4 meters
+    mobility.SetPositionAllocator ("ns3::GridPositionAllocator",
+                                   "MinX", DoubleValue (0.0),
+                                   "MinY", DoubleValue (0.0),
+                                   "DeltaX", DoubleValue (45.7),
+                                   "DeltaY", DoubleValue (51.4),
+                                   "GridWidth", UintegerValue (7),
+                                   "LayoutType", StringValue ("RowFirst"));
+    
+    
+    mobility.SetMobilityModel ("ns3::Vehicular2dMobilityModel",
+                               "Bounds", StringValue ("-10|310|-10|350"),
+                               "Time", StringValue ("10s"),
+                               "Mode", StringValue ("Time"),
+                               "Direction", StringValue ("ns3::UniformRandomVariable[Min=0.0|Max=6.283184]"),
+                               "Speed", StringValue ("ns3::UniformRandomVariable[Min=2.0|Max=4.0]"));*/
     
     
     //--------------------------------------------------------------------------
