@@ -26,8 +26,12 @@ $sum_packet_raw = 0;
 #$sum_out_packets = 0;
 $sum_satisfied_packet_raw = 0;
 $count = 0;
+
 @scenarios = ();
 $scenarios[0] = ["Politica","NaoProativo","ProAtivo"];
+
+@scenarios_txentrega_relativa = ();
+$scenarios_txentrega_relativa[0] = ["Politica","NaoProativo","ProAtivo"];
 
 @scenarios_ocupacao_maliciosa = ();
 $scenarios_ocupacao_maliciosa[0] = ["Politica","NaoProativo","ProAtivo"];
@@ -61,6 +65,8 @@ foreach $dir_scenario(@lista)
         @experimentos = ();
         @experimentos_ocupacao_maliciosa = ();
         @experimentos_delays = ();
+        
+        @experimentos_txentrega_relativa();
         
         # percorre sobre os diretorios dos experimentos nao proativo e proativo
         foreach $experimento_dir(@experimentos_dirs)
@@ -197,6 +203,8 @@ foreach $dir_scenario(@lista)
             $taxa_entrega = $satisfeitos/$interesses;
             $experimentos[$i] = $taxa_entrega;
             
+            $taxa_entrega_relativa = $satisfeitos/1000;
+            $experimentos_txentrega_relativa[$i] = $taxa_entrega_relativa;
             
             $media_ocupacao_maliciosa = $soma_num_poluidos/$soma_num_total;
             $experimentos_ocupacao_maliciosa[$i] = $media_ocupacao_maliciosa;
@@ -214,6 +222,9 @@ foreach $dir_scenario(@lista)
         $experimentos[0] = $dir_scenario;
         # guarda os resultados para o cenario k
         $scenarios[$k] = [@experimentos];
+        
+        $experimentos_txentrega_relativa[0] = $dir_scenario;
+        $scenarios_txentrega_relativa[$k] = [@experimentos_txentrega_relativa];
         
         $experimentos_ocupacao_maliciosa[0] = $dir_scenario;
         $scenarios_ocupacao_maliciosa[$k] = [@experimentos_ocupacao_maliciosa];
@@ -247,6 +258,26 @@ while($i < 3)
 
 
 close ARK;
+
+$file_name = "/home/elise/car2car/txentrega_relativa.txt";
+open ARK, ">".$file_name;
+select ARK;
+$i = 0;
+while($i < 3)
+{
+    $j = 0;
+    while($j < $k)
+    {
+        print("$scenarios_txentrega_relativa[$j][$i]      \t");
+        $j = $j + 1;
+    }
+    print("\n");
+    $i = $i + 1;
+}
+
+
+close ARK;
+
 #medias
 #$x =  $sum_packets/$count;
 $file_name = "/home/elise/car2car/ocupacao.txt";
