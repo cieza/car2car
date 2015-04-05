@@ -10,7 +10,10 @@ while($i <= $rodadas)
 {
     system("mkdir -p /home/elise/car2car/resultados/".$nome_programa."/experimento_".$experimento."/rodada_".$i);
     $ark_saida = "/home/elise/car2car/resultados/".$nome_programa."/experimento_".$experimento."/rodada_".$i."/saida.txt";
-    $chamada_programa = "./waf --run=\"".$nome_programa." ".$numero_nos." ".$experimento." ".$i."\" > ".$ark_saida;
+    #$chamada_programa = "./waf --run=\"".$nome_programa." ".$numero_nos." ".$experimento." ".$i."\" > ".$ark_saida;
+    #$seed = int(rand(10));
+    $seed=$i;
+    $chamada_programa = "NS_GLOBAL_VALUE=\"RngRun=".$seed."\" ./waf --run=\"".$nome_programa." ".$numero_nos." ".$experimento." ".$i."\" > ".$ark_saida;
     
     print($chamada_programa."\n");
     $tempo_antes = time();

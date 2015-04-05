@@ -19,6 +19,8 @@
  *
  */
 
+#include "ns3/ndnSIM/utils/ndn-fw-hop-count-tag.h"
+
 #include "v2v-tracer.h"
 #include "ns3/node.h"
 #include "ns3/packet.h"
@@ -58,7 +60,7 @@ namespace ns3 {
             outputStream->open (file.c_str (), std::ios_base::out | std::ios_base::trunc);
             
             if (!outputStream->is_open ())
-                return boost::make_tuple (outputStream, tracers);
+            return boost::make_tuple (outputStream, tracers);
             
             for (NodeList::Iterator node = NodeList::Begin ();
                  node != NodeList::End ();
@@ -132,15 +134,15 @@ namespace ns3 {
             
             //cout << "Node: " << m_node << " Dado: " << csEntry->GetName () << " SeqNum: " << csEntry->GetName ().GetLastComponent () << "\n";
             
-           std::string interest_name("");
-           std::list<std::string> components = csEntry->GetName ().GetComponents();
-           std::list<std::string>::const_iterator i;
-           for (i=components.begin(); i!=components.end(); i++)
-           {
-             interest_name = interest_name.append("/");
-             interest_name = interest_name.append(*i);
-           }
-
+            std::string interest_name("");
+            std::list<std::string> components = csEntry->GetName ().GetComponents();
+            std::list<std::string>::const_iterator i;
+            for (i=components.begin(); i!=components.end(); i++)
+            {
+                interest_name = interest_name.append("/");
+                interest_name = interest_name.append(*i);
+            }
+            
             if (data_map.find(interest_name) != data_map.end())
             {
                 int num = data_map[interest_name];
@@ -151,16 +153,31 @@ namespace ns3 {
                 data_map[interest_name]  = 1;
             }
             
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
             if(interest_map.find(interest_name) != interest_map.end())
             {
+                // se ja foi satisfeito entao estrutura guarda o numero de vezes que foi satisfeito
                 if (satisfied_data_map.find(interest_name) != satisfied_data_map.end())
                 {
                     int num = satisfied_data_map[interest_name];
                     num++;
                     satisfied_data_map[interest_name] = num;   }
+                // senao marca como satisfeito e calcula o atraso para satisfazer pela primeira vez, ou seja, depois de uma vez satisfeito o atraso nao vai ser impresso de novo
                 else
                 {
                     satisfied_data_map[interest_name]  = 1;
+                    // faz a conta do tempo atual menos o tempo em que o interesse foi gerado
                     delay_map[interest_name]  = (Simulator::Now ().ToDouble (Time::S)) - init_time_map[interest_name];
                     cout<<"Atraso Node: "<<m_node<<" Delay: "<<delay_map[interest_name]<< " Tempo: " << Simulator::Now ().ToDouble (Time::S)<<"\n";
                 }
@@ -203,13 +220,21 @@ namespace ns3 {
             }
             if(num != 0)
             {
+                
+                FwHopCountTag hopCountTag;
+                Ptr<Packet> packet = csEntry->GetFullyFormedNdnPacket ();
+                Ptr<Packet> payloadCopy = packet->Copy ();
+                payloadCopy->RemovePacketTag (hopCountTag);
+                
+                
                 double taxa = satisfied_data_map.size();
                 taxa = taxa/num;
                 //cout << "Node: " << m_node << " Taxa de entrega: " << taxa << "\n";
                 
                 double taxa_absoluta = satisfied_data_map.size();
                 taxa_absoluta = taxa_absoluta/interest_map.size();
-                cout << "Taxa_Entrega_Absoluta   Node: " << m_node << " Satisfeitos: " << satisfied_data_map.size() << " Interesses: " << interest_map.size() << " Tempo: " << Simulator::Now ().ToDouble (Time::S) << "\n";
+                cout << "Taxa_Entrega_Absoluta   Node: " << m_node << " Satisfeitos: " << satisfied_data_map.size() << " Interesses: " << interest_map.size() << " Tempo: " << Simulator::Now ().ToDouble (Time::S) <<"  Hopcount: "<< hopCountTag.Get ()<<"\n";
+                
             }
             
             //cout << "Node: " << m_node << " Num de dados totais: " << data_map.size() << "\n";
@@ -229,18 +254,18 @@ namespace ns3 {
             << m_node << "\t" << "Incoming interest" << "\t" << header->GetName ().GetLastComponent () << "\n";
             
             //cout << "Node: " << m_node << " Interesse: " << header->GetName () << " SeqNum: " << header->GetName ().GetLastComponent () << " Face: " << face->GetId() << "\n";
-
-        std::string interest_name("");
-           std::list<std::string> components = header->GetName ().GetComponents();
-           std::list<std::string>::const_iterator i;
-           for (i=components.begin(); i!=components.end(); i++)
-           {
-             interest_name = interest_name.append("/");
-             interest_name = interest_name.append(*i);
-           }
-           
-           //cout<<"Nome completo: "<<interest_name<<"\n";
-           //cout<<"Nome completo no original: "<<header->GetName ()<<"\n";
+            
+            std::string interest_name("");
+            std::list<std::string> components = header->GetName ().GetComponents();
+            std::list<std::string>::const_iterator i;
+            for (i=components.begin(); i!=components.end(); i++)
+            {
+                interest_name = interest_name.append("/");
+                interest_name = interest_name.append(*i);
+            }
+            
+            //cout<<"Nome completo: "<<interest_name<<"\n";
+            //cout<<"Nome completo no original: "<<header->GetName ()<<"\n";
             
             //verifica se a face igual a 1, ou seja, a face da aplicacao e se o prefixo e diferente de polluted, so contabiliza se for prefix
             if(face->GetId() == 1 && (header->GetName ().GetComponents().front().compare("polluted") != 0))

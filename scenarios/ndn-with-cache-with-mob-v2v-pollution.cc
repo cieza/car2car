@@ -198,7 +198,7 @@ main (int argc, char *argv[])
     ndn::StackHelper ndnHelper;
     ndnHelper.AddNetDeviceFaceCreateCallback (WifiNetDevice::GetTypeId (), MakeCallback (V2vNetDeviceFaceCallback));
     ndnHelper.SetForwardingStrategy ("ns3::ndn::fw::V2v");
-    ndnHelper.SetContentStore ("ns3::ndn::cs::Lru", "MaxSize", "1000");
+    ndnHelper.SetContentStore ("ns3::ndn::cs::Lru", "MaxSize", "500");
     //ndnHelper.SetContentStore ("ns3::ndn::cs::Nocache");
     ndnHelper.SetDefaultRoutes(true);
     ndnHelper.Install(nodes);
@@ -210,18 +210,18 @@ main (int argc, char *argv[])
     
     // Consumer will request /prefix/0, /prefix/1, ...
     
-    /*ndn::AppHelper consumerHelper ("ns3::ndn::ConsumerCbr");
+    ndn::AppHelper consumerHelper ("ns3::ndn::ConsumerCbr");
     consumerHelper.SetPrefix (prefix);
     consumerHelper.SetAttribute ("Frequency", DoubleValue (10.0));
     //consumerHelper.SetAttribute ("Randomize", StringValue ("uniform"))
-    consumerHelper.SetAttribute ("MaxSeq", IntegerValue (1000));;
+    consumerHelper.SetAttribute ("MaxSeq", IntegerValue (500));;
     consumerHelper.Install (nodes.Get (2));
     consumerHelper.Install (nodes.Get (3));
     consumerHelper.Install (nodes.Get (6));
     consumerHelper.Install (nodes.Get (9));
-    consumerHelper.Install (nodes.Get (12));*/
+    consumerHelper.Install (nodes.Get (12));
     
-    ndn::AppHelper consumerHelper1 ("ns3::ndn::ConsumerBatches");
+    /*ndn::AppHelper consumerHelper1 ("ns3::ndn::ConsumerBatches");
     consumerHelper1.SetPrefix (prefix);
     consumerHelper1.SetAttribute ("Batches", StringValue ("1s 10 2s 5 5s 5 10s 2"));
     consumerHelper1.Install (nodes.Get (2));
@@ -244,7 +244,7 @@ main (int argc, char *argv[])
     ndn::AppHelper consumerHelper5 ("ns3::ndn::ConsumerBatches");
     consumerHelper5.SetPrefix (prefix);
     consumerHelper5.SetAttribute ("Batches", StringValue ("1s 10 2s 12 50s 10 100s 10"));
-    consumerHelper5.Install (nodes.Get (12));
+    consumerHelper5.Install (nodes.Get (12));*/
     
     // Producer will reply to all requests starting with /prefix
     
