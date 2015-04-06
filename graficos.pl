@@ -164,7 +164,7 @@ foreach $dir_scenario(@lista)
                             $taxas_entrega_satisfeitos{$linha[2]} = $linha[4];
                             $taxas_entrega_interesses{$linha[2]} = $linha[6];
                             
-if                          if($linha[10] ne undef)
+                            if($linha[10] ne undef)
                             {
 
                                 if($hopcount_soma{$linha[2]} eq undef)
