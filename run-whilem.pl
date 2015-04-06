@@ -21,7 +21,11 @@ while($i <= $rodadas)
     #depois do system
     $tempo_depois = time();
     $tempo_demora = $tempo_depois - $tempo_antes;
-    print("Terminou rodada $i , o tempo foi de $tempo_demora segundos\n");
+    #print("Terminou rodada $i , o tempo foi de $tempo_demora segundos\n");
+    
+    print("Terminou rodada $i , o tempo foi de $tempo_demora segundos. saida abaixo: \n");
+    system("echo $?");
+    print("\n");
     
     $i = $i + 1;
 }
