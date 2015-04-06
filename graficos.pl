@@ -75,7 +75,7 @@ foreach $dir_scenario(@lista)
         @experimentos_ocupacao_maliciosa = ();
         @experimentos_delays = ();
         
-        @experimentos_txentrega_relativa();
+        @experimentos_txentrega_relativa = ();
 
         @experimentos_hopcount_medio = ();
         @experimentos_hopcount_maximo = ();
