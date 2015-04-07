@@ -41,6 +41,12 @@ $scenarios_ocupacao_maliciosa[0] = ["Politica","NaoProativo","ProAtivo"];
 @scenarios_delay = ();
 $scenarios_delay[0] = ["Politica","NaoProativo","ProAtivo"];
 
+@scenarios_hit = ();
+$scenarios_hit[0] = ["Politica","NaoProativo","ProAtivo"];
+
+@scenarios_miss = ();
+$scenarios_miss[0] = ["Politica","NaoProativo","ProAtivo"];
+
 @scenarios_hopcount_medio = ();
 $scenarios_hopcount_medio[0] = ["Politica","NaoProativo","ProAtivo"];
 
@@ -78,6 +84,8 @@ foreach $dir_scenario(@lista)
         @experimentos = ();
         @experimentos_ocupacao_maliciosa = ();
         @experimentos_delays = ();
+        @experimentos_cache_miss = ();
+        @experimentos_cache_hit = ();
         
         @experimentos_txentrega_relativa = ();
         
@@ -113,6 +121,9 @@ foreach $dir_scenario(@lista)
             $hopcount_maximo = undef;
             $hopcount_minimo = undef;
             
+            $soma_cache_miss = 0;
+            $soma_cache_hit = 0;
+            
             $max_seq = 0;
             
             # iterando sobre todos os diretorios de rodadas
@@ -144,6 +155,12 @@ foreach $dir_scenario(@lista)
                     
                     # HashMap que vai guardar o tempo de atraso para satisfazer o interesse pela primeira vez, a chave corresponde ao ID do no
                     %delays = ();
+                    
+                    # HashMap que vai guardar total de hits, a chave corresponde ao ID do no
+                    %hits = ();
+                    
+                    # HashMap que vai guardar total de misses, a chave corresponde ao ID do no
+                    %misses = ();
                     
                     # HashMap que vai guardar a soma de hopcounts para atender os interesses do no, a chave corresponde ao ID do no
                     %hopcount_soma = ();
@@ -250,6 +267,11 @@ foreach $dir_scenario(@lista)
                         {
                             $delays{$linha[2]} = $linha[4];
                         }
+                        if($linha[0] eq "Cache_Hit")
+                        {
+                            $hits{$linha[2]} = $linha[4];
+                            $misses{$linha[2]} = $linha[6];
+                        }
                         
                     }
                     close ARK;
@@ -298,6 +320,22 @@ foreach $dir_scenario(@lista)
                     $soma_aux = $soma_aux/(scalar @valores);
                     $soma_delays = $soma_delays + $soma_aux;
                     
+                    @valores = values %misses;
+                    
+                    # soma_cache_miss guarda a soma de misses para as n rodadas, para todos os nos, ao percorrer a lista de valores
+                    foreach(@valores)
+                    {
+                        $soma_cache_miss = $soma_cache_miss + $_;
+                    }
+                    
+                    @valores = values %hits;
+                    
+                    # soma_cache_hit guarda a soma de hits para as n rodadas, para todos os nos, ao percorrer a lista de valores
+                    foreach(@valores)
+                    {
+                        $soma_cache_hit = $soma_cache_hit + $_;
+                    }
+                    
                     #soma total dos hopcounts e do numero de vezes que um interesse foi atendido para fazer uma media
                     @valores = values %hopcount_soma;
                     foreach(@valores)
@@ -315,7 +353,6 @@ foreach $dir_scenario(@lista)
                     # conta o numero de rodadas
                     $count = $count + 1;
                 }
-                
                 
             }
             
@@ -358,6 +395,24 @@ foreach $dir_scenario(@lista)
                 $experimentos_delays[$i] = $media_delay;
             }
             
+            if($soma_cache_miss != 0){
+                $media_cache_miss = $soma_cache_miss/$count;
+                $experimentos_cache_miss[$i] = $media_cache_miss;
+            }
+            else{
+                $media_cache_miss = 0;
+                $experimentos_cache_miss[$i] = $media_cache_miss;
+            }
+            
+            if($soma_cache_hit != 0){
+                $media_cache_hit = $soma_cache_hit/$count;
+                $experimentos_cache_hit[$i] = $media_cache_hit;
+            }
+            else{
+                $media_cache_hit = 0;
+                $experimentos_cache_hit[$i] = $media_cache_hit;
+            }
+            
             if($num_hopcount != 0){
                 $experimentos_hopcount_medio[$i] = $soma_hopcount/$num_hopcount;
             }
@@ -387,6 +442,11 @@ foreach $dir_scenario(@lista)
         $experimentos_delays[0] = $dir_scenario;
         $scenarios_delay[$k] = [@experimentos_delays];
         
+        $experimentos_cache_miss[0] = $dir_scenario;
+        $scenarios_miss[$k] = [@experimentos_cache_miss];
+        
+        $experimentos_cache_hit[0] = $dir_scenario;
+        $scenarios_hit[$k] = [@experimentos_cache_hit];
         
         $scenarios_hopcount_medio[0] = $dir_scenario;
         $scenarios_hopcount_medio[$k] = [@experimentos_hopcount_medio];
@@ -396,7 +456,6 @@ foreach $dir_scenario(@lista)
         
         $scenarios_hopcount_minimo[0] = $dir_scenario;
         $scenarios_hopcount_minimo[$k] = [@experimentos_hopcount_minimo];
-        
         
         
         $k = $k + 1;
@@ -484,6 +543,45 @@ while($i < 3)
 
 
 close ARK;
+
+$file_name = "/home/elise/car2car/cache_hit.txt";
+open ARK, ">".$file_name;
+select ARK;
+$i = 0;
+while($i < 3)
+{
+    $j = 0;
+    while($j < $k)
+    {
+        print("$scenarios_hit[$j][$i]      \t");
+        $j = $j + 1;
+    }
+    print("\n");
+    $i = $i + 1;
+}
+
+
+close ARK;
+
+$file_name = "/home/elise/car2car/cache_miss.txt";
+open ARK, ">".$file_name;
+select ARK;
+$i = 0;
+while($i < 3)
+{
+    $j = 0;
+    while($j < $k)
+    {
+        print("$scenarios_miss[$j][$i]      \t");
+        $j = $j + 1;
+    }
+    print("\n");
+    $i = $i + 1;
+}
+
+
+close ARK;
+
 
 
 $file_name = "/home/elise/car2car/hopcount_medio.txt";
