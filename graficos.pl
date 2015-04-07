@@ -304,7 +304,7 @@ foreach $dir_scenario(@lista)
             $taxa_entrega = $satisfeitos/$interesses;
             $experimentos[$i] = $taxa_entrega;
             
-            $taxa_entrega_relativa = $satisfeitos/(500)*count;
+            $taxa_entrega_relativa = $satisfeitos/(500)*$count;
             $experimentos_txentrega_relativa[$i] = $taxa_entrega_relativa;
             
             $media_ocupacao_maliciosa = $soma_num_poluidos/$soma_num_total;
