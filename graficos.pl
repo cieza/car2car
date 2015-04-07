@@ -323,7 +323,8 @@ foreach $dir_scenario(@lista)
             
             if($interesses != 0){
                 $taxa_entrega = $satisfeitos/$interesses;
-                $experimentos[$i] = $taxa_entrega;}
+                $experimentos[$i] = $taxa_entrega;
+            }
             else{
                 $taxa_entrega = 0;
                 $experimentos[$i] = $taxa_entrega;
@@ -332,21 +333,37 @@ foreach $dir_scenario(@lista)
             $max_seq = 500 * (scalar keys %taxas_entrega_satisfeitos) * $count;
             if($max_seq != 0){
                 $taxa_entrega_relativa = $satisfeitos/$max_seq;
-                $experimentos_txentrega_relativa[$i] = $taxa_entrega_relativa;}
+                $experimentos_txentrega_relativa[$i] = $taxa_entrega_relativa;
+            }
             else{
                 $taxa_entrega_relativa = 0;
                 $experimentos_txentrega_relativa[$i] = $taxa_entrega_relativa;
             }
             
-            $media_ocupacao_maliciosa = $soma_num_poluidos/$soma_num_total;
-            $experimentos_ocupacao_maliciosa[$i] = $media_ocupacao_maliciosa;
+            if($soma_num_total != 0){
+                $media_ocupacao_maliciosa = $soma_num_poluidos/$soma_num_total;
+                $experimentos_ocupacao_maliciosa[$i] = $media_ocupacao_maliciosa;
+            }
+            else{
+                $media_ocupacao_maliciosa = 0;
+                $experimentos_ocupacao_maliciosa[$i] = $media_ocupacao_maliciosa;
+            }
             
+            if($count != 0){
+                $media_delay = $soma_delays/$count;
+                $experimentos_delays[$i] = $media_delay;
+            }
+            else{
+                $media_delay = 0;
+                $experimentos_delays[$i] = $media_delay;
+            }
             
-            $media_delay = $soma_delays/$count;
-            $experimentos_delays[$i] = $media_delay;
-            
-            
-            $experimentos_hopcount_medio[$i] = $soma_hopcount/$num_hopcount;
+            if($num_hopcount != 0){
+                $experimentos_hopcount_medio[$i] = $soma_hopcount/$num_hopcount;
+            }
+            else{
+                $experimentos_hopcount_medio[$i] = 0;
+            }
             $experimentos_hopcount_maximo[$i] = $hopcount_maximo;
             $experimentos_hopcount_minimo[$i] = $hopcount_minimo;
             
