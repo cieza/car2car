@@ -330,8 +330,13 @@ foreach $dir_scenario(@lista)
             }
             
             $max_seq = 500 * (scalar keys %taxas_entrega_satisfeitos) * $count;
-            $taxa_entrega_relativa = $satisfeitos/$max_seq;
-            $experimentos_txentrega_relativa[$i] = $taxa_entrega_relativa;
+            if($max_seq != 0){
+                $taxa_entrega_relativa = $satisfeitos/$max_seq;
+                $experimentos_txentrega_relativa[$i] = $taxa_entrega_relativa;}
+            else{
+                $taxa_entrega_relativa = 0;
+                $experimentos_txentrega_relativa[$i] = $taxa_entrega_relativa;
+            }
             
             $media_ocupacao_maliciosa = $soma_num_poluidos/$soma_num_total;
             $experimentos_ocupacao_maliciosa[$i] = $media_ocupacao_maliciosa;
