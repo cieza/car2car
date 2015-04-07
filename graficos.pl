@@ -109,6 +109,8 @@ foreach $dir_scenario(@lista)
             $hopcount_maximo = undef;
             $hopcount_minimo = undef;
             
+            $max_seq = 0;
+            
             # iterando sobre todos os diretorios de rodadas
             foreach $dir_exp(@lista_experimento)
             {
@@ -288,8 +290,6 @@ foreach $dir_scenario(@lista)
                     {
                         $num_hopcount = $num_hopcount + $_;
                     }
-                    
-
 
         
                     # conta o numero de rodadas
@@ -304,7 +304,8 @@ foreach $dir_scenario(@lista)
             $taxa_entrega = $satisfeitos/$interesses;
             $experimentos[$i] = $taxa_entrega;
             
-            $taxa_entrega_relativa = $satisfeitos/(500)*$count;
+            $max_seq = 500 * (scalar keys %taxas_entrega_satisfeitos) * $count;
+            $taxa_entrega_relativa = $satisfeitos/$max_seq;
             $experimentos_txentrega_relativa[$i] = $taxa_entrega_relativa;
             
             $media_ocupacao_maliciosa = $soma_num_poluidos/$soma_num_total;
