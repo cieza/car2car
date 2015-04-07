@@ -1,5 +1,7 @@
 #!/usr/bin/perl
 
+use File::Path;
+
 $diretorio = "/home/elise/car2car/resultados";
 
 #$diretorio = "/home/elise/ndnSIM/ns-3/resultados/ndn-no-cache-no-mob-pollution/experimento_1";
@@ -47,6 +49,8 @@ $scenarios_hopcount_maximo[0] = ["Politica","NaoProativo","ProAtivo"];
 
 @scenarios_hopcount_minimo = ();
 $scenarios_hopcount_minimo[0] = ["Politica","NaoProativo","ProAtivo"];
+
+$file_nos_name = "/home/elise/car2car/graficos_nos/";
 
 $k = 1;
 # percorre cada subdiretorio, ou seja, percorre os cenarios
@@ -153,6 +157,9 @@ foreach $dir_scenario(@lista)
                     # HashMap que vai guardar o menor hopcount para atender os interesses do no, a chave corresponde ao ID do no
                     %hopcount_minimo = ();
                     
+                    $dir = $file_nos_name.$dir_scenario."/experimento_".$i."/".$dir_exp;
+                    mkpath($dir);
+                    
                     # abre arquivo saida.txt para ler
                     open ARK, $file_name;
                     foreach(<ARK>)
@@ -165,6 +172,19 @@ foreach $dir_scenario(@lista)
                         {
                             $taxas_entrega_satisfeitos{$linha[2]} = $linha[4];
                             $taxas_entrega_interesses{$linha[2]} = $linha[6];
+                            
+                            #vai printar em um arquivo especifico de um no especifico de uma rodada especifica etc, etc
+                            $file_aux_ark_name = $file_nos_name.$dir_scenario."/experimento_".$i."/".$dir_exp."/no_".$linha[2].".txt";
+                            #print("File name: $file_aux_ark_name\n");
+                            open ARK2, ">>".$file_aux_ark_name;
+                            select ARK2;
+                            
+                            print($linha[8]."   ".$linha[6]."   ".$linha[4]."\n");
+                            
+                            select STDOUT;
+                            close ARK2;
+                            
+                            #terminou de printar
                             
                             if($linha[10] ne undef)
                             {

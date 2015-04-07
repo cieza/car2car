@@ -33,63 +33,66 @@
 #include <map>
 
 namespace ns3 {
-namespace ndn {
-
-class V2vTracer
-{
-public:
-  /**
-   * @brief Helper method to install tracers on all simulation nodes
-   *
-   * @param file File to which traces will be written
-   *
-   * @returns a tuple of reference to output stream and list of tracers. !!! Attention !!! This tuple needs to be preserved
-   *          for the lifetime of simulation, otherwise SEGFAULTs are inevitable
-   *
-   */
-  static boost::tuple< boost::shared_ptr<std::ostream>, std::list<boost::shared_ptr<V2vTracer> > >
-  InstallAll (const std::string &file);
-
-  /**
-   * @brief Trace constructor that attaches to the node using node pointer
-   * @param os    reference to the output stream
-   * @param node  pointer to the node
-   */
-  V2vTracer (boost::shared_ptr<std::ostream> os, Ptr<Node> node);
-
-  /**
-   * @brief Connect traces on a node
-   */
-  void
-  Connect ();
-
-
-private:
-  void
-  PrintHeader (std::ostream &os) const;
-
-  void DidAddEntry (Ptr<const cs::Entry> csEntry);
-
-  void InInterest (Ptr<const Interest> header, Ptr<const Face> face);
-
-  void PhyOutData (Ptr<const Packet> packet);
-
-  void Canceling (Ptr<Node> node, Ptr<const Packet> packet);
-
-private:
-  std::string m_node;
-  Ptr<Node> m_nodePtr;
-  std::map<std::string, int> interest_map;
-  std::map<std::string, int> data_map;
-  std::map<std::string, int> satisfied_data_map;
-  std::map<std::string, double> init_time_map;
-  std::map<std::string, double> delay_map;
-
-
-  boost::shared_ptr<std::ostream> m_os;
-};
-
-} // namespace ndn
+    namespace ndn {
+        
+        class V2vTracer
+        {
+        public:
+            /**
+             * @brief Helper method to install tracers on all simulation nodes
+             *
+             * @param file File to which traces will be written
+             *
+             * @returns a tuple of reference to output stream and list of tracers. !!! Attention !!! This tuple needs to be preserved
+             *          for the lifetime of simulation, otherwise SEGFAULTs are inevitable
+             *
+             */
+            static boost::tuple< boost::shared_ptr<std::ostream>, std::list<boost::shared_ptr<V2vTracer> > >
+            InstallAll (const std::string &file);
+            
+            /**
+             * @brief Trace constructor that attaches to the node using node pointer
+             * @param os    reference to the output stream
+             * @param node  pointer to the node
+             */
+            V2vTracer (boost::shared_ptr<std::ostream> os, Ptr<Node> node);
+            
+            /**
+             * @brief Connect traces on a node
+             */
+            void
+            Connect ();
+            
+            
+        private:
+            void
+            PrintHeader (std::ostream &os) const;
+            
+            void DidAddEntry (Ptr<const cs::Entry> csEntry);
+            
+            void InInterest (Ptr<const Interest> header, Ptr<const Face> face);
+            
+            void PhyOutData (Ptr<const Packet> packet);
+            
+            void Canceling (Ptr<Node> node, Ptr<const Packet> packet);
+            
+        private:
+            std::string m_node;
+            Ptr<Node> m_nodePtr;
+            std::map<std::string, int> interest_map;
+            std::map<std::string, int> data_map;
+            std::map<std::string, int> satisfied_data_map;
+            std::map<std::string, double> init_time_map;
+            std::map<std::string, double> delay_map;
+            
+            long cache_hits;
+            long cache_misses;
+            
+            
+            boost::shared_ptr<std::ostream> m_os;
+        };
+        
+    } // namespace ndn
 } // namespace ns3
 
 #endif // V2V_TRACER_H

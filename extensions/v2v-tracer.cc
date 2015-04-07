@@ -60,7 +60,7 @@ namespace ns3 {
             outputStream->open (file.c_str (), std::ios_base::out | std::ios_base::trunc);
             
             if (!outputStream->is_open ())
-            return boost::make_tuple (outputStream, tracers);
+                return boost::make_tuple (outputStream, tracers);
             
             for (NodeList::Iterator node = NodeList::Begin ();
                  node != NodeList::End ();
@@ -98,6 +98,9 @@ namespace ns3 {
         , m_os (os)
         {
             m_node = boost::lexical_cast<string> (m_nodePtr->GetId ());
+
+           cache_hits = 0;
+           cache_misses = 0;
             
             Connect ();
             
@@ -301,6 +304,46 @@ namespace ns3 {
                 double taxa_absoluta = satisfied_data_map.size();
                 taxa_absoluta = taxa_absoluta/interest_map.size();
                 cout << "Taxa_Entrega_Absoluta   Node: " << m_node << " Satisfeitos: " << satisfied_data_map.size() << " Interesses: " << interest_map.size() << " Tempo: " << Simulator::Now ().ToDouble (Time::S) << "\n";
+            }
+            
+            //cache hits e chache miss
+            if(header->GetName ().GetComponents().front().compare("polluted") != 0)
+            {
+                Ptr<cs::Entry> auxEntry = m_nodePtr->GetObject<ContentStore> ()->Begin ();
+                //cout<<"CONTENT STORE Node: "<<m_node<<"\n";
+                bool cache_hit = false;
+                if(auxEntry != NULL)
+                {
+                    do{
+                   
+                       //cout<<auxEntry->GetName ()<<"   begin: "<<auxEntry->GetName ().GetComponents().front()<<"\n";
+                       std::string entry_name("");
+                       std::list<std::string> components_cache = auxEntry->GetName ().GetComponents();
+                       std::list<std::string>::const_iterator j;
+                       for (j=components_cache.begin(); j!=components_cache.end(); j++)
+                       {
+                           entry_name = entry_name.append("/");
+                           entry_name = entry_name.append(*j);
+                       }
+                       
+                       if(entry_name.compare(interest_name) == 0)
+                       {
+                           cache_hit = true;
+                           break;
+                      }
+                      auxEntry = m_nodePtr->GetObject<ContentStore> ()->Next (auxEntry);
+                   }while(auxEntry != NULL);
+                }
+                if(cache_hit)
+                {
+                    cache_hits = cache_hits + 1;
+                    
+                }
+                else
+                {
+                    cache_misses = cache_misses + 1;
+                }
+                cout<<"Cache_Hit  Node: "<<m_node<<"  Cache_Hit: "<<cache_hits<<"  Cache_Miss: "<<cache_misses<<"\n";
             }
             
         }
