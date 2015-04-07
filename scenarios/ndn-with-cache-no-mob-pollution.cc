@@ -263,16 +263,20 @@ main (int argc, char *argv[])
     ndn::AppHelper consumerHelperAttack ("ns3::ndn::ConsumerCbr");
     consumerHelperAttack.SetPrefix (prefixAttack);
     consumerHelperAttack.SetAttribute ("Frequency", DoubleValue (20.0));
-    consumerHelperAttack.Install (nodes.Get (5));
-    consumerHelperAttack.Install (nodes.Get (10));
-    consumerHelperAttack.Install (nodes.Get (15));
+    /*consumerHelperAttack.Install (nodes.Get (5));
+     consumerHelperAttack.Install (nodes.Get (10));
+     consumerHelperAttack.Install (nodes.Get (15));*/
+    consumerHelper.Install (nodes.Get (5));
+    consumerHelper.Install (nodes.Get (10));
+    consumerHelper.Install (nodes.Get (15));
     
     // Producer will reply to all requests starting with /polluted
     
     ndn::AppHelper producerHelperAttack ("ns3::ndn::Producer");
     producerHelperAttack.SetPrefix (prefixAttack);
     producerHelperAttack.SetAttribute ("PayloadSize", StringValue("500"));
-    producerHelperAttack.Install (nodes.Get (1));
+    //producerHelperAttack.Install (nodes.Get (1));
+    producerHelper.Install (nodes.Get (1));
     
     //--------------------------------------------------------------------------
     //
