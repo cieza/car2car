@@ -56,11 +56,11 @@ $k = 1;
 # percorre cada subdiretorio, ou seja, percorre os cenarios
 foreach $dir_scenario(@lista)
 {
-
+    
     # verifica se nao eh um dos dois diretorios sempre encontrados nas pastas do Unix
     if($dir_scenario ne "." and $dir_scenario ne "..")
     {
-        # lista de diretorios de experimentos com dois diretorios, um do nao proativo e 
+        # lista de diretorios de experimentos com dois diretorios, um do nao proativo e
         @experimentos_dirs = ();
         
         # cria o nome do diretorio que contem experimento nao proativo, onde n eh impar
@@ -80,11 +80,11 @@ foreach $dir_scenario(@lista)
         @experimentos_delays = ();
         
         @experimentos_txentrega_relativa = ();
-
+        
         @experimentos_hopcount_medio = ();
         @experimentos_hopcount_maximo = ();
         @experimentos_hopcount_minimo = ();
-
+        
         
         # percorre sobre os diretorios dos experimentos nao proativo e proativo
         foreach $experimento_dir(@experimentos_dirs)
@@ -96,7 +96,7 @@ foreach $dir_scenario(@lista)
             @lista_experimento = readdir(diretorio_experimento);
             
             closedir(diretorio_experimento);
-        
+            
             $sum_packet_raw = 0;
             $sum_satisfied_packet_raw = 0;
             $count = 0;
@@ -107,7 +107,7 @@ foreach $dir_scenario(@lista)
             $soma_num_total = 0;
             
             $soma_delays = 0;
-
+            
             $soma_hopcount = 0;
             $num_hopcount = 0;
             $hopcount_maximo = undef;
@@ -118,11 +118,11 @@ foreach $dir_scenario(@lista)
             # iterando sobre todos os diretorios de rodadas
             foreach $dir_exp(@lista_experimento)
             {
-        
+                
                 # verifica se a pasta eh valida
                 if($dir_exp ne "." and $dir_exp ne "..")
                 {
-        
+                    
                     # file_name guarda o caminho ate o arquivo saida.txt de uma determinada rodada
                     $file_name = $experimento_dir."/".$dir_exp."/saida.txt";
                     #$packets = 0;
@@ -144,16 +144,16 @@ foreach $dir_scenario(@lista)
                     
                     # HashMap que vai guardar o tempo de atraso para satisfazer o interesse pela primeira vez, a chave corresponde ao ID do no
                     %delays = ();
-
+                    
                     # HashMap que vai guardar a soma de hopcounts para atender os interesses do no, a chave corresponde ao ID do no
                     %hopcount_soma = ();
-
+                    
                     # HashMap que vai guardar o numero de hopcounts para atender os interesses do no, a chave corresponde ao ID do no
                     %hopcount_numero = ();
                     
                     # HashMap que vai guardar o maior hopcount para atender os interesses do no, a chave corresponde ao ID do no
                     %hopcount_maximo = ();
-
+                    
                     # HashMap que vai guardar o menor hopcount para atender os interesses do no, a chave corresponde ao ID do no
                     %hopcount_minimo = ();
                     
@@ -188,7 +188,7 @@ foreach $dir_scenario(@lista)
                             
                             if($linha[10] ne undef)
                             {
-
+                                
                                 if($hopcount_soma{$linha[2]} eq undef)
                                 {
                                     $hopcount_soma{$linha[2]} = 0;
@@ -206,7 +206,7 @@ foreach $dir_scenario(@lista)
                                     $hopcount_minimo{$linha[2]} = $linha[10];
                                 }
                                 
-
+                                
                                 $hopcount_soma{$linha[2]} = $hopcount_soma{$linha[2]} + $linha[10];
                                 $hopcount_numero{$linha[2]} = $hopcount_numero{$linha[2]} + 1;
                                 if($hopcount_maximo{$linha[2]} < $linha[10] )
@@ -217,9 +217,9 @@ foreach $dir_scenario(@lista)
                                 {
                                     $hopcount_minimo{$linha[2]} = $linha[10];
                                 }
-
-
-
+                                
+                                
+                                
                                 if($hopcount_maximo eq undef)
                                 {
                                     $hopcount_maximo = $linha[10];
@@ -250,7 +250,7 @@ foreach $dir_scenario(@lista)
                         {
                             $delays{$linha[2]} = $linha[4];
                         }
-
+                        
                     }
                     close ARK;
                     
@@ -297,32 +297,37 @@ foreach $dir_scenario(@lista)
                     }
                     $soma_aux = $soma_aux/(scalar @valores);
                     $soma_delays = $soma_delays + $soma_aux;
-
+                    
                     #soma total dos hopcounts e do numero de vezes que um interesse foi atendido para fazer uma media
                     @valores = values %hopcount_soma;
                     foreach(@valores)
                     {
                         $soma_hopcount = $soma_hopcount + $_;
                     }
-
+                    
                     @valores = values %hopcount_numero;
                     foreach(@valores)
                     {
                         $num_hopcount = $num_hopcount + $_;
                     }
-
-        
+                    
+                    
                     # conta o numero de rodadas
                     $count = $count + 1;
                 }
-
-        
+                
+                
             }
             
             # faz a media das n rodadas
             
-            $taxa_entrega = $satisfeitos/$interesses;
-            $experimentos[$i] = $taxa_entrega;
+            if($interesses != 0){
+                $taxa_entrega = $satisfeitos/$interesses;
+                $experimentos[$i] = $taxa_entrega;}
+            else{
+                $taxa_entrega = 0;
+                $experimentos[$i] = $taxa_entrega;
+            }
             
             $max_seq = 500 * (scalar keys %taxas_entrega_satisfeitos) * $count;
             $taxa_entrega_relativa = $satisfeitos/$max_seq;
@@ -334,16 +339,16 @@ foreach $dir_scenario(@lista)
             
             $media_delay = $soma_delays/$count;
             $experimentos_delays[$i] = $media_delay;
-
-
+            
+            
             $experimentos_hopcount_medio[$i] = $soma_hopcount/$num_hopcount;
             $experimentos_hopcount_maximo[$i] = $hopcount_maximo;
             $experimentos_hopcount_minimo[$i] = $hopcount_minimo;
-
+            
             
             # identifica se eh nao proativo (i=1) ou se eh proativo (i=2)
             $i = $i + 1;
-        
+            
         }
         
         # serve para preencher com o nome do cenario correspondente
@@ -359,14 +364,14 @@ foreach $dir_scenario(@lista)
         
         $experimentos_delays[0] = $dir_scenario;
         $scenarios_delay[$k] = [@experimentos_delays];
-
-
+        
+        
         $scenarios_hopcount_medio[0] = $dir_scenario;
         $scenarios_hopcount_medio[$k] = [@experimentos_hopcount_medio];
-
+        
         $scenarios_hopcount_maximo[0] = $dir_scenario;
         $scenarios_hopcount_maximo[$k] = [@experimentos_hopcount_maximo];
-
+        
         $scenarios_hopcount_minimo[0] = $dir_scenario;
         $scenarios_hopcount_minimo[$k] = [@experimentos_hopcount_minimo];
         
