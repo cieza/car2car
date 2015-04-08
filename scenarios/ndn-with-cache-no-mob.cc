@@ -229,7 +229,7 @@ main (int argc, char *argv[])
             nodes_map[num_rand] = 1;
             encontrou = true;
             consumerHelper.Install (nodes.Get (num_rand));
-            cout<<"Consumidor: "<<num_rand<<"\n"<<;
+            cout<<"Consumidor: "<<num_rand<<"\n";
         }
     }
     
@@ -242,7 +242,7 @@ main (int argc, char *argv[])
             nodes_map[num_rand] = 1;
             encontrou = true;
             consumerHelper.Install (nodes.Get (num_rand));
-            cout<<"Consumidor: "<<num_rand<<"\n"<<;
+            cout<<"Consumidor: "<<num_rand<<"\n";
         }
     }
     
@@ -255,7 +255,7 @@ main (int argc, char *argv[])
             nodes_map[num_rand] = 1;
             encontrou = true;
             consumerHelper.Install (nodes.Get (num_rand));
-            cout<<"Consumidor: "<<num_rand<<"\n"<<;
+            cout<<"Consumidor: "<<num_rand<<"\n";
         }
     }
     
@@ -268,7 +268,7 @@ main (int argc, char *argv[])
             nodes_map[num_rand] = 1;
             encontrou = true;
             consumerHelper.Install (nodes.Get (num_rand));
-            cout<<"Consumidor: "<<num_rand<<"\n"<<;
+            cout<<"Consumidor: "<<num_rand<<"\n";
         }
     }
     
@@ -281,7 +281,7 @@ main (int argc, char *argv[])
             nodes_map[num_rand] = 1;
             encontrou = true;
             consumerHelper.Install (nodes.Get (num_rand));
-            cout<<"Consumidor: "<<num_rand<<"\n"<<;
+            cout<<"Consumidor: "<<num_rand<<"\n";
         }
     }
     
@@ -331,7 +331,7 @@ main (int argc, char *argv[])
             nodes_map[num_rand] = 1;
             encontrou = true;
             producerHelper.Install (nodes.Get (num_rand));
-            cout<<"Produtor: "<<num_rand<<"\n"<<;
+            cout<<"Produtor: "<<num_rand<<"\n";
         }
     }
     
