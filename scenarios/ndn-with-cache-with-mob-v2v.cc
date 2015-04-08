@@ -214,7 +214,7 @@ main (int argc, char *argv[])
     consumerHelper.SetPrefix (prefix);
     consumerHelper.SetAttribute ("Frequency", DoubleValue (10.0));
     //consumerHelper.SetAttribute ("Randomize", StringValue ("uniform"))
-    consumerHelper.SetAttribute ("MaxSeq", IntegerValue (500));;
+    consumerHelper.SetAttribute ("MaxSeq", IntegerValue (500));
     //consumerHelper.Install (nodes.Get (2));
     //consumerHelper.Install (nodes.Get (3));
     //consumerHelper.Install (nodes.Get (6));

@@ -214,7 +214,7 @@ main (int argc, char *argv[])
     consumerHelper.SetPrefix (prefix);
     consumerHelper.SetAttribute ("Frequency", DoubleValue (10.0));
     //consumerHelper.SetAttribute ("Randomize", StringValue ("uniform"))
-    consumerHelper.SetAttribute ("MaxSeq", IntegerValue (500));;
+    consumerHelper.SetAttribute ("MaxSeq", IntegerValue (500));
     
     std::map<int, int> nodes_map;
     
