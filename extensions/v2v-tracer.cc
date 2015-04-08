@@ -19,6 +19,8 @@
  *
  */
 
+#include "ns3/mobility-model.h"
+
 #include "ns3/ndnSIM/utils/ndn-fw-hop-count-tag.h"
 
 #include "v2v-tracer.h"
@@ -223,6 +225,16 @@ namespace ns3 {
             }
             if(num != 0)
             {
+	      
+	        //posicao do no
+                Ptr<MobilityModel> mobility = m_nodePtr->GetObject<MobilityModel> ();
+                if (mobility == 0)
+                {
+                    NS_FATAL_ERROR ("Mobility model has to be installed on the node");
+                    return;
+                }
+                Vector position = mobility->GetPosition ();
+		
                 
                 FwHopCountTag hopCountTag;
                 Ptr<Packet> packet = csEntry->GetFullyFormedNdnPacket ();
@@ -236,7 +248,7 @@ namespace ns3 {
                 
                 double taxa_absoluta = satisfied_data_map.size();
                 taxa_absoluta = taxa_absoluta/interest_map.size();
-                cout << "Taxa_Entrega_Absoluta   Node: " << m_node << " Satisfeitos: " << satisfied_data_map.size() << " Interesses: " << interest_map.size() << " Tempo: " << Simulator::Now ().ToDouble (Time::S) <<"  Hopcount: "<< hopCountTag.Get ()<<"\n";
+                cout << "Taxa_Entrega_Absoluta   Node: " << m_node << " Satisfeitos: " << satisfied_data_map.size() << " Interesses: " << interest_map.size() << " Tempo: " << Simulator::Now ().ToDouble (Time::S) << "  posicao_x: "<<((int) position.x)<<"   posicao_y: "<<((int) position.y)<<"  Hopcount: "<< hopCountTag.Get ()<<"\n";
                 
             }
             
@@ -287,6 +299,10 @@ namespace ns3 {
                 }
             }
             
+            
+	    
+	    
+            
             //cout << "Node: " << m_node << " Num de interesses totais: " << interest_map.size() << "\n";
             //cout << "Node: " << m_node << " Num de interesses satisfeitos totais: " << satisfied_data_map.size() << "\n";
             int num = 0;
@@ -297,13 +313,23 @@ namespace ns3 {
             }
             if(num != 0)
             {
+	        
+	        //posicao do no
+                Ptr<MobilityModel> mobility = m_nodePtr->GetObject<MobilityModel> ();
+                if (mobility == 0)
+                {
+                    NS_FATAL_ERROR ("Mobility model has to be installed on the node");
+                    return;
+                }
+                Vector position = mobility->GetPosition ();
+	        
                 double taxa = satisfied_data_map.size();
                 taxa = taxa/num;
                 //cout << "Node: " << m_node << " Taxa de entrega: " << taxa << "\n";
                 
                 double taxa_absoluta = satisfied_data_map.size();
                 taxa_absoluta = taxa_absoluta/interest_map.size();
-                cout << "Taxa_Entrega_Absoluta   Node: " << m_node << " Satisfeitos: " << satisfied_data_map.size() << " Interesses: " << interest_map.size() << " Tempo: " << Simulator::Now ().ToDouble (Time::S) << "\n";
+                cout << "Taxa_Entrega_Absoluta   Node: " << m_node << " Satisfeitos: " << satisfied_data_map.size() << " Interesses: " << interest_map.size() << " Tempo: " << Simulator::Now ().ToDouble (Time::S) << "  posicao_x: "<<((int) position.x)<<"   posicao_y: "<<((int) position.y)<<"\n";
             }
             
             //cache hits e chache miss
