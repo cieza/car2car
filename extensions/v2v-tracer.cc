@@ -335,6 +335,15 @@ namespace ns3 {
             //cache hits e chache miss
             if(header->GetName ().GetComponents().front().compare("polluted") != 0)
             {
+                //posicao do no
+                Ptr<MobilityModel> mobility = m_nodePtr->GetObject<MobilityModel> ();
+                if (mobility == 0)
+                {
+                    NS_FATAL_ERROR ("Mobility model has to be installed on the node");
+                    return;
+                }
+                Vector position = mobility->GetPosition ();
+                
                 Ptr<cs::Entry> auxEntry = m_nodePtr->GetObject<ContentStore> ()->Begin ();
                 //cout<<"CONTENT STORE Node: "<<m_node<<"\n";
                 bool cache_hit = false;
@@ -369,7 +378,7 @@ namespace ns3 {
                 {
                     cache_misses = cache_misses + 1;
                 }
-                cout<<"Cache_Hit  Node: "<<m_node<<"  Cache_Hit: "<<cache_hits<<"  Cache_Miss: "<<cache_misses<<"\n";
+                cout<<"Cache_Hit  Node: "<<m_node<<"  Cache_Hit: "<<cache_hits<<"  Cache_Miss: "<<cache_misses<< "  posicao_x: "<<((int) position.x)<<"   posicao_y: "<<((int) position.y)<<"\n";
             }
             
         }

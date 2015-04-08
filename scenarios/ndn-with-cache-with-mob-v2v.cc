@@ -139,17 +139,17 @@ main (int argc, char *argv[])
     //sem mobilidade - GRID 7 x 7 CONSTANT POSITION
     
     /*MobilityHelper mobility;
-    // setup the grid itself: objects are layed out
-    // started from (0,0) with 7 objects per row,
-    // the x interval between each object is 45,7 meters
-    // and the y interval between each object is 51,4 meters
-    mobility.SetPositionAllocator ("ns3::GridPositionAllocator",
-                                   "MinX", DoubleValue (0.0),
-                                   "MinY", DoubleValue (0.0),
-                                   "DeltaX", DoubleValue (45.7),
-                                   "DeltaY", DoubleValue (51.4),
-                                   "GridWidth", UintegerValue (7),
-                                   "LayoutType", StringValue ("RowFirst"));
+     // setup the grid itself: objects are layed out
+     // started from (0,0) with 7 objects per row,
+     // the x interval between each object is 45,7 meters
+     // and the y interval between each object is 51,4 meters
+     mobility.SetPositionAllocator ("ns3::GridPositionAllocator",
+     "MinX", DoubleValue (0.0),
+     "MinY", DoubleValue (0.0),
+     "DeltaX", DoubleValue (45.7),
+     "DeltaY", DoubleValue (51.4),
+     "GridWidth", UintegerValue (7),
+     "LayoutType", StringValue ("RowFirst"));
      
      mobility.SetMobilityModel ("ns3::ConstantPositionMobilityModel");*/
     
@@ -215,43 +215,123 @@ main (int argc, char *argv[])
     consumerHelper.SetAttribute ("Frequency", DoubleValue (10.0));
     //consumerHelper.SetAttribute ("Randomize", StringValue ("uniform"))
     consumerHelper.SetAttribute ("MaxSeq", IntegerValue (500));;
-    consumerHelper.Install (nodes.Get (2));
-    consumerHelper.Install (nodes.Get (3));
-    consumerHelper.Install (nodes.Get (6));
-    consumerHelper.Install (nodes.Get (9));
-    consumerHelper.Install (nodes.Get (12));
+    //consumerHelper.Install (nodes.Get (2));
+    //consumerHelper.Install (nodes.Get (3));
+    //consumerHelper.Install (nodes.Get (6));
+    //consumerHelper.Install (nodes.Get (9));
+    //consumerHelper.Install (nodes.Get (12));
+    std::map<int, int> nodes_map;
+    
+    bool encontrou = false;
+    int num_rand = 0;
+    
+    while(!encontrou)
+    {
+        num_rand = rand() % numberOfCars;
+        if (nodes_map.find(num_rand) == nodes_map.end())
+        {
+            nodes_map[num_rand] = 1;
+            encontrou = true;
+            consumerHelper.Install (nodes.Get (num_rand));
+            cout<<"Consumidor: "<<num_rand<<"\n"<<;
+        }
+    }
+    
+    encontrou = false;
+    while(!encontrou)
+    {
+        num_rand = rand() % numberOfCars;
+        if (nodes_map.find(num_rand) == nodes_map.end())
+        {
+            nodes_map[num_rand] = 1;
+            encontrou = true;
+            consumerHelper.Install (nodes.Get (num_rand));
+            cout<<"Consumidor: "<<num_rand<<"\n"<<;
+        }
+    }
+    
+    encontrou = false;
+    while(!encontrou)
+    {
+        num_rand = rand() % numberOfCars;
+        if (nodes_map.find(num_rand) == nodes_map.end())
+        {
+            nodes_map[num_rand] = 1;
+            encontrou = true;
+            consumerHelper.Install (nodes.Get (num_rand));
+            cout<<"Consumidor: "<<num_rand<<"\n"<<;
+        }
+    }
+    
+    encontrou = false;
+    while(!encontrou)
+    {
+        num_rand = rand() % numberOfCars;
+        if (nodes_map.find(num_rand) == nodes_map.end())
+        {
+            nodes_map[num_rand] = 1;
+            encontrou = true;
+            consumerHelper.Install (nodes.Get (num_rand));
+            cout<<"Consumidor: "<<num_rand<<"\n"<<;
+        }
+    }
+    
+    encontrou = false;
+    while(!encontrou)
+    {
+        num_rand = rand() % numberOfCars;
+        if (nodes_map.find(num_rand) == nodes_map.end())
+        {
+            nodes_map[num_rand] = 1;
+            encontrou = true;
+            consumerHelper.Install (nodes.Get (num_rand));
+            cout<<"Consumidor: "<<num_rand<<"\n"<<;
+        }
+    }
     
     /*ndn::AppHelper consumerHelper1 ("ns3::ndn::ConsumerBatches");
-    consumerHelper1.SetPrefix (prefix);
-    consumerHelper1.SetAttribute ("Batches", StringValue ("1s 10 2s 5 5s 5 10s 2"));
-    consumerHelper1.Install (nodes.Get (2));
-    
-    ndn::AppHelper consumerHelper2 ("ns3::ndn::ConsumerBatches");
-    consumerHelper2.SetPrefix (prefix);
-    consumerHelper2.SetAttribute ("Batches", StringValue ("2s 13 20s 15 25s 10"));
-    consumerHelper2.Install (nodes.Get (3));
-    
-    ndn::AppHelper consumerHelper3 ("ns3::ndn::ConsumerBatches");
-    consumerHelper3.SetPrefix (prefix);
-    consumerHelper3.SetAttribute ("Batches", StringValue ("1s 10 30s 21"));
-    consumerHelper3.Install (nodes.Get (6));
-    
-    ndn::AppHelper consumerHelper4 ("ns3::ndn::ConsumerBatches");
-    consumerHelper4.SetPrefix (prefix);
-    consumerHelper4.SetAttribute ("Batches", StringValue ("12s 12 40s 25 90s 20"));
-    consumerHelper4.Install (nodes.Get (9));
-    
-    ndn::AppHelper consumerHelper5 ("ns3::ndn::ConsumerBatches");
-    consumerHelper5.SetPrefix (prefix);
-    consumerHelper5.SetAttribute ("Batches", StringValue ("1s 10 2s 12 50s 10 100s 10"));
-    consumerHelper5.Install (nodes.Get (12));*/
+     consumerHelper1.SetPrefix (prefix);
+     consumerHelper1.SetAttribute ("Batches", StringValue ("1s 10 2s 5 5s 5 10s 2"));
+     consumerHelper1.Install (nodes.Get (2));
+     
+     ndn::AppHelper consumerHelper2 ("ns3::ndn::ConsumerBatches");
+     consumerHelper2.SetPrefix (prefix);
+     consumerHelper2.SetAttribute ("Batches", StringValue ("2s 13 20s 15 25s 10"));
+     consumerHelper2.Install (nodes.Get (3));
+     
+     ndn::AppHelper consumerHelper3 ("ns3::ndn::ConsumerBatches");
+     consumerHelper3.SetPrefix (prefix);
+     consumerHelper3.SetAttribute ("Batches", StringValue ("1s 10 30s 21"));
+     consumerHelper3.Install (nodes.Get (6));
+     
+     ndn::AppHelper consumerHelper4 ("ns3::ndn::ConsumerBatches");
+     consumerHelper4.SetPrefix (prefix);
+     consumerHelper4.SetAttribute ("Batches", StringValue ("12s 12 40s 25 90s 20"));
+     consumerHelper4.Install (nodes.Get (9));
+     
+     ndn::AppHelper consumerHelper5 ("ns3::ndn::ConsumerBatches");
+     consumerHelper5.SetPrefix (prefix);
+     consumerHelper5.SetAttribute ("Batches", StringValue ("1s 10 2s 12 50s 10 100s 10"));
+     consumerHelper5.Install (nodes.Get (12));*/
     
     // Producer will reply to all requests starting with /prefix
     
     ndn::AppHelper producerHelper ("ns3::ndn::Producer");
     producerHelper.SetPrefix (prefix);
     producerHelper.SetAttribute ("PayloadSize", StringValue("500"));
-    producerHelper.Install (nodes.Get (0));
+    //producerHelper.Install (nodes.Get (0));
+    encontrou = false;
+    while(!encontrou)
+    {
+        num_rand = rand() % numberOfCars;
+        if (nodes_map.find(num_rand) == nodes_map.end())
+        {
+            nodes_map[num_rand] = 1;
+            encontrou = true;
+            producerHelper.Install (nodes.Get (num_rand));
+            cout<<"Produtor: "<<num_rand<<"\n"<<;
+        }
+    }
     
     // 5. Set up applications << nos atacantes
     /*NS_LOG_INFO ("Installing Applications - Malicious Nodes");

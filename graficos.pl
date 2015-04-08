@@ -203,7 +203,7 @@ foreach $dir_scenario(@lista)
                             
                             #terminou de printar
                             
-                            if($linha[10] ne undef)
+                            if($linha[14] ne undef)
                             {
                                 
                                 if($hopcount_soma{$linha[2]} eq undef)
@@ -216,47 +216,46 @@ foreach $dir_scenario(@lista)
                                 }
                                 if($hopcount_maximo{$linha[2]} eq undef)
                                 {
-                                    $hopcount_maximo{$linha[2]} = $linha[10];
+                                    $hopcount_maximo{$linha[2]} = $linha[14];
                                 }
                                 if($hopcount_minimo{$linha[2]} eq undef)
                                 {
-                                    $hopcount_minimo{$linha[2]} = $linha[10];
+                                    $hopcount_minimo{$linha[2]} = $linha[14];
                                 }
                                 
                                 
-                                $hopcount_soma{$linha[2]} = $hopcount_soma{$linha[2]} + $linha[10];
+                                $hopcount_soma{$linha[2]} = $hopcount_soma{$linha[2]} + $linha[14];
                                 $hopcount_numero{$linha[2]} = $hopcount_numero{$linha[2]} + 1;
-                                if($hopcount_maximo{$linha[2]} < $linha[10] )
+                                if($hopcount_maximo{$linha[2]} < $linha[14] )
                                 {
-                                    $hopcount_maximo{$linha[2]} = $linha[10];
+                                    $hopcount_maximo{$linha[2]} = $linha[14];
                                 }
-                                if($hopcount_minimo{$linha[2]} > $linha[10])
+                                if($hopcount_minimo{$linha[2]} > $linha[14])
                                 {
-                                    $hopcount_minimo{$linha[2]} = $linha[10];
+                                    $hopcount_minimo{$linha[2]} = $linha[14];
                                 }
                                 
                                 
                                 
                                 if($hopcount_maximo eq undef)
                                 {
-                                    $hopcount_maximo = $linha[10];
+                                    $hopcount_maximo = $linha[14];
                                 }
                                 if($hopcount_minimo eq undef)
                                 {
-                                    $hopcount_minimo = $linha[10];
+                                    $hopcount_minimo = $linha[14];
                                 }
-                                if($hopcount_maximo < $linha[10])
+                                if($hopcount_maximo < $linha[14])
                                 {
-                                    $hopcount_maximo = $linha[10];
+                                    $hopcount_maximo = $linha[14];
                                 }
-                                if($hopcount_minimo > $linha[10])
+                                if($hopcount_minimo > $linha[14])
                                 {
-                                    $hopcount_minimo = $linha[10];
+                                    $hopcount_minimo = $linha[14];
                                 }
                                 
                                 
                             }
-                            
                         }
                         if($linha[0] eq "Ocupacao_Maliciosa")
                         {
