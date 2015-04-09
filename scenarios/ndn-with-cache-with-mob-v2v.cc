@@ -122,7 +122,7 @@ main (int argc, char *argv[])
     //
     //--------------------------------------------------------------------------
     
-    //teste
+    //*************  teste
     /*Ptr<ListPositionAllocator> positionAlloc = CreateObject<ListPositionAllocator> ();
      positionAlloc->Add (Vector (0.0, 20.0, 0.0));
      positionAlloc->Add (Vector (115.0, 20.0, 0.0)); //antes 137
@@ -132,28 +132,9 @@ main (int argc, char *argv[])
      mobility.SetPositionAllocator (positionAlloc);
      
      mobility.SetMobilityModel ("ns3::ConstantPositionMobilityModel");*/
-    //fim teste
+    //*************  fim teste
     
-    //area baseada no shopping mall at millenia de 103.866 metros quadrados, estacionamento (320X360)
-    
-    //sem mobilidade - GRID 7 x 7 CONSTANT POSITION
-    
-    /*MobilityHelper mobility;
-     // setup the grid itself: objects are layed out
-     // started from (0,0) with 7 objects per row,
-     // the x interval between each object is 45,7 meters
-     // and the y interval between each object is 51,4 meters
-     mobility.SetPositionAllocator ("ns3::GridPositionAllocator",
-     "MinX", DoubleValue (0.0),
-     "MinY", DoubleValue (0.0),
-     "DeltaX", DoubleValue (45.7),
-     "DeltaY", DoubleValue (51.4),
-     "GridWidth", UintegerValue (7),
-     "LayoutType", StringValue ("RowFirst"));
-     
-     mobility.SetMobilityModel ("ns3::ConstantPositionMobilityModel");*/
-    
-    //com mobilidade - GRID 7 X 7 VEICULAR
+    //area baseada no shopping mall at millenia de 103.866 metros quadrados, estacionamento (320X360) --> mudou para (525 X 700) dar gordura (600 X 800)
     
     MobilityHelper mobility;
     // setup the grid itself: objects are layed out
@@ -163,16 +144,21 @@ main (int argc, char *argv[])
     mobility.SetPositionAllocator ("ns3::GridPositionAllocator",
                                    "MinX", DoubleValue (0.0),
                                    "MinY", DoubleValue (0.0),
-                                   "DeltaX", DoubleValue (45.7),
-                                   "DeltaY", DoubleValue (51.4),
+                                   "DeltaX", DoubleValue (75.0),
+                                   "DeltaY", DoubleValue (100.0),
                                    "GridWidth", UintegerValue (7),
                                    "LayoutType", StringValue ("RowFirst"));
     
+    //sem mobilidade - GRID 7 x 7 CONSTANT POSITION
+    
+    //mobility.SetMobilityModel ("ns3::ConstantPositionMobilityModel");*/
+    
+    //com mobilidade - GRID 7 X 7 VEICULAR
     
     mobility.SetMobilityModel ("ns3::Vehicular2dMobilityModel",
-                               "Bounds", StringValue ("-10|310|-10|350"),
-                               "Time", StringValue ("10s"),
-                               "Mode", StringValue ("Time"),
+                               "Bounds", StringValue ("-10|590|-10|790"),
+                               "Mode", StringValue ("Distance"),
+                               "Distance", StringValue ("100"),
                                "Direction", StringValue ("ns3::UniformRandomVariable[Min=0.0|Max=6.283184]"),
                                "Speed", StringValue ("ns3::UniformRandomVariable[Min=2.0|Max=4.0]"));
     
@@ -212,7 +198,7 @@ main (int argc, char *argv[])
     
     ndn::AppHelper consumerHelper ("ns3::ndn::ConsumerCbr");
     consumerHelper.SetPrefix (prefix);
-    consumerHelper.SetAttribute ("Frequency", DoubleValue (10.0));
+    consumerHelper.SetAttribute ("Frequency", DoubleValue (20.0));
     //consumerHelper.SetAttribute ("Randomize", StringValue ("uniform"))
     consumerHelper.SetAttribute ("MaxSeq", IntegerValue (500));
     //consumerHelper.Install (nodes.Get (2));
@@ -375,7 +361,7 @@ main (int argc, char *argv[])
     
     //cout << "Linha 175" << "\n";
     
-    Simulator::Stop (Seconds (180.0));
+    Simulator::Stop (Seconds (100.0));
     
     NS_LOG_INFO ("Starting");
     

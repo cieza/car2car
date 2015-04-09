@@ -1,0 +1,33 @@
+Descrição dos experimentos:
+
+Experimento 5
+Nao proativo
+ConsumerCbr
+180 segundos
+
+Experimento 6
+Proativo
+ConsumerCbr
+180 segundos
+
+Experimento 7
+Nao proativo
+ConsumerBatches
+180 segundos
+
+Experimento 8
+Proativo
+ConsumerBatches
+180 segundos
+
+Experimento 9
+Nao proativo
+ConsumerCbr
+180 segundos
+ID do nó aleatório
+
+Experimento 10
+Proativo
+ConsumerCbr
+180 segundos
+ID do nó aleatório
