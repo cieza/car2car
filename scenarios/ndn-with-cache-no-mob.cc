@@ -151,7 +151,7 @@ main (int argc, char *argv[])
     
     //sem mobilidade - GRID 7 x 7 CONSTANT POSITION
     
-    mobility.SetMobilityModel ("ns3::ConstantPositionMobilityModel");*/
+    mobility.SetMobilityModel ("ns3::ConstantPositionMobilityModel");
     
     //com mobilidade - GRID 7 X 7 VEICULAR
     
