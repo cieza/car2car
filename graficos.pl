@@ -56,7 +56,12 @@ $scenarios_hopcount_maximo[0] = ["Politica","NaoProativo","ProAtivo"];
 @scenarios_hopcount_minimo = ();
 $scenarios_hopcount_minimo[0] = ["Politica","NaoProativo","ProAtivo"];
 
-$file_nos_name = "/home/elise/car2car/graficos_nos/";
+
+@scenarios_interesses_enviados_satisfeitos = ();
+$scenarios_interesses_enviados_satisfeitos[0] = ["Politica","NaoProativo_Enviados","ProAtivo_Enviados","NaoProativo_Satisfeitos","ProAtivo_Satisfeitoss"];
+
+
+mkpath("/home/elise/car2car/graficos_barra/");
 
 $k = 1;
 # percorre cada subdiretorio, ou seja, percorre os cenarios
@@ -93,6 +98,8 @@ foreach $dir_scenario(@lista)
         @experimentos_hopcount_maximo = ();
         @experimentos_hopcount_minimo = ();
         
+        
+        @experimentos_interesses_enviados_satisfeito = ();
         
         # percorre sobre os diretorios dos experimentos nao proativo e proativo
         foreach $experimento_dir(@experimentos_dirs)
@@ -174,8 +181,7 @@ foreach $dir_scenario(@lista)
                     # HashMap que vai guardar o menor hopcount para atender os interesses do no, a chave corresponde ao ID do no
                     %hopcount_minimo = ();
                     
-                    $dir = $file_nos_name.$dir_scenario."/experimento_".$i."/".$dir_exp;
-                    mkpath($dir);
+                    
                     
                     # abre arquivo saida.txt para ler
                     open ARK, $file_name;
@@ -190,18 +196,6 @@ foreach $dir_scenario(@lista)
                             $taxas_entrega_satisfeitos{$linha[2]} = $linha[4];
                             $taxas_entrega_interesses{$linha[2]} = $linha[6];
                             
-                            #vai printar em um arquivo especifico de um no especifico de uma rodada especifica etc, etc
-                            $file_aux_ark_name = $file_nos_name.$dir_scenario."/experimento_".$i."/".$dir_exp."/no_".$linha[2].".txt";
-                            #print("File name: $file_aux_ark_name\n");
-                            open ARK2, ">>".$file_aux_ark_name;
-                            select ARK2;
-                            
-                            print($linha[8]."   ".$linha[6]."   ".$linha[4]."\n");
-                            
-                            select STDOUT;
-                            close ARK2;
-                            
-                            #terminou de printar
                             
                             if($linha[14] ne undef)
                             {
@@ -422,6 +416,16 @@ foreach $dir_scenario(@lista)
             $experimentos_hopcount_minimo[$i] = $hopcount_minimo;
             
             
+            $intereses_realizados = $interesses/$count;
+            $intereses_satisfeitos = $satisfeitos/$count;
+            
+            $experimentos_interesses_enviados_satisfeito[$i] = $intereses_realizados;
+            $experimentos_interesses_enviados_satisfeito[$i+2] = $intereses_satisfeitos;
+            
+            
+            
+            
+            
             # identifica se eh nao proativo (i=1) ou se eh proativo (i=2)
             $i = $i + 1;
             
@@ -456,6 +460,9 @@ foreach $dir_scenario(@lista)
         $scenarios_hopcount_minimo[0] = $dir_scenario;
         $scenarios_hopcount_minimo[$k] = [@experimentos_hopcount_minimo];
         
+        $scenarios_interesses_enviados_satisfeitos[0] = $dir_scenario;
+        $scenarios_interesses_enviados_satisfeitos[$k] = [$experimentos_interesses];
+        
         
         $k = $k + 1;
     }
@@ -464,7 +471,7 @@ foreach $dir_scenario(@lista)
 }
 
 
-$file_name = "/home/elise/car2car/txentrega.txt";
+$file_name = "/home/elise/car2car/graficos_barra/txentrega.txt";
 open ARK, ">".$file_name;
 select ARK;
 $i = 0;
@@ -483,7 +490,7 @@ while($i < 3)
 
 close ARK;
 
-$file_name = "/home/elise/car2car/txentrega_relativa.txt";
+$file_name = "/home/elise/car2car/graficos_barra/txentrega_relativa.txt";
 open ARK, ">".$file_name;
 select ARK;
 $i = 0;
@@ -504,7 +511,7 @@ close ARK;
 
 #medias
 #$x =  $sum_packets/$count;
-$file_name = "/home/elise/car2car/ocupacao.txt";
+$file_name = "/home/elise/car2car/graficos_barra/ocupacao.txt";
 open ARK, ">".$file_name;
 select ARK;
 $i = 0;
@@ -524,7 +531,7 @@ while($i < 3)
 close ARK;
 
 
-$file_name = "/home/elise/car2car/atraso.txt";
+$file_name = "/home/elise/car2car/graficos_barra/atraso.txt";
 open ARK, ">".$file_name;
 select ARK;
 $i = 0;
@@ -543,7 +550,7 @@ while($i < 3)
 
 close ARK;
 
-$file_name = "/home/elise/car2car/cache_hit.txt";
+$file_name = "/home/elise/car2car/graficos_barra/cache_hit.txt";
 open ARK, ">".$file_name;
 select ARK;
 $i = 0;
@@ -562,7 +569,7 @@ while($i < 3)
 
 close ARK;
 
-$file_name = "/home/elise/car2car/cache_miss.txt";
+$file_name = "/home/elise/car2car/graficos_barra/cache_miss.txt";
 open ARK, ">".$file_name;
 select ARK;
 $i = 0;
@@ -583,7 +590,7 @@ close ARK;
 
 
 
-$file_name = "/home/elise/car2car/hopcount_medio.txt";
+$file_name = "/home/elise/car2car/graficos_barra/hopcount_medio.txt";
 open ARK, ">".$file_name;
 select ARK;
 $i = 0;
@@ -603,7 +610,7 @@ while($i < 3)
 close ARK;
 
 
-$file_name = "/home/elise/car2car/hopcount_maximo.txt";
+$file_name = "/home/elise/car2car/graficos_barra/hopcount_maximo.txt";
 open ARK, ">".$file_name;
 select ARK;
 $i = 0;
@@ -623,7 +630,7 @@ while($i < 3)
 close ARK;
 
 
-$file_name = "/home/elise/car2car/hopcount_minimo.txt";
+$file_name = "/home/elise/car2car/graficos_barra/hopcount_minimo.txt";
 open ARK, ">".$file_name;
 select ARK;
 $i = 0;
@@ -633,6 +640,26 @@ while($i < 3)
     while($j < $k)
     {
         print("$scenarios_hopcount_minimo[$j][$i]      \t");
+        $j = $j + 1;
+    }
+    print("\n");
+    $i = $i + 1;
+}
+
+
+close ARK;
+
+
+$file_name = "/home/elise/car2car/graficos_barra/interesses_enviados_satisfeito.txt";
+open ARK, ">".$file_name;
+select ARK;
+$i = 0;
+while($i < 5)
+{
+    $j = 0;
+    while($j < $k)
+    {
+        print("$scenarios_interesses_enviados_satisfeitos[$j][$i]      \t");
         $j = $j + 1;
     }
     print("\n");

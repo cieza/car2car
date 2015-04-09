@@ -4,30 +4,62 @@ Experimento 5
 Nao proativo
 ConsumerCbr
 180 segundos
+49 nós
+tamanho do cache = seqnumbers (500)
+IDs consumidores= 2, 3, 6, 9, 12
+IDs poluidores = 5, 10, 15
+IDs produtores = 0 (PL) e 1 (PP)
 
 Experimento 6
 Proativo
 ConsumerCbr
 180 segundos
+49 nós
+tamanho do cache = seqnumbers (500)
+IDs consumidores= 2, 3, 6, 9, 12
+IDs poluidores = 5, 10, 15
+IDs produtores = 0 (PL) e 1 (PP)
 
 Experimento 7
 Nao proativo
 ConsumerBatches
 180 segundos
+49 nós
+tamanho do cache = 500
+IDs consumidores= 2, 3, 6, 9, 12
+IDs poluidores = 5, 10, 15
+IDs produtores = 0 (PL) e 1 (PP)
 
 Experimento 8
 Proativo
 ConsumerBatches
 180 segundos
+49 nós
+tamanho do cache = 500
+IDs consumidores= 2, 3, 6, 9, 12
+IDs poluidores = 5, 10, 15
+IDs produtores = 0 (PL) e 1 (PP)
 
 Experimento 9
 Nao proativo
 ConsumerCbr
+Frequência 10/s legítimo 20/s poluidor
 180 segundos
+49 nós
+tamanho do cache = seqnumbers (500)
+320m X 360m
+x interval 45,7 meters
+y interval 51,4 meters
 ID do nó aleatório
 
 Experimento 10
 Proativo
 ConsumerCbr
+Frequência 10/s legítimo 20/s poluidor
 180 segundos
+49 nós
+tamanho do cache = seqnumbers (500)
+320m X 360m
+x interval 45,7 meters
+y interval 51,4 meters
 ID do nó aleatório
