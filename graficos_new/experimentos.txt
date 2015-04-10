@@ -87,3 +87,27 @@ tamanho do cache = seqnumbers (500)
 x interval 75 meters
 y interval 100 meters
 ID do nó aleatório
+
+Experimento 13
+Nao proativo
+ConsumerCbr
+Frequência 20/s legítimo 40/s poluidor
+100 segundos
+49 nós
+tamanho do cache = seqnumbers (500)
+600m X 800m
+x interval 75 meters
+y interval 100 meters
+ID do nó aleatório, para cada rodada agora
+
+Experimento 14
+Proativo
+ConsumerCbr
+Frequência 20/s legítimo 40/s poluidor
+100 segundos
+49 nós
+tamanho do cache = seqnumbers (500)
+600m X 800m
+x interval 75 meters
+y interval 100 meters
+ID do nó aleatório, para cada rodada agora

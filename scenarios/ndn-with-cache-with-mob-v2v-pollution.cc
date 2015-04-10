@@ -331,7 +331,7 @@ main (int argc, char *argv[])
     
     ndn::AppHelper consumerHelperAttack ("ns3::ndn::ConsumerCbr");
     consumerHelperAttack.SetPrefix (prefixAttack);
-    consumerHelperAttack.SetAttribute ("Frequency", DoubleValue (1.0));
+    consumerHelperAttack.SetAttribute ("Frequency", DoubleValue (40.0));
     
     /*consumerHelperAttack.Install (nodes.Get (5));
      consumerHelperAttack.Install (nodes.Get (10));
@@ -382,7 +382,7 @@ main (int argc, char *argv[])
     
     // Producer will reply to all requests starting with /polluted
     
-    /*ndn::AppHelper producerHelperAttack ("ns3::ndn::Producer");
+    ndn::AppHelper producerHelperAttack ("ns3::ndn::Producer");
     producerHelperAttack.SetPrefix (prefixAttack);
     producerHelperAttack.SetAttribute ("PayloadSize", StringValue("500"));
     //producerHelperAttack.Install (nodes.Get (1));
@@ -398,7 +398,7 @@ main (int argc, char *argv[])
             producerHelperAttack.Install (nodes.Get (num_rand));
             cout<<"Produtor_De_Lixo: "<<num_rand<<"\n";
         }
-    }*/
+    }
     
     //--------------------------------------------------------------------------
     //
