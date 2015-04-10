@@ -272,20 +272,94 @@ namespace ns3 {
             //cout<<"Nome completo: "<<interest_name<<"\n";
             //cout<<"Nome completo no original: "<<header->GetName ()<<"\n";
             
+            //cache hits e chache miss
+            bool cache_hit = false;
+
+            if(header->GetName ().GetComponents().front().compare("polluted") != 0)
+            {
+                //posicao do no
+                Ptr<MobilityModel> mobility = m_nodePtr->GetObject<MobilityModel> ();
+                if (mobility == 0)
+                {
+                    NS_FATAL_ERROR ("Mobility model has to be installed on the node");
+                    return;
+                }
+                Vector position = mobility->GetPosition ();
+                
+                Ptr<cs::Entry> auxEntry = m_nodePtr->GetObject<ContentStore> ()->Begin ();
+                //cout<<"CONTENT STORE Node: "<<m_node<<"\n";
+                if(auxEntry != NULL)
+                {
+                    do{
+                        
+                        //cout<<auxEntry->GetName ()<<"   begin: "<<auxEntry->GetName ().GetComponents().front()<<"\n";
+                        std::string entry_name("");
+                        std::list<std::string> components_cache = auxEntry->GetName ().GetComponents();
+                        std::list<std::string>::const_iterator j;
+                        for (j=components_cache.begin(); j!=components_cache.end(); j++)
+                        {
+                            entry_name = entry_name.append("/");
+                            entry_name = entry_name.append(*j);
+                        }
+                        
+                        if(entry_name.compare(interest_name) == 0)
+                        {
+                            cache_hit = true;
+                            break;
+                        }
+                        auxEntry = m_nodePtr->GetObject<ContentStore> ()->Next (auxEntry);
+                    }while(auxEntry != NULL);
+                }
+                if(cache_hit)
+                {
+                    cache_hits = cache_hits + 1;
+                    
+                }
+                else
+                {
+                    cache_misses = cache_misses + 1;
+                }
+                //cout<<"Cache_Hit  Node: "<<m_node<<"  Cache_Hit: "<<cache_hits<<"  Cache_Miss: "<<cache_misses<< "  posicao_x: "<<((int) position.x)<<"   posicao_y: "<<((int) position.y)<<"\n";
+                cout<<"hit "<<m_node<<" "<<cache_hits<<" "<<cache_misses<< " "<<((int) position.x)<<" "<<((int) position.y)<<"\n";
+            }
+            
             //verifica se a face igual a 1, ou seja, a face da aplicacao e se o prefixo e diferente de polluted, so contabiliza se for prefix
             if(face->GetId() == 1 && (header->GetName ().GetComponents().front().compare("polluted") != 0))
             {
-                //verifica se interesse já se encontra no mapa de interesses
+                //verifica se interesse ja se encontra no mapa de interesses
+                //está no mapa só conta quantas vezes já retransmiti esse interesse
                 if (interest_map.find(interest_name) != interest_map.end())
                 {
                     int num = interest_map[interest_name];
                     num++;
                     interest_map[interest_name] = num;
                 }
+                //nao esta no mapa, crio o interesse e precisa verificar se esta no cache
                 else
                 {
                     interest_map[interest_name]  = 1;
                     init_time_map[interest_name] = Simulator::Now ().ToDouble (Time::S);
+                    //verifica se o dado para aquele interesse ja nao esta na cache, se estiver marco como satisfeito
+                    if(cache_hit)
+                    {
+                        // se ja foi satisfeito entao estrutura guarda o numero de vezes que foi satisfeito
+                        if (satisfied_data_map.find(interest_name) != satisfied_data_map.end())
+                        {
+                            int num = satisfied_data_map[interest_name];
+                            num++;
+                            satisfied_data_map[interest_name] = num;
+                        }
+                        // senao marca como satisfeito e calcula o atraso para satisfazer pela primeira vez, ou seja, depois de uma vez satisfeito o atraso nao vai ser impresso de novo
+                        else
+                        {
+                            satisfied_data_map[interest_name]  = 1;
+                            // faz a conta do tempo atual menos o tempo em que o interesse foi gerado
+                            delay_map[interest_name]  = (Simulator::Now ().ToDouble (Time::S)) - init_time_map[interest_name];
+                            //cout<<"Atraso Node: "<<m_node<<" Delay: "<<delay_map[interest_name]<< " Tempo: " << Simulator::Now ().ToDouble (Time::S)<<"\n";
+                            cout<<"atraso "<<m_node<<" "<<delay_map[interest_name]<< " " << Simulator::Now ().ToDouble (Time::S)<<"\n";
+                        }
+                    }
+                    
                 }
                 cout<<"Eu Node: "<<m_node<<" Interesse: "<<interest_name<<" Tempo: "<<Simulator::Now ().ToDouble (Time::S)<<"\n";
             }
@@ -321,55 +395,7 @@ namespace ns3 {
                 cout << "txentrega " << m_node << " " << satisfied_data_map.size() << " " << interest_map.size() << " " << Simulator::Now ().ToDouble (Time::S) << " "<<((int) position.x)<<" "<<((int) position.y)<<"\n";
             }
             
-            //cache hits e chache miss
-            if(header->GetName ().GetComponents().front().compare("polluted") != 0)
-            {
-                //posicao do no
-                Ptr<MobilityModel> mobility = m_nodePtr->GetObject<MobilityModel> ();
-                if (mobility == 0)
-                {
-                    NS_FATAL_ERROR ("Mobility model has to be installed on the node");
-                    return;
-                }
-                Vector position = mobility->GetPosition ();
-                
-                Ptr<cs::Entry> auxEntry = m_nodePtr->GetObject<ContentStore> ()->Begin ();
-                //cout<<"CONTENT STORE Node: "<<m_node<<"\n";
-                bool cache_hit = false;
-                if(auxEntry != NULL)
-                {
-                    do{
-                   
-                       //cout<<auxEntry->GetName ()<<"   begin: "<<auxEntry->GetName ().GetComponents().front()<<"\n";
-                       std::string entry_name("");
-                       std::list<std::string> components_cache = auxEntry->GetName ().GetComponents();
-                       std::list<std::string>::const_iterator j;
-                       for (j=components_cache.begin(); j!=components_cache.end(); j++)
-                       {
-                           entry_name = entry_name.append("/");
-                           entry_name = entry_name.append(*j);
-                       }
-                       
-                       if(entry_name.compare(interest_name) == 0)
-                       {
-                           cache_hit = true;
-                           break;
-                      }
-                      auxEntry = m_nodePtr->GetObject<ContentStore> ()->Next (auxEntry);
-                   }while(auxEntry != NULL);
-                }
-                if(cache_hit)
-                {
-                    cache_hits = cache_hits + 1;
-                    
-                }
-                else
-                {
-                    cache_misses = cache_misses + 1;
-                }
-                //cout<<"Cache_Hit  Node: "<<m_node<<"  Cache_Hit: "<<cache_hits<<"  Cache_Miss: "<<cache_misses<< "  posicao_x: "<<((int) position.x)<<"   posicao_y: "<<((int) position.y)<<"\n";
-                cout<<"hit "<<m_node<<" "<<cache_hits<<" "<<cache_misses<< " "<<((int) position.x)<<" "<<((int) position.y)<<"\n";
-            }
+            
             
         }
         

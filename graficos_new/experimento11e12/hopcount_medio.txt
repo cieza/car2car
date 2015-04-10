@@ -1,0 +1,3 @@
+Politica      	ndn-with-cache-with-mob-v2v-pollution      	ndn-with-cache-no-mob      	ndn-with-cache-with-mob-v2v      	ndn-with-cache-no-mob-pollution      	
+NaoProativo      	4.49216886464785      	3.46744      	3.63872      	4.28946342355699      	
+ProAtivo      	3.40085335630998      	2.979      	2.97088      	3.34628169493448      	
