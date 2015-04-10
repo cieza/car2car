@@ -95,11 +95,11 @@ foreach $dir_scenario(@lista)
                         @linha = split(/\s+/);
                         
                         # se a primeira palavra da lista for "Taxa_Entrega_Absoluta" entao atualiza HashMap com a ultima informacao para aquela chave
-                        if($linha[0] eq "Taxa_Entrega_Absoluta")
+                        if($linha[0] eq "txentrega")
                         {
                             
-                            $taxas_entrega_satisfeitos{$linha[2]} = $linha[4];
-                            $taxas_entrega_interesses{$linha[2]} = $linha[6];
+                            $taxas_entrega_satisfeitos{$linha[1]} = $linha[2];
+                            $taxas_entrega_interesses{$linha[1]} = $linha[3];
                             
                             
                             $satisfeitos = 0;
@@ -122,7 +122,7 @@ foreach $dir_scenario(@lista)
                             #print("File name: $file_aux_ark_name\n");
                             select ARK2;
                             
-                            print($linha[8]."   ".$interesses."   ".$satisfeitos."\n");
+                            print($linha[4]."   ".$interesses."   ".$satisfeitos."\n");
                             
                             select STDOUT;
                             

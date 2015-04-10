@@ -158,18 +158,6 @@ namespace ns3 {
                 data_map[interest_name]  = 1;
             }
             
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
             if(interest_map.find(interest_name) != interest_map.end())
             {
                 // se ja foi satisfeito entao estrutura guarda o numero de vezes que foi satisfeito
@@ -184,10 +172,10 @@ namespace ns3 {
                     satisfied_data_map[interest_name]  = 1;
                     // faz a conta do tempo atual menos o tempo em que o interesse foi gerado
                     delay_map[interest_name]  = (Simulator::Now ().ToDouble (Time::S)) - init_time_map[interest_name];
-                    cout<<"Atraso Node: "<<m_node<<" Delay: "<<delay_map[interest_name]<< " Tempo: " << Simulator::Now ().ToDouble (Time::S)<<"\n";
+                    //cout<<"Atraso Node: "<<m_node<<" Delay: "<<delay_map[interest_name]<< " Tempo: " << Simulator::Now ().ToDouble (Time::S)<<"\n";
+                    cout<<"atraso "<<m_node<<" "<<delay_map[interest_name]<< " " << Simulator::Now ().ToDouble (Time::S)<<"\n";
                 }
             }
-            
             
             
             Ptr<cs::Entry> auxEntry = m_nodePtr->GetObject<ContentStore> ()->Begin ();
@@ -209,14 +197,8 @@ namespace ns3 {
                 }while(auxEntry != NULL);
                 double ocupacao_maliciosa = num_poluidos;
                 ocupacao_maliciosa = ocupacao_maliciosa/num_total;
-                //--------------------------------------------------------------------------
-                // * "ocup_maliciosa": Ocupacao_Maliciosa
-                // * m_node: ID do node
-                // * num_poluidos: quantidade de pedaços poluídos ocupando cache
-                // * num_total: quantidade de pedaços total ocupando cache
-                // * Simulator::Now ().ToDouble (Time::S): tempo em segundos
-                //--------------------------------------------------------------------------
-                cout<<"Ocupacao_Maliciosa  Node: "<<m_node<<"  num_poluidos: "<<num_poluidos<<" num_total: "<<num_total<< " Tempo: " << Simulator::Now ().ToDouble (Time::S)<<"\n";
+                //cout<<"Ocupacao_Maliciosa  Node: "<<m_node<<"  num_poluidos: "<<num_poluidos<<" num_total: "<<num_total<< " Tempo: " << Simulator::Now ().ToDouble (Time::S)<<"\n";
+                cout<<"ocup_maliciosa "<<m_node<<" "<<num_poluidos<<" "<<num_total<< " " << Simulator::Now ().ToDouble (Time::S)<<"\n";
             }
             else
             {
@@ -255,7 +237,8 @@ namespace ns3 {
                 
                 double taxa_absoluta = satisfied_data_map.size();
                 taxa_absoluta = taxa_absoluta/interest_map.size();
-                cout << "Taxa_Entrega_Absoluta   Node: " << m_node << " Satisfeitos: " << satisfied_data_map.size() << " Interesses: " << interest_map.size() << " Tempo: " << Simulator::Now ().ToDouble (Time::S) << "  posicao_x: "<<((int) position.x)<<"   posicao_y: "<<((int) position.y)<<"  Hopcount: "<< hopCountTag.Get ()<<"\n";
+                //cout << "Taxa_Entrega_Absoluta   Node: " << m_node << " Satisfeitos: " << satisfied_data_map.size() << " Interesses: " << interest_map.size() << " Tempo: " << Simulator::Now ().ToDouble (Time::S) << "  posicao_x: "<<((int) position.x)<<"   posicao_y: "<<((int) position.y)<<"  Hopcount: "<< hopCountTag.Get ()<<"\n";
+                cout << "txentrega " << m_node << " " << satisfied_data_map.size() << " " << interest_map.size() << " " << Simulator::Now ().ToDouble (Time::S) << " "<<((int) position.x)<<" "<<((int) position.y)<<" "<< hopCountTag.Get ()<<"\n";
                 
             }
             
@@ -304,11 +287,9 @@ namespace ns3 {
                     interest_map[interest_name]  = 1;
                     init_time_map[interest_name] = Simulator::Now ().ToDouble (Time::S);
                 }
+                cout<<"Eu Node: "<<m_node<<" Interesse: "<<interest_name<<" Tempo: "<<Simulator::Now ().ToDouble (Time::S)<<"\n";
             }
             
-            
-	    
-	    
             
             //cout << "Node: " << m_node << " Num de interesses totais: " << interest_map.size() << "\n";
             //cout << "Node: " << m_node << " Num de interesses satisfeitos totais: " << satisfied_data_map.size() << "\n";
@@ -336,7 +317,8 @@ namespace ns3 {
                 
                 double taxa_absoluta = satisfied_data_map.size();
                 taxa_absoluta = taxa_absoluta/interest_map.size();
-                cout << "Taxa_Entrega_Absoluta   Node: " << m_node << " Satisfeitos: " << satisfied_data_map.size() << " Interesses: " << interest_map.size() << " Tempo: " << Simulator::Now ().ToDouble (Time::S) << "  posicao_x: "<<((int) position.x)<<"   posicao_y: "<<((int) position.y)<<"\n";
+                //cout << "Taxa_Entrega_Absoluta   Node: " << m_node << " Satisfeitos: " << satisfied_data_map.size() << " Interesses: " << interest_map.size() << " Tempo: " << Simulator::Now ().ToDouble (Time::S) << "  posicao_x: "<<((int) position.x)<<"   posicao_y: "<<((int) position.y)<<"\n";
+                cout << "txentrega " << m_node << " " << satisfied_data_map.size() << " " << interest_map.size() << " " << Simulator::Now ().ToDouble (Time::S) << " "<<((int) position.x)<<" "<<((int) position.y)<<"\n";
             }
             
             //cache hits e chache miss
@@ -385,7 +367,8 @@ namespace ns3 {
                 {
                     cache_misses = cache_misses + 1;
                 }
-                cout<<"Cache_Hit  Node: "<<m_node<<"  Cache_Hit: "<<cache_hits<<"  Cache_Miss: "<<cache_misses<< "  posicao_x: "<<((int) position.x)<<"   posicao_y: "<<((int) position.y)<<"\n";
+                //cout<<"Cache_Hit  Node: "<<m_node<<"  Cache_Hit: "<<cache_hits<<"  Cache_Miss: "<<cache_misses<< "  posicao_x: "<<((int) position.x)<<"   posicao_y: "<<((int) position.y)<<"\n";
+                cout<<"hit "<<m_node<<" "<<cache_hits<<" "<<cache_misses<< " "<<((int) position.x)<<" "<<((int) position.y)<<"\n";
             }
             
         }

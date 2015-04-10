@@ -56,8 +56,9 @@ $scenarios_hopcount_maximo[0] = ["Politica","NaoProativo","ProAtivo"];
 @scenarios_hopcount_minimo = ();
 $scenarios_hopcount_minimo[0] = ["Politica","NaoProativo","ProAtivo"];
 
+
 @scenarios_interesses_enviados_satisfeitos = ();
-$scenarios_interesses_enviados_satisfeitos[0] = ["Politica","NaoProativo_Enviados","ProAtivo_Enviados","NaoProativo_Satisfeitos","ProAtivo_Satisfeitos"];
+$scenarios_interesses_enviados_satisfeitos[0] = ["Politica","NaoProativo_Enviados","ProAtivo_Enviados","NaoProativo_Satisfeitos","ProAtivo_Satisfeitoss"];
 
 
 mkpath("/home/elise/car2car/graficos_barra/");
@@ -190,79 +191,79 @@ foreach $dir_scenario(@lista)
                         @linha = split(/\s+/);
                         
                         # se a primeira palavra da lista for "Taxa_Entrega_Absoluta" entao atualiza HashMap com a ultima informacao para aquela chave
-                        if($linha[0] eq "Taxa_Entrega_Absoluta")
+                        if($linha[0] eq "txentrega")
                         {
-                            $taxas_entrega_satisfeitos{$linha[2]} = $linha[4];
-                            $taxas_entrega_interesses{$linha[2]} = $linha[6];
+                            $taxas_entrega_satisfeitos{$linha[1]} = $linha[2];
+                            $taxas_entrega_interesses{$linha[1]} = $linha[3];
                             
                             
-                            if($linha[14] ne undef)
+                            if($linha[7] ne undef)
                             {
                                 
-                                if($hopcount_soma{$linha[2]} eq undef)
+                                if($hopcount_soma{$linha[1]} eq undef)
                                 {
-                                    $hopcount_soma{$linha[2]} = 0;
+                                    $hopcount_soma{$linha[1]} = 0;
                                 }
-                                if($hopcount_numero{$linha[2]} eq undef)
+                                if($hopcount_numero{$linha[1]} eq undef)
                                 {
-                                    $hopcount_numero{$linha[2]} = 0;
+                                    $hopcount_numero{$linha[1]} = 0;
                                 }
-                                if($hopcount_maximo{$linha[2]} eq undef)
+                                if($hopcount_maximo{$linha[1]} eq undef)
                                 {
-                                    $hopcount_maximo{$linha[2]} = $linha[14];
+                                    $hopcount_maximo{$linha[1]} = $linha[7];
                                 }
-                                if($hopcount_minimo{$linha[2]} eq undef)
+                                if($hopcount_minimo{$linha[1]} eq undef)
                                 {
-                                    $hopcount_minimo{$linha[2]} = $linha[14];
+                                    $hopcount_minimo{$linha[1]} = $linha[7];
                                 }
                                 
                                 
-                                $hopcount_soma{$linha[2]} = $hopcount_soma{$linha[2]} + $linha[14];
-                                $hopcount_numero{$linha[2]} = $hopcount_numero{$linha[2]} + 1;
-                                if($hopcount_maximo{$linha[2]} < $linha[14] )
+                                $hopcount_soma{$linha[1]} = $hopcount_soma{$linha[1]} + $linha[7];
+                                $hopcount_numero{$linha[1]} = $hopcount_numero{$linha[1]} + 1;
+                                if($hopcount_maximo{$linha[1]} < $linha[7] )
                                 {
-                                    $hopcount_maximo{$linha[2]} = $linha[14];
+                                    $hopcount_maximo{$linha[1]} = $linha[7];
                                 }
-                                if($hopcount_minimo{$linha[2]} > $linha[14])
+                                if($hopcount_minimo{$linha[1]} > $linha[7])
                                 {
-                                    $hopcount_minimo{$linha[2]} = $linha[14];
+                                    $hopcount_minimo{$linha[1]} = $linha[7];
                                 }
                                 
                                 
                                 
                                 if($hopcount_maximo eq undef)
                                 {
-                                    $hopcount_maximo = $linha[14];
+                                    $hopcount_maximo = $linha[7];
                                 }
                                 if($hopcount_minimo eq undef)
                                 {
-                                    $hopcount_minimo = $linha[14];
+                                    $hopcount_minimo = $linha[7];
                                 }
-                                if($hopcount_maximo < $linha[14])
+                                if($hopcount_maximo < $linha[7])
                                 {
-                                    $hopcount_maximo = $linha[14];
+                                    $hopcount_maximo = $linha[7];
                                 }
-                                if($hopcount_minimo > $linha[14])
+                                if($hopcount_minimo > $linha[7])
                                 {
-                                    $hopcount_minimo = $linha[14];
+                                    $hopcount_minimo = $linha[7];
                                 }
                                 
                                 
                             }
                         }
-                        if($linha[0] eq "Ocupacao_Maliciosa")
+                        if($linha[0] eq "ocup_maliciosa")
                         {
-                            $ocupacao_num_poluidos{$linha[2]} = $linha[4];
-                            $ocupacao_num_total{$linha[2]} = $linha[6];
+                            $ocupacao_num_poluidos{$linha[1]} = $linha[2];
+                            $ocupacao_num_total{$linha[1]} = $linha[3];
                         }
-                        if($linha[0] eq "Atraso")
+                        if($linha[0] eq "atraso")
                         {
-                            $delays{$linha[2]} = $linha[4];
+                            $delays{$linha[1]} = $linha[2];
                         }
-                        if($linha[0] eq "Cache_Hit")
+                        if($linha[0] eq "hit")
                         {
-                            $hits{$linha[2]} = $linha[4];
-                            $misses{$linha[2]} = $linha[6];
+                            $hits{$linha[1]} = $linha[2];
+                            $misses{$linha[1]} = $linha[3];
                         }
                         
                     }
@@ -411,21 +412,19 @@ foreach $dir_scenario(@lista)
             else{
                 $experimentos_hopcount_medio[$i] = 0;
             }
-            
             $experimentos_hopcount_maximo[$i] = $hopcount_maximo;
             $experimentos_hopcount_minimo[$i] = $hopcount_minimo;
             
-            if($count != 0){
-                $intereses_realizados = $interesses/$count;
-                $intereses_satisfeitos = $satisfeitos/$count;
-            }
-            else{
-                $intereses_realizados = 0;
-                $intereses_satisfeitos = 0;
-            }
+            
+            $intereses_realizados = $interesses/$count;
+            $intereses_satisfeitos = $satisfeitos/$count;
             
             $experimentos_interesses_enviados_satisfeito[$i] = $intereses_realizados;
             $experimentos_interesses_enviados_satisfeito[$i+2] = $intereses_satisfeitos;
+            
+            
+            
+            
             
             # identifica se eh nao proativo (i=1) ou se eh proativo (i=2)
             $i = $i + 1;
@@ -452,22 +451,25 @@ foreach $dir_scenario(@lista)
         $experimentos_cache_hit[0] = $dir_scenario;
         $scenarios_hit[$k] = [@experimentos_cache_hit];
         
-        $experimentos_hopcount_medio[0] = $dir_scenario;
+        $scenarios_hopcount_medio[0] = $dir_scenario;
         $scenarios_hopcount_medio[$k] = [@experimentos_hopcount_medio];
         
-        $experimentos_hopcount_maximo[0] = $dir_scenario;
+        $scenarios_hopcount_maximo[0] = $dir_scenario;
         $scenarios_hopcount_maximo[$k] = [@experimentos_hopcount_maximo];
         
-        $experimentos_hopcount_minimo[0] = $dir_scenario;
+        $scenarios_hopcount_minimo[0] = $dir_scenario;
         $scenarios_hopcount_minimo[$k] = [@experimentos_hopcount_minimo];
         
-        $experimentos_interesses_enviados_satisfeito[0] = $dir_scenario;
-        $scenarios_interesses_enviados_satisfeitos[$k] = [@experimentos_interesses_enviados_satisfeito];
+        $scenarios_interesses_enviados_satisfeitos[0] = $dir_scenario;
+        $scenarios_interesses_enviados_satisfeitos[$k] = [$experimentos_interesses];
+        
         
         $k = $k + 1;
     }
     
+    
 }
+
 
 $file_name = "/home/elise/car2car/graficos_barra/txentrega.txt";
 open ARK, ">".$file_name;

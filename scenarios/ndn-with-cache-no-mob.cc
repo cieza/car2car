@@ -206,6 +206,7 @@ main (int argc, char *argv[])
     
     bool encontrou = false;
     int num_rand = 0;
+    srand(time(0));
     
     while(!encontrou)
     {
