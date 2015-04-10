@@ -209,6 +209,13 @@ namespace ns3 {
                 }while(auxEntry != NULL);
                 double ocupacao_maliciosa = num_poluidos;
                 ocupacao_maliciosa = ocupacao_maliciosa/num_total;
+                //--------------------------------------------------------------------------
+                // * "ocup_maliciosa": Ocupacao_Maliciosa
+                // * m_node: ID do node
+                // * num_poluidos: quantidade de pedaços poluídos ocupando cache
+                // * num_total: quantidade de pedaços total ocupando cache
+                // * Simulator::Now ().ToDouble (Time::S): tempo em segundos
+                //--------------------------------------------------------------------------
                 cout<<"Ocupacao_Maliciosa  Node: "<<m_node<<"  num_poluidos: "<<num_poluidos<<" num_total: "<<num_total<< " Tempo: " << Simulator::Now ().ToDouble (Time::S)<<"\n";
             }
             else

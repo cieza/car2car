@@ -422,10 +422,6 @@ foreach $dir_scenario(@lista)
             $experimentos_interesses_enviados_satisfeito[$i] = $intereses_realizados;
             $experimentos_interesses_enviados_satisfeito[$i+2] = $intereses_satisfeitos;
             
-            
-            
-            
-            
             # identifica se eh nao proativo (i=1) ou se eh proativo (i=2)
             $i = $i + 1;
             
@@ -461,7 +457,7 @@ foreach $dir_scenario(@lista)
         $scenarios_hopcount_minimo[$k] = [@experimentos_hopcount_minimo];
         
         $scenarios_interesses_enviados_satisfeitos[0] = $dir_scenario;
-        $scenarios_interesses_enviados_satisfeitos[$k] = [$experimentos_interesses];
+        $scenarios_interesses_enviados_satisfeitos[$k] = [$scenarios_interesses_enviados_satisfeitos];
         
         
         $k = $k + 1;
