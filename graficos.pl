@@ -56,9 +56,8 @@ $scenarios_hopcount_maximo[0] = ["Politica","NaoProativo","ProAtivo"];
 @scenarios_hopcount_minimo = ();
 $scenarios_hopcount_minimo[0] = ["Politica","NaoProativo","ProAtivo"];
 
-
 @scenarios_interesses_enviados_satisfeitos = ();
-$scenarios_interesses_enviados_satisfeitos[0] = ["Politica","NaoProativo_Enviados","ProAtivo_Enviados","NaoProativo_Satisfeitos","ProAtivo_Satisfeitoss"];
+$scenarios_interesses_enviados_satisfeitos[0] = ["Politica","NaoProativo_Enviados","ProAtivo_Enviados","NaoProativo_Satisfeitos","ProAtivo_Satisfeitos"];
 
 
 mkpath("/home/elise/car2car/graficos_barra/");
@@ -412,10 +411,10 @@ foreach $dir_scenario(@lista)
             else{
                 $experimentos_hopcount_medio[$i] = 0;
             }
+            
             $experimentos_hopcount_maximo[$i] = $hopcount_maximo;
             $experimentos_hopcount_minimo[$i] = $hopcount_minimo;
-            
-            
+        
             $intereses_realizados = $interesses/$count;
             $intereses_satisfeitos = $satisfeitos/$count;
             
@@ -457,15 +456,12 @@ foreach $dir_scenario(@lista)
         $scenarios_hopcount_minimo[$k] = [@experimentos_hopcount_minimo];
         
         $scenarios_interesses_enviados_satisfeitos[0] = $dir_scenario;
-        $scenarios_interesses_enviados_satisfeitos[$k] = [@scenarios_interesses_enviados_satisfeitos];
-        
+        $scenarios_interesses_enviados_satisfeitos[$k] = [@experimentos_interesses_enviados_satisfeito];
         
         $k = $k + 1;
     }
     
-    
 }
-
 
 $file_name = "/home/elise/car2car/graficos_barra/txentrega.txt";
 open ARK, ">".$file_name;
