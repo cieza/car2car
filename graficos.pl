@@ -414,9 +414,15 @@ foreach $dir_scenario(@lista)
             
             $experimentos_hopcount_maximo[$i] = $hopcount_maximo;
             $experimentos_hopcount_minimo[$i] = $hopcount_minimo;
-        
-            $intereses_realizados = $interesses/$count;
-            $intereses_satisfeitos = $satisfeitos/$count;
+            
+            if($count != 0){
+                $intereses_realizados = $interesses/$count;
+                $intereses_satisfeitos = $satisfeitos/$count;
+            }
+            else{
+                $intereses_realizados = 0;
+                $intereses_satisfeitos = 0;
+            }
             
             $experimentos_interesses_enviados_satisfeito[$i] = $intereses_realizados;
             $experimentos_interesses_enviados_satisfeito[$i+2] = $intereses_satisfeitos;
