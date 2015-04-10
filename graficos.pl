@@ -457,7 +457,7 @@ foreach $dir_scenario(@lista)
         $scenarios_hopcount_minimo[$k] = [@experimentos_hopcount_minimo];
         
         $scenarios_interesses_enviados_satisfeitos[0] = $dir_scenario;
-        $scenarios_interesses_enviados_satisfeitos[$k] = [$scenarios_interesses_enviados_satisfeitos];
+        $scenarios_interesses_enviados_satisfeitos[$k] = [@scenarios_interesses_enviados_satisfeitos];
         
         
         $k = $k + 1;
