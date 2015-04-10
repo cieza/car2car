@@ -79,7 +79,7 @@ main (int argc, char *argv[])
     // Should keep PIT entry to prevent duplicate interests from re-propagating
     Config::SetDefault ("ns3::ndn::Pit::PitEntryPruningTimout", StringValue ("1s"));
     
-    uint32_t numberOfCars = 3;
+    uint32_t numberOfCars = 49;
     
     if(argc > 1)
     {
@@ -331,9 +331,11 @@ main (int argc, char *argv[])
     ndn::AppHelper consumerHelperAttack ("ns3::ndn::ConsumerCbr");
     consumerHelperAttack.SetPrefix (prefixAttack);
     consumerHelperAttack.SetAttribute ("Frequency", DoubleValue (0.0));
+    
     /*consumerHelperAttack.Install (nodes.Get (5));
      consumerHelperAttack.Install (nodes.Get (10));
      consumerHelperAttack.Install (nodes.Get (15));*/
+    
     //consumerHelper.Install (nodes.Get (5));
     //consumerHelper.Install (nodes.Get (10));
     //consumerHelper.Install (nodes.Get (15));
