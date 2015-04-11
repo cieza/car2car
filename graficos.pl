@@ -58,7 +58,7 @@ $scenarios_hopcount_minimo[0] = ["Politica","NaoProativo","ProAtivo"];
 
 
 @scenarios_interesses_enviados_satisfeitos = ();
-$scenarios_interesses_enviados_satisfeitos[0] = ["Politica","NaoProativo_Enviados","ProAtivo_Enviados","NaoProativo_Satisfeitos","ProAtivo_Satisfeitoss"];
+$scenarios_interesses_enviados_satisfeitos[0] = ["Politica","NaoProativo_Enviados","ProAtivo_Enviados","NaoProativo_Satisfeitos","ProAtivo_Satisfeitos"];
 
 
 mkpath("/home/elise/car2car/graficos_barra/");
@@ -423,9 +423,6 @@ foreach $dir_scenario(@lista)
             $experimentos_interesses_enviados_satisfeito[$i+2] = $intereses_satisfeitos;
             
             
-            
-            
-            
             # identifica se eh nao proativo (i=1) ou se eh proativo (i=2)
             $i = $i + 1;
             
@@ -461,7 +458,7 @@ foreach $dir_scenario(@lista)
         $scenarios_hopcount_minimo[$k] = [@experimentos_hopcount_minimo];
         
         $scenarios_interesses_enviados_satisfeitos[0] = $dir_scenario;
-        $scenarios_interesses_enviados_satisfeitos[$k] = [$experimentos_interesses];
+        $scenarios_interesses_enviados_satisfeitos[$k] = [@experimentos_interesses_enviados_satisfeito];
         
         
         $k = $k + 1;
