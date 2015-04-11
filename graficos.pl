@@ -448,16 +448,16 @@ foreach $dir_scenario(@lista)
         $experimentos_cache_hit[0] = $dir_scenario;
         $scenarios_hit[$k] = [@experimentos_cache_hit];
         
-        $scenarios_hopcount_medio[0] = $dir_scenario;
+        $experimentos_hopcount_medio[0] = $dir_scenario;
         $scenarios_hopcount_medio[$k] = [@experimentos_hopcount_medio];
         
-        $scenarios_hopcount_maximo[0] = $dir_scenario;
+        $experimentos_hopcount_maximo[0] = $dir_scenario;
         $scenarios_hopcount_maximo[$k] = [@experimentos_hopcount_maximo];
         
-        $scenarios_hopcount_minimo[0] = $dir_scenario;
+        $experimentos_hopcount_minimo[0] = $dir_scenario;
         $scenarios_hopcount_minimo[$k] = [@experimentos_hopcount_minimo];
         
-        $scenarios_interesses_enviados_satisfeitos[0] = $dir_scenario;
+        $experimentos_interesses_enviados_satisfeito[0] = $dir_scenario;
         $scenarios_interesses_enviados_satisfeitos[$k] = [@experimentos_interesses_enviados_satisfeito];
         
         
