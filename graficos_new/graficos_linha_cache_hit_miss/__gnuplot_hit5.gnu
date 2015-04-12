@@ -14,5 +14,5 @@ set xlabel "Tempo (s)"
 #set style line
 se st d l
 
-plot 'with-mob-v2v-pollution-proativo.txt' u 1:2 lt 2 title "Hit", \
-'' u 1:3 lt 1 title "Miss"
+plot 'with-mob-v2v-pollution-proativo.txt' u 1:2 title "Miss", \
+'' u 1:3 title "Hit"
