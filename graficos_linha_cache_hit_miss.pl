@@ -82,6 +82,8 @@ foreach $dir_scenario(@lista)
                     %misses = ();
                     
                     
+                    $tempo_atual = 0;
+                    
                     
                     $file_aux_ark_name = $file_nos_name.$dir_scenario."/experimento_".$i."/".$dir_exp."/grafico_linha_cache_hit_miss.txt";
                     open ARK2, ">".$file_aux_ark_name;
@@ -121,11 +123,15 @@ foreach $dir_scenario(@lista)
                             #print("File name: $file_aux_ark_name\n");
                             select ARK2;
                             
-                            print($linha[4]."   ".$hits_totais."   ".$misses_totais."\n");
+                            print($tempo_atual."   ".$hits_totais."   ".$misses_totais."\n");
                             
                             select STDOUT;
                             
                             
+                        }
+                        if($linha[0] eq "txentrega")
+                        {
+                            $tempo_atual = $linha[4];
                         }
                        
                         
