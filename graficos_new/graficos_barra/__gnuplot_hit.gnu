@@ -11,7 +11,7 @@ set style data histogram
 set grid ytics
 set key left top reverse Left
 set ylabel "Hits"
-set yrange [0:]
+set yrange [0:250000]
 
 # Give the bars a plain fill pattern, and draw a solid line around them.
 #set style fill solid border
