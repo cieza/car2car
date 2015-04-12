@@ -1,0 +1,5 @@
+Politica      	ndn-with-cache-with-mob-v2v-pollution      	ndn-with-cache-no-mob      	ndn-with-cache-with-mob-v2v      	ndn-with-cache-no-mob-pollution      	
+NP:Send      	2495.5      	2500      	2500      	2483.6      	
+P:Send      	2484.7      	2500      	2500      	2500      	
+NP:Sat      	2445.2      	2500      	2500      	2430.9      	
+P:Sat      	2472.6      	2500      	2500      	2500      	

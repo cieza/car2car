@@ -585,6 +585,25 @@ while($i < 3)
 
 close ARK;
 
+$file_name = "/home/elise/car2car/graficos_barra/cache_hitRATE.txt";
+open ARK, ">".$file_name;
+select ARK;
+$i = 0;
+while($i < 3)
+{
+    $j = 0;
+    while($j < $k)
+    {
+        $hit_rate = $scenarios_hit[$j][$i]/($scenarios_miss[$j][$i] + $scenarios_hit[$j][$i]);
+        print("$hit_rate      \t");
+        $j = $j + 1;
+    }
+    print("\n");
+    $i = $i + 1;
+}
+
+
+close ARK;
 
 
 $file_name = "/home/elise/car2car/graficos_barra/hopcount_medio.txt";
