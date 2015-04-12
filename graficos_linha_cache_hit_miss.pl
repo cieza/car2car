@@ -123,7 +123,7 @@ foreach $dir_scenario(@lista)
                             #print("File name: $file_aux_ark_name\n");
                             select ARK2;
                             
-                            print($tempo_atual."   ".$hits_totais."   ".$misses_totais."\n");
+                            print($tempo_atual."   ".$misses_totais."   ".$hits_totais."\n");
                             
                             select STDOUT;
                             
