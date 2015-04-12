@@ -599,15 +599,16 @@ while($i < 3)
     $j = 0;
     while($j < $k)
     {
-        
-        if($j != 0 && $i != 0)
-        {
-            $hit_rate = $scenarios_hit[$j][$i]/($scenarios_miss[$j][$i] + $scenarios_hit[$j][$i]);
-            print("$hit_rate      \t");
-        }
-        else
-        {
-            print("$scenarios_miss[$j][$i]      \t");
+        if (($scenarios_miss[$j][$i] + $scenarios_hit[$j][$i]) != 0 ){
+            if($j != 0 && $i != 0)
+            {
+                $hit_rate = $scenarios_hit[$j][$i]/($scenarios_miss[$j][$i] + $scenarios_hit[$j][$i]);
+                print("$hit_rate      \t");
+            }
+            else
+            {
+                print("$scenarios_miss[$j][$i]      \t");
+            }
         }
         $j = $j + 1;
     }
