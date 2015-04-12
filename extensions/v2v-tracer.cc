@@ -361,7 +361,7 @@ namespace ns3 {
                     }
                     
                 }
-                cout<<"Eu Node: "<<m_node<<" Interesse: "<<interest_name<<" Tempo: "<<Simulator::Now ().ToDouble (Time::S)<<"\n";
+                //cout<<"Eu Node: "<<m_node<<" Interesse: "<<interest_name<<" Tempo: "<<Simulator::Now ().ToDouble (Time::S)<<"\n";
             }
             
             
