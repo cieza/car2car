@@ -79,7 +79,7 @@ main (int argc, char *argv[])
     // Should keep PIT entry to prevent duplicate interests from re-propagating
     Config::SetDefault ("ns3::ndn::Pit::PitEntryPruningTimout", StringValue ("1s"));
     
-    uint32_t numberOfCars = 3;
+    uint32_t numberOfCars = 49;
     
     if(argc > 1)
     {
@@ -276,31 +276,6 @@ main (int argc, char *argv[])
         }
     }
     
-    /*ndn::AppHelper consumerHelper1 ("ns3::ndn::ConsumerBatches");
-     consumerHelper1.SetPrefix (prefix);
-     consumerHelper1.SetAttribute ("Batches", StringValue ("1s 10 2s 5 5s 5 10s 2"));
-     consumerHelper1.Install (nodes.Get (2));
-     
-     ndn::AppHelper consumerHelper2 ("ns3::ndn::ConsumerBatches");
-     consumerHelper2.SetPrefix (prefix);
-     consumerHelper2.SetAttribute ("Batches", StringValue ("2s 13 20s 15 25s 10"));
-     consumerHelper2.Install (nodes.Get (3));
-     
-     ndn::AppHelper consumerHelper3 ("ns3::ndn::ConsumerBatches");
-     consumerHelper3.SetPrefix (prefix);
-     consumerHelper3.SetAttribute ("Batches", StringValue ("1s 10 30s 21"));
-     consumerHelper3.Install (nodes.Get (6));
-     
-     ndn::AppHelper consumerHelper4 ("ns3::ndn::ConsumerBatches");
-     consumerHelper4.SetPrefix (prefix);
-     consumerHelper4.SetAttribute ("Batches", StringValue ("12s 12 40s 25 90s 20"));
-     consumerHelper4.Install (nodes.Get (9));
-     
-     ndn::AppHelper consumerHelper5 ("ns3::ndn::ConsumerBatches");
-     consumerHelper5.SetPrefix (prefix);
-     consumerHelper5.SetAttribute ("Batches", StringValue ("1s 10 2s 12 50s 10 100s 10"));
-     consumerHelper5.Install (nodes.Get (12));*/
-    
     // Producer will reply to all requests starting with /prefix
     
     ndn::AppHelper producerHelper ("ns3::ndn::Producer");
@@ -359,8 +334,6 @@ main (int argc, char *argv[])
     
     boost::tuple< boost::shared_ptr<std::ostream>, std::list<boost::shared_ptr<ndn::V2vTracer> > >
     tracing = ndn::V2vTracer::InstallAll (tracer);
-    
-    //cout << "Linha 175" << "\n";
     
     Simulator::Stop (Seconds (100.0));
     

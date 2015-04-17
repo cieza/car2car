@@ -11,6 +11,9 @@ set key left top reverse Left
 set ylabel "Hit | Miss"
 set xlabel "Tempo (s)"
 
+set format y "%.0s*10^%T"
+set yrange [0:250000]
+
 #set style line
 se st d l
 

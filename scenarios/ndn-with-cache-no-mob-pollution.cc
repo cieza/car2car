@@ -79,7 +79,7 @@ main (int argc, char *argv[])
     // Should keep PIT entry to prevent duplicate interests from re-propagating
     Config::SetDefault ("ns3::ndn::Pit::PitEntryPruningTimout", StringValue ("1s"));
     
-    uint32_t numberOfCars = 3;
+    uint32_t numberOfCars = 49;
     
     if(argc > 1)
     {
@@ -272,38 +272,11 @@ main (int argc, char *argv[])
         }
     }
     
-    
-    
     /*consumerHelper.Install (nodes.Get (2));
      consumerHelper.Install (nodes.Get (3));
      consumerHelper.Install (nodes.Get (6));
      consumerHelper.Install (nodes.Get (9));
      consumerHelper.Install (nodes.Get (12));*/
-    
-    /*ndn::AppHelper consumerHelper1 ("ns3::ndn::ConsumerBatches");
-     consumerHelper1.SetPrefix (prefix);
-     consumerHelper1.SetAttribute ("Batches", StringValue ("1s 10 2s 5 5s 5 10s 2"));
-     consumerHelper1.Install (nodes.Get (2));
-     
-     ndn::AppHelper consumerHelper2 ("ns3::ndn::ConsumerBatches");
-     consumerHelper2.SetPrefix (prefix);
-     consumerHelper2.SetAttribute ("Batches", StringValue ("2s 13 20s 15 25s 10"));
-     consumerHelper2.Install (nodes.Get (3));
-     
-     ndn::AppHelper consumerHelper3 ("ns3::ndn::ConsumerBatches");
-     consumerHelper3.SetPrefix (prefix);
-     consumerHelper3.SetAttribute ("Batches", StringValue ("1s 10 30s 21"));
-     consumerHelper3.Install (nodes.Get (6));
-     
-     ndn::AppHelper consumerHelper4 ("ns3::ndn::ConsumerBatches");
-     consumerHelper4.SetPrefix (prefix);
-     consumerHelper4.SetAttribute ("Batches", StringValue ("12s 12 40s 25 90s 20"));
-     consumerHelper4.Install (nodes.Get (9));
-     
-     ndn::AppHelper consumerHelper5 ("ns3::ndn::ConsumerBatches");
-     consumerHelper5.SetPrefix (prefix);
-     consumerHelper5.SetAttribute ("Batches", StringValue ("1s 10 2s 12 50s 10 100s 10"));
-     consumerHelper5.Install (nodes.Get (12));*/
     
     // Producer will reply to all requests starting with /prefix
     
@@ -334,14 +307,37 @@ main (int argc, char *argv[])
     
     ndn::AppHelper consumerHelperAttack ("ns3::ndn::ConsumerCbr");
     consumerHelperAttack.SetPrefix (prefixAttack);
-    consumerHelperAttack.SetAttribute ("Frequency", DoubleValue (70.0));
+    consumerHelperAttack.SetAttribute ("Frequency", DoubleValue (40.0));
     /*consumerHelperAttack.Install (nodes.Get (5));
      consumerHelperAttack.Install (nodes.Get (10));
      consumerHelperAttack.Install (nodes.Get (15));*/
-    //consumerHelper.Install (nodes.Get (5));
-    //consumerHelper.Install (nodes.Get (10));
-    //consumerHelper.Install (nodes.Get (15));
     
+
+    encontrou = false;
+    while(!encontrou)
+    {
+        num_rand = rand() % numberOfCars;
+        if (nodes_map.find(num_rand) == nodes_map.end())
+        {
+            nodes_map[num_rand] = 1;
+            encontrou = true;
+            consumerHelperAttack.Install (nodes.Get (num_rand));
+            cout<<"Atacante: "<<num_rand<<"\n";
+        }
+    }
+    
+    encontrou = false;
+    while(!encontrou)
+    {
+        num_rand = rand() % numberOfCars;
+        if (nodes_map.find(num_rand) == nodes_map.end())
+        {
+            nodes_map[num_rand] = 1;
+            encontrou = true;
+            consumerHelperAttack.Install (nodes.Get (num_rand));
+            cout<<"Atacante: "<<num_rand<<"\n";
+        }
+    }
     
     encontrou = false;
     while(!encontrou)
@@ -421,9 +417,7 @@ main (int argc, char *argv[])
     
     boost::tuple< boost::shared_ptr<std::ostream>, std::list<boost::shared_ptr<ndn::V2vTracer> > >
     tracing = ndn::V2vTracer::InstallAll (tracer);
-    
-    //cout << "Linha 175" << "\n";
-    
+        
     Simulator::Stop (Seconds (100.0));
     
     NS_LOG_INFO ("Starting");
