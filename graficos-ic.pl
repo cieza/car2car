@@ -398,7 +398,14 @@ foreach $dir_scenario(@lista)
                     }
                     
                     $lista_satisfeitos_rodadas[$count] = $aux_satisfeitos;
-                    $lista_taxa_entrega_rodadas[$count] = $aux_satisfeitos/$aux_interesses;
+                    if($aux_interesses != 0)
+                    {
+                        $lista_taxa_entrega_rodadas[$count] = $aux_satisfeitos/$aux_interesses;
+                    }
+                    else
+                    {
+                        $lista_taxa_entrega_rodadas[$count] = 0;
+                    }
                     $lista_interesses_rodadas[$count] = $aux_interesses;
                     
                     
