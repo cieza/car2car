@@ -40,41 +40,41 @@ $ic_99[20] = 2.831;
 
 
 sub media{
-   $n = scalar(@_);
-   $sum = 0;
+   my $n = scalar(@_);
+   my $sum = 0;
 
    foreach $item (@_){
       $sum += $item;
    }
-   $media = $sum / $n;
+   my $media = $sum / $n;
    return $media;
 }
 
 sub desvPad{
-    $media = media(@_);
-    $sum = 0;
-    $n = scalar(@_);
-    $i = 0;
+    my $media = media(@_);
+    my $sum = 0;
+    my $n = scalar(@_);
+    my $i = 0;
     while($i < $n)
     {
         $item = @_[$i];
         $sum = (POSIX::pow( $item - $media, 2 )) + $sum;
         $i = $i + 1;
     }
-    $desvPad = $sum/($n - 1);
+    my $desvPad = $sum/($n - 1);
     return $desvPad;
 }
 
 sub variancia{
-    $desvio = desvPad(@_);
+    my $desvio = desvPad(@_);
     return sqrt($desvio);
 }
 
 sub confidence{
-    $n = scalar(@_);
-    $graus_de_liberdade = $n - 1;
-    $value = $ic_99[$graus_de_liberdade];
-    $confidenceValue = $value * (variancia(@_)/sqrt($n));
+    my $n = scalar(@_);
+    my $graus_de_liberdade = $n - 1;
+    my $value = $ic_99[$graus_de_liberdade];
+    my $confidenceValue = $value * (variancia(@_)/sqrt($n));
     return $confidenceValue;
 }
 
