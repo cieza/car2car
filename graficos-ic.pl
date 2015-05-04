@@ -431,7 +431,14 @@ foreach $dir_scenario(@lista)
                         $aux_soma_num_total = $aux_soma_num_total + $_;
                     }
                     
-                    $lista_ocupacao_maliciosa_rodadas[$count] = $aux_soma_num_poluidos/$aux_soma_num_total;
+                    if($aux_soma_num_total != 0)
+                    {
+                        $lista_ocupacao_maliciosa_rodadas[$count] = $aux_soma_num_poluidos/$aux_soma_num_total;
+                    }
+                    else
+                    {
+                        $lista_ocupacao_maliciosa_rodadas[$count]= 0;
+                    }
                     
                     
                     
