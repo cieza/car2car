@@ -290,6 +290,7 @@ foreach $dir_scenario(@lista)
                     
                     
                     # abre arquivo saida.txt para ler
+                    print("$file_name\n");
                     open ARK, $file_name;
                     foreach(<ARK>)
                     {
