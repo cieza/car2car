@@ -657,62 +657,62 @@ foreach $dir_scenario(@lista)
         $experimentos_txentrega_relativa[0] = $dir_scenario;
         $scenarios_txentrega_relativa[$k] = [@experimentos_txentrega_relativa];
         #erro
-        $erro_erro_experimentos_txentrega_relativa[$i] = "erro_".$dir_scenario;
-        $scenarios[$k+1] = [@erro_experimentos_txentrega_relativa];
+        $erro_erro_experimentos_txentrega_relativa[0] = "erro_".$dir_scenario;
+        $scenarios_txentrega_relativa[$k+1] = [@erro_experimentos_txentrega_relativa];
         
         $experimentos_ocupacao_maliciosa[0] = $dir_scenario;
         $scenarios_ocupacao_maliciosa[$k] = [@experimentos_ocupacao_maliciosa];
         #erro
-        $erro_experimentos_ocupacao_maliciosa[$i] = "erro_".$dir_scenario;
-        $scenarios[$k+1] = [@erro_experimentos_ocupacao_maliciosa];
+        $erro_experimentos_ocupacao_maliciosa[0] = "erro_".$dir_scenario;
+        $scenarios_ocupacao_maliciosa[$k+1] = [@erro_experimentos_ocupacao_maliciosa];
         
         $experimentos_delays[0] = $dir_scenario;
         $scenarios_delay[$k] = [@experimentos_delays];
         #erro
-        $erro_experimentos_delays[$i] = "erro_".$dir_scenario;
-        $scenarios[$k+1] = [@erro_experimentos_delays];
+        $erro_experimentos_delays[0] = "erro_".$dir_scenario;
+        $scenarios_delay[$k+1] = [@erro_experimentos_delays];
         
         $experimentos_cache_miss[0] = $dir_scenario;
         $scenarios_miss[$k] = [@experimentos_cache_miss];
         #erro
-        $erro_experimentos_cache_miss[$i] = "erro_".$dir_scenario;
-        $scenarios[$k+1] = [@erro_experimentos_cache_miss];
+        $erro_experimentos_cache_miss[0] = "erro_".$dir_scenario;
+        $scenarios_miss[$k+1] = [@erro_experimentos_cache_miss];
         
         $experimentos_cache_hit[0] = $dir_scenario;
         $scenarios_hit[$k] = [@experimentos_cache_hit];
         #erro
-        $erro_experimentos_cache_hit[$i] = "erro_".$dir_scenario;
-        $scenarios[$k+1] = [@erro_experimentos_cache_hit];
+        $erro_experimentos_cache_hit[0] = "erro_".$dir_scenario;
+        $scenarios_hit[$k+1] = [@erro_experimentos_cache_hit];
         
         $experimentos_cache_hit_rate[0] = $dir_scenario;
         $scenarios_hit_rate[$k] = [@experimentos_cache_hit_rate];
         #erro
-        $erro_experimentos_cache_hit_rate[$i] = "erro_".$dir_scenario;
-        $scenarios[$k+1] = [@erro_experimentos_cache_hit_rate];
+        $erro_experimentos_cache_hit_rate[0] = "erro_".$dir_scenario;
+        $scenarios_hit_rate[$k+1] = [@erro_experimentos_cache_hit_rate];
         
         $experimentos_hopcount_medio[0] = $dir_scenario;
         $scenarios_hopcount_medio[$k] = [@experimentos_hopcount_medio];
         #erro
-        $erro_experimentos_hopcount_medio[$i] = "erro_".$dir_scenario;
-        $scenarios[$k+1] = [@erro_experimentos_hopcount_medio];
+        $erro_experimentos_hopcount_medio[0] = "erro_".$dir_scenario;
+        $scenarios_hopcount_medio[$k+1] = [@erro_experimentos_hopcount_medio];
         
         $experimentos_hopcount_maximo[0] = $dir_scenario;
         $scenarios_hopcount_maximo[$k] = [@experimentos_hopcount_maximo];
         #erro
-        $erro_experimentos_hopcount_maximo[$i] = "erro_".$dir_scenario;
-        $scenarios[$k+1] = [@erro_experimentos_hopcount_maximo];
+        $erro_experimentos_hopcount_maximo[0] = "erro_".$dir_scenario;
+        $scenarios_hopcount_maximo[$k+1] = [@erro_experimentos_hopcount_maximo];
         
         $experimentos_hopcount_minimo[0] = $dir_scenario;
         $scenarios_hopcount_minimo[$k] = [@experimentos_hopcount_minimo];
         #erro
-        $erro_experimentos_hopcount_minimo[$i] = "erro_".$dir_scenario;
-        $scenarios[$k+1] = [@erro_experimentos_hopcount_minimo];
+        $erro_experimentos_hopcount_minimo[0] = "erro_".$dir_scenario;
+        $scenarios_hopcount_minimo[$k+1] = [@erro_experimentos_hopcount_minimo];
         
         $experimentos_interesses_enviados_satisfeito[0] = $dir_scenario;
         $scenarios_interesses_enviados_satisfeitos[$k] = [@experimentos_interesses_enviados_satisfeito];
         #erro
-        $erro_experimentos_interesses_enviados_satisfeito[$i] = "erro_".$dir_scenario;
-        $scenarios[$k+1] = [@erro_experimentos_interesses_enviados_satisfeito];
+        $erro_experimentos_interesses_enviados_satisfeito[0] = "erro_".$dir_scenario;
+        $scenarios_interesses_enviados_satisfeitos[$k+1] = [@erro_experimentos_interesses_enviados_satisfeito];
         
         
         $k = $k + 2;
