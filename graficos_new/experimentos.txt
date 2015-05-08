@@ -111,3 +111,105 @@ tamanho do cache = seqnumbers (500)
 x interval 75 meters
 y interval 100 meters
 ID do nó aleatório, para cada rodada agora
+
+Experimento 15
+Nao proativo
+ConsumerCbr
+Frequência 20/s legítimo 70/s poluidor
+100 segundos
+49 nós
+tamanho do cache = seqnumbers (500)
+600m X 800m
+x interval 75 meters
+y interval 100 meters
+ID do nó aleatório, para cada rodada agora
+
+Experimento 16
+Proativo
+ConsumerCbr
+Frequência 20/s legítimo 70/s poluidor
+100 segundos
+49 nós
+tamanho do cache = seqnumbers (500)
+600m X 800m
+x interval 75 meters
+y interval 100 meters
+ID do nó aleatório, para cada rodada agora
+
+Experimento 17
+Nao proativo
+ConsumerCbr
+Frequência 20/s legítimo 40/s poluidor
+100 segundos
+49 nós
+tamanho do cache = seqnumbers (500)
+600m X 800m
+x interval 75 meters
+y interval 100 meters
+ID do nó aleatório, para cada rodada agora
+Aumentei de 3 atacantes para 5
+
+Experimento 18
+Proativo
+ConsumerCbr
+Frequência 20/s legítimo 40/s poluidor
+100 segundos
+49 nós
+tamanho do cache = seqnumbers (500)
+600m X 800m
+x interval 75 meters
+y interval 100 meters
+ID do nó aleatório, para cada rodada agora
+Aumentei de 3 atacantes para 5
+
+Experimento 19
+Nao proativo
+ConsumerCbr
+Frequência 20/s legítimo 40/s poluidor
+100 segundos
+49 nós
+tamanho do cache = seqnumbers (500)
+600m X 800m
+x interval 75 meters
+y interval 100 meters
+ID do nó aleatório, para cada rodada agora
+Aumentei de 3 atacantes para 7
+
+Experimento 20
+Proativo
+ConsumerCbr
+Frequência 20/s legítimo 40/s poluidor
+100 segundos
+49 nós
+tamanho do cache = seqnumbers (500)
+600m X 800m
+x interval 75 meters
+y interval 100 meters
+ID do nó aleatório, para cada rodada agora
+Aumentei de 3 atacantes para 7
+
+Experimento 21
+Nao proativo
+ConsumerCbr
+Frequência 20/s legítimo 40/s poluidor
+100 segundos
+49 nós
+tamanho do cache = seqnumbers (500)
+600m X 800m
+x interval 75 meters
+y interval 100 meters
+ID do nó aleatório, para cada rodada agora
+Aumentei de 3 atacantes para 9
+
+Experimento 22
+Proativo
+ConsumerCbr
+Frequência 20/s legítimo 40/s poluidor
+100 segundos
+49 nós
+tamanho do cache = seqnumbers (500)
+600m X 800m
+x interval 75 meters
+y interval 100 meters
+ID do nó aleatório, para cada rodada agora
+Aumentei de 3 atacantes para 9
