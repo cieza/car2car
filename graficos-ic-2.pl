@@ -674,7 +674,7 @@ foreach $dir_scenario(@lista)
             $erro_experimentos_interesses_enviados[$i] = $erro;
             $erro = confidence(@lista_satisfeitos_rodadas);
             $erro_experimentos_interesses_enviados_satisfeito[$i+2] = $erro;
-            $erro_experimentos_interesses_satisfeito[$i] = $erro
+            $erro_experimentos_interesses_satisfeito[$i] = $erro;
             
             
             $scenarios_coluna_0[$i] = $num_atacantes;
