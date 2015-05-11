@@ -680,6 +680,7 @@ foreach $dir_scenario(@lista)
             
             
             $scenarios_coluna_0[$i] = $num_atacantes;
+            print("Numero de attacantes: $num_atacantes\n")
             
             
             
@@ -698,7 +699,7 @@ foreach $dir_scenario(@lista)
         
         
         #erro
-        $erro_experimentos[$i] = "erro_".$dir_scenario;
+        $erro_experimentos[0] = "erro_".$dir_scenario;
         $scenarios[$k+1] = [@erro_experimentos];
         
         $scenarios[0] = [@scenarios_coluna_0];
