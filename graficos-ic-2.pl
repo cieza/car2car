@@ -147,7 +147,7 @@ foreach $dir_scenario(@lista)
 {
     
     # verifica se nao eh um dos dois diretorios sempre encontrados nas pastas do Unix
-    if($dir_scenario ne "." and $dir_scenario ne "..")
+    if($dir_scenario ne "." and $dir_scenario ne ".." and (index($dir_scenario, "pollution") != -1))
     {
         # lista de diretorios de experimentos com dois diretorios, um do nao proativo e
         #@experimentos_dirs = ();
