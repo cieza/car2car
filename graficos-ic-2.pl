@@ -98,6 +98,8 @@ $count = 0;
 @scenarios = ();
 $scenarios[0] = ["Politica","NaoProativo","ProAtivo"];
 
+$scenarios_coluna_0[0] = "X";
+
 @scenarios_txentrega_relativa = ();
 $scenarios_txentrega_relativa[0] = ["Politica","NaoProativo","ProAtivo"];
 
