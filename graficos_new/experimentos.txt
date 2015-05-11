@@ -115,7 +115,7 @@ ID do nó aleatório, para cada rodada agora
 Experimento 15
 Nao proativo
 ConsumerCbr
-Frequência 20/s legítimo 70/s poluidor
+Frequência 20/s legítimo 40/s poluidor
 100 segundos
 49 nós
 tamanho do cache = seqnumbers (500)
@@ -123,11 +123,12 @@ tamanho do cache = seqnumbers (500)
 x interval 75 meters
 y interval 100 meters
 ID do nó aleatório, para cada rodada agora
+3 atacantes
 
 Experimento 16
 Proativo
 ConsumerCbr
-Frequência 20/s legítimo 70/s poluidor
+Frequência 20/s legítimo 40/s poluidor
 100 segundos
 49 nós
 tamanho do cache = seqnumbers (500)
@@ -135,6 +136,7 @@ tamanho do cache = seqnumbers (500)
 x interval 75 meters
 y interval 100 meters
 ID do nó aleatório, para cada rodada agora
+3 atacantes
 
 Experimento 17
 Nao proativo
@@ -213,3 +215,55 @@ x interval 75 meters
 y interval 100 meters
 ID do nó aleatório, para cada rodada agora
 Aumentei de 3 atacantes para 9
+
+Experimento 23
+Nao proativo
+ConsumerCbr
+Frequência 20/s legítimo 40/s poluidor
+100 segundos
+49 nós
+tamanho do cache = seqnumbers (500)
+600m X 800m
+x interval 75 meters
+y interval 100 meters
+ID do nó aleatório, para cada rodada agora
+Aumentei de 3 atacantes para 11
+
+Experimento 24
+Proativo
+ConsumerCbr
+Frequência 20/s legítimo 40/s poluidor
+100 segundos
+49 nós
+tamanho do cache = seqnumbers (500)
+600m X 800m
+x interval 75 meters
+y interval 100 meters
+ID do nó aleatório, para cada rodada agora
+Aumentei de 3 atacantes para 11
+
+Experimento 25
+Nao proativo
+ConsumerCbr
+Frequência 20/s legítimo 40/s poluidor
+100 segundos
+49 nós
+tamanho do cache = seqnumbers (500)
+600m X 800m
+x interval 75 meters
+y interval 100 meters
+ID do nó aleatório, para cada rodada agora
+Aumentei de 3 atacantes para 13
+
+Experimento 26
+Proativo
+ConsumerCbr
+Frequência 20/s legítimo 40/s poluidor
+100 segundos
+49 nós
+tamanho do cache = seqnumbers (500)
+600m X 800m
+x interval 75 meters
+y interval 100 meters
+ID do nó aleatório, para cada rodada agora
+Aumentei de 3 atacantes para 13
