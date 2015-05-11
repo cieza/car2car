@@ -312,7 +312,49 @@ main (int argc, char *argv[])
      consumerHelperAttack.Install (nodes.Get (10));
      consumerHelperAttack.Install (nodes.Get (15));*/
     
+    /* 1 */
     encontrou = false;
+    while(!encontrou)
+    {
+        num_rand = rand() % numberOfCars;
+        if (nodes_map.find(num_rand) == nodes_map.end())
+        {
+            nodes_map[num_rand] = 1;
+            encontrou = true;
+            consumerHelperAttack.Install (nodes.Get (num_rand));
+            cout<<"Atacante: "<<num_rand<<"\n";
+        }
+    }
+    
+    /* 2 */
+    encontrou = false;
+    while(!encontrou)
+    {
+        num_rand = rand() % numberOfCars;
+        if (nodes_map.find(num_rand) == nodes_map.end())
+        {
+            nodes_map[num_rand] = 1;
+            encontrou = true;
+            consumerHelperAttack.Install (nodes.Get (num_rand));
+            cout<<"Atacante: "<<num_rand<<"\n";
+        }
+    }
+    
+    /* 3 */
+    encontrou = false;
+    while(!encontrou)
+    {
+        num_rand = rand() % numberOfCars;
+        if (nodes_map.find(num_rand) == nodes_map.end())
+        {
+            nodes_map[num_rand] = 1;
+            encontrou = true;
+            consumerHelperAttack.Install (nodes.Get (num_rand));
+            cout<<"Atacante: "<<num_rand<<"\n";
+        }
+    }
+    
+    /*encontrou = false;
     while(!encontrou)
     {
         num_rand = rand() % numberOfCars;
@@ -440,46 +482,7 @@ main (int argc, char *argv[])
             consumerHelperAttack.Install (nodes.Get (num_rand));
             cout<<"Atacante: "<<num_rand<<"\n";
         }
-    }
-    
-    encontrou = false;
-    while(!encontrou)
-    {
-        num_rand = rand() % numberOfCars;
-        if (nodes_map.find(num_rand) == nodes_map.end())
-        {
-            nodes_map[num_rand] = 1;
-            encontrou = true;
-            consumerHelperAttack.Install (nodes.Get (num_rand));
-            cout<<"Atacante: "<<num_rand<<"\n";
-        }
-    }
-    
-    encontrou = false;
-    while(!encontrou)
-    {
-        num_rand = rand() % numberOfCars;
-        if (nodes_map.find(num_rand) == nodes_map.end())
-        {
-            nodes_map[num_rand] = 1;
-            encontrou = true;
-            consumerHelperAttack.Install (nodes.Get (num_rand));
-            cout<<"Atacante: "<<num_rand<<"\n";
-        }
-    }
-    
-    encontrou = false;
-    while(!encontrou)
-    {
-        num_rand = rand() % numberOfCars;
-        if (nodes_map.find(num_rand) == nodes_map.end())
-        {
-            nodes_map[num_rand] = 1;
-            encontrou = true;
-            consumerHelperAttack.Install (nodes.Get (num_rand));
-            cout<<"Atacante: "<<num_rand<<"\n";
-        }
-    }
+    }*/
     
     // Producer will reply to all requests starting with /polluted
     
