@@ -204,9 +204,10 @@ foreach $dir_scenario(@lista)
         
         # percorre sobre os diretorios enquanto não termina
         #foreach $experimento_dir(@experimentos_dirs)
-        while($n <= $n_final)
+        $y = $n;
+        while($y <= $n_final)
         {
-            $experimento_dir = $diretorio."/".$dir_scenario."/experimento_".$n;
+            $experimento_dir = $diretorio."/".$dir_scenario."/experimento_".$y;
             opendir(diretorio_experimento, $experimento_dir);
             
             # lista com nome de todas as rodadas
@@ -684,7 +685,7 @@ foreach $dir_scenario(@lista)
             
             # identifica o numero do experimento
             $i = $i + 1;
-            $n = $n + 2;
+            $y = $y + 2;
             
         }
         
