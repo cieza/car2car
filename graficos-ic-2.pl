@@ -680,7 +680,7 @@ foreach $dir_scenario(@lista)
             
             
             $scenarios_coluna_0[$i] = $num_atacantes;
-            print("Numero de attacantes: $num_atacantes\n")
+            print("Numero de attacantes: $num_atacantes\n");
             
             
             
