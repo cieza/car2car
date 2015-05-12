@@ -307,7 +307,7 @@ main (int argc, char *argv[])
     
     ndn::AppHelper consumerHelperAttack ("ns3::ndn::ConsumerCbr");
     consumerHelperAttack.SetPrefix (prefixAttack);
-    consumerHelperAttack.SetAttribute ("Frequency", DoubleValue (40.0));
+    consumerHelperAttack.SetAttribute ("Frequency", DoubleValue (100.0));
     /*consumerHelperAttack.Install (nodes.Get (5));
      consumerHelperAttack.Install (nodes.Get (10));
      consumerHelperAttack.Install (nodes.Get (15));*/
@@ -354,7 +354,7 @@ main (int argc, char *argv[])
         }
     }
     
-    encontrou = false;
+    /*encontrou = false;
     while(!encontrou)
     {
         num_rand = rand() % numberOfCars;
@@ -482,7 +482,7 @@ main (int argc, char *argv[])
             consumerHelperAttack.Install (nodes.Get (num_rand));
             cout<<"Atacante: "<<num_rand<<"\n";
         }
-    }
+    }*/
     
     // Producer will reply to all requests starting with /polluted
     
