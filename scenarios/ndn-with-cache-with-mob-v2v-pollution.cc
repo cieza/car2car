@@ -306,7 +306,7 @@ main (int argc, char *argv[])
     
     ndn::AppHelper consumerHelperAttack ("ns3::ndn::ConsumerCbr");
     consumerHelperAttack.SetPrefix (prefixAttack);
-    consumerHelperAttack.SetAttribute ("Frequency", DoubleValue (120.0));
+    consumerHelperAttack.SetAttribute ("Frequency", DoubleValue (140.0));
     
     /*consumerHelperAttack.Install (nodes.Get (5));
      consumerHelperAttack.Install (nodes.Get (10));
