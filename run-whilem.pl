@@ -3,9 +3,9 @@
 $nome_programa = $ARGV[0];
 $numero_nos = $ARGV[1];
 $experimento = $ARGV[2];
-$rodadas = $ARGV[3];
+$i = $ARGV[3];
+$rodadas = $ARGV[4];
 
-$i = 1;
 while($i <= $rodadas)
 {
     system("mkdir -p /home/elise/car2car/resultados/".$nome_programa."/experimento_".$experimento."/rodada_".$i);
