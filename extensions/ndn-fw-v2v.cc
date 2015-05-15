@@ -181,7 +181,7 @@ namespace ns3 {
                 
                 
                 /* ESSE TRECHO ABAIXO DEVE SER COMENTADO PARA DESABILITAR O COMPORTAMENTO PROATIVO*/
-                if (didCreateCacheEntry)
+                /*if (didCreateCacheEntry)
                 {
                     // initiate low priority "pushing" only for "new data packets"
                     
@@ -194,7 +194,7 @@ namespace ns3 {
                         NS_LOG_INFO("Tentando Enviar Conteudo (Nao Solicitado) " << header->GetName().GetComponents());
                         TrySendLowPriority (l3->GetFace (faceId), origPacket);
                     }
-                }
+                }*/
                 
                 
             }
