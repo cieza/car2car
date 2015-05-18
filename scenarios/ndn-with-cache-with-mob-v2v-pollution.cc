@@ -354,7 +354,7 @@ main (int argc, char *argv[])
         }
     }
     
-    encontrou = false;
+    /*encontrou = false;
     while(!encontrou)
     {
         num_rand = rand() % numberOfCars;
@@ -482,7 +482,7 @@ main (int argc, char *argv[])
             consumerHelperAttack.Install (nodes.Get (num_rand));
             cout<<"Atacante: "<<num_rand<<"\n";
         }
-    }
+    }*/
     
     // Producer will reply to all requests starting with /polluted
     
