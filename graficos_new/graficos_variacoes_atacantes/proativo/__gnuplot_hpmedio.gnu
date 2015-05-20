@@ -2,7 +2,7 @@ clear
 reset
 fontsize = 12
 set terminal png size 520,400 enhanced font "Helvetica,13"
-set output "hpmedio.png"
+set output "hpmedio-p.png"
 
 set title "Proativo"
 
