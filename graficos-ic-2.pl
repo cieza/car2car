@@ -139,7 +139,7 @@ $scenarios_interesses_satisfeitos[0] = ["Politica","NaoProativo","ProAtivo"];
 $scenarios_interesses_enviados_satisfeitos[0] = ["Politica","NaoProativo_Enviados","ProAtivo_Enviados","NaoProativo_Satisfeitos","ProAtivo_Satisfeitos"];
 
 
-mkpath("/home/elise/car2car/graficos_barra/");
+mkpath("/home/elise/car2car/graficos_variacoes_atacantes/");
 
 $k = 1;
 # percorre cada subdiretorio, ou seja, percorre os cenarios
@@ -813,7 +813,7 @@ foreach $dir_scenario(@lista)
 
 $total = $i; 
 
-$file_name = "/home/elise/car2car/graficos_barra/txentrega.txt";
+$file_name = "/home/elise/car2car/graficos_variacoes_atacantes/txentrega.txt";
 open ARK, ">".$file_name;
 select ARK;
 $i = 0;
@@ -832,7 +832,7 @@ while($i < $total)
 
 close ARK;
 
-$file_name = "/home/elise/car2car/graficos_barra/txentrega_relativa.txt";
+$file_name = "/home/elise/car2car/graficos_variacoes_atacantes/txentrega_relativa.txt";
 open ARK, ">".$file_name;
 select ARK;
 $i = 0;
@@ -853,7 +853,7 @@ close ARK;
 
 #medias
 #$x =  $sum_packets/$count;
-$file_name = "/home/elise/car2car/graficos_barra/ocupacao.txt";
+$file_name = "/home/elise/car2car/graficos_variacoes_atacantes/ocupacao.txt";
 open ARK, ">".$file_name;
 select ARK;
 $i = 0;
@@ -873,7 +873,7 @@ while($i < $total)
 close ARK;
 
 
-$file_name = "/home/elise/car2car/graficos_barra/atraso.txt";
+$file_name = "/home/elise/car2car/graficos_variacoes_atacantes/atraso.txt";
 open ARK, ">".$file_name;
 select ARK;
 $i = 0;
@@ -892,7 +892,7 @@ while($i < $total)
 
 close ARK;
 
-$file_name = "/home/elise/car2car/graficos_barra/cache_hit.txt";
+$file_name = "/home/elise/car2car/graficos_variacoes_atacantes/cache_hit.txt";
 open ARK, ">".$file_name;
 select ARK;
 $i = 0;
@@ -911,7 +911,7 @@ while($i < $total)
 
 close ARK;
 
-$file_name = "/home/elise/car2car/graficos_barra/cache_miss.txt";
+$file_name = "/home/elise/car2car/graficos_variacoes_atacantes/cache_miss.txt";
 open ARK, ">".$file_name;
 select ARK;
 $i = 0;
@@ -930,7 +930,7 @@ while($i < $total)
 
 close ARK;
 
-$file_name = "/home/elise/car2car/graficos_barra/cache_hitRATE.txt";
+$file_name = "/home/elise/car2car/graficos_variacoes_atacantes/cache_hitRATE.txt";
 open ARK, ">".$file_name;
 select ARK;
 $i = 0;
@@ -950,7 +950,7 @@ while($i < $total)
 close ARK;
 
 
-$file_name = "/home/elise/car2car/graficos_barra/hopcount_medio.txt";
+$file_name = "/home/elise/car2car/graficos_variacoes_atacantes/hopcount_medio.txt";
 open ARK, ">".$file_name;
 select ARK;
 $i = 0;
@@ -970,7 +970,7 @@ while($i < $total)
 close ARK;
 
 
-$file_name = "/home/elise/car2car/graficos_barra/hopcount_maximo.txt";
+$file_name = "/home/elise/car2car/graficos_variacoes_atacantes/hopcount_maximo.txt";
 open ARK, ">".$file_name;
 select ARK;
 $i = 0;
@@ -990,7 +990,7 @@ while($i < $total)
 close ARK;
 
 
-$file_name = "/home/elise/car2car/graficos_barra/hopcount_minimo.txt";
+$file_name = "/home/elise/car2car/graficos_variacoes_atacantes/hopcount_minimo.txt";
 open ARK, ">".$file_name;
 select ARK;
 $i = 0;
@@ -1013,7 +1013,7 @@ close ARK;
 
 
 
-$file_name = "/home/elise/car2car/graficos_barra/interesses_enviados.txt";
+$file_name = "/home/elise/car2car/graficos_variacoes_atacantes/interesses_enviados.txt";
 open ARK, ">".$file_name;
 select ARK;
 $i = 0;
@@ -1034,7 +1034,7 @@ close ARK;
 
 
 
-$file_name = "/home/elise/car2car/graficos_barra/interesses_satisfeito.txt";
+$file_name = "/home/elise/car2car/graficos_variacoes_atacantes/interesses_satisfeito.txt";
 open ARK, ">".$file_name;
 select ARK;
 $i = 0;
