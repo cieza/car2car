@@ -40,14 +40,14 @@ $ic_99[20] = 2.831;
 
 
 sub media{
-   my $n = scalar(@_);
-   my $sum = 0;
-
-   foreach $item (@_){
-      $sum += $item;
-   }
-   my $media = $sum / $n;
-   return $media;
+    my $n = scalar(@_);
+    my $sum = 0;
+    
+    foreach $item (@_){
+        $sum += $item;
+    }
+    my $media = $sum / $n;
+    return $media;
 }
 
 sub desvPad{
@@ -483,10 +483,16 @@ foreach $dir_scenario(@lista)
                     {
                         $soma_aux = $soma_aux + $_;
                     }
-                    $soma_aux = $soma_aux/(scalar @valores);
-                    $soma_delays = $soma_delays + $soma_aux;
                     
-                    $lista_soma_delays_rodadas[$count] = $soma_aux;
+                    if($soma_aux != 0){
+                        $soma_aux = $soma_aux/(scalar @valores);
+                        $soma_delays = $soma_delays + $soma_aux;
+                    }
+                    else{
+                        $soma_delays = 0;
+                    }
+                    
+                    $lista_soma_delays_rodadas[$count] = $soma_delays;
                     
                     
                     $aux_cache_miss = 0;
@@ -772,7 +778,7 @@ foreach $dir_scenario(@lista)
         $erro_experimentos_hopcount_maximo[0] = "erro_".$dir_scenario;
         $scenarios_hopcount_maximo[$k+1] = [@erro_experimentos_hopcount_maximo];
         
-        $scenarios_hopcount_maximo[0] = [@scenarios_coluna_0]; 
+        $scenarios_hopcount_maximo[0] = [@scenarios_coluna_0];
         
         $experimentos_hopcount_minimo[0] = $dir_scenario;
         $scenarios_hopcount_minimo[$k] = [@experimentos_hopcount_minimo];
@@ -780,7 +786,7 @@ foreach $dir_scenario(@lista)
         $erro_experimentos_hopcount_minimo[0] = "erro_".$dir_scenario;
         $scenarios_hopcount_minimo[$k+1] = [@erro_experimentos_hopcount_minimo];
         
-        $scenarios_hopcount_minimo[0] = [@scenarios_coluna_0]; 
+        $scenarios_hopcount_minimo[0] = [@scenarios_coluna_0];
         
         $experimentos_interesses_enviados_satisfeito[0] = $dir_scenario;
         $scenarios_interesses_enviados_satisfeitos[$k] = [@experimentos_interesses_enviados_satisfeito];
@@ -802,7 +808,7 @@ foreach $dir_scenario(@lista)
         
         
         
-        $scenarios_interesses_enviados_satisfeitos[0] = [@scenarios_coluna_0]; 
+        $scenarios_interesses_enviados_satisfeitos[0] = [@scenarios_coluna_0];
         
         
         $k = $k + 2;
@@ -811,7 +817,7 @@ foreach $dir_scenario(@lista)
     
 }
 
-$total = $i; 
+$total = $i;
 
 $file_name = "/home/elise/car2car/graficos_variacoes_atacantes/txentrega.txt";
 open ARK, ">".$file_name;
