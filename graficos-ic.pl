@@ -725,14 +725,18 @@ foreach $dir_scenario(@lista)
 $file_name = "/home/elise/car2car/graficos_barra/txentrega.txt";
 open ARK, ">".$file_name;
 select ARK;
-$i = 0;
+$i = 1;
 while($i < 3)
 {
     $j = 0;
     while($j < $k)
     {
-        print("$scenarios[$j][$i]      \t");
+        print("$scenarios[$j][$i]");
         $j = $j + 1;
+        if($j < $k)
+        {
+            print(", ");
+        }
     }
     print("\n");
     $i = $i + 1;
@@ -744,14 +748,18 @@ close ARK;
 $file_name = "/home/elise/car2car/graficos_barra/txentrega_relativa.txt";
 open ARK, ">".$file_name;
 select ARK;
-$i = 0;
+$i = 1;
 while($i < 3)
 {
     $j = 0;
     while($j < $k)
     {
-        print("$scenarios_txentrega_relativa[$j][$i]      \t");
+        print("$scenarios_txentrega_relativa[$j][$i]");
         $j = $j + 1;
+        if($j < $k)
+        {
+            print(", ");
+        }
     }
     print("\n");
     $i = $i + 1;
@@ -765,14 +773,18 @@ close ARK;
 $file_name = "/home/elise/car2car/graficos_barra/ocupacao.txt";
 open ARK, ">".$file_name;
 select ARK;
-$i = 0;
+$i = 1;
 while($i < 3)
 {
     $j = 0;
     while($j < $k)
     {
-        print("$scenarios_ocupacao_maliciosa[$j][$i]      \t");
+        print("$scenarios_ocupacao_maliciosa[$j][$i]");
         $j = $j + 1;
+        if($j < $k)
+        {
+            print(", ");
+        }
     }
     print("\n");
     $i = $i + 1;
@@ -785,14 +797,18 @@ close ARK;
 $file_name = "/home/elise/car2car/graficos_barra/atraso.txt";
 open ARK, ">".$file_name;
 select ARK;
-$i = 0;
+$i = 1;
 while($i < 3)
 {
     $j = 0;
     while($j < $k)
     {
-        print("$scenarios_delay[$j][$i]      \t");
+        print("$scenarios_delay[$j][$i]");
         $j = $j + 1;
+        if($j < $k)
+        {
+            print(", ");
+        }
     }
     print("\n");
     $i = $i + 1;
@@ -804,14 +820,18 @@ close ARK;
 $file_name = "/home/elise/car2car/graficos_barra/cache_hit.txt";
 open ARK, ">".$file_name;
 select ARK;
-$i = 0;
+$i = 1;
 while($i < 3)
 {
     $j = 0;
     while($j < $k)
     {
-        print("$scenarios_hit[$j][$i]      \t");
+        print("$scenarios_hit[$j][$i]");
         $j = $j + 1;
+        if($j < $k)
+        {
+            print(", ");
+        }
     }
     print("\n");
     $i = $i + 1;
@@ -823,14 +843,18 @@ close ARK;
 $file_name = "/home/elise/car2car/graficos_barra/cache_miss.txt";
 open ARK, ">".$file_name;
 select ARK;
-$i = 0;
+$i = 1;
 while($i < 3)
 {
     $j = 0;
     while($j < $k)
     {
-        print("$scenarios_miss[$j][$i]      \t");
+        print("$scenarios_miss[$j][$i]");
         $j = $j + 1;
+        if($j < $k)
+        {
+            print(", ");
+        }
     }
     print("\n");
     $i = $i + 1;
@@ -842,14 +866,18 @@ close ARK;
 $file_name = "/home/elise/car2car/graficos_barra/cache_hitRATE.txt";
 open ARK, ">".$file_name;
 select ARK;
-$i = 0;
+$i = 1;
 while($i < 3)
 {
     $j = 0;
     while($j < $k)
     {
-        print("$scenarios_hit_rate[$j][$i]      \t");
+        print("$scenarios_hit_rate[$j][$i]");
         $j = $j + 1;
+        if($j < $k)
+        {
+            print(", ");
+        }
     }
     print("\n");
     $i = $i + 1;
@@ -862,14 +890,18 @@ close ARK;
 $file_name = "/home/elise/car2car/graficos_barra/hopcount_medio.txt";
 open ARK, ">".$file_name;
 select ARK;
-$i = 0;
+$i = 1;
 while($i < 3)
 {
     $j = 0;
     while($j < $k)
     {
-        print("$scenarios_hopcount_medio[$j][$i]      \t");
+        print("$scenarios_hopcount_medio[$j][$i]");
         $j = $j + 1;
+        if($j < $k)
+        {
+            print(", ");
+        }
     }
     print("\n");
     $i = $i + 1;
@@ -882,14 +914,18 @@ close ARK;
 $file_name = "/home/elise/car2car/graficos_barra/hopcount_maximo.txt";
 open ARK, ">".$file_name;
 select ARK;
-$i = 0;
+$i = 1;
 while($i < 3)
 {
     $j = 0;
     while($j < $k)
     {
-        print("$scenarios_hopcount_maximo[$j][$i]      \t");
+        print("$scenarios_hopcount_maximo[$j][$i]");
         $j = $j + 1;
+        if($j < $k)
+        {
+            print(", ");
+        }
     }
     print("\n");
     $i = $i + 1;
@@ -902,14 +938,18 @@ close ARK;
 $file_name = "/home/elise/car2car/graficos_barra/hopcount_minimo.txt";
 open ARK, ">".$file_name;
 select ARK;
-$i = 0;
+$i = 1;
 while($i < 3)
 {
     $j = 0;
     while($j < $k)
     {
-        print("$scenarios_hopcount_minimo[$j][$i]      \t");
+        print("$scenarios_hopcount_minimo[$j][$i]");
         $j = $j + 1;
+        if($j < $k)
+        {
+            print(", ");
+        }
     }
     print("\n");
     $i = $i + 1;
@@ -922,14 +962,18 @@ close ARK;
 $file_name = "/home/elise/car2car/graficos_barra/interesses_enviados_satisfeito.txt";
 open ARK, ">".$file_name;
 select ARK;
-$i = 0;
+$i = 1;
 while($i < 5)
 {
     $j = 0;
     while($j < $k)
     {
-        print("$scenarios_interesses_enviados_satisfeitos[$j][$i]      \t");
+        print("$scenarios_interesses_enviados_satisfeitos[$j][$i]");
         $j = $j + 1;
+        if($j < $k)
+        {
+            print(", ");
+        }
     }
     print("\n");
     $i = $i + 1;
