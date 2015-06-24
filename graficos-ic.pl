@@ -249,6 +249,7 @@ foreach $dir_scenario(@lista)
                     
                     # file_name guarda o caminho ate o arquivo saida.txt de uma determinada rodada
                     $file_name = $experimento_dir."/".$dir_exp."/saida.txt";
+                    print($file_name."\n");
                     #$packets = 0;
                     $ininterest_packet_raw = 0;
                     #$out_packets = 0;
