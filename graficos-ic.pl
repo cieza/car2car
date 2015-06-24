@@ -239,6 +239,8 @@ foreach $dir_scenario(@lista)
             
             $max_seq = 0;
             
+            print("Vai analisar o diretorio: ".$experimento_dir."\n");
+            
             # iterando sobre todos os diretorios de rodadas
             foreach $dir_exp(@lista_experimento)
             {
