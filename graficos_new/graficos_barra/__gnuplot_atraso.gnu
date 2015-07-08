@@ -12,7 +12,7 @@ set style histogram errorbars
 set grid ytics
 #set key left top reverse Left
 set ylabel "Atraso"
-set yrange [0:50]
+set yrange [0:70]
 set datafile separator ","
 
 plot 'atraso.txt' using 2:3:xtic(1) ti "Mobilidade com Poluidor" fill pattern 5, \
