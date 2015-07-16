@@ -654,7 +654,7 @@ foreach $dir_scenario(@lista)
             if($soma_num_total != 0){
                 $media_ocupacao_maliciosa = $soma_num_poluidos/$soma_num_total;
                 $experimentos_ocupacao_maliciosa[$i] = $media_ocupacao_maliciosa;
-                #aqui colocar o erro da taxa de ocupação maliciosa
+                #aqui colocar o erro da taxa de ocupacao maliciosa
                 
                 $erro = confidence(@lista_ocupacao_maliciosa_rodadas);
                 $erro_experimentos_ocupacao_maliciosa[$i] = $erro;
@@ -667,8 +667,12 @@ foreach $dir_scenario(@lista)
             if($count != 0){
                 $media_delay = $soma_delays/$count;
                 $experimentos_delays[$i] = $media_delay;
-                #aqui colocar o erro dos delays médios
-                $erro = confidence(@lista_soma_delays_rodadas);
+                #aqui colocar o erro dos delays medios
+                #$erro = confidence(@lista_soma_delays_rodadas);
+                foreach(@lista_soma_delays_rodadas)
+                {
+                    print("Delay: $_");
+                }
                 $erro_experimentos_delays[$i] = $erro;
             }
             else{
