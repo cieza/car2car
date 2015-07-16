@@ -532,7 +532,8 @@ foreach $dir_scenario(@lista)
                         $soma_delays = 0;
                     }
                     
-                    $lista_soma_delays_rodadas[$count] = $soma_delays;
+                    #$lista_soma_delays_rodadas[$count] = $soma_delays;
+                    $lista_soma_delays_rodadas[$count] = $soma_aux;
                     
                     
                     #soma total de atrso e faz a media desse total em seguida
@@ -551,8 +552,8 @@ foreach $dir_scenario(@lista)
                         $soma_last_delays = 0;
                     }
                     
-                    $lista_soma_last_delays_rodadas[$count] = $soma_last_delays;
-                    
+                    #$lista_soma_last_delays_rodadas[$count] = $soma_last_delays;
+                    $lista_soma_last_delays_rodadas[$count] = $soma_aux;
                     
                     
                     $aux_cache_miss = 0;
