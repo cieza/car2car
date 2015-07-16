@@ -172,8 +172,12 @@ namespace ns3 {
                     satisfied_data_map[interest_name]  = 1;
                     // faz a conta do tempo atual menos o tempo em que o interesse foi gerado
                     delay_map[interest_name]  = (Simulator::Now ().ToDouble (Time::S)) - init_time_map[interest_name];
+		    //faz o mesmo só que para o last time (o tempo da ultima vez que gerou o interesse em vez do tempo que o primeiro interesse foi gerado)
+		    last_delay_map[interest_name]  = (Simulator::Now ().ToDouble (Time::S)) - last_time_map[interest_name];
                     //cout<<"Atraso Node: "<<m_node<<" Delay: "<<delay_map[interest_name]<< " Tempo: " << Simulator::Now ().ToDouble (Time::S)<<"\n";
-                    cout<<"atraso "<<m_node<<" "<<delay_map[interest_name]<< " " << Simulator::Now ().ToDouble (Time::S)<<"\n";
+                    cout<<"atraso "<<m_node<<" "<<delay_map[interest_name]<< " " << Simulator::Now ().ToDouble (Time::S)<< " " <<interest_map[interest_name]<<"\n";
+		    
+		    cout<<"atraso_pi "<<m_node<<" "<<last_delay_map[interest_name]<< " " << Simulator::Now ().ToDouble (Time::S)<< " " <<interest_map[interest_name]<<"\n";
                 }
             }
             
@@ -333,12 +337,16 @@ namespace ns3 {
                     int num = interest_map[interest_name];
                     num++;
                     interest_map[interest_name] = num;
+		    //atualiza o ultimo tempo de interesse
+		    last_time_map[interest_name] = Simulator::Now ().ToDouble (Time::S);
                 }
                 //nao esta no mapa, crio o interesse e precisa verificar se esta no cache
                 else
                 {
                     interest_map[interest_name]  = 1;
                     init_time_map[interest_name] = Simulator::Now ().ToDouble (Time::S);
+		    //colcoa o tempo do ultimo interesse gerado (que é o unico até agora)
+		    last_time_map[interest_name] = Simulator::Now ().ToDouble (Time::S);
                     //verifica se o dado para aquele interesse ja nao esta na cache, se estiver marco como satisfeito
                     if(cache_hit)
                     {
@@ -355,8 +363,12 @@ namespace ns3 {
                             satisfied_data_map[interest_name]  = 1;
                             // faz a conta do tempo atual menos o tempo em que o interesse foi gerado
                             delay_map[interest_name]  = (Simulator::Now ().ToDouble (Time::S)) - init_time_map[interest_name];
+			    //faz o mesmo só que para o last time (o tempo da ultima vez que gerou o interesse em vez do tempo que o primeiro interesse foi gerado)
+			    last_delay_map[interest_name]  = (Simulator::Now ().ToDouble (Time::S)) - last_time_map[interest_name];
                             //cout<<"Atraso Node: "<<m_node<<" Delay: "<<delay_map[interest_name]<< " Tempo: " << Simulator::Now ().ToDouble (Time::S)<<"\n";
-                            cout<<"atraso "<<m_node<<" "<<delay_map[interest_name]<< " " << Simulator::Now ().ToDouble (Time::S)<<"\n";
+                            cout<<"atraso "<<m_node<<" "<<delay_map[interest_name]<< " " << Simulator::Now ().ToDouble (Time::S)<< " " <<interest_map[interest_name]<<"\n";
+			    
+			    cout<<"atraso_pi "<<m_node<<" "<<last_delay_map[interest_name]<< " " << Simulator::Now ().ToDouble (Time::S)<< " " <<interest_map[interest_name]<<"\n";
                         }
                     }
                     

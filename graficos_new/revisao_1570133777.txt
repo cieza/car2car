@@ -1,0 +1,19 @@
+Revisão Smart home Web of Object Architecture for Convergence Service on IoT Environment
+Elise e Claiton
+
+1 Good.
+2 Questionable work with severe flaws.
+3 It has been said many times before.
+4 Unacceptable.
+
+5 The paper addresses an interesting topic.
+6 Figures not referenced in the text.
+  Figure 10 does not exist and is mentioned in the text.
+  It presents references that are not used in the text.
+  Only uses 4 of 16 references.
+  Related work disconnected from the article proposal, we saw no relationship.
+  In Section V, implementation, does not use the figures, does not explain the figures, does not explain what was Implemented, only has one paragraph.
+  Article contribution is unclear.
+  Writing low quality.
+7 Review writing, referencing and explain the figures, remove unnecessary figures, citing relevant articles of the area, clarify the contribution.
+8 Weak paper, rejected.

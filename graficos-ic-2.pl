@@ -132,6 +132,9 @@ $scenarios_ocupacao_maliciosa[0] = ["Politica","NaoProativo","ProAtivo"];
 @scenarios_delay = ();
 $scenarios_delay[0] = ["Politica","NaoProativo","ProAtivo"];
 
+@scenarios_last_delay = ();
+$scenarios_last_delay[0] = ["Politica","NaoProativo","ProAtivo"];
+
 @scenarios_hit = ();
 $scenarios_hit[0] = ["Politica","NaoProativo","ProAtivo"];
 
@@ -189,6 +192,7 @@ foreach $dir_scenario(@lista)
         @experimentos = ();
         @experimentos_ocupacao_maliciosa = ();
         @experimentos_delays = ();
+        @experimentos_last_delays = ();
         @experimentos_cache_miss = ();
         @experimentos_cache_hit = ();
         @experimentos_cache_hit_rate = ();
@@ -209,6 +213,7 @@ foreach $dir_scenario(@lista)
         @erro_experimentos = ();
         @erro_experimentos_ocupacao_maliciosa = ();
         @erro_experimentos_delays = ();
+        @erro_experimentos_last_delays = ();
         @erro_experimentos_cache_miss = ();
         @erro_experimentos_cache_hit = ();
         @erro_experimentos_cache_hit_rate = ();
@@ -254,6 +259,8 @@ foreach $dir_scenario(@lista)
             @lista_ocupacao_maliciosa_rodadas = ();
             #guarda uma lista mostrando a soma dos delays para cada rodada
             @lista_soma_delays_rodadas = ();
+            #guarda uma lista mostrando a soma dos delays (com a nova conta só vendo o ultimo interesse) para cada rodada
+            @lista_soma_last_delays_rodadas = ();
             #guarda uma lista mostrando a soma da media misse para cada rodada
             @lista_miss_rodadas = ();
             #guarda uma lista mostrando a soma da media hits para cada rodada
@@ -268,6 +275,8 @@ foreach $dir_scenario(@lista)
             $soma_num_total = 0;
             
             $soma_delays = 0;
+            
+            $soma_last_delays = 0;
             
             $soma_hopcount = 0;
             $num_hopcount = 0;
@@ -311,6 +320,9 @@ foreach $dir_scenario(@lista)
                     
                     # HashMap que vai guardar o tempo de atraso para satisfazer o interesse pela primeira vez, a chave corresponde ao ID do no
                     %delays = ();
+                    
+                    # HashMap que vai guardar o tempo de atraso para satisfazer o interesse pela primeira vez, pelo ultimo interesse, a chave corresponde ao ID do no
+                    %last_delays = ();
                     
                     # HashMap que vai guardar total de hits, a chave corresponde ao ID do no
                     %hits = ();
@@ -410,6 +422,12 @@ foreach $dir_scenario(@lista)
                         {
                             $delays{$linha[1]} = $linha[2];
                         }
+                        
+                        if($linha[0] eq "atraso_pi")
+                        {
+                            $last_delays{$linha[1]} = $linha[2];
+                        }
+                        
                         if($linha[0] eq "hit")
                         {
                             $hits{$linha[1]} = $linha[2];
@@ -515,6 +533,26 @@ foreach $dir_scenario(@lista)
                     }
                     
                     $lista_soma_delays_rodadas[$count] = $soma_delays;
+                    
+                    
+                    #soma total de atrso e faz a media desse total em seguida
+                    @valores = values %last_delays;
+                    $soma_aux = 0;
+                    foreach(@valores)
+                    {
+                        $soma_aux = $soma_aux + $_;
+                    }
+                    
+                    if($soma_aux != 0){
+                        $soma_aux = $soma_aux/(scalar @valores);
+                        $soma_last_delays = $soma_last_delays + $soma_aux;
+                    }
+                    else{
+                        $soma_last_delays = 0;
+                    }
+                    
+                    $lista_soma_last_delays_rodadas[$count] = $soma_last_delays;
+                    
                     
                     
                     $aux_cache_miss = 0;
@@ -638,6 +676,18 @@ foreach $dir_scenario(@lista)
                 $experimentos_delays[$i] = $media_delay;
             }
             
+            if($count != 0){
+                $media_last_delay = $soma_last_delays/$count;
+                $experimentos_last_delays[$i] = $media_last_delay;
+                #aqui colocar o erro dos delays médios
+                $erro = confidence(@lista_soma_last_delays_rodadas);
+                $erro_experimentos_last_delays[$i] = $erro;
+            }
+            else{
+                $media_last_delay = 0;
+                $experimentos_last_delays[$i] = $media_last_delay;
+            }
+            
             if($soma_cache_miss != 0){
                 $media_cache_miss = $soma_cache_miss/$count;
                 $experimentos_cache_miss[$i] = $media_cache_miss;
@@ -756,6 +806,14 @@ foreach $dir_scenario(@lista)
         $scenarios_delay[$k+1] = [@erro_experimentos_delays];
         
         $scenarios_delay[0] = [@scenarios_coluna_0];
+        
+        $experimentos_last_delays[0] = $dir_scenario;
+        $scenarios_last_delay[$k] = [@experimentos_last_delays];
+        #erro
+        $erro_experimentos_last_delays[0] = "erro_".$dir_scenario;
+        $scenarios_last_delay[$k+1] = [@erro_experimentos_last_delays];
+        
+        $scenarios_last_delay[0] = [@scenarios_coluna_0];
         
         $experimentos_cache_miss[0] = $dir_scenario;
         $scenarios_miss[$k] = [@experimentos_cache_miss];
@@ -911,6 +969,26 @@ while($i < $total)
     while($j < $k)
     {
         print("$scenarios_delay[$j][$i]      \t");
+        $j = $j + 1;
+    }
+    print("\n");
+    $i = $i + 1;
+}
+
+
+close ARK;
+
+
+$file_name = "/home/elise/car2car/graficos_variacoes_atacantes/atraso_pi.txt";
+open ARK, ">".$file_name;
+select ARK;
+$i = 0;
+while($i < $total)
+{
+    $j = 0;
+    while($j < $k)
+    {
+        print("$scenarios_last_delay[$j][$i]      \t");
         $j = $j + 1;
     }
     print("\n");

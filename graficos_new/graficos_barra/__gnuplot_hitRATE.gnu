@@ -12,7 +12,7 @@ set style histogram errorbars
 set grid ytics
 #set key left top reverse Left
 set ylabel "Hit Rate"
-set yrange [0:1.5]
+set yrange [0:1.0]
 set datafile separator ","
 
 plot 'cache_hitRATE.txt' using 2:3:xtic(1) ti "Mobilidade com Poluidor" fill pattern 5, \
