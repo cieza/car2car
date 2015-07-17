@@ -8,8 +8,8 @@ set output "atraso-np.png"
 
 set grid ytics
 set grid xtics
-set yrange [0:150]
-set key left top reverse Left
+set yrange [0:25]
+set key right bottom reverse Left
 set ylabel "Atraso (s)"
 set xlabel "NºAtacantes"
 

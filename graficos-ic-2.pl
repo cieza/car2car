@@ -123,6 +123,9 @@ $scenarios[0] = ["Politica","NaoProativo","ProAtivo"];
 @scenarios_coluna_0 = ();
 $scenarios_coluna_0[0] = "X";
 
+@scenarios_coluna_1 = ();
+$scenarios_coluna_1[0] = "Y";
+
 @scenarios_txentrega_relativa = ();
 $scenarios_txentrega_relativa[0] = ["Politica","NaoProativo","ProAtivo"];
 
@@ -166,7 +169,7 @@ $scenarios_interesses_enviados_satisfeitos[0] = ["Politica","NaoProativo_Enviado
 
 mkpath("/home/elise/car2car/graficos_variacoes_atacantes/");
 
-$k = 1;
+$k = 2;
 # percorre cada subdiretorio, ou seja, percorre os cenarios
 foreach $dir_scenario(@lista)
 {
@@ -289,6 +292,7 @@ foreach $dir_scenario(@lista)
             $max_seq = 0;
             
             $num_atacantes = 0;
+            $taxa_envio_atac = 0;
             $leu_o_primeiro_arquivo = 0;
             
             # iterando sobre todos os diretorios de rodadas
@@ -439,6 +443,10 @@ foreach $dir_scenario(@lista)
                             if($linha[0] eq "Atacante:")
                             {
                                 $num_atacantes = $num_atacantes + 1;
+                            }
+                            if($linha[0] eq "Taxa_envio_atac:")
+                            {
+                                $taxa_envio_atac = $linha[1];
                             }
                         }
                         
@@ -672,7 +680,7 @@ foreach $dir_scenario(@lista)
                 #$erro = confidence(@lista_soma_delays_rodadas);
                 foreach(@lista_soma_delays_rodadas)
                 {
-                    print("Delay: $_");
+                    print("Delay: $_ \n");
                 }
                 $erro_experimentos_delays[$i] = $erro;
             }
@@ -765,6 +773,9 @@ foreach $dir_scenario(@lista)
             $scenarios_coluna_0[$i] = $num_atacantes;
             print("Numero de attacantes: $num_atacantes\n");
             
+            $scenarios_coluna_1[$i] = $taxa_envio_atac;
+            print("Taxa_envio_atac: $taxa_envio_atac\n");
+            
             
             
             
@@ -786,6 +797,7 @@ foreach $dir_scenario(@lista)
         $scenarios[$k+1] = [@erro_experimentos];
         
         $scenarios[0] = [@scenarios_coluna_0];
+        $scenarios[1] = [@scenarios_coluna_1];
         
         
         $experimentos_txentrega_relativa[0] = $dir_scenario;
@@ -795,6 +807,7 @@ foreach $dir_scenario(@lista)
         $scenarios_txentrega_relativa[$k+1] = [@erro_experimentos_txentrega_relativa];
         
         $scenarios_txentrega_relativa[0] = [@scenarios_coluna_0];
+        $scenarios_txentrega_relativa[1] = [@scenarios_coluna_1];
         
         $experimentos_ocupacao_maliciosa[0] = $dir_scenario;
         $scenarios_ocupacao_maliciosa[$k] = [@experimentos_ocupacao_maliciosa];
@@ -803,6 +816,7 @@ foreach $dir_scenario(@lista)
         $scenarios_ocupacao_maliciosa[$k+1] = [@erro_experimentos_ocupacao_maliciosa];
         
         $scenarios_ocupacao_maliciosa[0] = [@scenarios_coluna_0];
+        $scenarios_ocupacao_maliciosa[1] = [@scenarios_coluna_1];
         
         $experimentos_delays[0] = $dir_scenario;
         $scenarios_delay[$k] = [@experimentos_delays];
@@ -811,6 +825,7 @@ foreach $dir_scenario(@lista)
         $scenarios_delay[$k+1] = [@erro_experimentos_delays];
         
         $scenarios_delay[0] = [@scenarios_coluna_0];
+        $scenarios_delay[1] = [@scenarios_coluna_1];
         
         $experimentos_last_delays[0] = $dir_scenario;
         $scenarios_last_delay[$k] = [@experimentos_last_delays];
@@ -819,6 +834,7 @@ foreach $dir_scenario(@lista)
         $scenarios_last_delay[$k+1] = [@erro_experimentos_last_delays];
         
         $scenarios_last_delay[0] = [@scenarios_coluna_0];
+        $scenarios_last_delay[1] = [@scenarios_coluna_1];
         
         $experimentos_cache_miss[0] = $dir_scenario;
         $scenarios_miss[$k] = [@experimentos_cache_miss];
@@ -827,6 +843,7 @@ foreach $dir_scenario(@lista)
         $scenarios_miss[$k+1] = [@erro_experimentos_cache_miss];
         
         $scenarios_miss[0] = [@scenarios_coluna_0];
+        $scenarios_miss[1] = [@scenarios_coluna_1];
         
         
         $experimentos_cache_hit[0] = $dir_scenario;
@@ -836,6 +853,7 @@ foreach $dir_scenario(@lista)
         $scenarios_hit[$k+1] = [@erro_experimentos_cache_hit];
         
         $scenarios_hit[0] = [@scenarios_coluna_0];
+        $scenarios_hit[1] = [@scenarios_coluna_1];
         
         
         $experimentos_cache_hit_rate[0] = $dir_scenario;
@@ -845,6 +863,7 @@ foreach $dir_scenario(@lista)
         $scenarios_hit_rate[$k+1] = [@erro_experimentos_cache_hit_rate];
         
         $scenarios_hit_rate[0] = [@scenarios_coluna_0];
+        $scenarios_hit_rate[1] = [@scenarios_coluna_1];
         
         
         $experimentos_hopcount_medio[0] = $dir_scenario;
@@ -855,6 +874,7 @@ foreach $dir_scenario(@lista)
         
         
         $scenarios_hopcount_medio[0] = [@scenarios_coluna_0];
+        $scenarios_hopcount_medio[1] = [@scenarios_coluna_1];
         
         
         $experimentos_hopcount_maximo[0] = $dir_scenario;
@@ -864,6 +884,7 @@ foreach $dir_scenario(@lista)
         $scenarios_hopcount_maximo[$k+1] = [@erro_experimentos_hopcount_maximo];
         
         $scenarios_hopcount_maximo[0] = [@scenarios_coluna_0];
+        $scenarios_hopcount_maximo[1] = [@scenarios_coluna_1];
         
         $experimentos_hopcount_minimo[0] = $dir_scenario;
         $scenarios_hopcount_minimo[$k] = [@experimentos_hopcount_minimo];
@@ -872,6 +893,7 @@ foreach $dir_scenario(@lista)
         $scenarios_hopcount_minimo[$k+1] = [@erro_experimentos_hopcount_minimo];
         
         $scenarios_hopcount_minimo[0] = [@scenarios_coluna_0];
+        $scenarios_hopcount_minimo[1] = [@scenarios_coluna_1];
         
         $experimentos_interesses_enviados_satisfeito[0] = $dir_scenario;
         $scenarios_interesses_enviados_satisfeitos[$k] = [@experimentos_interesses_enviados_satisfeito];
@@ -894,6 +916,7 @@ foreach $dir_scenario(@lista)
         
         
         $scenarios_interesses_enviados_satisfeitos[0] = [@scenarios_coluna_0];
+        $scenarios_interesses_enviados_satisfeitos[1] = [@scenarios_coluna_1];
         
         
         $k = $k + 2;

@@ -1,0 +1,2 @@
+X      	ndn-with-cache-no-mob-pollution      	erro_ndn-with-cache-no-mob-pollution      	ndn-with-cache-with-mob-v2v-pollution      	erro_ndn-with-cache-with-mob-v2v-pollution      	
+13      	1.38951806957      	3.7479264878642      	1.20506719385      	2.96774954594356      	

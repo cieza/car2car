@@ -61,16 +61,15 @@ $ic_95[18] = 2.093;
 $ic_95[19] = 2.086;
 $ic_95[20] = 2.080;
 
-
 sub media{
-   my $n = scalar(@_);
-   my $sum = 0;
-
-   foreach $item (@_){
-      $sum += $item;
-   }
-   my $media = $sum / $n;
-   return $media;
+    my $n = scalar(@_);
+    my $sum = 0;
+    
+    foreach $item (@_){
+        $sum += $item;
+    }
+    my $media = $sum / $n;
+    return $media;
 }
 
 sub desvPad{
@@ -103,6 +102,7 @@ sub confidence{
 
 
 $n = $ARGV[0];
+$n_final  = $ARGV[1];
 
 #########################
 opendir(diretorio, $diretorio);
@@ -120,6 +120,12 @@ $count = 0;
 @scenarios = ();
 $scenarios[0] = ["Politica","NaoProativo","ProAtivo"];
 
+@scenarios_coluna_0 = ();
+$scenarios_coluna_0[0] = "X";
+
+@scenarios_coluna_1 = ();
+$scenarios_coluna_1[0] = "Y";
+
 @scenarios_txentrega_relativa = ();
 $scenarios_txentrega_relativa[0] = ["Politica","NaoProativo","ProAtivo"];
 
@@ -128,6 +134,9 @@ $scenarios_ocupacao_maliciosa[0] = ["Politica","NaoProativo","ProAtivo"];
 
 @scenarios_delay = ();
 $scenarios_delay[0] = ["Politica","NaoProativo","ProAtivo"];
+
+@scenarios_last_delay = ();
+$scenarios_last_delay[0] = ["Politica","NaoProativo","ProAtivo"];
 
 @scenarios_hit = ();
 $scenarios_hit[0] = ["Politica","NaoProativo","ProAtivo"];
@@ -148,38 +157,45 @@ $scenarios_hopcount_maximo[0] = ["Politica","NaoProativo","ProAtivo"];
 $scenarios_hopcount_minimo[0] = ["Politica","NaoProativo","ProAtivo"];
 
 
+@scenarios_interesses_enviados = ();
+$scenarios_interesses_enviados[0] = ["Politica","NaoProativo","ProAtivo"];
+
+@scenarios_interesses_satisfeitos = ();
+$scenarios_interesses_satisfeitos[0] = ["Politica","NaoProativo","ProAtivo"];
+
 @scenarios_interesses_enviados_satisfeitos = ();
 $scenarios_interesses_enviados_satisfeitos[0] = ["Politica","NaoProativo_Enviados","ProAtivo_Enviados","NaoProativo_Satisfeitos","ProAtivo_Satisfeitos"];
 
 
-mkpath("/home/elise/car2car/graficos_barra/");
+mkpath("/home/elise/car2car/graficos_variacoes_atacantes/");
 
-$k = 1;
+$k = 2;
 # percorre cada subdiretorio, ou seja, percorre os cenarios
 foreach $dir_scenario(@lista)
 {
     
     # verifica se nao eh um dos dois diretorios sempre encontrados nas pastas do Unix
-    if($dir_scenario ne "." and $dir_scenario ne "..")
+    if($dir_scenario ne "." and $dir_scenario ne ".." and (index($dir_scenario, "pollution") == -1))
     {
         # lista de diretorios de experimentos com dois diretorios, um do nao proativo e
-        @experimentos_dirs = ();
+        #@experimentos_dirs = ();
         
         # cria o nome do diretorio que contem experimento nao proativo, onde n eh impar
-        $dir_exp_n = $diretorio."/".$dir_scenario."/experimento_".$n;
+        #$dir_exp_n = $diretorio."/".$dir_scenario."/experimento_".$n;
         
         # cria o nome do diretorio que contem experimento proativo
-        $dir_exp_n_1 = $diretorio."/".$dir_scenario."/experimento_".($n+1);
+        #$dir_exp_n_1 = $diretorio."/".$dir_scenario."/experimento_".($n+1);
         
         # em 0 se encontra o nao proativo e em 1 se encontra o proativo
-        $experimentos_dirs[0] = $dir_exp_n;
-        $experimentos_dirs[1] = $dir_exp_n_1;
+        #$experimentos_dirs[0] = $dir_exp_n;
+        #$experimentos_dirs[1] = $dir_exp_n_1;
         
         
         $i = 1;
         @experimentos = ();
         @experimentos_ocupacao_maliciosa = ();
         @experimentos_delays = ();
+        @experimentos_last_delays = ();
         @experimentos_cache_miss = ();
         @experimentos_cache_hit = ();
         @experimentos_cache_hit_rate = ();
@@ -193,10 +209,14 @@ foreach $dir_scenario(@lista)
         
         @experimentos_interesses_enviados_satisfeito = ();
         
+        @experimentos_interesses_enviados = ();
+        @experimentos_interesses_satisfeito = ();
+        
         #lista de erros
         @erro_experimentos = ();
         @erro_experimentos_ocupacao_maliciosa = ();
         @erro_experimentos_delays = ();
+        @erro_experimentos_last_delays = ();
         @erro_experimentos_cache_miss = ();
         @erro_experimentos_cache_hit = ();
         @erro_experimentos_cache_hit_rate = ();
@@ -210,10 +230,15 @@ foreach $dir_scenario(@lista)
         
         @erro_experimentos_interesses_enviados_satisfeito = ();
         
-        # percorre sobre os diretorios dos experimentos nao proativo e proativo
-        foreach $experimento_dir(@experimentos_dirs)
+        @erro_experimentos_interesses_enviados = ();
+        @erro_experimentos_interesses_satisfeito = ();
+        
+        # percorre sobre os diretorios enquanto não termina
+        #foreach $experimento_dir(@experimentos_dirs)
+        $y = $n;
+        while($y <= $n_final)
         {
-            
+            $experimento_dir = $diretorio."/".$dir_scenario."/experimento_".$y;
             opendir(diretorio_experimento, $experimento_dir);
             
             # lista com nome de todas as rodadas
@@ -237,6 +262,8 @@ foreach $dir_scenario(@lista)
             @lista_ocupacao_maliciosa_rodadas = ();
             #guarda uma lista mostrando a soma dos delays para cada rodada
             @lista_soma_delays_rodadas = ();
+            #guarda uma lista mostrando a soma dos delays (com a nova conta só vendo o ultimo interesse) para cada rodada
+            @lista_soma_last_delays_rodadas = ();
             #guarda uma lista mostrando a soma da media misse para cada rodada
             @lista_miss_rodadas = ();
             #guarda uma lista mostrando a soma da media hits para cada rodada
@@ -252,6 +279,8 @@ foreach $dir_scenario(@lista)
             
             $soma_delays = 0;
             
+            $soma_last_delays = 0;
+            
             $soma_hopcount = 0;
             $num_hopcount = 0;
             $hopcount_maximo = undef;
@@ -262,7 +291,9 @@ foreach $dir_scenario(@lista)
             
             $max_seq = 0;
             
-            print("Vai analisar o diretorio: ".$experimento_dir."\n");
+            $num_consumidores = 0;
+            $taxa_envio_leg = 0;
+            $leu_o_primeiro_arquivo = 0;
             
             # iterando sobre todos os diretorios de rodadas
             foreach $dir_exp(@lista_experimento)
@@ -274,7 +305,6 @@ foreach $dir_scenario(@lista)
                     
                     # file_name guarda o caminho ate o arquivo saida.txt de uma determinada rodada
                     $file_name = $experimento_dir."/".$dir_exp."/saida.txt";
-                    print($file_name."\n");
                     #$packets = 0;
                     $ininterest_packet_raw = 0;
                     #$out_packets = 0;
@@ -294,6 +324,9 @@ foreach $dir_scenario(@lista)
                     
                     # HashMap que vai guardar o tempo de atraso para satisfazer o interesse pela primeira vez, a chave corresponde ao ID do no
                     %delays = ();
+                    
+                    # HashMap que vai guardar o tempo de atraso para satisfazer o interesse pela primeira vez, pelo ultimo interesse, a chave corresponde ao ID do no
+                    %last_delays = ();
                     
                     # HashMap que vai guardar total de hits, a chave corresponde ao ID do no
                     %hits = ();
@@ -393,14 +426,35 @@ foreach $dir_scenario(@lista)
                         {
                             $delays{$linha[1]} = $linha[2];
                         }
+                        
+                        if($linha[0] eq "atraso_pi")
+                        {
+                            $last_delays{$linha[1]} = $linha[2];
+                        }
+                        
                         if($linha[0] eq "hit")
                         {
                             $hits{$linha[1]} = $linha[2];
                             $misses{$linha[1]} = $linha[3];
                         }
                         
+                        if($leu_o_primeiro_arquivo == 0)
+                        {
+                            if($linha[0] eq "Consumidor:")
+                            {
+                                $num_consumidores = $num_consumidores + 1;
+                            }
+                            if($linha[0] eq "Taxa_envio_leg:")
+                            {
+                                $taxa_envio_leg = $linha[1];
+                            }
+                        }
+                        
+                        
+                        
                     }
                     close ARK;
+                    $leu_o_primeiro_arquivo = 1;
                     
                     $aux_satisfeitos = 0;
                     # lista valores guarda todos os valores do HashMap de satisfeitos, a chave (ID do no) nao interessa para o calculo da taxa de entrega
@@ -477,10 +531,37 @@ foreach $dir_scenario(@lista)
                     {
                         $soma_aux = $soma_aux + $_;
                     }
-                    $soma_aux = $soma_aux/(scalar @valores);
-                    $soma_delays = $soma_delays + $soma_aux;
                     
+                    if($soma_aux != 0){
+                        $soma_aux = $soma_aux/(scalar @valores);
+                        $soma_delays = $soma_delays + $soma_aux;
+                    }
+                    else{
+                        $soma_delays = 0;
+                    }
+                    
+                    #$lista_soma_delays_rodadas[$count] = $soma_delays;
                     $lista_soma_delays_rodadas[$count] = $soma_aux;
+                    
+                    
+                    #soma total de atrso e faz a media desse total em seguida
+                    @valores = values %last_delays;
+                    $soma_aux = 0;
+                    foreach(@valores)
+                    {
+                        $soma_aux = $soma_aux + $_;
+                    }
+                    
+                    if($soma_aux != 0){
+                        $soma_aux = $soma_aux/(scalar @valores);
+                        $soma_last_delays = $soma_last_delays + $soma_aux;
+                    }
+                    else{
+                        $soma_last_delays = 0;
+                    }
+                    
+                    #$lista_soma_last_delays_rodadas[$count] = $soma_last_delays;
+                    $lista_soma_last_delays_rodadas[$count] = $soma_aux;
                     
                     
                     $aux_cache_miss = 0;
@@ -582,7 +663,7 @@ foreach $dir_scenario(@lista)
             if($soma_num_total != 0){
                 $media_ocupacao_maliciosa = $soma_num_poluidos/$soma_num_total;
                 $experimentos_ocupacao_maliciosa[$i] = $media_ocupacao_maliciosa;
-                #aqui colocar o erro da taxa de ocupação maliciosa
+                #aqui colocar o erro da taxa de ocupacao maliciosa
                 
                 $erro = confidence(@lista_ocupacao_maliciosa_rodadas);
                 $erro_experimentos_ocupacao_maliciosa[$i] = $erro;
@@ -595,17 +676,29 @@ foreach $dir_scenario(@lista)
             if($count != 0){
                 $media_delay = $soma_delays/$count;
                 $experimentos_delays[$i] = $media_delay;
-                #aqui colocar o erro dos delays médios
+                #aqui colocar o erro dos delays medios
+                #$erro = confidence(@lista_soma_delays_rodadas);
                 foreach(@lista_soma_delays_rodadas)
                 {
                     print("Delay: $_ \n");
                 }
-                $erro = confidence(@lista_soma_delays_rodadas);
                 $erro_experimentos_delays[$i] = $erro;
             }
             else{
                 $media_delay = 0;
                 $experimentos_delays[$i] = $media_delay;
+            }
+            
+            if($count != 0){
+                $media_last_delay = $soma_last_delays/$count;
+                $experimentos_last_delays[$i] = $media_last_delay;
+                #aqui colocar o erro dos delays médios
+                $erro = confidence(@lista_soma_last_delays_rodadas);
+                $erro_experimentos_last_delays[$i] = $erro;
+            }
+            else{
+                $media_last_delay = 0;
+                $experimentos_last_delays[$i] = $media_last_delay;
             }
             
             if($soma_cache_miss != 0){
@@ -661,16 +754,34 @@ foreach $dir_scenario(@lista)
             }
             
             $experimentos_interesses_enviados_satisfeito[$i] = $intereses_realizados;
+            
+            $experimentos_interesses_enviados[$i] = $intereses_realizados;
+            
             $experimentos_interesses_enviados_satisfeito[$i+2] = $intereses_satisfeitos;
+            
+            $experimentos_interesses_satisfeito[$i] = $intereses_satisfeitos;
+            
             #erro
             $erro = confidence(@lista_interesses_rodadas);
             $erro_experimentos_interesses_enviados_satisfeito[$i] = $erro;
+            $erro_experimentos_interesses_enviados[$i] = $erro;
             $erro = confidence(@lista_satisfeitos_rodadas);
             $erro_experimentos_interesses_enviados_satisfeito[$i+2] = $erro;
+            $erro_experimentos_interesses_satisfeito[$i] = $erro;
             
             
-            # identifica se eh nao proativo (i=1) ou se eh proativo (i=2)
+            $scenarios_coluna_0[$i] = $num_consumidores;
+            print("Numero de consumidores: $num_consumidores\n");
+            
+            $scenarios_coluna_1[$i] = $taxa_envio_leg;
+            print("Taxa_envio_leg: $taxa_envio_leg\n");
+            
+            
+            
+            
+            # identifica o numero do experimento
             $i = $i + 1;
+            $y = $y + 2;
             
         }
         
@@ -679,9 +790,14 @@ foreach $dir_scenario(@lista)
         # guarda os resultados para o cenario k
         $scenarios[$k] = [@experimentos];
         
+        
+        
         #erro
-        $erro_experimentos[$i] = "erro_".$dir_scenario;
+        $erro_experimentos[0] = "erro_".$dir_scenario;
         $scenarios[$k+1] = [@erro_experimentos];
+        
+        $scenarios[0] = [@scenarios_coluna_0];
+        $scenarios[1] = [@scenarios_coluna_1];
         
         
         $experimentos_txentrega_relativa[0] = $dir_scenario;
@@ -690,11 +806,17 @@ foreach $dir_scenario(@lista)
         $erro_erro_experimentos_txentrega_relativa[0] = "erro_".$dir_scenario;
         $scenarios_txentrega_relativa[$k+1] = [@erro_experimentos_txentrega_relativa];
         
+        $scenarios_txentrega_relativa[0] = [@scenarios_coluna_0];
+        $scenarios_txentrega_relativa[1] = [@scenarios_coluna_1];
+        
         $experimentos_ocupacao_maliciosa[0] = $dir_scenario;
         $scenarios_ocupacao_maliciosa[$k] = [@experimentos_ocupacao_maliciosa];
         #erro
         $erro_experimentos_ocupacao_maliciosa[0] = "erro_".$dir_scenario;
         $scenarios_ocupacao_maliciosa[$k+1] = [@erro_experimentos_ocupacao_maliciosa];
+        
+        $scenarios_ocupacao_maliciosa[0] = [@scenarios_coluna_0];
+        $scenarios_ocupacao_maliciosa[1] = [@scenarios_coluna_1];
         
         $experimentos_delays[0] = $dir_scenario;
         $scenarios_delay[$k] = [@experimentos_delays];
@@ -702,11 +824,27 @@ foreach $dir_scenario(@lista)
         $erro_experimentos_delays[0] = "erro_".$dir_scenario;
         $scenarios_delay[$k+1] = [@erro_experimentos_delays];
         
+        $scenarios_delay[0] = [@scenarios_coluna_0];
+        $scenarios_delay[1] = [@scenarios_coluna_1];
+        
+        $experimentos_last_delays[0] = $dir_scenario;
+        $scenarios_last_delay[$k] = [@experimentos_last_delays];
+        #erro
+        $erro_experimentos_last_delays[0] = "erro_".$dir_scenario;
+        $scenarios_last_delay[$k+1] = [@erro_experimentos_last_delays];
+        
+        $scenarios_last_delay[0] = [@scenarios_coluna_0];
+        $scenarios_last_delay[1] = [@scenarios_coluna_1];
+        
         $experimentos_cache_miss[0] = $dir_scenario;
         $scenarios_miss[$k] = [@experimentos_cache_miss];
         #erro
         $erro_experimentos_cache_miss[0] = "erro_".$dir_scenario;
         $scenarios_miss[$k+1] = [@erro_experimentos_cache_miss];
+        
+        $scenarios_miss[0] = [@scenarios_coluna_0];
+        $scenarios_miss[1] = [@scenarios_coluna_1];
+        
         
         $experimentos_cache_hit[0] = $dir_scenario;
         $scenarios_hit[$k] = [@experimentos_cache_hit];
@@ -714,11 +852,19 @@ foreach $dir_scenario(@lista)
         $erro_experimentos_cache_hit[0] = "erro_".$dir_scenario;
         $scenarios_hit[$k+1] = [@erro_experimentos_cache_hit];
         
+        $scenarios_hit[0] = [@scenarios_coluna_0];
+        $scenarios_hit[1] = [@scenarios_coluna_1];
+        
+        
         $experimentos_cache_hit_rate[0] = $dir_scenario;
         $scenarios_hit_rate[$k] = [@experimentos_cache_hit_rate];
         #erro
         $erro_experimentos_cache_hit_rate[0] = "erro_".$dir_scenario;
         $scenarios_hit_rate[$k+1] = [@erro_experimentos_cache_hit_rate];
+        
+        $scenarios_hit_rate[0] = [@scenarios_coluna_0];
+        $scenarios_hit_rate[1] = [@scenarios_coluna_1];
+        
         
         $experimentos_hopcount_medio[0] = $dir_scenario;
         $scenarios_hopcount_medio[$k] = [@experimentos_hopcount_medio];
@@ -726,11 +872,19 @@ foreach $dir_scenario(@lista)
         $erro_experimentos_hopcount_medio[0] = "erro_".$dir_scenario;
         $scenarios_hopcount_medio[$k+1] = [@erro_experimentos_hopcount_medio];
         
+        
+        $scenarios_hopcount_medio[0] = [@scenarios_coluna_0];
+        $scenarios_hopcount_medio[1] = [@scenarios_coluna_1];
+        
+        
         $experimentos_hopcount_maximo[0] = $dir_scenario;
         $scenarios_hopcount_maximo[$k] = [@experimentos_hopcount_maximo];
         #erro
         $erro_experimentos_hopcount_maximo[0] = "erro_".$dir_scenario;
         $scenarios_hopcount_maximo[$k+1] = [@erro_experimentos_hopcount_maximo];
+        
+        $scenarios_hopcount_maximo[0] = [@scenarios_coluna_0];
+        $scenarios_hopcount_maximo[1] = [@scenarios_coluna_1];
         
         $experimentos_hopcount_minimo[0] = $dir_scenario;
         $scenarios_hopcount_minimo[$k] = [@experimentos_hopcount_minimo];
@@ -738,11 +892,31 @@ foreach $dir_scenario(@lista)
         $erro_experimentos_hopcount_minimo[0] = "erro_".$dir_scenario;
         $scenarios_hopcount_minimo[$k+1] = [@erro_experimentos_hopcount_minimo];
         
+        $scenarios_hopcount_minimo[0] = [@scenarios_coluna_0];
+        $scenarios_hopcount_minimo[1] = [@scenarios_coluna_1];
+        
         $experimentos_interesses_enviados_satisfeito[0] = $dir_scenario;
         $scenarios_interesses_enviados_satisfeitos[$k] = [@experimentos_interesses_enviados_satisfeito];
         #erro
         $erro_experimentos_interesses_enviados_satisfeito[0] = "erro_".$dir_scenario;
         $scenarios_interesses_enviados_satisfeitos[$k+1] = [@erro_experimentos_interesses_enviados_satisfeito];
+        
+        $experimentos_interesses_enviados[0] = $dir_scenario;
+        $scenarios_interesses_enviados[$k] = [@experimentos_interesses_enviados];
+        #erro
+        $erro_experimentos_interesses_enviados[0] = "erro_".$dir_scenario;
+        $scenarios_interesses_enviados[$k+1] = [@erro_experimentos_interesses_enviados];
+        
+        $experimentos_interesses_satisfeito[0] = $dir_scenario;
+        $scenarios_interesses_satisfeitos[$k] = [@experimentos_interesses_satisfeito];
+        #erro
+        $erro_experimentos_interesses_satisfeito[0] = "erro_".$dir_scenario;
+        $scenarios_interesses_satisfeitos[$k+1] = [@erro_experimentos_interesses_satisfeito];
+        
+        
+        
+        $scenarios_interesses_enviados_satisfeitos[0] = [@scenarios_coluna_0];
+        $scenarios_interesses_enviados_satisfeitos[1] = [@scenarios_coluna_1];
         
         
         $k = $k + 2;
@@ -751,22 +925,19 @@ foreach $dir_scenario(@lista)
     
 }
 
+$total = $i;
 
-$file_name = "/home/elise/car2car/graficos_barra/txentrega.txt";
+$file_name = "/home/elise/car2car/graficos_variacoes_atacantes/txentrega.txt";
 open ARK, ">".$file_name;
 select ARK;
-$i = 1;
-while($i < 3)
+$i = 0;
+while($i < $total)
 {
     $j = 0;
     while($j < $k)
     {
-        print("$scenarios[$j][$i]");
+        print("$scenarios[$j][$i]      \t");
         $j = $j + 1;
-        if($j < $k)
-        {
-            print(", ");
-        }
     }
     print("\n");
     $i = $i + 1;
@@ -775,21 +946,17 @@ while($i < 3)
 
 close ARK;
 
-$file_name = "/home/elise/car2car/graficos_barra/txentrega_relativa.txt";
+$file_name = "/home/elise/car2car/graficos_variacoes_atacantes/txentrega_relativa.txt";
 open ARK, ">".$file_name;
 select ARK;
-$i = 1;
-while($i < 3)
+$i = 0;
+while($i < $total)
 {
     $j = 0;
     while($j < $k)
     {
-        print("$scenarios_txentrega_relativa[$j][$i]");
+        print("$scenarios_txentrega_relativa[$j][$i]      \t");
         $j = $j + 1;
-        if($j < $k)
-        {
-            print(", ");
-        }
     }
     print("\n");
     $i = $i + 1;
@@ -800,21 +967,17 @@ close ARK;
 
 #medias
 #$x =  $sum_packets/$count;
-$file_name = "/home/elise/car2car/graficos_barra/ocupacao.txt";
+$file_name = "/home/elise/car2car/graficos_variacoes_atacantes/ocupacao.txt";
 open ARK, ">".$file_name;
 select ARK;
-$i = 1;
-while($i < 3)
+$i = 0;
+while($i < $total)
 {
     $j = 0;
     while($j < $k)
     {
-        print("$scenarios_ocupacao_maliciosa[$j][$i]");
+        print("$scenarios_ocupacao_maliciosa[$j][$i]      \t");
         $j = $j + 1;
-        if($j < $k)
-        {
-            print(", ");
-        }
     }
     print("\n");
     $i = $i + 1;
@@ -824,90 +987,17 @@ while($i < 3)
 close ARK;
 
 
-$file_name = "/home/elise/car2car/graficos_barra/atraso.txt";
+$file_name = "/home/elise/car2car/graficos_variacoes_atacantes/atraso.txt";
 open ARK, ">".$file_name;
 select ARK;
-$i = 1;
-while($i < 3)
+$i = 0;
+while($i < $total)
 {
     $j = 0;
     while($j < $k)
     {
-        print("$scenarios_delay[$j][$i]");
+        print("$scenarios_delay[$j][$i]      \t");
         $j = $j + 1;
-        if($j < $k)
-        {
-            print(", ");
-        }
-    }
-    print("\n");
-    $i = $i + 1;
-}
-
-
-close ARK;
-
-$file_name = "/home/elise/car2car/graficos_barra/cache_hit.txt";
-open ARK, ">".$file_name;
-select ARK;
-$i = 1;
-while($i < 3)
-{
-    $j = 0;
-    while($j < $k)
-    {
-        print("$scenarios_hit[$j][$i]");
-        $j = $j + 1;
-        if($j < $k)
-        {
-            print(", ");
-        }
-    }
-    print("\n");
-    $i = $i + 1;
-}
-
-
-close ARK;
-
-$file_name = "/home/elise/car2car/graficos_barra/cache_miss.txt";
-open ARK, ">".$file_name;
-select ARK;
-$i = 1;
-while($i < 3)
-{
-    $j = 0;
-    while($j < $k)
-    {
-        print("$scenarios_miss[$j][$i]");
-        $j = $j + 1;
-        if($j < $k)
-        {
-            print(", ");
-        }
-    }
-    print("\n");
-    $i = $i + 1;
-}
-
-
-close ARK;
-
-$file_name = "/home/elise/car2car/graficos_barra/cache_hitRATE.txt";
-open ARK, ">".$file_name;
-select ARK;
-$i = 1;
-while($i < 3)
-{
-    $j = 0;
-    while($j < $k)
-    {
-        print("$scenarios_hit_rate[$j][$i]");
-        $j = $j + 1;
-        if($j < $k)
-        {
-            print(", ");
-        }
     }
     print("\n");
     $i = $i + 1;
@@ -917,21 +1007,74 @@ while($i < 3)
 close ARK;
 
 
-$file_name = "/home/elise/car2car/graficos_barra/hopcount_medio.txt";
+$file_name = "/home/elise/car2car/graficos_variacoes_atacantes/atraso_pi.txt";
 open ARK, ">".$file_name;
 select ARK;
-$i = 1;
-while($i < 3)
+$i = 0;
+while($i < $total)
 {
     $j = 0;
     while($j < $k)
     {
-        print("$scenarios_hopcount_medio[$j][$i]");
+        print("$scenarios_last_delay[$j][$i]      \t");
         $j = $j + 1;
-        if($j < $k)
-        {
-            print(", ");
-        }
+    }
+    print("\n");
+    $i = $i + 1;
+}
+
+
+close ARK;
+
+$file_name = "/home/elise/car2car/graficos_variacoes_atacantes/cache_hit.txt";
+open ARK, ">".$file_name;
+select ARK;
+$i = 0;
+while($i < $total)
+{
+    $j = 0;
+    while($j < $k)
+    {
+        print("$scenarios_hit[$j][$i]      \t");
+        $j = $j + 1;
+    }
+    print("\n");
+    $i = $i + 1;
+}
+
+
+close ARK;
+
+$file_name = "/home/elise/car2car/graficos_variacoes_atacantes/cache_miss.txt";
+open ARK, ">".$file_name;
+select ARK;
+$i = 0;
+while($i < $total)
+{
+    $j = 0;
+    while($j < $k)
+    {
+        print("$scenarios_miss[$j][$i]      \t");
+        $j = $j + 1;
+    }
+    print("\n");
+    $i = $i + 1;
+}
+
+
+close ARK;
+
+$file_name = "/home/elise/car2car/graficos_variacoes_atacantes/cache_hitRATE.txt";
+open ARK, ">".$file_name;
+select ARK;
+$i = 0;
+while($i < $total)
+{
+    $j = 0;
+    while($j < $k)
+    {
+        print("$scenarios_hit_rate[$j][$i]      \t");
+        $j = $j + 1;
     }
     print("\n");
     $i = $i + 1;
@@ -941,21 +1084,17 @@ while($i < 3)
 close ARK;
 
 
-$file_name = "/home/elise/car2car/graficos_barra/hopcount_maximo.txt";
+$file_name = "/home/elise/car2car/graficos_variacoes_atacantes/hopcount_medio.txt";
 open ARK, ">".$file_name;
 select ARK;
-$i = 1;
-while($i < 3)
+$i = 0;
+while($i < $total)
 {
     $j = 0;
     while($j < $k)
     {
-        print("$scenarios_hopcount_maximo[$j][$i]");
+        print("$scenarios_hopcount_medio[$j][$i]      \t");
         $j = $j + 1;
-        if($j < $k)
-        {
-            print(", ");
-        }
     }
     print("\n");
     $i = $i + 1;
@@ -965,21 +1104,17 @@ while($i < 3)
 close ARK;
 
 
-$file_name = "/home/elise/car2car/graficos_barra/hopcount_minimo.txt";
+$file_name = "/home/elise/car2car/graficos_variacoes_atacantes/hopcount_maximo.txt";
 open ARK, ">".$file_name;
 select ARK;
-$i = 1;
-while($i < 3)
+$i = 0;
+while($i < $total)
 {
     $j = 0;
     while($j < $k)
     {
-        print("$scenarios_hopcount_minimo[$j][$i]");
+        print("$scenarios_hopcount_maximo[$j][$i]      \t");
         $j = $j + 1;
-        if($j < $k)
-        {
-            print(", ");
-        }
     }
     print("\n");
     $i = $i + 1;
@@ -989,21 +1124,61 @@ while($i < 3)
 close ARK;
 
 
-$file_name = "/home/elise/car2car/graficos_barra/interesses_enviados_satisfeito.txt";
+$file_name = "/home/elise/car2car/graficos_variacoes_atacantes/hopcount_minimo.txt";
 open ARK, ">".$file_name;
 select ARK;
-$i = 1;
-while($i < 5)
+$i = 0;
+while($i < $total)
 {
     $j = 0;
     while($j < $k)
     {
-        print("$scenarios_interesses_enviados_satisfeitos[$j][$i]");
+        print("$scenarios_hopcount_minimo[$j][$i]      \t");
         $j = $j + 1;
-        if($j < $k)
-        {
-            print(", ");
-        }
+    }
+    print("\n");
+    $i = $i + 1;
+}
+
+
+close ARK;
+
+
+
+
+
+$file_name = "/home/elise/car2car/graficos_variacoes_atacantes/interesses_enviados.txt";
+open ARK, ">".$file_name;
+select ARK;
+$i = 0;
+while($i < $total)
+{
+    $j = 0;
+    while($j < $k)
+    {
+        print("$scenarios_interesses_enviados[$j][$i]      \t");
+        $j = $j + 1;
+    }
+    print("\n");
+    $i = $i + 1;
+}
+
+
+close ARK;
+
+
+
+$file_name = "/home/elise/car2car/graficos_variacoes_atacantes/interesses_satisfeito.txt";
+open ARK, ">".$file_name;
+select ARK;
+$i = 0;
+while($i < $total)
+{
+    $j = 0;
+    while($j < $k)
+    {
+        print("$scenarios_interesses_satisfeitos[$j][$i]      \t");
+        $j = $j + 1;
     }
     print("\n");
     $i = $i + 1;

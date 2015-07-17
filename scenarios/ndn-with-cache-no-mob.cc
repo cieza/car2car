@@ -198,7 +198,9 @@ main (int argc, char *argv[])
     
     ndn::AppHelper consumerHelper ("ns3::ndn::ConsumerCbr");
     consumerHelper.SetPrefix (prefix);
-    consumerHelper.SetAttribute ("Frequency", DoubleValue (20.0));
+    double taxa_envio_leg = 20.0;
+    consumerHelper.SetAttribute ("Frequency", DoubleValue (taxa_envio_leg));
+    cout<<"Taxa_envio_leg: "<<taxa_envio_leg<<"\n";
     //consumerHelper.SetAttribute ("Randomize", StringValue ("uniform"))
     consumerHelper.SetAttribute ("MaxSeq", IntegerValue (500));
     
