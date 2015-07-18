@@ -596,11 +596,12 @@ foreach $dir_scenario(@lista)
                 $media_delay = $soma_delays/$count;
                 $experimentos_delays[$i] = $media_delay;
                 #aqui colocar o erro dos delays médios
+                $erro = confidence(@lista_soma_delays_rodadas);
                 foreach(@lista_soma_delays_rodadas)
                 {
                     print("Delay: $_ \n");
                 }
-                $erro = confidence(@lista_soma_delays_rodadas);
+                print("Media: $media_delay Erro: $erro \n");
                 $erro_experimentos_delays[$i] = $erro;
             }
             else{
