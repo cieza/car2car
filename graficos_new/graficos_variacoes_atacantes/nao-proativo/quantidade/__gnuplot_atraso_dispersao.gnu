@@ -13,7 +13,5 @@ set key left top reverse Left
 set ylabel "Atraso (s)"
 set xlabel "NºAtacantes"
 
-plot 'atraso.txt' u 1:2 ti "Sem mobilidade" with lines linetype 1, \
-"" u 1:2:3 notitle w errorbars linetype 1, \
-"" u 1:4 ti "Com mobilidade" with lines linetype 2, \
-"" u 1:4:5 notitle w errorbars linetype 2
+plot 'atraso_disp.txt' u 1:3 ti "Sem mobilidade" with points pt 5, \
+"" u 1:4 ti "Com mobilidade" with points pt 9

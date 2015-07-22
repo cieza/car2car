@@ -40,6 +40,7 @@
 #include "ns3/ndn-face.h"
 #include "ns3/ndn-interest.h"
 #include "ns3/ndn-content-object.h"
+#include <ndn-header-helper.h>
 
 #include <fstream>
 #include <boost/lexical_cast.hpp>
@@ -425,6 +426,37 @@ namespace ns3 {
             // NS_LOG_INFO( "Dropping packet due to noise or error model calculation." );
             *m_os << Simulator::Now ().ToDouble (Time::S) << "\t"
             << m_node << "\t" << "Canceling transmission" << "\t" << *packet/*->PeekPacketTag<CcnxNameComponentsTag> ()->GetName ()->GetLastComponent ()*/ << "\n";
+            
+            std::string packet_name("");
+            std::list<std::string> components = *packet->PeekPacketTag<CcnxNameComponentsTag> ()->GetName ().GetComponents();
+            std::list<std::string>::const_iterator i;
+            for (i=components.begin(); i!=components.end(); i++)
+            {
+                packet_name = packet_name.append("/");
+                packet_name = packet_name.append(*i);
+            }
+            
+	    std::string type("O");
+	    
+            if(ns3::ndn::HeaderHelper.GetNdnHeaderType (packet) == ns3::ndn::HeaderHelper::INTEREST_NDNSIM)
+	    {
+	        type = "I";
+	    }
+	    if(ns3::ndn::HeaderHelper.GetNdnHeaderType (packet) == ns3::ndn::HeaderHelper::CONTENT_OBJECT_NDNSIM)
+	    {
+	        type = "D";
+	    }
+	    if(ns3::ndn::HeaderHelper.GetNdnHeaderType (packet) == ns3::ndn::HeaderHelper::INTEREST_CCNB)
+	    {
+	        type = "IC";
+	    }
+	    if(ns3::ndn::HeaderHelper.GetNdnHeaderType (packet) == ns3::ndn::HeaderHelper::CONTENT_OBJECT_CCNB)
+	    {
+	        type = "DC";
+	    }
+	    
+            
+            cout<<"drop "<<m_node<<" "<<packet_name<<" "<<type<<" "<<Simulator::Now ().ToDouble (Time::S);
         }
         
     } // namespace ndn

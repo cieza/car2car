@@ -167,6 +167,15 @@ $scenarios_interesses_satisfeitos[0] = ["Politica","NaoProativo","ProAtivo"];
 $scenarios_interesses_enviados_satisfeitos[0] = ["Politica","NaoProativo_Enviados","ProAtivo_Enviados","NaoProativo_Satisfeitos","ProAtivo_Satisfeitos"];
 
 
+
+@atraso_disp_num_atacantes = ();
+$atraso_disp_num_atacantes[0] = "X";
+@atraso_disp_num_taxa = ();
+$atraso_disp_num_taxa[0] = "Y";
+@atraso_disp_valores = ();
+
+
+
 mkpath("/home/elise/car2car/graficos_variacoes_atacantes/");
 
 $k = 2;
@@ -678,10 +687,19 @@ foreach $dir_scenario(@lista)
                 $experimentos_delays[$i] = $media_delay;
                 #aqui colocar o erro dos delays medios
                 $erro = confidence(@lista_soma_delays_rodadas);
+                #colocar aqui dados para criar o grafico atraso_disp
+                @aux_atraso_disp_valores = ();
+                $aux_atraso_disp_valores[0] = $dir_scenario;
                 foreach(@lista_soma_delays_rodadas)
                 {
+                    push (@atraso_disp_num_atacantes, $num_atacantes);
+                    push (@atraso_disp_num_taxa, $taxa_envio_atac);
+                    push (@aux_atraso_disp_valores, $_);
                     print("Delay: $_ \n");
                 }
+                $atraso_disp_valores[$i] = [@aux_atraso_disp_valores];
+                #fim do atraso_disp
+                
                 $erro_experimentos_delays[$i] = $erro;
             }
             else{
@@ -997,6 +1015,30 @@ while($i < $total)
     while($j < $k)
     {
         print("$scenarios_delay[$j][$i]      \t");
+        $j = $j + 1;
+    }
+    print("\n");
+    $i = $i + 1;
+}
+
+
+close ARK;
+
+
+$file_name = "/home/elise/car2car/graficos_variacoes_atacantes/atraso_disp.txt";
+open ARK, ">".$file_name;
+select ARK;
+$i = 0;
+$total_disp = scalar(@atraso_disp_num_atacantes);
+$k_disp = scalar(@atraso_disp_valores);
+while($i < $total_disp)
+{
+    print("$atraso_disp_num_atacantes[$i]      \t");
+    print("$atraso_disp_num_taxa[$i]      \t");
+    $j = 0;
+    while($j < $k_disp)
+    {
+        print("$atraso_disp_valores[$j][$i]      \t");
         $j = $j + 1;
     }
     print("\n");
