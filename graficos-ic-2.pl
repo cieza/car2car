@@ -1057,7 +1057,7 @@ while($i < $total)
             }
             else
             {
-                @lista_aux = $scenarios_delay[$j][$i]);
+                @lista_aux = $scenarios_delay[$j][$i];
                 print("$lista_aux[$l]      \t");
             }
             $j = $j + 1;
