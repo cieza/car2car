@@ -135,6 +135,9 @@ $scenarios_ocupacao_maliciosa[0] = ["Politica","NaoProativo","ProAtivo"];
 @scenarios_delay = ();
 $scenarios_delay[0] = ["Politica","NaoProativo","ProAtivo"];
 
+@scenarios_delay_disp = ();
+$scenarios_delay_disp[0] = ["Politica","NaoProativo","ProAtivo"];
+
 @scenarios_last_delay = ();
 $scenarios_last_delay[0] = ["Politica","NaoProativo","ProAtivo"];
 
@@ -168,11 +171,7 @@ $scenarios_interesses_enviados_satisfeitos[0] = ["Politica","NaoProativo_Enviado
 
 
 
-@atraso_disp_num_atacantes = ();
-$atraso_disp_num_atacantes[0] = "X";
-@atraso_disp_num_taxa = ();
-$atraso_disp_num_taxa[0] = "Y";
-@atraso_disp_valores = ();
+
 
 
 
@@ -204,6 +203,7 @@ foreach $dir_scenario(@lista)
         @experimentos = ();
         @experimentos_ocupacao_maliciosa = ();
         @experimentos_delays = ();
+        @experimentos_delays_disp = ();
         @experimentos_last_delays = ();
         @experimentos_cache_miss = ();
         @experimentos_cache_hit = ();
@@ -358,7 +358,7 @@ foreach $dir_scenario(@lista)
                     
                     
                     # abre arquivo saida.txt para ler
-                    print("$file_name\n");
+                    #print("$file_name\n");
                     open ARK, $file_name;
                     foreach(<ARK>)
                     {
@@ -689,15 +689,12 @@ foreach $dir_scenario(@lista)
                 $erro = confidence(@lista_soma_delays_rodadas);
                 #colocar aqui dados para criar o grafico atraso_disp
                 @aux_atraso_disp_valores = ();
-                $aux_atraso_disp_valores[0] = $dir_scenario;
                 foreach(@lista_soma_delays_rodadas)
                 {
-                    push (@atraso_disp_num_atacantes, $num_atacantes);
-                    push (@atraso_disp_num_taxa, $taxa_envio_atac);
                     push (@aux_atraso_disp_valores, $_);
                     print("Delay: $_ \n");
                 }
-                $atraso_disp_valores[$i] = [@aux_atraso_disp_valores];
+                $experimentos_delays_disp[$i] = [@aux_atraso_disp_valores];
                 #fim do atraso_disp
                 
                 $erro_experimentos_delays[$i] = $erro;
@@ -840,10 +837,25 @@ foreach $dir_scenario(@lista)
         $scenarios_delay[$k] = [@experimentos_delays];
         #erro
         $erro_experimentos_delays[0] = "erro_".$dir_scenario;
-        $scenarios_delay[$k+1] = [@erro_experimentos_delays];
+        $scenarios_delay[$k+1] = [@erro_experimentos_delays];        
         
         $scenarios_delay[0] = [@scenarios_coluna_0];
         $scenarios_delay[1] = [@scenarios_coluna_1];
+        
+        
+        
+        #o grafico de atraso disp
+        $experimentos_delays_disp[0] = $dir_scenario;
+        $scenarios_delay_disp[$k] = [@experimentos_delays_disp];
+        #erro
+        $scenarios_delay_disp[$k+1] = [@erro_experimentos_delays];
+        
+        
+        $scenarios_delay_disp[0] = [@scenarios_coluna_0];
+        $scenarios_delay_disp[1] = [@scenarios_coluna_1];
+        
+        
+        
         
         $experimentos_last_delays[0] = $dir_scenario;
         $scenarios_last_delay[$k] = [@experimentos_last_delays];
@@ -1029,19 +1041,32 @@ $file_name = "/home/elise/car2car/graficos_variacoes_atacantes/atraso_disp.txt";
 open ARK, ">".$file_name;
 select ARK;
 $i = 0;
-$total_disp = scalar(@atraso_disp_num_atacantes);
-$k_disp = scalar(@atraso_disp_valores);
-while($i < $total_disp)
+while($i < $total)
 {
-    print("$atraso_disp_num_atacantes[$i]      \t");
-    print("$atraso_disp_num_taxa[$i]      \t");
-    $j = 0;
-    while($j < $k_disp)
+    
+    $number_of_delays = scalar($scenarios_delay[2][$i]);
+    $l = 0;
+    while($l < $number_of_delays)
     {
-        print("$atraso_disp_valores[$j][$i]      \t");
-        $j = $j + 1;
+        $j = 0;
+        while($j < $k)
+        {
+            if($j < 2)
+            {
+                print("$scenarios_delay[$j][$i]      \t");
+            }
+            else
+            {
+                @lista_aux = $scenarios_delay[$j][$i]);
+                print("$lista_aux[$l]      \t");
+            }
+            $j = $j + 1;
+        }
+        print("\n");
+        $l = $l + 1;
+        
     }
-    print("\n");
+    
     $i = $i + 1;
 }
 
