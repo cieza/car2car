@@ -40,7 +40,7 @@
 #include "ns3/ndn-face.h"
 #include "ns3/ndn-interest.h"
 #include "ns3/ndn-content-object.h"
-#include "ns3/ndn-header-helper.h
+#include "ns3/ndn-header-helper.h"
 
 #include <fstream>
 #include <boost/lexical_cast.hpp>
