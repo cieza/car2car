@@ -1054,13 +1054,14 @@ while($i < $total)
             if($j < 2)
             {
                 print("$scenarios_delay[$j][$i]      \t");
+                $j = $j + 1;
             }
             else
             {
                 @lista_aux = $scenarios_delay[$j][$i];
                 print("$lista_aux[$l]      \t");
+                $j = $j + 2;
             }
-            $j = $j + 1;
         }
         print("\n");
         $l = $l + 1;
