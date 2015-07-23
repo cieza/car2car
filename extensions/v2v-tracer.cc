@@ -428,13 +428,13 @@ namespace ns3 {
             << m_node << "\t" << "Canceling transmission" << "\t" << *packet/*->PeekPacketTag<CcnxNameComponentsTag> ()->GetName ()->GetLastComponent ()*/ << "\n";
             
             std::string packet_name("");
-            std::list<std::string> components = packet->PeekPacketTag<CcnxNameComponentsTag> ()->GetName ().GetComponents();
-            std::list<std::string>::const_iterator i;
-            for (i=components.begin(); i!=components.end(); i++)
-            {
-                packet_name = packet_name.append("/");
-                packet_name = packet_name.append(*i);
-            }
+            //std::list<std::string> components = packet->PeekPacketTag<CcnxNameComponentsTag> ()->GetName ().GetComponents();
+            //std::list<std::string>::const_iterator i;
+            //for (i=components.begin(); i!=components.end(); i++)
+            //{
+            //    packet_name = packet_name.append("/");
+            //    packet_name = packet_name.append(*i);
+            //}
             
 	    std::string type("O");
 	    
