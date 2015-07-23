@@ -1044,7 +1044,8 @@ $i = 0;
 while($i < $total)
 {
     
-    $number_of_delays = scalar($scenarios_delay_disp[2][$i]);
+    #$number_of_delays = scalar($scenarios_delay_disp[2][$i]);
+    $number_of_delays = 20;
     $l = 0;
     while($l < $number_of_delays)
     {
