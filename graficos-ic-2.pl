@@ -1062,6 +1062,7 @@ while($i < $total)
                 $j = $j + 2;
              }
         }
+        print("\n");
     }
     else
     {
