@@ -1044,7 +1044,7 @@ $i = 0;
 while($i < $total)
 {
     
-    $number_of_delays = scalar($scenarios_delay[2][$i]);
+    $number_of_delays = scalar($scenarios_delay_disp[2][$i]);
     $l = 0;
     while($l < $number_of_delays)
     {
@@ -1053,12 +1053,12 @@ while($i < $total)
         {
             if($j < 2)
             {
-                print("$scenarios_delay[$j][$i]      \t");
+                print("$scenarios_delay_disp[$j][$i]      \t");
                 $j = $j + 1;
             }
             else
             {
-                @lista_aux = $scenarios_delay[$j][$i];
+                @lista_aux = $scenarios_delay_disp[$j][$i];
                 print("$lista_aux[$l]      \t");
                 $j = $j + 2;
             }
