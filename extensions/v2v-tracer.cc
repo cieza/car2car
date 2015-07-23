@@ -428,7 +428,7 @@ namespace ns3 {
             << m_node << "\t" << "Canceling transmission" << "\t" << *packet/*->PeekPacketTag<CcnxNameComponentsTag> ()->GetName ()->GetLastComponent ()*/ << "\n";
             
             std::string packet_name("");
-            std::list<std::string> components = *packet->PeekPacketTag<CcnxNameComponentsTag> ()->GetName ().GetComponents();
+            std::list<std::string> components = packet->PeekPacketTag<CcnxNameComponentsTag> ()->GetName ().GetComponents();
             std::list<std::string>::const_iterator i;
             for (i=components.begin(); i!=components.end(); i++)
             {
@@ -438,19 +438,19 @@ namespace ns3 {
             
 	    std::string type("O");
 	    
-            if(ns3::ndn::HeaderHelper.GetNdnHeaderType (packet) == ns3::ndn::HeaderHelper::INTEREST_NDNSIM)
+            if(ns3::ndn::HeaderHelper::GetNdnHeaderType (packet) == ns3::ndn::HeaderHelper::INTEREST_NDNSIM)
 	    {
 	        type = "I";
 	    }
-	    if(ns3::ndn::HeaderHelper.GetNdnHeaderType (packet) == ns3::ndn::HeaderHelper::CONTENT_OBJECT_NDNSIM)
+	    if(ns3::ndn::HeaderHelper::GetNdnHeaderType (packet) == ns3::ndn::HeaderHelper::CONTENT_OBJECT_NDNSIM)
 	    {
 	        type = "D";
 	    }
-	    if(ns3::ndn::HeaderHelper.GetNdnHeaderType (packet) == ns3::ndn::HeaderHelper::INTEREST_CCNB)
+	    if(ns3::ndn::HeaderHelper::GetNdnHeaderType (packet) == ns3::ndn::HeaderHelper::INTEREST_CCNB)
 	    {
 	        type = "IC";
 	    }
-	    if(ns3::ndn::HeaderHelper.GetNdnHeaderType (packet) == ns3::ndn::HeaderHelper::CONTENT_OBJECT_CCNB)
+	    if(ns3::ndn::HeaderHelper::GetNdnHeaderType (packet) == ns3::ndn::HeaderHelper::CONTENT_OBJECT_CCNB)
 	    {
 	        type = "DC";
 	    }
