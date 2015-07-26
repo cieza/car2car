@@ -83,9 +83,9 @@ namespace ns3 {
             std::map<std::string, int> data_map;
             std::map<std::string, int> satisfied_data_map;
             std::map<std::string, double> init_time_map;
-	    std::map<std::string, double> last_time_map;
+            std::map<std::string, double> last_time_map;
             std::map<std::string, double> delay_map;
-	    std::map<std::string, double> last_delay_map;
+            std::map<std::string, double> last_delay_map;
             
             long cache_hits;
             long cache_misses;
