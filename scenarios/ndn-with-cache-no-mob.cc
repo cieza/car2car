@@ -196,9 +196,10 @@ main (int argc, char *argv[])
     
     // Consumer will request /prefix/0, /prefix/1, ...
     
-    ndn::AppHelper consumerHelper ("ns3::ndn::ConsumerCbr");
+    ndn::AppHelper consumerHelper ("ns3::ndn::ConsumerZipfMandelbrot");
+    //ndn::AppHelper consumerHelper ("ns3::ndn::ConsumerCbr");
     consumerHelper.SetPrefix (prefix);
-    double taxa_envio_leg = 20.0;
+    double taxa_envio_leg = 200.0;
     consumerHelper.SetAttribute ("Frequency", DoubleValue (taxa_envio_leg));
     cout<<"Taxa_envio_leg: "<<taxa_envio_leg<<"\n";
     //consumerHelper.SetAttribute ("Randomize", StringValue ("uniform"))
