@@ -196,8 +196,8 @@ main (int argc, char *argv[])
     
     // Consumer will request /prefix/0, /prefix/1, ...
     
-    ndn::AppHelper consumerHelper ("ns3::ndn::ConsumerZipfMandelbrot");
-    //ndn::AppHelper consumerHelper ("ns3::ndn::ConsumerCbr");
+    //ndn::AppHelper consumerHelper ("ns3::ndn::ConsumerZipfMandelbrot");
+    ndn::AppHelper consumerHelper ("ns3::ndn::ConsumerCbr");
     consumerHelper.SetPrefix (prefix);
     double taxa_envio_leg = 1000000.0;
     consumerHelper.SetAttribute ("Frequency", DoubleValue (taxa_envio_leg));
