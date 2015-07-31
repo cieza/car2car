@@ -163,6 +163,9 @@ $scenarios_interesses_enviados[0] = ["Politica","NaoProativo","ProAtivo"];
 @scenarios_interesses_satisfeitos = ();
 $scenarios_interesses_satisfeitos[0] = ["Politica","NaoProativo","ProAtivo"];
 
+@scenarios_drops = ();
+$scenarios_drops[0] = ["Politica","NaoProativo","ProAtivo"];
+
 @scenarios_interesses_enviados_satisfeitos = ();
 $scenarios_interesses_enviados_satisfeitos[0] = ["Politica","NaoProativo_Enviados","ProAtivo_Enviados","NaoProativo_Satisfeitos","ProAtivo_Satisfeitos"];
 
@@ -212,6 +215,8 @@ foreach $dir_scenario(@lista)
         @experimentos_interesses_enviados = ();
         @experimentos_interesses_satisfeito = ();
         
+        @experimentos_drops = ();
+        
         #lista de erros
         @erro_experimentos = ();
         @erro_experimentos_ocupacao_maliciosa = ();
@@ -233,6 +238,8 @@ foreach $dir_scenario(@lista)
         @erro_experimentos_interesses_enviados = ();
         @erro_experimentos_interesses_satisfeito = ();
         
+        @erro_experimentos_drops = ();
+        
         # percorre sobre os diretorios enquanto não termina
         #foreach $experimento_dir(@experimentos_dirs)
         $y = $n;
@@ -251,6 +258,8 @@ foreach $dir_scenario(@lista)
             $count = 0;
             $satisfeitos = 0;
             $interesses = 0;
+            
+            $drops = 0;
             
             #guarda uma lista mostrando a taxa de entrega (interesses satisfeitos/interesses_totais) para cada rodada
             @lista_taxa_entrega_rodadas = ();
@@ -272,6 +281,9 @@ foreach $dir_scenario(@lista)
             @lista_hit_rate_rodadas = ();
             #guarda uma lista mostrando o hopcount medio para cada rodada
             @lista_hopcount_medio_rodadas = ();
+            
+            #guarda uma lista mostrando o total de drops para cada rodada
+            @lista_drops_rodadas = ();
             
             
             $soma_num_poluidos = 0;
@@ -345,6 +357,9 @@ foreach $dir_scenario(@lista)
                     
                     # HashMap que vai guardar o menor hopcount para atender os interesses do no, a chave corresponde ao ID do no
                     %hopcount_minimo = ();
+                    
+                    # HashMap que vai guardar o numero de drops, a chave corresponde ao ID do no
+                    %numero_drops = ();
                     
                     
                     
@@ -447,6 +462,18 @@ foreach $dir_scenario(@lista)
                             if($linha[0] eq "Taxa_envio_leg:")
                             {
                                 $taxa_envio_leg = $linha[1];
+                            }
+                        }
+                        if($linha[0] eq "drop")
+                        {
+                            print("Drop no no: ".$linha[1]." \n");
+                            if($numero_drops{$linha[1]} eq undef)
+                            {
+                                $numero_drops{$linha[1]} = 1;
+                            }
+                            else
+                            {
+                                $numero_drops{$linha[1]} = $numero_drops{$linha[1]} + 1;
                             }
                         }
                         
@@ -614,6 +641,16 @@ foreach $dir_scenario(@lista)
                     $lista_hopcount_medio_rodadas[$count] = $aux_soma_hopcount/$aux_hopcount_numero;
                     
                     
+                    @valores = values %numero_drops;
+                    $num_drops_rodada = 0;
+                    foreach(@valores)
+                    {
+                        $drops = $drops + $_;
+                        $num_drops_rodada = $num_drops_rodada + $_;
+                    }
+                    $lista_drops_rodadas[$count] = $num_drops_rodada;
+                    
+                    
                     # conta o numero de rodadas
                     $count = $count + 1;
                 }
@@ -770,6 +807,19 @@ foreach $dir_scenario(@lista)
             $erro_experimentos_interesses_satisfeito[$i] = $erro;
             
             
+            
+            if($drops != 0){
+                $experimentos_drops[$i] = $drops/$count;
+                #erro
+                $erro = confidence(@lista_drops_rodadas);
+                $erro_experimentos_drops[$i] = $erro;
+            }
+            else{
+                $experimentos_drops[$i] = 0;
+                $erro_experimentos_drops[$i] = 0;
+            }
+            
+            
             $scenarios_coluna_0[$i] = $num_consumidores;
             print("Numero de consumidores: $num_consumidores\n");
             
@@ -919,6 +969,22 @@ foreach $dir_scenario(@lista)
         $scenarios_interesses_enviados_satisfeitos[1] = [@scenarios_coluna_1];
         
         
+        
+        
+        
+        $experimentos_drops0] = $dir_scenario;
+        $scenarios_drops[$k] = [@experimentos_drops];
+        #erro
+        $erro_experimentos_drops[0] = "erro_".$dir_scenario;
+        $scenarios_drops[$k+1] = [@erro_experimentos_drops];
+        
+        $scenarios_drops[0] = [@scenarios_coluna_0];
+        $scenarios_drops[1] = [@scenarios_coluna_1];
+        
+        
+        
+        
+        
         $k = $k + 2;
     }
     
@@ -927,7 +993,7 @@ foreach $dir_scenario(@lista)
 
 $total = $i;
 
-$file_name = "/home/elise/car2car/graficos_variacoes_atacantes/txentrega.txt";
+$file_name = "/home/elise/car2car/graficos_sem_atacantes/txentrega.txt";
 open ARK, ">".$file_name;
 select ARK;
 $i = 0;
@@ -946,7 +1012,7 @@ while($i < $total)
 
 close ARK;
 
-$file_name = "/home/elise/car2car/graficos_variacoes_atacantes/txentrega_relativa.txt";
+$file_name = "/home/elise/car2car/graficos_sem_atacantes/txentrega_relativa.txt";
 open ARK, ">".$file_name;
 select ARK;
 $i = 0;
@@ -967,7 +1033,7 @@ close ARK;
 
 #medias
 #$x =  $sum_packets/$count;
-$file_name = "/home/elise/car2car/graficos_variacoes_atacantes/ocupacao.txt";
+$file_name = "/home/elise/car2car/graficos_sem_atacantes/ocupacao.txt";
 open ARK, ">".$file_name;
 select ARK;
 $i = 0;
@@ -987,7 +1053,7 @@ while($i < $total)
 close ARK;
 
 
-$file_name = "/home/elise/car2car/graficos_variacoes_atacantes/atraso.txt";
+$file_name = "/home/elise/car2car/graficos_sem_atacantes/atraso.txt";
 open ARK, ">".$file_name;
 select ARK;
 $i = 0;
@@ -1007,7 +1073,7 @@ while($i < $total)
 close ARK;
 
 
-$file_name = "/home/elise/car2car/graficos_variacoes_atacantes/atraso_pi.txt";
+$file_name = "/home/elise/car2car/graficos_sem_atacantes/atraso_pi.txt";
 open ARK, ">".$file_name;
 select ARK;
 $i = 0;
@@ -1026,7 +1092,7 @@ while($i < $total)
 
 close ARK;
 
-$file_name = "/home/elise/car2car/graficos_variacoes_atacantes/cache_hit.txt";
+$file_name = "/home/elise/car2car/graficos_sem_atacantes/cache_hit.txt";
 open ARK, ">".$file_name;
 select ARK;
 $i = 0;
@@ -1045,7 +1111,7 @@ while($i < $total)
 
 close ARK;
 
-$file_name = "/home/elise/car2car/graficos_variacoes_atacantes/cache_miss.txt";
+$file_name = "/home/elise/car2car/graficos_sem_atacantes/cache_miss.txt";
 open ARK, ">".$file_name;
 select ARK;
 $i = 0;
@@ -1064,7 +1130,7 @@ while($i < $total)
 
 close ARK;
 
-$file_name = "/home/elise/car2car/graficos_variacoes_atacantes/cache_hitRATE.txt";
+$file_name = "/home/elise/car2car/graficos_sem_atacantes/cache_hitRATE.txt";
 open ARK, ">".$file_name;
 select ARK;
 $i = 0;
@@ -1084,7 +1150,7 @@ while($i < $total)
 close ARK;
 
 
-$file_name = "/home/elise/car2car/graficos_variacoes_atacantes/hopcount_medio.txt";
+$file_name = "/home/elise/car2car/graficos_sem_atacantes/hopcount_medio.txt";
 open ARK, ">".$file_name;
 select ARK;
 $i = 0;
@@ -1104,7 +1170,7 @@ while($i < $total)
 close ARK;
 
 
-$file_name = "/home/elise/car2car/graficos_variacoes_atacantes/hopcount_maximo.txt";
+$file_name = "/home/elise/car2car/graficos_sem_atacantes/hopcount_maximo.txt";
 open ARK, ">".$file_name;
 select ARK;
 $i = 0;
@@ -1124,7 +1190,7 @@ while($i < $total)
 close ARK;
 
 
-$file_name = "/home/elise/car2car/graficos_variacoes_atacantes/hopcount_minimo.txt";
+$file_name = "/home/elise/car2car/graficos_sem_atacantes/hopcount_minimo.txt";
 open ARK, ">".$file_name;
 select ARK;
 $i = 0;
@@ -1147,7 +1213,7 @@ close ARK;
 
 
 
-$file_name = "/home/elise/car2car/graficos_variacoes_atacantes/interesses_enviados.txt";
+$file_name = "/home/elise/car2car/graficos_sem_atacantes/interesses_enviados.txt";
 open ARK, ">".$file_name;
 select ARK;
 $i = 0;
@@ -1168,7 +1234,7 @@ close ARK;
 
 
 
-$file_name = "/home/elise/car2car/graficos_variacoes_atacantes/interesses_satisfeito.txt";
+$file_name = "/home/elise/car2car/graficos_sem_atacantes/interesses_satisfeito.txt";
 open ARK, ">".$file_name;
 select ARK;
 $i = 0;
@@ -1178,6 +1244,29 @@ while($i < $total)
     while($j < $k)
     {
         print("$scenarios_interesses_satisfeitos[$j][$i]      \t");
+        $j = $j + 1;
+    }
+    print("\n");
+    $i = $i + 1;
+}
+
+
+close ARK;
+
+
+
+
+
+$file_name = "/home/elise/car2car/graficos_sem_atacantes/drops.txt";
+open ARK, ">".$file_name;
+select ARK;
+$i = 0;
+while($i < $total)
+{
+    $j = 0;
+    while($j < $k)
+    {
+        print("$scenarios_drops[$j][$i]      \t");
         $j = $j + 1;
     }
     print("\n");
