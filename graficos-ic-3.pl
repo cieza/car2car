@@ -972,7 +972,7 @@ foreach $dir_scenario(@lista)
         
         
         
-        $experimentos_drops0] = $dir_scenario;
+        $experimentos_drops[0] = $dir_scenario;
         $scenarios_drops[$k] = [@experimentos_drops];
         #erro
         $erro_experimentos_drops[0] = "erro_".$dir_scenario;
