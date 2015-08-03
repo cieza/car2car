@@ -275,6 +275,47 @@ main (int argc, char *argv[])
         }
     }
     
+    //taxa, mais 3 consumidores:
+    
+    encontrou = false;
+    while(!encontrou)
+    {
+        num_rand = rand() % numberOfCars;
+        if (nodes_map.find(num_rand) == nodes_map.end())
+        {
+            nodes_map[num_rand] = 1;
+            encontrou = true;
+            consumerHelper.Install (nodes.Get (num_rand));
+            cout<<"Consumidor: "<<num_rand<<"\n";
+        }
+    }
+    
+    encontrou = false;
+    while(!encontrou)
+    {
+        num_rand = rand() % numberOfCars;
+        if (nodes_map.find(num_rand) == nodes_map.end())
+        {
+            nodes_map[num_rand] = 1;
+            encontrou = true;
+            consumerHelper.Install (nodes.Get (num_rand));
+            cout<<"Consumidor: "<<num_rand<<"\n";
+        }
+    }
+    
+    encontrou = false;
+    while(!encontrou)
+    {
+        num_rand = rand() % numberOfCars;
+        if (nodes_map.find(num_rand) == nodes_map.end())
+        {
+            nodes_map[num_rand] = 1;
+            encontrou = true;
+            consumerHelper.Install (nodes.Get (num_rand));
+            cout<<"Consumidor: "<<num_rand<<"\n";
+        }
+    }
+    
     //consumerHelper.Install (nodes.Get (2));
     //consumerHelper.Install (nodes.Get (3));
     //consumerHelper.Install (nodes.Get (6));
