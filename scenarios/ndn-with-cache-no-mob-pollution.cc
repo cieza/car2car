@@ -311,7 +311,7 @@ main (int argc, char *argv[])
     ndn::AppHelper consumerHelperAttack ("ns3::ndn::ConsumerCbr");
     consumerHelperAttack.SetPrefix (prefixAttack);
     
-    double taxa_envio_atac = 400.0;
+    double taxa_envio_atac = 200.0;
     consumerHelperAttack.SetAttribute ("Frequency", DoubleValue (taxa_envio_atac));
     cout<<"Taxa_envio_atac: "<<taxa_envio_atac<<"\n";
     /*consumerHelperAttack.Install (nodes.Get (5));
