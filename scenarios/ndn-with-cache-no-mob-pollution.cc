@@ -196,8 +196,8 @@ main (int argc, char *argv[])
     
     // Consumer will request /prefix/0, /prefix/1, ...
     
-    //ndn::AppHelper consumerHelper ("ns3::ndn::ConsumerZipfMandelbrot");
-    ndn::AppHelper consumerHelper ("ns3::ndn::ConsumerCbr");
+    ndn::AppHelper consumerHelper ("ns3::ndn::ConsumerZipfMandelbrot");
+    //ndn::AppHelper consumerHelper ("ns3::ndn::ConsumerCbr");
     consumerHelper.SetPrefix (prefix);
     double taxa_envio_leg = 20.0;
     consumerHelper.SetAttribute ("Frequency", DoubleValue (taxa_envio_leg));
@@ -311,7 +311,7 @@ main (int argc, char *argv[])
     ndn::AppHelper consumerHelperAttack ("ns3::ndn::ConsumerCbr");
     consumerHelperAttack.SetPrefix (prefixAttack);
     
-    double taxa_envio_atac = 100.0;
+    double taxa_envio_atac = 600.0;
     consumerHelperAttack.SetAttribute ("Frequency", DoubleValue (taxa_envio_atac));
     cout<<"Taxa_envio_atac: "<<taxa_envio_atac<<"\n";
     /*consumerHelperAttack.Install (nodes.Get (5));
