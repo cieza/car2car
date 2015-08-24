@@ -10,6 +10,7 @@ set grid ytics
 set grid xtics
 set yrange [0:85]
 set key left top reverse Left
+set key box
 set ylabel "Atraso (s)"
 set xlabel "NºAtacantes"
 
