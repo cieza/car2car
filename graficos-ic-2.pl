@@ -611,7 +611,10 @@ foreach $dir_scenario(@lista)
                     
                     $lista_hit_rodadas[$count] = $aux_cache_hit;
                     
-                    $lista_hit_rate_rodadas[$count] = $aux_cache_hit/($aux_cache_hit+$aux_cache_miss);
+                    if(($aux_cache_hit+$aux_cache_miss) != 0 )
+                    {
+                        $lista_hit_rate_rodadas[$count] = $aux_cache_hit/($aux_cache_hit+$aux_cache_miss);
+                    }
                     
                     $aux_soma_hopcount = 0;
                     #soma total dos hopcounts e do numero de vezes que um interesse foi atendido para fazer uma media
