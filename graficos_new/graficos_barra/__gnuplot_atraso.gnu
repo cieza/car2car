@@ -11,7 +11,7 @@ set style histogram errorbars
 
 set grid ytics
 #set key left top reverse Left
-set ylabel "Atraso"
+set ylabel "Tempo de Recuperação (s)"
 set yrange [0:70]
 set datafile separator ","
 
