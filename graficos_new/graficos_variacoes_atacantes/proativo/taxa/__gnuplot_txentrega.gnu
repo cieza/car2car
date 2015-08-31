@@ -14,7 +14,7 @@ set key right top reverse Left
 set ylabel "Taxa Entrega"
 set xlabel "Taxa de Envio de Interesses"
 
-plot 'txentrega.txt' u 2:3 ti "Com mobilidade" with lines linetype 2, \
-"" u 2:3:4 notitle w errorbars linetype 2, \
-"" u 2:5 ti "Sem mobilidade" with lines linetype 1, \
-"" u 2:5:6 notitle w errorbars linetype 1
+plot 'txentrega.txt' u 2:5 ti "Sem mobilidade" with lines linetype 1, \
+"" u 2:5:6 notitle w errorbars linetype 1, \
+"" u 2:3 ti "Com mobilidade" with lines linetype 2, \
+"" u 2:3:4 notitle w errorbars linetype 2

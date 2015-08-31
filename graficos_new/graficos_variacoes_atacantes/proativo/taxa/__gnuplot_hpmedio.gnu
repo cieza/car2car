@@ -8,12 +8,13 @@ set output "hpmedio3-p.png"
 
 set grid ytics
 set grid xtics
-set yrange [2:5]
+set yrange [3:5]
+set xrange [40:650]
 set key right top reverse Left
 set ylabel "Hop count"
 set xlabel "Taxa de Envio de Interesses"
 
-plot 'hopcount_medio.txt' u 1:2 ti "Sem mobilidade" with lines linetype 1, \
-"" u 1:2:3 notitle w errorbars linetype 1, \
-"" u 1:4 ti "Com mobilidade" with lines linetype 2, \
-"" u 1:4:5 notitle w errorbars linetype 2
+plot 'hopcount_medio.txt' u 2:5 ti "Sem mobilidade" with lines linetype 1, \
+"" u 2:5:6 notitle w errorbars linetype 1, \
+"" u 2:3 ti "Com mobilidade" with lines linetype 2, \
+"" u 2:3:4 notitle w errorbars linetype 2
