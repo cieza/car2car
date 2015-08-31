@@ -2,14 +2,14 @@ clear
 reset
 fontsize = 12
 set terminal png size 520,400 enhanced font "Helvetica,13"
-set output "atraso2-np.png"
+set output "atraso3-np.png"
 
 #set title "Não proativo"
 
 set grid ytics
 set grid xtics
-set xrange [30:150]
-set yrange [0:85]
+set xrange [40:650]
+set yrange [0:110]
 set key left top reverse Left
 set key box
 set ylabel "Atraso (s)"

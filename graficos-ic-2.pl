@@ -103,7 +103,11 @@ sub confidence{
     my $n = scalar(@_);
     my $graus_de_liberdade = $n - 1;
     my $value = $ic_95[$graus_de_liberdade];
-    my $confidenceValue = $value * (variancia(@_)/sqrt($n));
+    my $confidenceValue = 0;
+    if($n != 0)
+    {
+        $confidenceValue = $value * (variancia(@_)/sqrt($n));
+    }
     return $confidenceValue;
 }
 

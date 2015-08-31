@@ -9,7 +9,7 @@ set output "atraso3-p.png"
 set grid ytics
 set grid xtics
 set xrange [40:650]
-set yrange [0:100]
+set yrange [0:110]
 set key left top reverse Left
 set key box
 set ylabel "Atraso (s)"
