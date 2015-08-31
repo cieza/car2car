@@ -2,13 +2,13 @@ clear
 reset
 fontsize = 12
 set terminal png size 520,400 enhanced font "Helvetica,13"
-set output "ocupacao2-p.png"
+set output "ocupacao3-p.png"
 
 #set title "Proativo"
 
 set grid ytics
 set grid xtics
-set yrange [0.7:1.0]
+set yrange [0:1.0]
 set key right bottom reverse Left
 set ylabel "Ocupação Maliciosa"
 set xlabel "Taxa de Envio de Interesses"

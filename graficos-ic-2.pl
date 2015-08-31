@@ -68,7 +68,14 @@ sub media{
     foreach $item (@_){
         $sum += $item;
     }
-    my $media = $sum / $n;
+    my $media = 0;
+    if($n != 0){
+        $media = $sum / $n;
+    }
+    else
+    {
+        my $media = 0;
+    }
     return $media;
 }
 

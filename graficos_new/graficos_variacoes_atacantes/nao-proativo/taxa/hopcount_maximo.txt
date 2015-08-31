@@ -1,7 +1,8 @@
-X      	ndn-with-cache-no-mob-pollution      	erro_ndn-with-cache-no-mob-pollution      	ndn-with-cache-with-mob-v2v-pollution      	erro_ndn-with-cache-with-mob-v2v-pollution      	
-3      	21      	0      	20      	0      	
-3      	20      	0      	18      	0      	
-3      	20      	0      	19      	0      	
-3      	18      	0      	20      	0      	
-3      	20      	0      	24      	0      	
-3      	20      	0      	21      	0      	
+X      	Y      	ndn-with-cache-no-mob-pollution      	erro_ndn-with-cache-no-mob-pollution      	ndn-with-cache-with-mob-v2v-pollution      	erro_ndn-with-cache-with-mob-v2v-pollution      	
+3      	200      	18      	0      	18      	0      	
+3      	50      	23      	0      	21      	0      	
+3      	100      	18      	0      	20      	0      	
+3      	400      	15      	0      	16      	0      	
+3      	150      	19      	0      	20      	0      	
+3      	300      	18      	0      	19      	0      	
+3      	600      	13      	0      	14      	0      	
