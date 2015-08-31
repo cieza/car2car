@@ -631,7 +631,10 @@ foreach $dir_scenario(@lista)
                     }
                     
                     
-                    $lista_hopcount_medio_rodadas[$count] = $aux_soma_hopcount/$aux_hopcount_numero;
+                    if($aux_hopcount_numero != 0 )
+                    {
+                        $lista_hopcount_medio_rodadas[$count] = $aux_soma_hopcount/$aux_hopcount_numero;
+                    }
                     
                     
                     # conta o numero de rodadas
