@@ -1,8 +1,7 @@
-Politica      	      	ndn-with-cache-no-mob-pollution      	erro_ndn-with-cache-no-mob-pollution      	ndn-with-cache-with-mob-v2v-pollution      	erro_ndn-with-cache-with-mob-v2v-pollution      	
-NaoProativo      	      	1588.06666666667      	0      	1562      	0      	
-ProAtivo      	      	2440.76666666667      	0      	2392.9      	0      	
-      	      	2105.56666666667      	0      	1869.53333333333      	0      	
-      	      	1127.43333333333      	0      	1034.8      	0      	
-      	      	1995.96666666667      	0      	1957.7      	0      	
-      	      	1145.3      	0      	1247.43333333333      	0      	
-      	      	717.3      	0      	949.833333333333      	0      	
+Politica      	ndn-with-cache-no-mob-pollution      	erro_ndn-with-cache-no-mob-pollution      	ndn-with-cache-with-mob-v2v-pollution      	erro_ndn-with-cache-with-mob-v2v-pollution      	
+NaoProativo      	1998.35      	151.671466677745      	1593.15      	288.510080414586      	
+ProAtivo      	2037.15      	228.834909326972      	2140.45      	183.332579867431      	
+      	2114.85      	174.044319289776      	2080.1      	213.438996589416      	
+      	2191.05      	116.158892477256      	2092.4      	109.451816229464      	
+      	2465.5      	45.807209109599      	2392.2      	108.773670473037      	
+      	2402.25      	73.5766477672845      	2427.1      	45.3472805254597      	

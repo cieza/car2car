@@ -14,5 +14,5 @@ set key box
 set ylabel "Atraso (s)"
 set xlabel "NºAtacantes"
 
-plot 'atraso_disp.txt' u 1:3 ti "Sem mobilidade" with points pt 5, \
-"" u 1:4 ti "Com mobilidade" with points pt 9
+plot 'atraso_disp.txt' u 1:4 ti "Sem mobilidade" with points pt 5, \
+"" u 1:3 ti "Com mobilidade" with points pt 9

@@ -1,5 +1,0 @@
-Politica      	ndn-with-cache-with-mob-v2v-pollution      	erro_ndn-with-cache-with-mob-v2v-pollution      	ndn-with-cache-no-mob      	erro_ndn-with-cache-no-mob      	ndn-with-cache-with-mob-v2v      	erro_ndn-with-cache-with-mob-v2v      	ndn-with-cache-no-mob-pollution      	erro_ndn-with-cache-no-mob-pollution      	
-NaoProativo_Enviados      	2495.5      	14.2605      	2500      	0      	2500      	0      	2483.6      	38.8386057397075      	
-ProAtivo_Enviados      	2484.7      	48.4857      	2500      	0      	2500      	0      	2500      	0      	
-NaoProativo_Satisfeitos      	2445.2      	97.7537053514029      	2500      	0      	2500      	0      	2430.9      	106.587592771751      	
-ProAtivo_Satisfeitos      	2472.6      	74.6629671302536      	2500      	0      	2500      	0      	2500      	0      	

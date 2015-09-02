@@ -12,7 +12,7 @@ set xrange [30:150]
 set yrange [0:150]
 set key left top reverse Left
 set ylabel "Atraso (s)"
-set xlabel "Taxa de Envio de Interesses"
+set xlabel "Taxa de Envio (interesses/s)"
 
 plot 'atraso.txt' u 1:2 ti "Sem mobilidade" with lines linetype 1, \
 "" u 1:2:3 notitle w errorbars linetype 1, \
